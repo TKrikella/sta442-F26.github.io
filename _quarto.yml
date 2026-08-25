@@ -3,13 +3,12 @@ project:
   output-dir: docs
 
 website:
-  title: "STA442-Website"
+  title: "STA442"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-
+      - slides.qmd
 format:
   html:
     theme:

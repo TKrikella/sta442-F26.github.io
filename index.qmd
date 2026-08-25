@@ -1,11 +1,9 @@
 ---
-title: "STA442-Website"
+title: "STA442"
+about: 
+  template: jolla
 ---
 
-This is a Quarto website.
+## Course Information 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+[Syllabus](STA442-Syllabus.pdf)
