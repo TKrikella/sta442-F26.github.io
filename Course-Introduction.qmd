@@ -65,11 +65,14 @@ My PhD graduation, 2024.
 
 Now it's time for me to get to know you!
 
-Go to:
+Go to: mathmatize.com/polls
 
-Access Code:
+Access Code: JQTB
 
-Note: We will be using Mathmatize throughout the semester.
+![](images/STA442-MathmatizeQR-Intro.png)
+
+Note: We will be using Mathmatize throughout the semester. 
+
 
 ## About This Course
 
