@@ -8,16 +8,16 @@ page-layout: full
 Below is a tentative schedule of topics for the term. You can find the lecture slides in html format, my annotated slides as a pdf, as well as the pdf versions of the tutorial slides. When annotating the html slides in class, you can save them by printing to pdf in your browser.
 
 ::: smaller
-| Date | Topics | Suggested Reading | Assessments |
-|:--------------:|:---------------|:---------------|:------------------------|
-| Sept. 11 | **Statistical Modelling and Inference**<br>Study planning, data-generating process, statistical inference (Type I/II errors), simulation, sample size calculation | — | — |
-| Sept. 18 | **Topics in Statistical Inference**<br>Multiple testing, family-wise error rate, false discovery rate, permutation methods | \[ISL\] Ch. 13 | Assignment 1 Released |
-| Sept. 25<br>Oct. 2 | **Linear Models**<br>Least squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection | \[LM\] Ch. 2, 3, 8.2, 10<br>\[ISL\] Ch. 3, 6.1 | Assignment 1 Due, Oct 2 |
-| Oct. 9<br>Oct. 16 | **Generalized Linear Models**<br>Review of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood | \[ELM\] Ch. 2, 5, 8<br>\[ISL\] Ch. 4.1–4.3, 4.6 |  |
-| Oct. 23 | **Midterm Exam** | — | Assignment 2 Released |
-| Oct. 30 | **No class — Reading Week** | — | — |
-| Nov. 6 | **Bayesian Thinking**<br>Prior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs | — | Assignment 2 Due |
-| Nov. 13<br>Nov. 20 | **Random Effects Models**<br>Correlated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP | \[ELM\] Ch. 10, 11 | Assignment 3 Released, Nov. 20 |
-| Nov. 27 | **Penalized Regression**<br>Bias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation | \[ISL\] Ch. 6<br>\[ESL\] Sec. 7.10 |  |
-| Dec. 4 | **Generalized Additive Models**<br>Basis functions, smoothing splines, generalized additive models | \[ELM\] Ch. 15<br>\[ISL\] Ch. 7<br>\[ESL\] Ch. 5 | Assignment 3 Due |
+| Date | Topics | Slides | Suggested Reading | Assessments |
+|:--------------:|:---------------|:---------------|:---------------|:------------------------|
+| Sept. 11 | **Statistical Modelling and Inference**<br>Study planning, data-generating process, statistical inference (Type I/II errors), simulation, sample size calculation | — | — | - |
+| Sept. 18 | **Topics in Statistical Inference**<br>Multiple testing, family-wise error rate, false discovery rate, permutation methods | | \[ISL\] Ch. 13 | Assignment 1 Released |
+| Sept. 25<br>Oct. 2 | **Linear Models**<br>Least squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection | | \[LM\] Ch. 2, 3, 8.2, 10<br>\[ISL\] Ch. 3, 6.1 | Assignment 1 Due, Oct 2 |
+| Oct. 9<br>Oct. 16 | **Generalized Linear Models**<br>Review of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood | | \[ELM\] Ch. 2, 5, 8<br>\[ISL\] Ch. 4.1–4.3, 4.6 |  |
+| Oct. 23 | **Midterm Exam** | - | — | Assignment 2 Released |
+| Oct. 30 | **No class — Reading Week** | |  — | — |
+| Nov. 6 | **Bayesian Thinking**<br>Prior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs | |  — | Assignment 2 Due |
+| Nov. 13<br>Nov. 20 | **Random Effects Models**<br>Correlated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP | |  \[ELM\] Ch. 10, 11 | Assignment 3 Released, Nov. 20 |
+| Nov. 27 | **Penalized Regression**<br>Bias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation | |  \[ISL\] Ch. 6<br>\[ESL\] Sec. 7.10 |  |
+| Dec. 4 | **Generalized Additive Models**<br>Basis functions, smoothing splines, generalized additive models | |  \[ELM\] Ch. 15<br>\[ISL\] Ch. 7<br>\[ESL\] Ch. 5 | Assignment 3 Due |
 :::
