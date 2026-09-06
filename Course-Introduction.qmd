@@ -3,6 +3,7 @@ title: "STA442: Methods in Applied Statistics"
 subtitle: "Course Introduction"
 format: 
   live-revealjs:
+    css: styles.css
     html-math-method: mathjax
     scrollable: false
     slide-number: "c/t"

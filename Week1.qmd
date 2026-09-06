@@ -3,6 +3,7 @@ title: "Statistical Modelling and Inference"
 subtitle: "Week 1"
 format: 
   live-revealjs:
+    css: styles.css
     html-math-method: mathjax
     scrollable: false
     slide-number: "c/t"
@@ -26,23 +27,6 @@ engine: webr
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 
-```{=html}
-<style>
-.reveal .slides section h2 {
-  font-size: 1.5em !important;
-}
-
-.reveal p, .reveal li {
-  font-size: 1em;
-  line-height: 1.1;
-}
-
-.reveal .math {
-  font-size: 0.95em;
-}
-</style>
-```
-
 ## Warm-Up Questions
 
 Mathmatize
@@ -60,11 +44,41 @@ The purpose of this week's lecture is to ensure that we are on the same page abo
 
 Statistical modelling is the process of using data to learn about an unknown population.
 
-:::: fragment
-::: {style="font-size: 1.2em; line-height: 1.8;"}
-[Population]{style="color: navy;"} <br> ↓ <br> [Scientific question]{style="color: navy;"} <br> ↓ <br> [Study design + data collection]{style="color: navy;"} <br> ↓ <br> [Statistical model]{style="color: nacy;"} <br> ↓ <br> [Estimation]{style="color: navy;"} <br> ↓ <br> [Uncertainty quantification]{style="color: navy;"} <br> ↓ <br> [Inference + scientific conclusions]{style="color: navy;"}
+::: fragment
+
+::: {.workflow-grid}
+
+::: {.workflow-step}
+**1. Population**
 :::
-::::
+
+::: {.workflow-step}
+**2. Scientific Question**
+:::
+
+::: {.workflow-step}
+**3. Study Design + Data Collection**
+:::
+
+::: {.workflow-step}
+**4. Statistical Model**
+:::
+
+::: {.workflow-step}
+**5. Estimation**
+:::
+
+::: {.workflow-step}
+**6. Uncertainty Quantification**
+:::
+
+::: {.workflow-step}
+**7. Inference + Scientific Conclusions**
+:::
+
+:::
+
+:::
 
 # Introduction to Statistical Models {.center .text-center}
 

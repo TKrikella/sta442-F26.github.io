@@ -137,7 +137,7 @@
     "href": "Week1.html#big-picture-the-statistical-modelling-workflow",
     "title": "Statistical Modelling and Inference",
     "section": "Big Picture: The Statistical Modelling Workflow",
-    "text": "Big Picture: The Statistical Modelling Workflow\nStatistical modelling is the process of using data to learn about an unknown population.\n\n\nPopulation  ↓  Scientific question  ↓  Study design + data collection  ↓  Statistical model  ↓  Estimation  ↓  Uncertainty quantification  ↓  Inference + scientific conclusions"
+    "text": "Big Picture: The Statistical Modelling Workflow\nStatistical modelling is the process of using data to learn about an unknown population.\n\n\n\n1. Population\n\n\n2. Scientific Question\n\n\n3. Study Design + Data Collection\n\n\n4. Statistical Model\n\n\n5. Estimation\n\n\n6. Uncertainty Quantification\n\n\n7. Inference + Scientific Conclusions"
   },
   {
     "objectID": "Week1.html#population",
