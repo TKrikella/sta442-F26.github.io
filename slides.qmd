@@ -10,7 +10,7 @@ Below is a tentative schedule of topics for the term. You can find the lecture s
 ::: smaller
 | Date | Topics | Slides | Suggested Reading | Assessments |
 |:--------------:|:---------------|:---------------|:---------------|:------------------------|
-| Sept. 11 | **Statistical Modelling and Inference**<br>Study planning, data-generating process, statistical inference (Type I/II errors), simulation, sample size calculation | — | — | - |
+| Sept. 11 | **Statistical Modelling and Inference**<br>Study planning, data-generating process, statistical inference (Type I/II errors), simulation, sample size calculation | [HTML Slides](Week1.qmd) | — | - |
 | Sept. 18 | **Topics in Statistical Inference**<br>Multiple testing, family-wise error rate, false discovery rate, permutation methods | | \[ISL\] Ch. 13 | Assignment 1 Released |
 | Sept. 25<br>Oct. 2 | **Linear Models**<br>Least squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection | | \[LM\] Ch. 2, 3, 8.2, 10<br>\[ISL\] Ch. 3, 6.1 | Assignment 1 Due, Oct 2 |
 | Oct. 9<br>Oct. 16 | **Generalized Linear Models**<br>Review of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood | | \[ELM\] Ch. 2, 5, 8<br>\[ISL\] Ch. 4.1–4.3, 4.6 |  |
