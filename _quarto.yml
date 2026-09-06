@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - slides.qmd
+    - Week1.qmd
+    - Course-Introduction.qmd
 
 website:
   title: "STA442"
@@ -8,7 +13,8 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - slides.qmd
+      - href: slides.qmd 
+        text: Slides
 format:
   html:
     theme:

@@ -4,20 +4,468 @@
     "href": "index.html",
     "title": "STA442",
     "section": "",
-    "text": "Syllabus"
+    "text": "This course is about moving beyond simply knowing how to apply statistical methods and toward thinking carefully about how, when, and why we use them. Throughout the semester, we will work with real-world problems and case studies, with an emphasis on model building, diagnostics, interpretation, and selection. Just as importantly, we will focus on developing the critical thinking and communication skills needed to make sense of statistical results and explain them clearly to others.\nMany of you will soon be graduating and moving into careers in industry, research, graduate studies, or other fields. Regardless of where you go next, you may find yourself in situations where others look to you as the statistical expert. My goal is for you to leave this course feeling prepared to take on that responsibility: not because you know every statistical method, but because you know how to think critically about data, question the assumptions behind the models you use, recognize when something has gone wrong, and communicate your conclusions responsibly.\nI have high expectations for this course, but I am also committed to creating a welcoming, respectful, and inclusive learning environment where everyone feels comfortable asking questions and contributing to discussions. Please don’t hesitate to ask questions during lectures, office hours, or on Piazza. If you’re struggling with something, reach out early. I am here to support you throughout the semester.\nI hope this course helps you develop the confidence to work with data independently and responsibly, and to approach statistical problems with curiosity, care, and a healthy degree of skepticism. I’m looking forward to a great semester with all of you!"
   },
   {
     "objectID": "index.html#course-information",
     "href": "index.html#course-information",
     "title": "STA442",
-    "section": "",
-    "text": "Syllabus"
+    "section": "Course Information",
+    "text": "Course Information\nAll information can be found in the Syllabus.\nJust a few important points:\n\nall date information, location information, and most of the course material will be posted on this course website\nnon-public material will be posted on Quercus\nto email me, email sta442@course.utoronto.ca\nI will not respond to emails sent to my individual account\nall lectures and tests will be delivered in person, unless otherwise specified\nthere will be one midterm test scheduled during the scheduled class time, and we will have a FAS proctored final examination"
   },
   {
     "objectID": "slides.html",
     "href": "slides.html",
-    "title": "Lecture Slides",
+    "title": "Slides",
     "section": "",
-    "text": "blah blah blah"
+    "text": "Below is a tentative schedule of topics for the term. You can find the lecture slides in html format, my annotated slides as a pdf, as well as the pdf versions of the tutorial slides. When annotating the html slides in class, you can save them by printing to pdf in your browser.\n\n\n\n\n\n\n\n\n\n\nDate\nTopics\nSuggested Reading\nAssessments\n\n\n\n\nSept. 11\nStatistical Modelling and InferenceStudy planning, data-generating process, statistical inference (Type I/II errors), simulation, sample size calculation\n—\n—\n\n\nSept. 18\nTopics in Statistical InferenceMultiple testing, family-wise error rate, false discovery rate, permutation methods\n[ISL] Ch. 13\nAssignment 1 Released\n\n\nSept. 25Oct. 2\nLinear ModelsLeast squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection\n[LM] Ch. 2, 3, 8.2, 10[ISL] Ch. 3, 6.1\nAssignment 1 Due, Oct 2\n\n\nOct. 9Oct. 16\nGeneralized Linear ModelsReview of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood\n[ELM] Ch. 2, 5, 8[ISL] Ch. 4.1–4.3, 4.6\n\n\n\nOct. 23\nMidterm Exam\n—\nAssignment 2 Released\n\n\nOct. 30\nNo class — Reading Week\n—\n—\n\n\nNov. 6\nBayesian ThinkingPrior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs\n—\nAssignment 2 Due\n\n\nNov. 13Nov. 20\nRandom Effects ModelsCorrelated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP\n[ELM] Ch. 10, 11\nAssignment 3 Released, Nov. 20\n\n\nNov. 27\nPenalized RegressionBias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation\n[ISL] Ch. 6[ESL] Sec. 7.10\n\n\n\nDec. 4\nGeneralized Additive ModelsBasis functions, smoothing splines, generalized additive models\n[ELM] Ch. 15[ISL] Ch. 7[ESL] Ch. 5\nAssignment 3 Due"
+  },
+  {
+    "objectID": "Course-Introduction.html#about-me",
+    "href": "Course-Introduction.html#about-me",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "About Me",
+    "text": "About Me\n\n\nTatiana Krikella (she/her)\n\nAssistant Professor, Teaching Stream\n\n\nEducation\n\nUndergrad: University of Windsor\nMasters: University of Windsor\nPhD: University of Waterloo\n\n\n\nAbout me\n\nI like to travel\nI like to bake\nMy Goodreads book challenge this year is 45\nI started running this summer\n\n\n\n\n\nMy PhD graduation, 2024."
+  },
+  {
+    "objectID": "Course-Introduction.html#about-you",
+    "href": "Course-Introduction.html#about-you",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "About you",
+    "text": "About you\nNow it’s time for me to get to know you!\nGo to:\nAccess Code:\nNote: We will be using Mathmatize throughout the semester."
+  },
+  {
+    "objectID": "Course-Introduction.html#about-this-course",
+    "href": "Course-Introduction.html#about-this-course",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "About This Course",
+    "text": "About This Course\n\nAdvanced statistical modelling and data analysis for real-world problems\nModel building, diagnostics, interpretation, and selection\nCase studies and real-world examples to connect statistical methods to practice\nStatistical communication and critical thinking, with an emphasis on clearly interpreting and communicating results"
+  },
+  {
+    "objectID": "Course-Introduction.html#course-motivation",
+    "href": "Course-Introduction.html#course-motivation",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "Course Motivation",
+    "text": "Course Motivation\n\nMost of the students in this course will be graduating soon. Some of you will get a job in industry, others will pursue graduate studies, etc.\nRegardless, it is likely that people who’ll be working with you expect you to be “experts” in statistics.\nMost of the research questions you’ll be working with will be pretty straightforward and can be answered using prerequisites for this course.\n\n\n\nTo work with data in independent and responsible manner, it is critical that you know what’s really going on with the statistical models you use."
+  },
+  {
+    "objectID": "Course-Introduction.html#do-i-have-the-appropriate-background",
+    "href": "Course-Introduction.html#do-i-have-the-appropriate-background",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "Do I Have the Appropriate Background?",
+    "text": "Do I Have the Appropriate Background?\nThe prerequisite for this course is STA303: Methods of Data Analysis.\n\nThis means that the following is assumed to have been learned:\n\nsome fundamentals: (maximum) likelihood, parameter estimation, hypothesis testing\nlinear models (e.g. least squares) and generalized linear models (e.g. logistic/Poisson regression)\nR programming"
+  },
+  {
+    "objectID": "Course-Introduction.html#course-materials-important-links",
+    "href": "Course-Introduction.html#course-materials-important-links",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "Course Materials & Important Links",
+    "text": "Course Materials & Important Links\nTextbook: We will be using the following three textbooks: - [ISL] An Introduction to Statistical Learning by James et al. (https://www.statlearning.com) - [LM] Linear Models with R by Faraway (2nd edition) - [ELM] Extending Linear Models with R by Faraway (2nd edition)\n\n\nCourse Webpage: Main source of information – Check regularly!\n\nQuercus: Announcements and non-public materials (i.e. solutions)\n\nPiazza: Main place for discussions.\n\nCrowdmark: We will use Crowdmark for assignment submission on Quercus."
+  },
+  {
+    "objectID": "Course-Introduction.html#delivery-details",
+    "href": "Course-Introduction.html#delivery-details",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "Delivery Details",
+    "text": "Delivery Details\nUnless otherwise specified, lectures will be held in-person.\n\n\n\n\nSection\nCategory\nTime\nLocation\n\n\n\n\nLEC0101\nLectures\nFri (2-5pm)\nSS 1073\n\n\n\nInstructor’s Office Hours\nMon (2–3pm)\nOPG 9165"
+  },
+  {
+    "objectID": "Course-Introduction.html#tentative-course-schedule",
+    "href": "Course-Introduction.html#tentative-course-schedule",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "Tentative Course Schedule",
+    "text": "Tentative Course Schedule\n\n\n\n\n\n\n\n\n\n\nDate\nTopics\nSuggested Reading\nAssessments\n\n\n\n\nSept. 11\nStatistical Modelling and InferenceStudy planning, data-generating process, statistical inference (Type I/II errors), simulation, sample size calculation\n—\n—\n\n\nSept. 18\nTopics in Statistical InferenceMultiple testing, family-wise error rate, false discovery rate, permutation methods\n[ISL] Ch. 13\nAssignment 1 Released\n\n\nSept. 25Oct. 2\nLinear ModelsLeast squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection\n[LM] Ch. 2, 3, 8.2, 10[ISL] Ch. 3, 6.1\nAssignment 1 Due, Oct 2\n\n\nOct. 9Oct. 16\nGeneralized Linear ModelsReview of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood\n[ELM] Ch. 2, 5, 8[ISL] Ch. 4.1–4.3, 4.6\n\n\n\nOct. 23\nMidterm Exam\n—\nAssignment 2 Released\n\n\nOct. 30\nNo class — Reading Week\n—\n—\n\n\nNov. 6\nBayesian ThinkingPrior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs\n—\nAssignment 2 Due\n\n\nNov. 13Nov. 20\nRandom Effects ModelsCorrelated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP\n[ELM] Ch. 10, 11\nAssignment 3 Released, Nov. 20\n\n\nNov. 27\nPenalized RegressionBias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation\n[ISL] Ch. 6[ESL] Sec. 7.10\n\n\n\nDec. 4\nGeneralized Additive ModelsBasis functions, smoothing splines, generalized additive models\n[ELM] Ch. 15[ISL] Ch. 7[ESL] Ch. 5\nAssignment 3 Due"
+  },
+  {
+    "objectID": "Course-Introduction.html#email-policy",
+    "href": "Course-Introduction.html#email-policy",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "Email Policy",
+    "text": "Email Policy\nCourse Email:\n\nInstructor and TAs will not respond to emails sent to individual accounts\nResponse Time: It will take 24 – 48 hours to respond to emails. I will only respond during working hours (Monday – Friday, 9am – 5pm).\n\n\n\nFor questions…\n\nIf it is about course material such as lectures / tutorials, or clarification question, post it to Piazza so that other students will benefit.\nIf it is related with solving practical problem sets, use the office hours"
+  },
+  {
+    "objectID": "Course-Introduction.html#course-grading-scheme",
+    "href": "Course-Introduction.html#course-grading-scheme",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "Course Grading Scheme",
+    "text": "Course Grading Scheme\n\n\n\n\nAssessment\nStandard Scheme\nFlexible Scheme\n\n\n\n\nAssignment 1\n10%\n10%\n\n\nAssignment 2\n10%\n10%\n\n\nAssignment 3\n10%\n10%\n\n\nMidterm Test\n30%\n15%\n\n\nFinal Exam\n40%\n55%"
+  },
+  {
+    "objectID": "Course-Introduction.html#important-dates",
+    "href": "Course-Introduction.html#important-dates",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "Important Dates",
+    "text": "Important Dates\nMidterm: October 23rd, 2 – 4pm\n\nThanksgiving: October 12th (no classes, no office hours)\n\nReading Week: October 26th – 30th (no classes, no office hours)\n\nDrop Date: November 17th\n\nLast Day of Class: December 4th\n\nFinal Exam Period: December 10th – 22nd"
+  },
+  {
+    "objectID": "Course-Introduction.html#ai-policy---can-i-use-ai-for",
+    "href": "Course-Introduction.html#ai-policy---can-i-use-ai-for",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "AI Policy - Can I Use AI for…",
+    "text": "AI Policy - Can I Use AI for…\n General Questions: Yes – but keep in mind AI can make mistakes.\n\nAssignments: No, assignments are designed to help you learn.\n\nTests: No."
+  },
+  {
+    "objectID": "Course-Introduction.html#resources",
+    "href": "Course-Introduction.html#resources",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "Resources",
+    "text": "Resources\n\nAccomodations: https://studentlife.utoronto.ca/as\n\nLearning Skills: https://www.studentlife.utoronto.ca/department/centre-for-learning-strategy-support/\n\nHealth & Wellness: https://www.studentlife.utoronto.ca/department/health-wellness/"
+  },
+  {
+    "objectID": "Course-Introduction.html#final-note",
+    "href": "Course-Introduction.html#final-note",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "Final Note",
+    "text": "Final Note\n All information is in the syllabus on the course website.\n\n\nIf you remember just one thing:\nCheck the course website regularly."
+  },
+  {
+    "objectID": "Week1.html#warm-up-questions",
+    "href": "Week1.html#warm-up-questions",
+    "title": "Statistical Modelling and Inference",
+    "section": "Warm-Up Questions",
+    "text": "Warm-Up Questions\nMathmatize"
+  },
+  {
+    "objectID": "Week1.html#learning-outcome-for-this-week",
+    "href": "Week1.html#learning-outcome-for-this-week",
+    "title": "Statistical Modelling and Inference",
+    "section": "Learning Outcome for This Week",
+    "text": "Learning Outcome for This Week\nThe purpose of this week’s lecture is to ensure that we are on the same page about the basics.\n\nIntroduction to statistical models\nDesigning studies\nIntroduction to simulations\nProcedures of statistical inference"
+  },
+  {
+    "objectID": "Week1.html#big-picture-the-statistical-modelling-workflow",
+    "href": "Week1.html#big-picture-the-statistical-modelling-workflow",
+    "title": "Statistical Modelling and Inference",
+    "section": "Big Picture: The Statistical Modelling Workflow",
+    "text": "Big Picture: The Statistical Modelling Workflow\nStatistical modelling is the process of using data to learn about an unknown population.\n\n\nPopulation  ↓  Scientific question  ↓  Study design + data collection  ↓  Statistical model  ↓  Estimation  ↓  Uncertainty quantification  ↓  Inference + scientific conclusions"
+  },
+  {
+    "objectID": "Week1.html#population",
+    "href": "Week1.html#population",
+    "title": "Statistical Modelling and Inference",
+    "section": "Population",
+    "text": "Population\nIn statistics, a population is the entire group of individuals or objects we are interested in studying.\n\nWe collect a sample from the population and use it to make inferences about the population.\n\n\nOur sample does not contain all observations from the population\n\nKey idea of statistics!\nWe have limited information (sample) and use it to learn about the unknown population.\nIf the data are a random sample from a population, we can make reasonable inferences about the population characteristics (e.g. mean)\nThe key requirement is that the sample should be representative of the population"
+  },
+  {
+    "objectID": "Week1.html#population-1",
+    "href": "Week1.html#population-1",
+    "title": "Statistical Modelling and Inference",
+    "section": "Population",
+    "text": "Population\nIt is important to clearly define the population of interest.\n\nit is not enough to say “I collected n observations”\nthe key question is: Who or what do these observations represent?\n\n\nExample 1: Genetic Studies\n\nMany genetic studies have been conducted primarily in people of European ancestry\nModels developed using these data often perform poorly in populations with different genetic backgrounds (e.g., people of Asian or African ancestry).\n\n\n\nExample 2: Psychology Experiments\n\nPsychology studies often recruit undergraduate students because they are readily accessible.\nDo these participants represent all adults?"
+  },
+  {
+    "objectID": "Week1.html#population-2",
+    "href": "Week1.html#population-2",
+    "title": "Statistical Modelling and Inference",
+    "section": "Population",
+    "text": "Population\n\n\nIn practice, the true characteristics of a population, such as its mean, variance, or distribution, are typically unknown.\nOur sample provides limited information about the population, but if it is representative, it can provide a good approximation of the population."
+  },
+  {
+    "objectID": "Week1.html#population-3",
+    "href": "Week1.html#population-3",
+    "title": "Statistical Modelling and Inference",
+    "section": "Population",
+    "text": "Population\n\nWe are often interested in numerical summaries that describe a population.\n\nThese numerical summaries are called parameters\n\ne.g. mean height of all UofT students\nAlthough the parameter is unknown, it is a fixed (constant) value.\n\nThe corresponding summaries computed from a sample are called statistics.\n\n\n\n\nSince our conclusions are based on a sample rather than the entire population, every statistical conclusion involves some uncertainty."
+  },
+  {
+    "objectID": "Week1.html#samples",
+    "href": "Week1.html#samples",
+    "title": "Statistical Modelling and Inference",
+    "section": "Samples",
+    "text": "Samples\nRandom sampling is essential for ensuring that study findings generalize to the population of interest.\nExample\n\nIn neuroimaging studies, brain MRI scans are often excluded when excessive head motion reduces image quality.\nAdolescents with autism spectrum disorder (ASD) may be more likely to move during scanning and, therefore, more likely to be excluded.\nThis can introduce selection bias, as the analyzed sample may no longer represent the target population."
+  },
+  {
+    "objectID": "Week1.html#statistical-model",
+    "href": "Week1.html#statistical-model",
+    "title": "Statistical Modelling and Inference",
+    "section": "Statistical Model",
+    "text": "Statistical Model\nWe specify a probability model that represents how we believe the data were generated. This is called the data-generating process (DGP) or data-generating model.\n\n\nFor example, if \\[Y_i \\stackrel{\\text{i.i.d.}}{\\sim} \\mathcal{F}\\] then each observation is assumed to be independent and drawn from the same population distribution \\(\\mathcal{F}\\).\n\n\n\n\nOne simple model, which makes relatively strong assumptions, is\n\n\\[Y_i \\stackrel{\\text{i.i.d.}}{\\sim} \\mathcal{N}(\\mu, \\sigma^2)\\]"
+  },
+  {
+    "objectID": "Week1.html#examples-of-statistical-models",
+    "href": "Week1.html#examples-of-statistical-models",
+    "title": "Statistical Modelling and Inference",
+    "section": "Examples of Statistical Models",
+    "text": "Examples of Statistical Models\nDifferent research questions require different statistical models!\n\n\n(linear) \\(y_i = \\beta_0+ x_i\\beta_1 + \\epsilon_i\\)\n(non-linear) \\(y_i = \\beta_0 + \\beta_1sin(x_i) + \\epsilon_i\\)\n(multiple non-linear) \\(y_i = f_1(x_{1i}) + f_2(x_{2i}) + ... + f_p(x_{pi}) + \\epsilon_i\\)\n(multiple non-linear with interactions) \\(y_i = f_1(x_{1i}) + f_2(x_{2i}) + ... + f_p(x_{pi}) + g_1(f_1(x_{1i})f_2(x_{2i})) +...+ \\epsilon_i\\)"
+  },
+  {
+    "objectID": "Week1.html#statistical-model-1",
+    "href": "Week1.html#statistical-model-1",
+    "title": "Statistical Modelling and Inference",
+    "section": "Statistical Model",
+    "text": "Statistical Model\n\n(Binary response)\n\\[y_i \\sim \\text{Bernoulli}\\left( \\frac{\\exp{(\\beta_0 + \\beta_1x_i)}}{1 + \\exp{(\\beta_0 + \\beta_1x_1)}}\\right)\\] Note: this is the default model fit by assuming in glm(..., family = binomial) for binary response data\n\n\n\n(Binary data, non linear)\n\n\\[y_i \\sim \\text{Bernoulli}\\left( \\frac{\\exp{(\\beta_0 + \\beta_1\\sin(x_i))}}{1 + \\exp{(\\beta_0 + \\beta_1\\sin(x_i))}}\\right)\\]"
+  },
+  {
+    "objectID": "Week1.html#comments-on-the-statistical-model",
+    "href": "Week1.html#comments-on-the-statistical-model",
+    "title": "Statistical Modelling and Inference",
+    "section": "Comments on the Statistical Model",
+    "text": "Comments on the Statistical Model\n\n“All models are wrong, but some are useful” (George Box)\n\n\n\nStandard errors, confidence intervals, and hypothesis tests all assume that the statistical model has been correctly specified.\n\nThey do not account for errors caused by choosing the wrong model\n\n\n\n\n\nStatistics is not assumption-free!\n\nWe make assumptions that we believe are reasonable approximations to reality.\nIf these assumptions are substantially violated, the consequences may include:\n\nbiased estimates\nincorrect standard errors\ninvalid statistical inference\n\n\n\n\n\n\nDoes this make statistical methods useless?\n\nNo, many statistical procedures are surprisingly robust to modest violations of their assumptions.\nWe can evaluate through simulations"
+  },
+  {
+    "objectID": "Week1.html#comments-on-the-statistical-model-1",
+    "href": "Week1.html#comments-on-the-statistical-model-1",
+    "title": "Statistical Modelling and Inference",
+    "section": "Comments on the Statistical Model",
+    "text": "Comments on the Statistical Model\nExample: Suppose we want to compare the mean outcome before and after treatment using paired observations.\n\nFor subject \\(i = 1, ..., n\\), measured at visits \\(j = 1, 2\\), suppose we assume\n\\[ Y_{ij} \\stackrel{\\text{i.i.d.}}{\\sim} \\mathcal{N}(\\mu_j, \\sigma^2) \\] and test \\(H_0:\\mu_1=\\mu_2\\).\n\n\nWhat assumption does this model make about repeated measurements from the same subject?\n\n\n\nIs that assumption reasonable?\nWhat are the consequences if it is violated?"
+  },
+  {
+    "objectID": "Week1.html#design-of-studies",
+    "href": "Week1.html#design-of-studies",
+    "title": "Statistical Modelling and Inference",
+    "section": "Design of Studies",
+    "text": "Design of Studies\nA typical statistical analysis follows these steps:\n\n\nSpecify the statistical model\n\nPropose a data-generating process (DGP) that is a reasonable approximation of reality (this influences the study design)\nDefine the research question and hypothesis\nPlan the study design (e.g., sampling strategy and sample size)\n\n\n\n\n\nCollect the data\n\nObtain a (ideally random) sample from the population of interest\n\n\n\n\n\nEstimate the quantities of interest\n\nEstimate the unknown parameters (e.g., using maximum likelihood estimation)\nQuantify the uncertainty in these estimates (e.g., standard errors or confidence intervals)\n\n\n\n\n\n\nDraw statistical conclusions\n\nConstruct appropriate test statistics or confidence intervals\nMake conclusions about the population based on observed data"
+  },
+  {
+    "objectID": "Week1.html#design-of-studies-1",
+    "href": "Week1.html#design-of-studies-1",
+    "title": "Statistical Modelling and Inference",
+    "section": "Design of Studies",
+    "text": "Design of Studies\nIn practice…\n\n\nThe assumed model does not have to be the true DGP, it only needs to be a useful approximation\nIf the sample size is small or estimation is unstable, regularization (penalization) may improve estimation\nIf analytic uncertainty quantification is difficult, resampling methods (e.g., the bootstrap) can often be used"
+  },
+  {
+    "objectID": "Week1.html#design-of-studies-2",
+    "href": "Week1.html#design-of-studies-2",
+    "title": "Statistical Modelling and Inference",
+    "section": "Design of Studies",
+    "text": "Design of Studies\nSome cautionary notes\n\n\nIdeally, the statistical model and hypotheses are specified before examining the data.\n\nThis is informed by background knowledge, scientific theory, and previous research.\nIf we repeatedly explore the data until we find an interesting pattern, we may discover relationships that are due to chance rather than true effects.\n\n\n\n\n\nA planned analysis may still be inappropriate after data collection.\n\nModel assumptions should be checked after observing the data.\nIf assumptions are violated, we may need to modify the analysis\nThese decisions should be transparently reported.\n\n\n\n\n\nThis does not mean we cannot explore data.\n\nExploratory analyses can identify new patterns, generate hypotheses, and suggest future research directions.\nIdeally, these findings should be validated using an independent dataset."
+  },
+  {
+    "objectID": "Week1.html#misusing-statistics",
+    "href": "Week1.html#misusing-statistics",
+    "title": "Statistical Modelling and Inference",
+    "section": "Misusing Statistics",
+    "text": "Misusing Statistics\nSome common practices that can invalidate statistical inference include:\n\n\nP-hacking: Trying multiple analyses and only reporting one that produces a statistically significant result\nHARKing (Hypothesizing After the Results are Known): presenting hypotheses generated from the data as though they were specified before the analysis\nRepeated Significance Testing: repeated analyzing the data as participants are recruited and stopping once a significant result is obtained\nPost-hoc Participant Exclusion: Modifying inclusion or exclusion criteria after examining the data\nUsing Inappropriate Statistical Methods: applying statistical tests that do not match the study design, outcome type, or model assumptions\nOverfitting: including predictors without scientific justification or appropriate model selection.\n\n\n\nKey Point: Statistical inference depends on the entire analysis process. Even a perfectly computed p-value can be misleading if the study design or analysis is flawed."
+  },
+  {
+    "objectID": "Week1.html#misusing-statistics-1",
+    "href": "Week1.html#misusing-statistics-1",
+    "title": "Statistical Modelling and Inference",
+    "section": "Misusing Statistics",
+    "text": "Misusing Statistics\n“If you torture the data long enough, it will confess to anything” (Ronald Coase)\n\n\nIn principle, the data should be analyzed only once to make confirmatory results. Any other results would be exploratory.\nA good understanding of the scientific domain is essential for designing appropriate studies, selecting sample sizes, specifying hypotheses, and choosing suitable statistical analyses.\nA solid understanding of statistics helps you choose models that provide valid and informative inference.\n\n\n\nThe goal is not to obtain a small p-value. The goal is to produce evidence that is scientifically credible and statistically valid."
+  },
+  {
+    "objectID": "Week1.html#case-study-clinical-trials",
+    "href": "Week1.html#case-study-clinical-trials",
+    "title": "Statistical Modelling and Inference",
+    "section": "Case Study: Clinical Trials",
+    "text": "Case Study: Clinical Trials\nDeveloping a new drug requires substantial time and financial investment.\nPhase 3 clinical trials provide the evidence needed for regulatory approval. Because these trials are costly and time-consuming, careful statistical planning is essential.\n\nPoor decisions about:\n\nstudy design,\nsample size,\nendpoints,\nor statistical analysis\n\ncan lead to inconclusive or failed trials, resulting in significant financial losses (i.e., sunk costs) and organizational consequences."
+  },
+  {
+    "objectID": "Week1.html#case-study-clinical-trials-1",
+    "href": "Week1.html#case-study-clinical-trials-1",
+    "title": "Statistical Modelling and Inference",
+    "section": "Case Study: Clinical Trials",
+    "text": "Case Study: Clinical Trials\nPotential (direct) consequences of sunk cost?\n\n\nIn 2019, Roche announced plans to cut 500 jobs in Switzerland following the failure of a key clinical trial for its Alzheimer’s drug.\nIn 2016, The failure of Eli Lilly’s Alzheimer’s drug, solanezumab, in a Phase 3 trial led to significant restructuring and layoffs.\nMany others!"
+  },
+  {
+    "objectID": "Week1.html#case-study-clinical-trials-2",
+    "href": "Week1.html#case-study-clinical-trials-2",
+    "title": "Statistical Modelling and Inference",
+    "section": "Case Study: Clinical Trials",
+    "text": "Case Study: Clinical Trials\nA Statistical Analysis Plan (SAP) promotes transparency, reproducibility, and adherence to regulatory requirements.\nThe SAP is developed before observing trial outcomes to prevent decisions from being influenced by the results.\n\nKey considerations include:\n\n\n\nStudy design: sample size, randomization, trial structure, and stopping rules.\nOutcomes: primary endpoint selection and hypotheses to be tested.\nAnalysis methods: statistical models, covariate selection, and software.\nData handling: missing data methods and subgroup analyses.\nMultiple comparisons: strategies to control false positive findings."
+  },
+  {
+    "objectID": "Week1.html#main-takeaway",
+    "href": "Week1.html#main-takeaway",
+    "title": "Statistical Modelling and Inference",
+    "section": "Main Takeaway",
+    "text": "Main Takeaway\n\nStatistical inference begins before data collection.\n\nA clear research question, appropriate study design, and reasonable statistical model are essential.\n\n\n\n\nModels are approximations of reality.\n\nWe do not expect a model to be perfectly true, but it should provide a useful representation of the data-generating process.\n\n\n\n\n\nThe analysis process matters.\n\nStatistical conclusions depend on how data are collected, analyzed, and interpreted—not just on the final statistical test.\n\n\n\n\n\nExploration and confirmation are both valuable, but they serve different purposes.\n\nExploratory analyses generate hypotheses; confirmatory analyses provide evidence for hypotheses.\n\n\n\n\n\nThe goal of statistics is not to find significant results.\n\nThe goal is to produce reliable, reproducible, and scientifically meaningful evidence."
+  },
+  {
+    "objectID": "Week1.html#simulations",
+    "href": "Week1.html#simulations",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations",
+    "text": "Simulations\nMotivating Example\n\nWe know from geometry that the area of a unit circle is \\(\\pi\\).\nHowever, determining the value of \\(\\pi\\) has a long history, requiring increasingly sophisticated mathematical methods.\nModern approaches use calculus to derive and compute this quantity."
+  },
+  {
+    "objectID": "Week1.html#simulations-1",
+    "href": "Week1.html#simulations-1",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations",
+    "text": "Simulations\nMotivating Example\nHow can we estimate the area of a circle using simulation?\n\n\nGenerate random points within the square, \\([-1,1] \\times [-1,1]\\).\n\n\n\n\nThe probability that a point falls inside the circle is equal to the ratio of the two areas, \\(A/4\\).\n\n\n\n\nRepeat this process many times and estimate the probability by the proportion of points that fall inside the circle.\n\n\n\nIf \\(M\\) out of 50,000 points fall inside the circle:\n\\[\n\\frac{A}{4} \\approx \\frac{M}{50000}\n\\]\nTherefore:\n\\[\nA \\approx 4 \\times \\frac{M}{50000}\n\\]"
+  },
+  {
+    "objectID": "Week1.html#simulations-2",
+    "href": "Week1.html#simulations-2",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations",
+    "text": "Simulations\nMotivating Example"
+  },
+  {
+    "objectID": "Week1.html#simulations-3",
+    "href": "Week1.html#simulations-3",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations",
+    "text": "Simulations\nMotivating Example\nUsing 50,000 simulated points:\n\\[\\hat{\\pi}=3.14432\\]\n\nThe estimate is not exactly \\(\\pi\\), but it is close!\nBecause the estimate is based on random sampling, it will vary from simulation to simulation.\nIncreasing the number of simulated points reduces this variability and gives a more precise estimate."
+  },
+  {
+    "objectID": "Week1.html#simulations-4",
+    "href": "Week1.html#simulations-4",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations",
+    "text": "Simulations\nWhy simulate?\n\nWe can specify a population to generate random samples\n\nWe then can evaluate statistical properties such as bias of an estimate, errors associated with hypothesis testing, coverage probabilities, etc.\n\n\nLater, we will use simulations to see what happens if\n\nthe model is misspecified\n\nsample size isn’t sufficient\nstatistical misbehaviour is made (e.g. p-hacking)\netc."
+  },
+  {
+    "objectID": "Week1.html#simulations-5",
+    "href": "Week1.html#simulations-5",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations",
+    "text": "Simulations\n\nUsing simulations, we can generate a population that is bell-shaped, with a fixed mean (e.g., 5) and variance (e.g., 1)."
+  },
+  {
+    "objectID": "Week1.html#simulations-6",
+    "href": "Week1.html#simulations-6",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations",
+    "text": "Simulations\nA simple example: generating random data in R"
+  },
+  {
+    "objectID": "Week1.html#designing-simulation-studies",
+    "href": "Week1.html#designing-simulation-studies",
+    "title": "Statistical Modelling and Inference",
+    "section": "Designing Simulation Studies",
+    "text": "Designing Simulation Studies\nA simulation study should be carefully designed to answer a specific statistical question.\n\nA useful framework is ADEMP (Morris et al., 2019):\n\n\nA — Aim: What statistical question are we trying to answer?\nD — Data-generating mechanism: How will we generate the simulated data?\nE — Estimands: What quantities are we interested in evaluating?\nM — Methods: What statistical procedures are being evaluated or compared?\nP — Performance measures: How will we assess the methods?\n\n\n\n\n\n Morris, T. P., White, I. R., & Crowther, M. J. (2019). Using simulation studies to evaluate statistical methods. Statistics in Medicine, 38(11), 2074–2102."
+  },
+  {
+    "objectID": "Week1.html#simulations-7",
+    "href": "Week1.html#simulations-7",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations",
+    "text": "Simulations\nExample: Evaluating ‘Unbiasedness’ Empirically\nAssume the following model:\n\\[y_i = \\beta_0 + \\beta_1x_i + \\epsilon_i \\quad \\text{where} \\quad \\epsilon_i \\stackrel{\\text{i.i.d.}}{\\sim} \\mathcal{N}(0, \\sigma^2)\\]\nUsing the ADEMP framework…\n\n\nA — Aim: Is the coefficient \\(\\beta_1\\) of a linear regression model unbiased?\nD — Data-generating mechanism: We fix \\(\\beta_0, \\beta_1, \\sigma^2\\), and generate a dataset \\((x_i, y_i), i=1, ..., n\\). We also generate \\(\\epsilon_i \\stackrel{\\text{i.i.d.}}{\\sim} \\mathcal{N}(0, \\sigma^2)\\).\nE — Estimands: We estimate \\(\\beta_1\\)\nM — Methods: Fitting a linear regression model.\nP — Performance measures: Bias (i.e. \\(E[\\hat{\\beta}_1] - \\beta_1\\)))"
+  },
+  {
+    "objectID": "Week1.html#simulations-8",
+    "href": "Week1.html#simulations-8",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations",
+    "text": "Simulations\nExample: Evaluating ‘Unbiasedness’ Empirically"
+  },
+  {
+    "objectID": "Week1.html#simulations-9",
+    "href": "Week1.html#simulations-9",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations",
+    "text": "Simulations\nExample: Evaluating ‘Unbiasedness’ Empirically\nLet’s repeat this process 10,000 times and calculate the average of all estimated \\(\\beta_1\\) values."
+  },
+  {
+    "objectID": "Week1.html#hypothesis-testing",
+    "href": "Week1.html#hypothesis-testing",
+    "title": "Statistical Modelling and Inference",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\nIn statistics, a hypothesis is a statement of one or more parameters\n\ne.g., \\(H_0: E(X_i) = 100\\) and \\(H_A: E(X_i) \\neq 100\\)\n\n\nThe method of hypothesis testing uses data from a sample to judge whether a statement about a population may be true or not.\n\nA simple way you learned is to somehow get a p-value, and compare it to a significance level, \\(\\alpha\\)\nIf the p-value is less than \\(\\alpha\\), we reject the null hypothesis. Otherwise, we fail to reject the null hypothesis."
+  },
+  {
+    "objectID": "Week1.html#errors-in-hypothesis-testing",
+    "href": "Week1.html#errors-in-hypothesis-testing",
+    "title": "Statistical Modelling and Inference",
+    "section": "Errors in Hypothesis Testing",
+    "text": "Errors in Hypothesis Testing\nSince we are making conclusions about the population with limited information, our decision is always prone to some errors.\n\nType 1 Error: False positive; rejecting the null hypothesis when the null hypothesis is actually true\n\nP(Type 1 Error) = \\(\\alpha\\)\n\n\n\nType 2 Error: False negative; failing to reject the null hypothesis when the null hypothesis is actually false\n\nP(Type 2 Error) = \\(\\beta\\)\n\n\n\nPower: the probability that a test will correctly reject a null hypothesis that is false\n\nRelated to Type 2 Error\nPower = 1 - P(Type 2 Error) = \\(1 - \\beta\\)\n\n\n\nIdeally, you want to reduce these two errors, \\(\\alpha\\) and \\(\\beta\\) as much as possible."
+  },
+  {
+    "objectID": "Week1.html#errors-in-hypothesis-testing-1",
+    "href": "Week1.html#errors-in-hypothesis-testing-1",
+    "title": "Statistical Modelling and Inference",
+    "section": "Errors in Hypothesis Testing",
+    "text": "Errors in Hypothesis Testing\nWhat are these probabilities?\n\\[\\text{Type 1 error rate} = \\alpha = \\frac{\\text{number of experiments that rejected} H_0}{\\text{number of experiments}} \\quad (\\text{when} \\quad H_0 \\quad \\text{is true})\\]\nThe value, \\(\\alpha\\), is the same as the significance level.\nWe can control the Type 1 error by setting the significance level of the test. A popular value is to set \\(\\alpha = 0.05\\)."
+  },
+  {
+    "objectID": "Week1.html#errors-in-hypothesis-testing-2",
+    "href": "Week1.html#errors-in-hypothesis-testing-2",
+    "title": "Statistical Modelling and Inference",
+    "section": "Errors in Hypothesis Testing",
+    "text": "Errors in Hypothesis Testing\nWhat are these probabilities?\n\\[\\text{Power} = 1 - \\beta = \\frac{\\text{\\# of experiments that rejected} H_0}{\\text{\\# of experiments}} \\quad (\\text{when} \\quad H_0 \\quad \\text{is false})\\]\nPower depends on the sample size, the effect size, and the specified significance level, \\(\\alpha\\)."
+  },
+  {
+    "objectID": "Week1.html#simulations-statistical-inference",
+    "href": "Week1.html#simulations-statistical-inference",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations: Statistical Inference",
+    "text": "Simulations: Statistical Inference\nCase 1: Behaviours of p-values when \\(H_0\\) is true, \\(n=50\\)\nWe want to test the following hypothesis: \\[H_0: \\mu = 5 \\quad \\text{vs} \\quad H_A: \\mu \\neq 5\\] We draw 50 samples from a population that has a mean of 5, i.e., we are setting up a scenario where the null hypothesis is true.\nThen, using the simulated data, we test the hypothesis."
+  },
+  {
+    "objectID": "Week1.html#simulations-statistical-inference-1",
+    "href": "Week1.html#simulations-statistical-inference-1",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations: Statistical Inference",
+    "text": "Simulations: Statistical Inference\nCase 1: Behaviours of p-values when \\(H_0\\) is true, \\(n=50\\)"
+  },
+  {
+    "objectID": "Week1.html#simulations-statistical-inference-2",
+    "href": "Week1.html#simulations-statistical-inference-2",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations: Statistical Inference",
+    "text": "Simulations: Statistical Inference\nCase 1: Behaviours of p-values when \\(H_0\\) is true, \\(n=50\\)\nIf we repeat this simulation 50,000 times, and then plot a histogram of the resulting p-values, we get the following.\n\nNote that about \\(5\\%\\) of the p-values are less than 0.05."
+  },
+  {
+    "objectID": "Week1.html#simulations-statistical-inference-3",
+    "href": "Week1.html#simulations-statistical-inference-3",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations: Statistical Inference",
+    "text": "Simulations: Statistical Inference\nCase 2: Behaviours of p-values when \\(H_0\\) is false (\\(\\mu = 5.1\\)), \\(n=50\\)"
+  },
+  {
+    "objectID": "Week1.html#simulations-statistical-inference-4",
+    "href": "Week1.html#simulations-statistical-inference-4",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations: Statistical Inference",
+    "text": "Simulations: Statistical Inference\nCase 2: Behaviours of p-values when \\(H_0\\) is false (\\(\\mu = 5.1\\)), \\(n=50\\)\nAgain, we repeat this simulation 50,000 times - More p-values are shifted to 0 - Is this an expected result?"
+  },
+  {
+    "objectID": "Week1.html#simulations-statistical-inference-5",
+    "href": "Week1.html#simulations-statistical-inference-5",
+    "title": "Statistical Modelling and Inference",
+    "section": "Simulations: Statistical Inference",
+    "text": "Simulations: Statistical Inference\nCase 3: Behaviours of p-values when \\(H_0\\) is false (\\(\\mu = 5.1\\)), \\(n=200\\)\nWe increase the sample size from \\(n=50\\) to \\(n=200\\) and repeat the simulation 50,000 times - More p-values are shifted to 0 - Is this an expected result?"
+  },
+  {
+    "objectID": "Week1.html#power",
+    "href": "Week1.html#power",
+    "title": "Statistical Modelling and Inference",
+    "section": "Power",
+    "text": "Power\nRemember, when talking about power we are assuming the null hypothesis is false (i.e., the alternative is true)\n\nAbove, we see clearly that \\(\\alpha\\), the effect size and sample size have an effect on power."
+  },
+  {
+    "objectID": "Week1.html#empirical-understanding-of-statistics",
+    "href": "Week1.html#empirical-understanding-of-statistics",
+    "title": "Statistical Modelling and Inference",
+    "section": "Empirical Understanding of Statistics",
+    "text": "Empirical Understanding of Statistics\nWe can use simulations to evaluate how statistics works in various scenarios. For example:\n\nWhat would be the bias if we don’t use least squares to estimate the coefficients?\nWhat would be the bias if the errors do not come from \\(\\mathcal{N}(0, \\sigma^2)\\)\nWhat happens to the Type 1 error when the sample size is small?\nWhat happens to the Type 1 error when the sample size is small and the shape of the population distribution is highly skewed?\nWhat happens to power when you do not model the within-subject correlation in two-sample testing?\nWhat would be the actual coverage rate of a \\(95\\%\\) confidence interval of \\(\\hat{\\beta}_1\\)?\n\nso many other investigations"
+  },
+  {
+    "objectID": "Week1.html#summary",
+    "href": "Week1.html#summary",
+    "title": "Statistical Modelling and Inference",
+    "section": "Summary",
+    "text": "Summary\n\nThroughout the course, we will return to the same questions:\n\nWhat assumptions does the model make?\nHow do we estimate uncertainty?\nHow well does the model represent the data-generating process?\n\nWe will use simulations to investigate the properties of statistical methods and evaluate how well they perform under different scenarios."
+  },
+  {
+    "objectID": "slides.html#tentative-course-schedule",
+    "href": "slides.html#tentative-course-schedule",
+    "title": "Slides",
+    "section": "",
+    "text": "Below is a tentative schedule of topics for the term. You can find the lecture slides in html format, my annotated slides as a pdf, as well as the pdf versions of the tutorial slides. When annotating the html slides in class, you can save them by printing to pdf in your browser.\n\n\n\n\n\n\n\n\n\n\nDate\nTopics\nSuggested Reading\nAssessments\n\n\n\n\nSept. 11\nStatistical Modelling and InferenceStudy planning, data-generating process, statistical inference (Type I/II errors), simulation, sample size calculation\n—\n—\n\n\nSept. 18\nTopics in Statistical InferenceMultiple testing, family-wise error rate, false discovery rate, permutation methods\n[ISL] Ch. 13\nAssignment 1 Released\n\n\nSept. 25Oct. 2\nLinear ModelsLeast squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection\n[LM] Ch. 2, 3, 8.2, 10[ISL] Ch. 3, 6.1\nAssignment 1 Due, Oct 2\n\n\nOct. 9Oct. 16\nGeneralized Linear ModelsReview of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood\n[ELM] Ch. 2, 5, 8[ISL] Ch. 4.1–4.3, 4.6\n\n\n\nOct. 23\nMidterm Exam\n—\nAssignment 2 Released\n\n\nOct. 30\nNo class — Reading Week\n—\n—\n\n\nNov. 6\nBayesian ThinkingPrior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs\n—\nAssignment 2 Due\n\n\nNov. 13Nov. 20\nRandom Effects ModelsCorrelated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP\n[ELM] Ch. 10, 11\nAssignment 3 Released, Nov. 20\n\n\nNov. 27\nPenalized RegressionBias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation\n[ISL] Ch. 6[ESL] Sec. 7.10\n\n\n\nDec. 4\nGeneralized Additive ModelsBasis functions, smoothing splines, generalized additive models\n[ELM] Ch. 15[ISL] Ch. 7[ESL] Ch. 5\nAssignment 3 Due"
+  },
+  {
+    "objectID": "index.html#welcome-to-methods-of-applied-statistics",
+    "href": "index.html#welcome-to-methods-of-applied-statistics",
+    "title": "STA442",
+    "section": "",
+    "text": "This course is about moving beyond simply knowing how to apply statistical methods and toward thinking carefully about how, when, and why we use them. Throughout the semester, we will work with real-world problems and case studies, with an emphasis on model building, diagnostics, interpretation, and selection. Just as importantly, we will focus on developing the critical thinking and communication skills needed to make sense of statistical results and explain them clearly to others.\nMany of you will soon be graduating and moving into careers in industry, research, graduate studies, or other fields. Regardless of where you go next, you may find yourself in situations where others look to you as the statistical expert. My goal is for you to leave this course feeling prepared to take on that responsibility: not because you know every statistical method, but because you know how to think critically about data, question the assumptions behind the models you use, recognize when something has gone wrong, and communicate your conclusions responsibly.\nI have high expectations for this course, but I am also committed to creating a welcoming, respectful, and inclusive learning environment where everyone feels comfortable asking questions and contributing to discussions. Please don’t hesitate to ask questions during lectures, office hours, or on Piazza. If you’re struggling with something, reach out early. I am here to support you throughout the semester.\nI hope this course helps you develop the confidence to work with data independently and responsibly, and to approach statistical problems with curiosity, care, and a healthy degree of skepticism. I’m looking forward to a great semester with all of you!"
+  },
+  {
+    "objectID": "index.html#announcements",
+    "href": "index.html#announcements",
+    "title": "STA442",
+    "section": "Announcements",
+    "text": "Announcements\n\nThe Syllabus is available.\nAnnouncements will be through Quercus and here, on the course website."
+  },
+  {
+    "objectID": "index.html#computing",
+    "href": "index.html#computing",
+    "title": "STA442",
+    "section": "Computing",
+    "text": "Computing\nStatistical programming is an essential part of this course. We will use R throughout this course, which is a free, open-source statistical programming language widely used for data analysis and reproducible research.\nThe software is publicly available for free here, and it is also highly recommended to install RStudio for an interactive programming environment. Note that the University of Toronto offers an open-source web application to use R and RStudio."
   }
 ]

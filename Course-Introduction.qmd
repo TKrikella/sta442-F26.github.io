@@ -1,0 +1,243 @@
+---
+title: "STA442: Methods in Applied Statistics"
+subtitle: "Course Introduction"
+format: 
+  live-revealjs:
+    html-math-method: mathjax
+    scrollable: false
+    slide-number: "c/t"
+    footer: '<div style="font-size: 15px; display: flex; justify-content: space-between; width: 92%; margin-left: 4em;"><span style="flex: 1; text-align: left;">STA442: Methods in Applied Statistics</span><span style="flex: 1; text-align: center;">Course Introduction</span><span style="flex: 1;"></span></div>'
+    smaller: true
+    menu: 
+      side: right
+      width: wide
+webr:
+  packages:
+    - dplyr
+    - infer
+    - ggplot2
+persist: true
+editor: visual
+execute:
+  echo: true
+  warning: false
+engine: webr
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+## About Me
+
+:::::::: columns
+::::: {.column width="60%"}
+**Tatiana Krikella (she/her)**
+
+-   Assistant Professor, Teaching Stream
+
+::: fragment
+[Education]{.underline}
+
+-   **Undergrad**: University of Windsor
+-   **Masters**: University of Windsor
+-   **PhD**: University of Waterloo
+:::
+
+::: fragment
+[About me]{.underline}
+
+-   I like to travel
+-   I like to bake
+-   My Goodreads book challenge this year is 45
+-   I started running this summer
+:::
+:::::
+
+:::: {.column width="40%"}
+![](images/PhDGrad.jpg)
+
+::: text-center
+My PhD graduation, 2024.
+:::
+::::
+::::::::
+
+## About you
+
+Now it's time for me to get to know you!
+
+Go to:
+
+Access Code:
+
+Note: We will be using Mathmatize throughout the semester.
+
+## About This Course
+
+-   Advanced statistical modelling and data analysis for real-world problems
+-   Model building, diagnostics, interpretation, and selection
+-   Case studies and real-world examples to connect statistical methods to practice
+-   Statistical communication and critical thinking, with an emphasis on clearly interpreting and communicating results
+
+## Course Motivation
+
+-   Most of the students in this course will be graduating soon. Some of you will get a job in industry, others will pursue graduate studies, etc.
+-   Regardless, it is likely that people who’ll be working with you expect you to be “experts” in statistics.
+-   Most of the research questions you’ll be working with will be pretty straightforward and can be answered using prerequisites for this course.
+
+<br>
+
+::: {style="text-align: center; font-size: 1em;"}
+To work with data in independent and responsible manner, it is critical that you know what’s really going on with the statistical models you use.
+:::
+
+## Do I Have the Appropriate Background?
+
+The prerequisite for this course is **STA303: Methods of Data Analysis**.
+
+<br>
+
+This means that the following is assumed to have been learned:
+
+-   some fundamentals: (maximum) likelihood, parameter estimation, hypothesis testing
+-   linear models (e.g. least squares) and generalized linear models (e.g. logistic/Poisson regression)
+-   R programming
+
+## Course Materials & Important Links
+
+**Textbook**: We will be using the following three textbooks: - \[ISL\] *An Introduction to Statistical Learning* by James et al. (https://www.statlearning.com) - \[LM\] Linear Models with R by Faraway (2nd edition) - \[ELM\] Extending Linear Models with R by Faraway (2nd edition)
+
+<br>
+
+::: fragment
+**Course Webpage**: Main source of information -- Check regularly!
+
+<br>
+
+**Quercus**: Announcements and non-public materials (i.e. solutions)
+
+<br>
+
+**Piazza**: Main place for discussions.
+
+<br>
+
+**Crowdmark**: We will use Crowdmark for assignment submission on Quercus.
+:::
+
+## Delivery Details
+
+Unless otherwise specified, lectures will be held in-person.
+
+::: small
+| Section | Category                  | Time        | Location |
+|:-------:|:--------------------------|:------------|:---------|
+| LEC0101 | Lectures                  | Fri (2-5pm) | SS 1073  |
+|         | Instructor's Office Hours | Mon (2–3pm) | OPG 9165 |
+:::
+
+## Tentative Course Schedule {.scrollable}
+
+::: smaller
+| Date | Topics | Suggested Reading | Assessments |
+|:--------------:|:---------------|:---------------|:------------------------|
+| Sept. 11 | **Statistical Modelling and Inference**<br>Study planning, data-generating process, statistical inference (Type I/II errors), simulation, sample size calculation | — | — |
+| Sept. 18 | **Topics in Statistical Inference**<br>Multiple testing, family-wise error rate, false discovery rate, permutation methods | \[ISL\] Ch. 13 | Assignment 1 Released |
+| Sept. 25<br>Oct. 2 | **Linear Models**<br>Least squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection | \[LM\] Ch. 2, 3, 8.2, 10<br>\[ISL\] Ch. 3, 6.1 | Assignment 1 Due, Oct 2 |
+| Oct. 9<br>Oct. 16 | **Generalized Linear Models**<br>Review of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood | \[ELM\] Ch. 2, 5, 8<br>\[ISL\] Ch. 4.1–4.3, 4.6 |  |
+| Oct. 23 | **Midterm Exam** | — | Assignment 2 Released |
+| Oct. 30 | **No class — Reading Week** | — | — |
+| Nov. 6 | **Bayesian Thinking**<br>Prior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs | — | Assignment 2 Due |
+| Nov. 13<br>Nov. 20 | **Random Effects Models**<br>Correlated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP | \[ELM\] Ch. 10, 11 | Assignment 3 Released, Nov. 20 |
+| Nov. 27 | **Penalized Regression**<br>Bias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation | \[ISL\] Ch. 6<br>\[ESL\] Sec. 7.10 |  |
+| Dec. 4 | **Generalized Additive Models**<br>Basis functions, smoothing splines, generalized additive models | \[ELM\] Ch. 15<br>\[ISL\] Ch. 7<br>\[ESL\] Ch. 5 | Assignment 3 Due |
+:::
+
+## Email Policy
+
+**Course Email**:
+
+-   Instructor and TAs will not respond to emails sent to individual accounts
+-   *Response Time*: It will take 24 – 48 hours to respond to emails. I will only respond during working hours (Monday – Friday, 9am – 5pm).
+
+<br>
+
+::: fragment
+For questions...
+
+-   If it is about course material such as lectures / tutorials, or clarification question, post it to Piazza so that other students will benefit.
+-   If it is related with solving practical problem sets, use the office hours
+:::
+
+## Course Grading Scheme
+
+::: small
+| Assessment   | Standard Scheme | Flexible Scheme |
+|:-------------|:---------------:|:---------------:|
+| Assignment 1 |       10%       |       10%       |
+| Assignment 2 |       10%       |       10%       |
+| Assignment 3 |       10%       |       10%       |
+| Midterm Test |       30%       |       15%       |
+| Final Exam   |       40%       |       55%       |
+:::
+
+## Important Dates
+
+**Midterm**: October 23rd, 2 -- 4pm
+
+<br>
+
+**Thanksgiving**: October 12th (no classes, no office hours)
+
+<br>
+
+**Reading Week**: October 26th -- 30th (no classes, no office hours)
+
+<br>
+
+**Drop Date**: November 17th
+
+<br>
+
+**Last Day of Class**: December 4th
+
+<br>
+
+**Final Exam Period**: December 10th -- 22nd
+
+## AI Policy - Can I Use AI for...
+
+<br><br> **General Questions**: Yes -- but keep in mind AI can make mistakes.
+
+<br>
+
+**Assignments**: No, assignments are designed to help you learn.
+
+<br>
+
+**Tests**: No.
+
+## Resources
+
+<br><br>
+
+**Accomodations**: https://studentlife.utoronto.ca/as
+
+<br>
+
+**Learning Skills**: https://www.studentlife.utoronto.ca/department/centre-for-learning-strategy-support/
+
+<br>
+
+**Health & Wellness**: https://www.studentlife.utoronto.ca/department/health-wellness/
+
+## Final Note
+
+<br><br> All information is in the syllabus on the course website.
+
+<br>
+
+::: {style="text-align: center; font-size: 1em;"}
+If you remember just one thing:
+
+**Check the course website regularly.**
+:::

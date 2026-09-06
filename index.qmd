@@ -1,9 +1,43 @@
 ---
 title: "STA442"
-about: 
-  template: jolla
 ---
 
-## Course Information 
+## Welcome to Methods of Applied Statistics!
 
-[Syllabus](STA442-Syllabus.pdf)
+This course is about moving beyond simply knowing how to apply statistical methods and toward thinking carefully about how, when, and why we use them. Throughout the semester, we will work with real-world problems and case studies, with an emphasis on model building, diagnostics, interpretation, and selection. Just as importantly, we will focus on developing the critical thinking and communication skills needed to make sense of statistical results and explain them clearly to others.
+
+Many of you will soon be graduating and moving into careers in industry, research, graduate studies, or other fields. Regardless of where you go next, you may find yourself in situations where others look to you as the statistical expert. My goal is for you to leave this course feeling prepared to take on that responsibility: not because you know every statistical method, but because you know how to think critically about data, question the assumptions behind the models you use, recognize when something has gone wrong, and communicate your conclusions responsibly.
+
+I have high expectations for this course, but I am also committed to creating a welcoming, respectful, and inclusive learning environment where everyone feels comfortable asking questions and contributing to discussions. Please don't hesitate to ask questions during lectures, office hours, or on Piazza. If you're struggling with something, reach out early. I am here to support you throughout the semester.
+
+I hope this course helps you develop the confidence to work with data independently and responsibly, and to approach statistical problems with curiosity, care, and a healthy degree of skepticism. I'm looking forward to a great semester with all of you!
+
+## Announcements
+
+-   The [Syllabus](STA442-Syllabus.pdf) is available.
+
+-   Announcements will be through [Quercus](https://q.utoronto.ca/courses/463394) and here, on the course website.
+
+## Course Information
+
+All information can be found in the [Syllabus](STA442-Syllabus.pdf).
+
+Just a few important points: 
+
+- all date information, location information, and most of the course material will be posted on this course website
+
+- non-public material will be posted on [Quercus](https://q.utoronto.ca/courses/463394)
+
+- to email me, email sta442\@course.utoronto.ca
+
+- I will not respond to emails sent to my individual account 
+
+- all lectures and tests will be delivered in person, unless otherwise specified 
+
+- there will be one midterm test scheduled during the scheduled class time, and we will have a FAS proctored final examination 
+
+## Computing
+
+Statistical programming is an essential part of this course. We will use R throughout this course, which is a free, open-source statistical programming language widely used for data analysis and reproducible research.
+
+The software is publicly available for free [here](https://mirror.csclub.uwaterloo.ca/CRAN/), and it is also highly recommended to install [RStudio](https://posit.co/downloads/) for an interactive programming environment. Note that the University of Toronto offers an [open-source web application](https://r.datatools.utoronto.ca/) to use R and RStudio.
