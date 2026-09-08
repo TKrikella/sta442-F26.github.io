@@ -232,8 +232,6 @@ $$y_i \sim \text{Bernoulli}\left( \frac{\exp{(\beta_0 + \beta_1\sin(x_i))}}{1 + 
 :::
 
 ## Comments on the Statistical Model
-
-::: {style="font-size: 0.8em; line-height: 1.2;"}
 ::: text-center
 ["All models are wrong, but some are useful" (George Box)]{style="color: maroon;"}
 :::
@@ -256,7 +254,6 @@ $$y_i \sim \text{Bernoulli}\left( \frac{\exp{(\beta_0 + \beta_1\sin(x_i))}}{1 + 
 -   Does this make statistical methods useless?
     -   No, many statistical procedures are surprisingly robust to modest violations of their assumptions.
     -   We can evaluate through simulations
-:::
 :::
 
 ## Comments on the Statistical Model
@@ -282,7 +279,6 @@ $$ Y_{ij} \stackrel{\text{i.i.d.}}{\sim} \mathcal{N}(\mu_j, \sigma^2) $$ and tes
 
 ## Design of Studies 
 
-::: {style="font-size: 0.8em; line-height: 1.2;"}
 1. **Specify the statistical model**
    - Propose a DGP that is a reasonable approximation of reality
    - Define the research question and hypothesis
@@ -304,7 +300,6 @@ $$ Y_{ij} \stackrel{\text{i.i.d.}}{\sim} \mathcal{N}(\mu_j, \sigma^2) $$ and tes
    - Construct appropriate test statistics or confidence intervals
    - Make conclusions about the population based on observed data
 :::
-:::
 
 ## Design of Studies
 
@@ -318,7 +313,6 @@ In practice...
 
 ## Design of Studies
 
-::: {style="font-size: 0.8em; line-height: 1.2;"}
 [**Some cautionary notes**]{style="color: maroon;"}
 
 ::: fragment
@@ -339,11 +333,9 @@ In practice...
     -   Exploratory analyses can identify new patterns, generate hypotheses, and suggest future research directions.
     -   Ideally, these findings should be validated using an independent dataset.
 :::
-::: 
 
 ## Misusing Statistics
 
-::: {style="font-size: 0.8em; line-height: 1.2;"}
 Some common practices that can invalidate statistical inference include:
 
 ::: incremental
@@ -358,7 +350,6 @@ Some common practices that can invalidate statistical inference include:
 ::: fragment
 **Key Point**: Statistical inference depends on the entire analysis process. Even a perfectly computed p-value can be misleading if the study design or analysis is flawed.
 :::
-::: 
 
 ## Misusing Statistics
 
@@ -421,7 +412,6 @@ Key considerations include:
 
 ## Main Takeaway
 
-::: {style="font-size: 0.8em; line-height: 1.2;"}
 -   **Statistical inference begins before data collection.**
     -   A clear research question, appropriate study design, and reasonable statistical model are essential.
 
@@ -444,7 +434,6 @@ Key considerations include:
 -   **The goal of statistics is not to find significant results.**
     -   The goal is to produce reliable, reproducible, and scientifically meaningful evidence.
 :::
-::: 
 
 # Introduction to Simulation
 
@@ -466,7 +455,6 @@ Modern approaches use calculus to derive and compute this quantity.
 
 ## Simulations
 
-::: {style="font-size: 0.8em; line-height: 1.2;"}
 [Motivating Example]{style="color: maroon;"}
 
 How can we estimate the area of a circle using simulation?
@@ -495,7 +483,6 @@ Therefore:
 $$
 A \approx 4 \times \frac{M}{50000}
 $$
-:::
 :::
 
 ## Simulations
@@ -740,7 +727,6 @@ The method of [hypothesis testing]{style="color: navy;"} uses data from a sample
 
 ## Errors in Hypothesis Testing
 
-::: {style="font-size: 0.8em; line-height: 1.2;"}
 Since we are making conclusions about the population with limited information, our decision is always prone to some errors.
 
 ::: fragment
@@ -765,7 +751,6 @@ Since we are making conclusions about the population with limited information, o
 ::: fragment
 **Ideally, you want to reduce these two errors,** $\alpha$ and $\beta$ as much as possible.
 :::
-::: 
 
 ## Errors in Hypothesis Testing
 
