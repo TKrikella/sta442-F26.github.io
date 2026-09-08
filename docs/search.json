@@ -193,7 +193,7 @@
     "href": "Week1.html#statistical-model-1",
     "title": "Statistical Modelling and Inference",
     "section": "Statistical Model",
-    "text": "Statistical Model\n\n(Binary response)\n\\[y_i \\sim \\text{Bernoulli}\\left( \\frac{\\exp{(\\beta_0 + \\beta_1x_i)}}{1 + \\exp{(\\beta_0 + \\beta_1x_1)}}\\right)\\] Note: this is the default model fit by assuming in glm(..., family = binomial) for binary response data\n\n\n\n(Binary data, non linear)\n\n\\[y_i \\sim \\text{Bernoulli}\\left( \\frac{\\exp{(\\beta_0 + \\beta_1\\sin(x_i))}}{1 + \\exp{(\\beta_0 + \\beta_1\\sin(x_i))}}\\right)\\]"
+    "text": "Statistical Model\n\n(Binary response)\n\\[y_i \\sim \\text{Bernoulli}\\left( \\frac{\\exp{(\\beta_0 + \\beta_1x_i)}}{1 + \\exp{(\\beta_0 + \\beta_1x_i)}}\\right)\\] Note: this is the default model fit by assuming in glm(..., family = binomial) for binary response data\n\n\n\n(Binary data, non linear)\n\n\\[y_i \\sim \\text{Bernoulli}\\left( \\frac{\\exp{(\\beta_0 + \\beta_1\\sin(x_i))}}{1 + \\exp{(\\beta_0 + \\beta_1\\sin(x_i))}}\\right)\\]"
   },
   {
     "objectID": "Week1.html#comments-on-the-statistical-model",

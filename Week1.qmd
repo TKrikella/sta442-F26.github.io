@@ -217,7 +217,7 @@ $$Y_i \stackrel{\text{i.i.d.}}{\sim} \mathcal{N}(\mu, \sigma^2)$$
 
 -   (Binary response)
 
-    $$y_i \sim \text{Bernoulli}\left( \frac{\exp{(\beta_0 + \beta_1x_i)}}{1 + \exp{(\beta_0 + \beta_1x_1)}}\right)$$ **Note**: this is the default model fit by assuming in `glm(..., family = binomial)` for binary response data
+    $$y_i \sim \text{Bernoulli}\left( \frac{\exp{(\beta_0 + \beta_1x_i)}}{1 + \exp{(\beta_0 + \beta_1x_i)}}\right)$$ **Note**: this is the default model fit by assuming in `glm(..., family = binomial)` for binary response data
 
 ::: fragment
 -   (Binary data, non linear)
