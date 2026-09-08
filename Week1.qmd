@@ -679,30 +679,26 @@ beta1_hat
 
 Let's repeat this process 10,000 times and calculate the average of all estimated $\beta_1$ values.
 
-::: {.column width="60%"}
 ```{webr}
 beta1_vec <- NULL
-x <- runif(n, min = 0, max = 5)
 
 for (sim in 1:10000){
-epsilon <- rnorm(n, mean = 0, sd = sigma)
 
-## Repeat in here
+x <- runif(n, min = 0, max = 5)
+epsilon <- rnorm(n, mean = 0, sd = sigma)
+y <- beta0 + beta1*x + epsilon
+
+fit <- lm(y~x)
+
+beta1_vec[i] <- coef(fit)[2]
 
 }
 
-mean(beta1_vec) 
-
 # Calculate bias 
 
-```
-:::
 
-:::: {.column width="40%"}
-::: fragment
-![](images/Case1-Repeated.png){fig-align="center" width="350" height="350"}
-:::
-::::
+```
+
 
 # Procedures of Statistical Inference
 
