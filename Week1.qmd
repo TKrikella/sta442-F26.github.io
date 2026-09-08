@@ -27,15 +27,9 @@ engine: webr
 
 ## Warm-Up Questions
 
-**A p-value of 0.50 means there is no relationship between two variables.**  
-True or false?
 
-<br>
-
-:::{.fragment}
 **If a study has only three observations, can we still perform a statistical analysis?**  
 What might go wrong?
-:::
 
 <br>
 

@@ -123,7 +123,7 @@
     "href": "Week1.html#warm-up-questions",
     "title": "Statistical Modelling and Inference",
     "section": "Warm-Up Questions",
-    "text": "Warm-Up Questions\nA p-value of 0.50 means there is no relationship between two variables.\nTrue or false?\n\n\nIf a study has only three observations, can we still perform a statistical analysis?\nWhat might go wrong?\n\n\n\nA 95% confidence interval means there is a 95% probability that the true parameter lies in the interval.\nTrue or false?\n\n\n\nWould a hypothesis test that rejects $H_0 every time be a good test?\nWhy or why not?"
+    "text": "Warm-Up Questions\nIf a study has only three observations, can we still perform a statistical analysis?\nWhat might go wrong?\n\n\nA 95% confidence interval means there is a 95% probability that the true parameter lies in the interval.\nTrue or false?\n\n\n\nWould a hypothesis test that rejects $H_0 every time be a good test?\nWhy or why not?"
   },
   {
     "objectID": "Week1.html#learning-outcome-for-this-week",
