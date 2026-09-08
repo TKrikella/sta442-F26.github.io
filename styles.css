@@ -1,377 +1,75 @@
-/* =========================================================
-   STA442 / STA314 RevealJS theme
-   Clean academic presentation style
-   ========================================================= */
-
-/* ---------- Overall slide deck ---------- */
-
-.reveal-viewport {
-  background: #fbfbfa;
-}
+/*-- scss:defaults --*/
 
 .reveal {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Helvetica, Arial, sans-serif;
-
-  color: #25282d;
-
-  font-size: 34px;
-  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #202217;
 }
-
-
-/* ---------- Slide layout ---------- */
 
 .reveal .slides {
   text-align: left;
 }
 
-.reveal .slides section {
-  box-sizing: border-box;
-  padding: 20px 30px;
+/* warm background */
+.reveal .slide-background {
+  background-color: #f4f2e9;
 }
 
-
-/* ---------- Slide titles ---------- */
-
+/* slide titles */
 .reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Helvetica, Arial, sans-serif;
-
-  color: #182536;
-
-  font-weight: 600;
-
-  text-transform: none;
-
+.reveal h2 {
+  color: #171b0f;
+  font-weight: 400;
   letter-spacing: -0.02em;
 }
 
-
-/* Standard slide title */
 .reveal h2 {
-
-  font-size: 1.45em;
-
-  margin-top: 0;
-  margin-bottom: 0.65em;
-
-  padding-bottom: 0.20em;
-
-  border-bottom: 3px solid #8b2942;
+  font-size: 1.65em;
+  margin-bottom: 0.6em;
 }
 
-
-/* Smaller headings within a slide */
-.reveal h3 {
-
-  font-size: 1.05em;
-
-  color: #8b2942;
-
-  margin-top: 0.8em;
-  margin-bottom: 0.35em;
-}
-
-
-/* ---------- Body text ---------- */
-
-.reveal p {
-
-  line-height: 1.45;
-
-  margin-top: 0.4em;
-  margin-bottom: 0.7em;
-}
-
-
+/* body text */
+.reveal p,
 .reveal li {
-
-  line-height: 1.4;
-
-  margin-bottom: 0.28em;
+  line-height: 1.35;
 }
 
-
-/* More breathing room between top-level bullets */
-.reveal ul > li {
-
-  margin-bottom: 0.35em;
-}
-
-
-/* Nested lists slightly smaller */
-.reveal ul ul,
-.reveal ol ol,
-.reveal ul ol,
-.reveal ol ul {
-
-  font-size: 0.88em;
-
-  margin-top: 0.25em;
-}
-
-
-/* ---------- Emphasis ---------- */
-
-.reveal strong {
-
-  color: #182536;
-
-  font-weight: 650;
-}
-
-
-.reveal em {
-
-  color: #444b54;
-}
-
-
-/* Custom accent class */
-.maroon {
-
-  color: #8b2942;
-  font-weight: 600;
-}
-
-
-/* ---------- Links ---------- */
-
-.reveal a {
-
-  color: #8b2942;
-
-  text-decoration: none;
-
-  border-bottom: 1px solid rgba(139, 41, 66, 0.35);
-}
-
-
-.reveal a:hover {
-
-  color: #5e172a;
-
-  border-bottom-color: #5e172a;
-}
-
-
-/* ---------- Blockquotes ---------- */
-
-.reveal blockquote {
-
-  width: 88%;
-
-  margin: 1em auto;
-
-  padding: 0.65em 0.9em;
-
-  background: #f5f1f2;
-
-  border-left: 5px solid #8b2942;
-
-  border-radius: 3px;
-
-  box-shadow: none;
-
-  font-style: normal;
-}
-
-
-/* ---------- Tables ---------- */
-
-.reveal table {
-
-  margin: 0.5em auto;
-
-  border-collapse: collapse;
-
-  font-size: 0.82em;
-}
-
-
-.reveal table th {
-
-  background: #182536;
-
-  color: white;
-
-  font-weight: 600;
-
-  padding: 0.5em 0.7em;
-}
-
-
-.reveal table td {
-
-  padding: 0.45em 0.7em;
-
-  border-bottom: 1px solid #d9dce0;
-}
-
-
-.reveal table tbody tr:nth-child(even) {
-
-  background: #f5f6f7;
-}
-
-
-/* ---------- Code ---------- */
-
-.reveal code {
-
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-}
-
-
-.reveal p code,
-.reveal li code {
-
-  background: #f0f1f2;
-
-  color: #8b2942;
-
-  padding: 0.08em 0.22em;
-
-  border-radius: 4px;
-}
-
-
-.reveal pre {
-
-  width: 96%;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  box-shadow: none;
-
-  border: 1px solid #d9dce0;
-
-  border-radius: 5px;
-}
-
-
-/* ---------- Figures / images ---------- */
-
-.reveal img {
-
-  max-height: 620px;
-}
-
-
-/* ---------- Math ---------- */
-
-.reveal .MathJax {
-
-  color: #20242a;
-}
-
-
-/* ---------- Footer ---------- */
-
-.reveal .footer {
-
-  font-size: 0.38em;
-
-  color: #777c83;
-}
-
-
-/* ---------- Slide numbers ---------- */
-
-.reveal .slide-number {
-
+/* footnotes at bottom of slide */
+.reveal .slide-footnote {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0;
+  width: 100%;
   font-size: 0.42em;
-
-  color: #777c83;
-
-  background: transparent;
+  color: #555;
+  line-height: 1.2;
+  border-top: 1px solid #999;
+  padding-top: 0.4em;
+}
+/* accent */
+.maroon {
+  color: #7a263a;
 }
 
-
-/* ---------- Title slide ---------- */
-
-.reveal .title-slide h1,
-.reveal #title-slide h1 {
-
-  color: #182536;
-
-  font-size: 1.9em;
-
-  font-weight: 650;
-
-  line-height: 1.12;
-
-  margin-bottom: 0.35em;
+/* block quotes */
+.reveal blockquote {
+  width: 85%;
+  margin: 1.2em auto;
+  padding: 0.7em 1em;
+  border-left: 5px solid #7a263a;
+  background: rgba(122, 38, 58, 0.06);
+  box-shadow: none;
 }
 
-
-.reveal .title-slide .subtitle,
-.reveal #title-slide .subtitle {
-
-  color: #8b2942;
-
-  font-size: 1.05em;
-
-  font-weight: 500;
+/* footer */
+.reveal .footer {
+  font-size: 0.38em;
+  color: #555;
 }
 
-
-/* No underline on title slide */
-.reveal #title-slide h1 {
-
-  border-bottom: none;
-}
-
-
-/* ---------- Useful custom classes ---------- */
-
-.center {
-  text-align: center;
-}
-
-.small {
-  font-size: 0.82em;
-}
-
-.large {
-  font-size: 1.15em;
-}
-
-
-/* Simple highlighted statement */
-
-.key-point {
-
-  background: #f5f1f2;
-
-  border-left: 5px solid #8b2942;
-
-  padding: 0.5em 0.8em;
-
-  margin: 0.8em 0;
-
-  border-radius: 3px;
-}
-
-
-/* Muted text */
-
-.muted {
-
-  color: #6d737b;
-}
-
-
-/* Burgundy emphasis */
-
-.accent {
-
-  color: #8b2942;
-
-  font-weight: 600;
+/* citations / image sources */
+.reveal .citation {
+  font-size: 0.42em;
+  color: #666;
+  line-height: 1.2;
+  margin-top: 0.5em;
 }

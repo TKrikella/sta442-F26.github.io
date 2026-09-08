@@ -5,7 +5,7 @@ format:
   live-revealjs:
     css: styles.css
     html-math-method: mathjax
-    scrollable: false
+    scrollable: true
     slide-number: "c/t"
     footer: '<div style="font-size: 15px; display: flex; justify-content: space-between; width: 92%; margin-left: 4em;"><span style="flex: 1; text-align: left;">STA442: Methods of Applied Statistics</span><span style="flex: 1; text-align: center;">Week 1: Statistical Modelling and Inference</span><span style="flex: 1;"></span></div>'
     smaller: true
@@ -25,13 +25,75 @@ execute:
 engine: webr
 ---
 
-{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+## Warm-Up Questions
+
+**A p-value of 0.50 means there is no relationship between two variables.**  
+True or false?
+
+<br>
+
+:::{.fragment}
+**If a study has only three observations, can we still perform a statistical analysis?**  
+What might go wrong?
+:::
+
+<br>
+
+:::{.fragment}
+**A 95% confidence interval means there is a 95% probability that the true parameter lies in the interval.**  
+True or false?
+::: 
+
+<br>
+
+:::{.fragment}
+**Would a hypothesis test that rejects $H_0 every time be a good test?**  
+Why or why not?
+::: 
 
 ## Warm-Up Questions
 
-Mathmatize
+**For paired data, an independent two-sample \(t\)-test is just as appropriate as a paired \(t\)-test.**  
+True or false?
 
-## Learning Outcome for This Week
+<br>
+
+:::{.fragment}
+**If a regression model gives \(p > 0.05\), it is reasonable to remove a variable and refit the model until \(p < 0.05\).**  
+True or false?
+::: 
+
+<br>
+
+:::{.fragment}
+**If 846 out of 20,000 hypothesis tests have \(p < 0.05\), we can conclude that those 846 effects are real.**  
+True or false? 
+:::
+
+## Warm-Up Questions
+
+[What do you think?]{style="color: maroon;"}
+
+<br>
+
+Suppose I apply to **20 PhD programs**, and each program has an acceptance rate of 20/%.
+
+If the decisions were independent, then
+
+$$
+P(\text{at least one acceptance})
+=
+1-(1-0.20)^{20}
+\approx 0.988.
+$$
+
+So, do I really have a **98.8% chance** of getting into at least one program?
+
+<br>
+
+[What assumption is being made here? Is it reasonable?]{style="color: maroon;"}
+
+## Learning Outcomes for This Week
 
 The purpose of this week's lecture is to ensure that we are on the same page about the *basics*.
 
@@ -46,37 +108,19 @@ Statistical modelling is the process of using data to learn about an unknown pop
 
 ::: fragment
 
-::: {.workflow-grid}
-
-::: {.workflow-step}
 **1. Population**
-:::
 
-::: {.workflow-step}
 **2. Scientific Question**
-:::
 
-::: {.workflow-step}
 **3. Study Design + Data Collection**
-:::
 
-::: {.workflow-step}
 **4. Statistical Model**
-:::
 
-::: {.workflow-step}
 **5. Estimation**
-:::
 
-::: {.workflow-step}
 **6. Uncertainty Quantification**
-:::
 
-::: {.workflow-step}
 **7. Inference + Scientific Conclusions**
-:::
-
-:::
 
 :::
 
@@ -99,19 +143,19 @@ Our sample does [not]{style="color: maroon;"} contain all observations from the 
 -   The key requirement is that [the sample should be representative of the population]{style="color: navy;"}
 :::
 
-## Population
+## Population 
 
 It is important to clearly define the population of interest.
 
 -   it is not enough to say "I collected *n* observations"
 -   the key question is: [Who or what do these observations represent?]{style="color: navy;"}
 
-::: fragment
+## Population 
+
 **Example 1: Genetic Studies**
 
 -   Many genetic studies have been conducted primarily in people of European ancestry
 -   Models developed using these data often perform poorly in populations with different genetic backgrounds (e.g., people of Asian or African ancestry).
-:::
 
 ::: fragment
 **Example 2: Psychology Experiments**
@@ -189,6 +233,7 @@ $$y_i \sim \text{Bernoulli}\left( \frac{\exp{(\beta_0 + \beta_1\sin(x_i))}}{1 + 
 
 ## Comments on the Statistical Model
 
+::: {style="font-size: 0.8em; line-height: 1.2;"}
 ::: text-center
 ["All models are wrong, but some are useful" (George Box)]{style="color: maroon;"}
 :::
@@ -212,6 +257,7 @@ $$y_i \sim \text{Bernoulli}\left( \frac{\exp{(\beta_0 + \beta_1\sin(x_i))}}{1 + 
     -   No, many statistical procedures are surprisingly robust to modest violations of their assumptions.
     -   We can evaluate through simulations
 :::
+:::
 
 ## Comments on the Statistical Model
 
@@ -234,32 +280,30 @@ $$ Y_{ij} \stackrel{\text{i.i.d.}}{\sim} \mathcal{N}(\mu_j, \sigma^2) $$ and tes
 
 # Designing Studies {.center .text-center}
 
-## Design of Studies
+## Design of Studies 
 
-A typical statistical analysis follows these steps:
+::: {style="font-size: 0.8em; line-height: 1.2;"}
+1. **Specify the statistical model**
+   - Propose a DGP that is a reasonable approximation of reality
+   - Define the research question and hypothesis
+   - Plan the study design (e.g., sampling strategy and sample size)
 
 ::: fragment
-1.  **Specify the statistical model**
-    -   Propose a data-generating process (DGP) that is a reasonable approximation of reality (this influences the study design)
-    -   Define the research question and hypothesis
-    -   Plan the study design (e.g., sampling strategy and sample size)
+2. **Collect the data**
+   - Obtain a (ideally random) sample from the population of interest
 :::
 
 ::: fragment
-2.  **Collect the data**
-    -   Obtain a (ideally random) sample from the population of interest
+3. **Estimate the quantities of interest**
+   - Estimate the unknown parameters (e.g., using maximum likelihood estimation)
+   - Quantify the uncertainty in these estimates (e.g., standard errors or confidence intervals)
 :::
 
 ::: fragment
-3.  **Estimate the quantities of interest**
-    -   Estimate the unknown parameters (e.g., using maximum likelihood estimation)
-    -   Quantify the uncertainty in these estimates (e.g., standard errors or confidence intervals)\
+4. **Draw statistical conclusions**
+   - Construct appropriate test statistics or confidence intervals
+   - Make conclusions about the population based on observed data
 :::
-
-::: fragment
-4.  **Draw statistical conclusions**
-    -   Construct appropriate test statistics or confidence intervals
-    -   Make conclusions about the population based on observed data
 :::
 
 ## Design of Studies
@@ -274,6 +318,7 @@ In practice...
 
 ## Design of Studies
 
+::: {style="font-size: 0.8em; line-height: 1.2;"}
 [**Some cautionary notes**]{style="color: maroon;"}
 
 ::: fragment
@@ -294,9 +339,11 @@ In practice...
     -   Exploratory analyses can identify new patterns, generate hypotheses, and suggest future research directions.
     -   Ideally, these findings should be validated using an independent dataset.
 :::
+::: 
 
 ## Misusing Statistics
 
+::: {style="font-size: 0.8em; line-height: 1.2;"}
 Some common practices that can invalidate statistical inference include:
 
 ::: incremental
@@ -311,6 +358,7 @@ Some common practices that can invalidate statistical inference include:
 ::: fragment
 **Key Point**: Statistical inference depends on the entire analysis process. Even a perfectly computed p-value can be misleading if the study design or analysis is flawed.
 :::
+::: 
 
 ## Misusing Statistics
 
@@ -373,6 +421,7 @@ Key considerations include:
 
 ## Main Takeaway
 
+::: {style="font-size: 0.8em; line-height: 1.2;"}
 -   **Statistical inference begins before data collection.**
     -   A clear research question, appropriate study design, and reasonable statistical model are essential.
 
@@ -395,6 +444,7 @@ Key considerations include:
 -   **The goal of statistics is not to find significant results.**
     -   The goal is to produce reliable, reproducible, and scientifically meaningful evidence.
 :::
+::: 
 
 # Introduction to Simulation
 
@@ -416,6 +466,7 @@ Modern approaches use calculus to derive and compute this quantity.
 
 ## Simulations
 
+::: {style="font-size: 0.8em; line-height: 1.2;"}
 [Motivating Example]{style="color: maroon;"}
 
 How can we estimate the area of a circle using simulation?
@@ -444,6 +495,7 @@ Therefore:
 $$
 A \approx 4 \times \frac{M}{50000}
 $$
+:::
 :::
 
 ## Simulations
@@ -688,6 +740,7 @@ The method of [hypothesis testing]{style="color: navy;"} uses data from a sample
 
 ## Errors in Hypothesis Testing
 
+::: {style="font-size: 0.8em; line-height: 1.2;"}
 Since we are making conclusions about the population with limited information, our decision is always prone to some errors.
 
 ::: fragment
@@ -712,24 +765,53 @@ Since we are making conclusions about the population with limited information, o
 ::: fragment
 **Ideally, you want to reduce these two errors,** $\alpha$ and $\beta$ as much as possible.
 :::
+::: 
 
 ## Errors in Hypothesis Testing
 
-[What are these probabilities?]{style="color: maroon;"}
+[Type I Error]{style="color: maroon;"}
 
-$$\text{Type 1 error rate} = \alpha = \frac{\text{number of experiments that rejected} H_0}{\text{number of experiments}} \quad (\text{when} \quad H_0 \quad \text{is true})$$
+A **Type I error** occurs when we reject $H_0$, even though $H_0$ is true.
 
-The value, $\alpha$, is the same as the significance level.
+$$
+P(\text{reject } H_0 \mid H_0 \text{ is true}) = \alpha
+$$
 
-We can control the Type 1 error by setting the significance level of the test. A popular value is to set $\alpha = 0.05$.
+:::{.fragment}
+The value $\alpha$ is called the **significance level** of the test.
+:::
+
+:::{.fragment}
+We choose $\alpha$ in advance, which allows us to control the Type I error rate.
+
+A common choice is
+
+$$
+\alpha = 0.05.
+$$
+:::
 
 ## Errors in Hypothesis Testing
 
-[What are these probabilities?]{style="color: maroon;"}
+[Power]{style="color: maroon;"}
 
-$$\text{Power} = 1 - \beta = \frac{\text{\# of experiments that rejected} H_0}{\text{\# of experiments}} \quad (\text{when} \quad H_0 \quad \text{is false})$$
+The **power** of a hypothesis test is the probability of correctly rejecting $H_0$ when $H_0$ is false.
 
-Power depends on the sample size, the effect size, and the specified significance level, $\alpha$.
+$$
+P(\text{reject } H_0 \mid H_0 \text{ is false}) = 1 - \beta
+$$
+
+:::{.fragment}
+A test with high power is more likely to detect a real effect when one exists.
+:::
+
+:::{.fragment}
+Power depends on:
+
+- the **sample size**
+- the **effect size**
+- the significance level, $\alpha$
+:::
 
 ## Simulations: Statistical Inference
 
@@ -847,16 +929,29 @@ Above, we see clearly that $\alpha$, the effect size and sample size have an eff
 
 ## Empirical Understanding of Statistics
 
-We can use simulations to evaluate how statistics works in various scenarios. For example:
+[Simulation lets us ask: *What actually happens?*]{style="color: maroon;"}
 
--   What would be the bias if we don't use least squares to estimate the coefficients?
--   What would be the bias if the errors do not come from $\mathcal{N}(0, \sigma^2)$
--   What happens to the Type 1 error when the sample size is small?
--   What happens to the Type 1 error when the sample size is small and the shape of the population distribution is highly skewed?
--   What happens to power when you do not model the within-subject correlation in two-sample testing?
--   What would be the actual coverage rate of a $95\%$ confidence interval of $\hat{\beta}_1$?
--   
-    -   so many other investigations
+We can use simulation to investigate the behaviour of statistical methods when:
+
+:::{.fragment}
+- **assumptions are violated**  
+  *e.g., non-normal or skewed errors*
+:::
+
+:::{.fragment}
+- **sample sizes are small**  
+  *e.g., does the Type I error rate remain at $\alpha$?*
+:::
+
+:::{.fragment}
+- **models are misspecified**  
+  *e.g., ignoring within-subject correlation*
+:::
+
+:::{.fragment}
+- **we want to evaluate statistical properties**  
+  *e.g., bias, power, or confidence interval coverage*
+:::
 
 ## Summary
 

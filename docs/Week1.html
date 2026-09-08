@@ -47,6 +47,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -140,10 +141,57 @@
 </section>
 <section id="warm-up-questions" class="slide level2">
 <h2>Warm-Up Questions</h2>
-<p>Mathmatize</p>
+<p><strong>A p-value of 0.50 means there is no relationship between two variables.</strong><br>
+True or false?</p>
+<p><br></p>
+<div class="fragment">
+<p><strong>If a study has only three observations, can we still perform a statistical analysis?</strong><br>
+What might go wrong?</p>
+</div>
+<p><br></p>
+<div class="fragment">
+<p><strong>A 95% confidence interval means there is a 95% probability that the true parameter lies in the interval.</strong><br>
+True or false?</p>
+</div>
+<p><br></p>
+<div class="fragment">
+<p><strong>Would a hypothesis test that rejects $H_0 every time be a good test?</strong><br>
+Why or why not?</p>
+</div>
 </section>
-<section id="learning-outcome-for-this-week" class="slide level2">
-<h2>Learning Outcome for This Week</h2>
+<section id="warm-up-questions-1" class="slide level2">
+<h2>Warm-Up Questions</h2>
+<p><strong>For paired data, an independent two-sample (t)-test is just as appropriate as a paired (t)-test.</strong><br>
+True or false?</p>
+<p><br></p>
+<div class="fragment">
+<p><strong>If a regression model gives (p &gt; 0.05), it is reasonable to remove a variable and refit the model until (p &lt; 0.05).</strong><br>
+True or false?</p>
+</div>
+<p><br></p>
+<div class="fragment">
+<p><strong>If 846 out of 20,000 hypothesis tests have (p &lt; 0.05), we can conclude that those 846 effects are real.</strong><br>
+True or false?</p>
+</div>
+</section>
+<section id="warm-up-questions-2" class="slide level2">
+<h2>Warm-Up Questions</h2>
+<p><span style="color: maroon;">What do you think?</span></p>
+<p><br></p>
+<p>Suppose I apply to <strong>20 PhD programs</strong>, and each program has an acceptance rate of 20/%.</p>
+<p>If the decisions were independent, then</p>
+<p><span class="math display">\[
+P(\text{at least one acceptance})
+=
+1-(1-0.20)^{20}
+\approx 0.988.
+\]</span></p>
+<p>So, do I really have a <strong>98.8% chance</strong> of getting into at least one program?</p>
+<p><br></p>
+<p><span style="color: maroon;">What assumption is being made here? Is it reasonable?</span></p>
+</section>
+<section id="learning-outcomes-for-this-week" class="slide level2">
+<h2>Learning Outcomes for This Week</h2>
 <p>The purpose of this week’s lecture is to ensure that we are on the same page about the <em>basics</em>.</p>
 <ul>
 <li>Introduction to statistical models</li>
@@ -156,29 +204,13 @@
 <h2>Big Picture: The Statistical Modelling Workflow</h2>
 <p>Statistical modelling is the process of using data to learn about an unknown population.</p>
 <div class="fragment">
-<div class="workflow-grid">
-<div class="workflow-step">
 <p><strong>1. Population</strong></p>
-</div>
-<div class="workflow-step">
 <p><strong>2. Scientific Question</strong></p>
-</div>
-<div class="workflow-step">
 <p><strong>3. Study Design + Data Collection</strong></p>
-</div>
-<div class="workflow-step">
 <p><strong>4. Statistical Model</strong></p>
-</div>
-<div class="workflow-step">
 <p><strong>5. Estimation</strong></p>
-</div>
-<div class="workflow-step">
 <p><strong>6. Uncertainty Quantification</strong></p>
-</div>
-<div class="workflow-step">
 <p><strong>7. Inference + Scientific Conclusions</strong></p>
-</div>
-</div>
 </div>
 </section>
 <section>
@@ -209,13 +241,14 @@
 <li>it is not enough to say “I collected <em>n</em> observations”</li>
 <li>the key question is: <span style="color: navy;">Who or what do these observations represent?</span></li>
 </ul>
-<div class="fragment">
+</section>
+<section id="population-2" class="slide level2">
+<h2>Population</h2>
 <p><strong>Example 1: Genetic Studies</strong></p>
 <ul>
 <li>Many genetic studies have been conducted primarily in people of European ancestry</li>
 <li>Models developed using these data often perform poorly in populations with different genetic backgrounds (e.g., people of Asian or African ancestry).</li>
 </ul>
-</div>
 <div class="fragment">
 <p><strong>Example 2: Psychology Experiments</strong></p>
 <ul>
@@ -224,7 +257,7 @@
 </ul>
 </div>
 </section>
-<section id="population-2" class="slide level2">
+<section id="population-3" class="slide level2">
 <h2>Population</h2>
 
 <img data-src="images/Week1-PopulationSample.png" class="quarto-figure quarto-figure-center r-stretch" width="400"><ul>
@@ -232,7 +265,7 @@
 <li><p>Our sample provides limited information about the population, but if it is representative, it can provide a good approximation of the population.</p></li>
 </ul>
 </section>
-<section id="population-3" class="slide level2">
+<section id="population-4" class="slide level2">
 <h2>Population</h2>
 <ul>
 <li>We are often interested in numerical summaries that describe a population.
@@ -303,6 +336,7 @@
 </section>
 <section id="comments-on-the-statistical-model" class="slide level2">
 <h2>Comments on the Statistical Model</h2>
+<div style="font-size: 0.8em; line-height: 1.2;">
 <div class="text-center">
 <p><span style="color: maroon;">“All models are wrong, but some are useful” (George Box)</span></p>
 </div>
@@ -337,6 +371,7 @@
 </ul></li>
 </ul>
 </div>
+</div>
 </section>
 <section id="comments-on-the-statistical-model-1" class="slide level2">
 <h2>Comments on the Statistical Model</h2>
@@ -360,19 +395,17 @@
 <h1>Designing Studies</h1>
 
 </section>
-<section id="design-of-studies" class="slide level2">
+<section id="design-of-studies" class="slide level2 scrollable">
 <h2>Design of Studies</h2>
-<p>A typical statistical analysis follows these steps:</p>
-<div class="fragment">
+<div style="font-size: 0.8em; line-height: 1.2;">
 <ol type="1">
 <li><strong>Specify the statistical model</strong>
 <ul>
-<li>Propose a data-generating process (DGP) that is a reasonable approximation of reality (this influences the study design)</li>
+<li>Propose a DGP that is a reasonable approximation of reality</li>
 <li>Define the research question and hypothesis</li>
 <li>Plan the study design (e.g., sampling strategy and sample size)</li>
 </ul></li>
 </ol>
-</div>
 <div class="fragment">
 <ol start="2" type="1">
 <li><strong>Collect the data</strong>
@@ -386,8 +419,7 @@
 <li><strong>Estimate the quantities of interest</strong>
 <ul>
 <li>Estimate the unknown parameters (e.g., using maximum likelihood estimation)</li>
-<li>Quantify the uncertainty in these estimates (e.g., standard errors or confidence intervals)<br>
-</li>
+<li>Quantify the uncertainty in these estimates (e.g., standard errors or confidence intervals)</li>
 </ul></li>
 </ol>
 </div>
@@ -399,6 +431,7 @@
 <li>Make conclusions about the population based on observed data</li>
 </ul></li>
 </ol>
+</div>
 </div>
 </section>
 <section id="design-of-studies-1" class="slide level2">
@@ -414,6 +447,7 @@
 </section>
 <section id="design-of-studies-2" class="slide level2">
 <h2>Design of Studies</h2>
+<div style="font-size: 0.8em; line-height: 1.2;">
 <p><span style="color: maroon;"><strong>Some cautionary notes</strong></span></p>
 <div class="fragment">
 <ul>
@@ -443,9 +477,11 @@
 </ul></li>
 </ul>
 </div>
+</div>
 </section>
 <section id="misusing-statistics" class="slide level2">
 <h2>Misusing Statistics</h2>
+<div style="font-size: 0.8em; line-height: 1.2;">
 <p>Some common practices that can invalidate statistical inference include:</p>
 <div>
 <ul>
@@ -459,6 +495,7 @@
 </div>
 <div class="fragment">
 <p><strong>Key Point</strong>: Statistical inference depends on the entire analysis process. Even a perfectly computed p-value can be misleading if the study design or analysis is flawed.</p>
+</div>
 </div>
 </section>
 <section id="misusing-statistics-1" class="slide level2">
@@ -520,6 +557,7 @@
 </section>
 <section id="main-takeaway" class="slide level2">
 <h2>Main Takeaway</h2>
+<div style="font-size: 0.8em; line-height: 1.2;">
 <ul>
 <li><strong>Statistical inference begins before data collection.</strong>
 <ul>
@@ -558,6 +596,7 @@
 </ul></li>
 </ul>
 </div>
+</div>
 </section></section>
 <section>
 <section id="introduction-to-simulation" class="title-slide slide level1 center">
@@ -574,8 +613,9 @@
 </div><div class="column" style="width:40%;">
 <p><img data-src="images/UnitCircle.png"></p>
 </div></section>
-<section id="simulations-1" class="slide level2">
+<section id="simulations-1" class="slide level2 scrollable">
 <h2>Simulations</h2>
+<div style="font-size: 0.8em; line-height: 1.2;">
 <p><span style="color: maroon;">Motivating Example</span></p>
 <p>How can we estimate the area of a circle using simulation?</p>
 <div class="fragment">
@@ -603,6 +643,7 @@
 A \approx 4 \times \frac{M}{50000}
 \]</span></p>
 </div>
+</div>
 </section>
 <section id="simulations-2" class="slide level2">
 <h2>Simulations</h2>
@@ -629,7 +670,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2V0LnNlZWQoMTIzKSAjIEVu
 <li>Increasing the number of simulated points reduces this variability and gives a more precise estimate.</li>
 </ul>
 
-<img data-src="Week1_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<img data-src="Week1_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
 <section id="simulations-4" class="slide level2">
 <h2>Simulations</h2>
 <p><strong>Why simulate?</strong></p>
@@ -773,6 +814,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiYmV0YTFfdmVjIDwtIE5VTExc
 </section>
 <section id="errors-in-hypothesis-testing" class="slide level2">
 <h2>Errors in Hypothesis Testing</h2>
+<div style="font-size: 0.8em; line-height: 1.2;">
 <p>Since we are making conclusions about the population with limited information, our decision is always prone to some errors.</p>
 <div class="fragment">
 <p><strong>Type 1 Error</strong>: False positive; rejecting the null hypothesis when the null hypothesis is actually true</p>
@@ -796,19 +838,44 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiYmV0YTFfdmVjIDwtIE5VTExc
 <div class="fragment">
 <p><strong>Ideally, you want to reduce these two errors,</strong> <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> as much as possible.</p>
 </div>
+</div>
 </section>
 <section id="errors-in-hypothesis-testing-1" class="slide level2">
 <h2>Errors in Hypothesis Testing</h2>
-<p><span style="color: maroon;">What are these probabilities?</span></p>
-<p><span class="math display">\[\text{Type 1 error rate} = \alpha = \frac{\text{number of experiments that rejected} H_0}{\text{number of experiments}} \quad (\text{when} \quad H_0 \quad \text{is true})\]</span></p>
-<p>The value, <span class="math inline">\(\alpha\)</span>, is the same as the significance level.</p>
-<p>We can control the Type 1 error by setting the significance level of the test. A popular value is to set <span class="math inline">\(\alpha = 0.05\)</span>.</p>
+<p><span style="color: maroon;">Type I Error</span></p>
+<p>A <strong>Type I error</strong> occurs when we reject <span class="math inline">\(H_0\)</span>, even though <span class="math inline">\(H_0\)</span> is true.</p>
+<p><span class="math display">\[
+P(\text{reject } H_0 \mid H_0 \text{ is true}) = \alpha
+\]</span></p>
+<div class="fragment">
+<p>The value <span class="math inline">\(\alpha\)</span> is called the <strong>significance level</strong> of the test.</p>
+</div>
+<div class="fragment">
+<p>We choose <span class="math inline">\(\alpha\)</span> in advance, which allows us to control the Type I error rate.</p>
+<p>A common choice is</p>
+<p><span class="math display">\[
+\alpha = 0.05.
+\]</span></p>
+</div>
 </section>
 <section id="errors-in-hypothesis-testing-2" class="slide level2">
 <h2>Errors in Hypothesis Testing</h2>
-<p><span style="color: maroon;">What are these probabilities?</span></p>
-<p><span class="math display">\[\text{Power} = 1 - \beta = \frac{\text{\# of experiments that rejected} H_0}{\text{\# of experiments}} \quad (\text{when} \quad H_0 \quad \text{is false})\]</span></p>
-<p>Power depends on the sample size, the effect size, and the specified significance level, <span class="math inline">\(\alpha\)</span>.</p>
+<p><span style="color: maroon;">Power</span></p>
+<p>The <strong>power</strong> of a hypothesis test is the probability of correctly rejecting <span class="math inline">\(H_0\)</span> when <span class="math inline">\(H_0\)</span> is false.</p>
+<p><span class="math display">\[
+P(\text{reject } H_0 \mid H_0 \text{ is false}) = 1 - \beta
+\]</span></p>
+<div class="fragment">
+<p>A test with high power is more likely to detect a real effect when one exists.</p>
+</div>
+<div class="fragment">
+<p>Power depends on:</p>
+<ul>
+<li>the <strong>sample size</strong></li>
+<li>the <strong>effect size</strong></li>
+<li>the significance level, <span class="math inline">\(\alpha\)</span></li>
+</ul>
+</div>
 </section>
 <section id="simulations-statistical-inference" class="slide level2">
 <h2>Simulations: Statistical Inference</h2>
@@ -835,7 +902,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBHZW5lcmF0ZSA1MCBvYnNl
 <p><span style="color: maroon;">Case 1: Behaviours of p-values when <span class="math inline">\(H_0\)</span> is true, <span class="math inline">\(n=50\)</span></span></p>
 <p>If we repeat this simulation 50,000 times, and then plot a histogram of the resulting p-values, we get the following.</p>
 
-<img data-src="Week1_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Note that about <span class="math inline">\(5\%\)</span> of the p-values are less than 0.05.</p>
+<img data-src="Week1_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Note that about <span class="math inline">\(5\%\)</span> of the p-values are less than 0.05.</p>
 </section>
 <section id="simulations-statistical-inference-3" class="slide level2">
 <h2>Simulations: Statistical Inference</h2>
@@ -856,13 +923,13 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBHZW5lcmF0ZSA1MCBvYnNl
 <p><span style="color: maroon;">Case 2: Behaviours of p-values when <span class="math inline">\(H_0\)</span> is false (<span class="math inline">\(\mu = 5.1\)</span>), <span class="math inline">\(n=50\)</span></span></p>
 <p>Again, we repeat this simulation 50,000 times - More p-values are shifted to 0 - Is this an expected result?</p>
 
-<img data-src="Week1_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<img data-src="Week1_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
 <section id="simulations-statistical-inference-5" class="slide level2">
 <h2>Simulations: Statistical Inference</h2>
 <p><span style="color: maroon;">Case 3: Behaviours of p-values when <span class="math inline">\(H_0\)</span> is false (<span class="math inline">\(\mu = 5.1\)</span>), <span class="math inline">\(n=200\)</span></span></p>
 <p>We increase the sample size from <span class="math inline">\(n=50\)</span> to <span class="math inline">\(n=200\)</span> and repeat the simulation 50,000 times - More p-values are shifted to 0 - Is this an expected result?</p>
 
-<img data-src="Week1_files/figure-revealjs/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<img data-src="Week1_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
 <section id="power" class="slide level2">
 <h2>Power</h2>
 <p>Remember, when talking about power we are assuming the null hypothesis is <strong>false</strong> (i.e., the alternative is true)</p>
@@ -871,18 +938,32 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBHZW5lcmF0ZSA1MCBvYnNl
 </section>
 <section id="empirical-understanding-of-statistics" class="slide level2">
 <h2>Empirical Understanding of Statistics</h2>
-<p>We can use simulations to evaluate how statistics works in various scenarios. For example:</p>
+<p><span style="color: maroon;">Simulation lets us ask: <em>What actually happens?</em></span></p>
+<p>We can use simulation to investigate the behaviour of statistical methods when:</p>
+<div class="fragment">
 <ul>
-<li>What would be the bias if we don’t use least squares to estimate the coefficients?</li>
-<li>What would be the bias if the errors do not come from <span class="math inline">\(\mathcal{N}(0, \sigma^2)\)</span></li>
-<li>What happens to the Type 1 error when the sample size is small?</li>
-<li>What happens to the Type 1 error when the sample size is small and the shape of the population distribution is highly skewed?</li>
-<li>What happens to power when you do not model the within-subject correlation in two-sample testing?</li>
-<li>What would be the actual coverage rate of a <span class="math inline">\(95\%\)</span> confidence interval of <span class="math inline">\(\hat{\beta}_1\)</span>?</li>
-<li><ul>
-<li>so many other investigations</li>
-</ul></li>
+<li><strong>assumptions are violated</strong><br>
+<em>e.g., non-normal or skewed errors</em></li>
 </ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>sample sizes are small</strong><br>
+<em>e.g., does the Type I error rate remain at <span class="math inline">\(\alpha\)</span>?</em></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>models are misspecified</strong><br>
+<em>e.g., ignoring within-subject correlation</em></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>we want to evaluate statistical properties</strong><br>
+<em>e.g., bias, power, or confidence interval coverage</em></li>
+</ul>
+</div>
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
