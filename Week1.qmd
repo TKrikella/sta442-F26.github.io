@@ -650,7 +650,6 @@ n <- 40
 # Generate the dataset
 beta0 <- 3
 beta1 <- 0.5
-sigma <- 1
 
 x <- 
 epsilon <- 
@@ -677,15 +676,15 @@ beta1_hat
 
 [Example: Evaluating 'Unbiasedness' Empirically]{style="color: maroon;"}
 
-Let's repeat this process 10,000 times and calculate the average of all estimated $\beta_1$ values.
+Let's repeat this process 1,000 times and calculate the average of all estimated $\beta_1$ values to estimate the bias.
 
 ```{webr}
 beta1_vec <- NULL
 
-for (sim in 1:10000){
+for (i in 1:1000){
 
-x <- runif(n, min = 0, max = 5)
-epsilon <- rnorm(n, mean = 0, sd = sigma)
+x <- runif(n, 0, 5)
+epsilon <- rnorm(n, 0, 1)
 y <- beta0 + beta1*x + epsilon
 
 fit <- lm(y~x)
