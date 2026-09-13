@@ -18,6 +18,12 @@ I hope this course helps you develop the confidence to work with data independen
 
 -   Announcements will be through [Quercus](https://q.utoronto.ca/courses/463394) and here, on the course website.
 
+## Office Hours 
+
+Office hours will be held online through Zoom. See [Quercus](https://q.utoronto.ca/courses/463394) for links.
+
+**Tatiana**: Mondays, 2pm-3pm
+
 ## Course Information
 
 All information can be found in the [Syllabus](STA442-Syllabus.pdf).
