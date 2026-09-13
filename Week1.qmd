@@ -630,7 +630,7 @@ Using the ADEMP framework...
 ::: incremental
 -   **A — Aim**: Is the coefficient $\beta_1$ of a linear regression model unbiased?
 
--   **D — Data-generating mechanism**: We fix $\beta_0, \beta_1, \sigma^2$, and generate a dataset $(x_i, y_i), i=1, ..., n$. We also generate $\epsilon_i \stackrel{\text{i.i.d.}}{\sim} \mathcal{N}(0, \sigma^2)$.
+-   **D — Data-generating mechanism**: We fix $\beta_0, \beta_1$, and generate a dataset $(x_i, y_i), i=1, ..., n$ where each $X_i \sim Uniform(0,5)$. We also generate $\epsilon_i \stackrel{\text{i.i.d.}}{\sim} \mathcal{N}(0, \sigma^2)$.
 
 -   **E — Estimands**: We estimate $\beta_1$
 

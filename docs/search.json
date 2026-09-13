@@ -60,14 +60,14 @@
     "href": "Course-Introduction.html#course-materials-important-links",
     "title": "STA442: Methods in Applied Statistics",
     "section": "Course Materials & Important Links",
-    "text": "Course Materials & Important Links\nTextbook: We will be using the following three textbooks: - [ISL] An Introduction to Statistical Learning by James et al. (https://www.statlearning.com) - [LM] Linear Models with R by Faraway (2nd edition) - [ELM] Extending Linear Models with R by Faraway (2nd edition)\n\n\nCourse Webpage: Main source of information – Check regularly!\n\nQuercus: Announcements and non-public materials (i.e. solutions)\n\nPiazza: Main place for discussions.\n\nCrowdmark: We will use Crowdmark for assignment submission on Quercus."
+    "text": "Course Materials & Important Links\nTextbook: We will be using the following three textbooks: - [ISL] An Introduction to Statistical Learning by James et al. (https://www.statlearning.com) - [LM] Linear Models with R by Faraway (2nd edition) - [ELM] Extending Linear Models with R by Faraway (2nd edition)\n\nCourse Webpage: Main source of information – Check regularly!\n\nQuercus: Announcements and non-public materials (i.e. solutions)\n\nPiazza: Main place for discussions.\n\nCrowdmark: We will use Crowdmark for assignment submission on Quercus."
   },
   {
     "objectID": "Course-Introduction.html#delivery-details",
     "href": "Course-Introduction.html#delivery-details",
     "title": "STA442: Methods in Applied Statistics",
     "section": "Delivery Details",
-    "text": "Delivery Details\nUnless otherwise specified, lectures will be held in-person.\n\n\n\n\nSection\nCategory\nTime\nLocation\n\n\n\n\nLEC0101\nLectures\nFri (2-5pm)\nSS 1073\n\n\n\nInstructor’s Office Hours\nMon (2–3pm)\nOPG 9165"
+    "text": "Delivery Details\nUnless otherwise specified, lectures will be held in-person.\n\n\n\n\n\n\n\n\n\n\nSection\nCategory\nTime\nLocation\n\n\n\n\nLEC0101\nLectures\nFri (2-5pm)\nSS 1073\n\n\n\nInstructor’s Office Hours\nMon (2–3pm)\nOnline, Quercus for link"
   },
   {
     "objectID": "Course-Introduction.html#tentative-course-schedule",
@@ -81,7 +81,7 @@
     "href": "Course-Introduction.html#email-policy",
     "title": "STA442: Methods in Applied Statistics",
     "section": "Email Policy",
-    "text": "Email Policy\nCourse Email:\n\nInstructor and TAs will not respond to emails sent to individual accounts\nResponse Time: It will take 24 – 48 hours to respond to emails. I will only respond during working hours (Monday – Friday, 9am – 5pm).\n\n\n\nFor questions…\n\nIf it is about course material such as lectures / tutorials, or clarification question, post it to Piazza so that other students will benefit.\nIf it is related with solving practical problem sets, use the office hours"
+    "text": "Email Policy\nCourse Email: sta442@course.utoronto.ca\n\nInstructor and TAs will not respond to emails sent to individual accounts\nResponse Time: It will take 24 – 48 hours to respond to emails. I will only respond during working hours (Monday – Friday, 9am – 5pm).\n\n\n\nFor questions…\n\nIf it is about course material such as lectures / tutorials, or clarification question, post it to Piazza so that other students will benefit.\nIf it is related with solving assignments, use the office hours\nIf it is related to administrative inquiries, email"
   },
   {
     "objectID": "Course-Introduction.html#course-grading-scheme",
@@ -95,7 +95,7 @@
     "href": "Course-Introduction.html#important-dates",
     "title": "STA442: Methods in Applied Statistics",
     "section": "Important Dates",
-    "text": "Important Dates\nMidterm: October 23rd, 2 – 4pm\n\nThanksgiving: October 12th (no classes, no office hours)\n\nReading Week: October 26th – 30th (no classes, no office hours)\n\nDrop Date: November 17th\n\nLast Day of Class: December 4th\n\nFinal Exam Period: December 10th – 22nd"
+    "text": "Important Dates\nMidterm: October 23rd, 2 – 4pm\n\nThanksgiving: October 12th (no office hours)\n\nReading Week: October 26th – 30th (no classes, no office hours)\n\nDrop Date: November 17th\n\nLast Day of Class: December 4th\n\nFinal Exam Period: December 10th – 22nd"
   },
   {
     "objectID": "Course-Introduction.html#ai-policy---can-i-use-ai-for",
@@ -333,7 +333,7 @@
     "href": "Week1.html#simulations-7",
     "title": "Statistical Modelling and Inference",
     "section": "Simulations",
-    "text": "Simulations\nExample: Evaluating ‘Unbiasedness’ Empirically\nAssume the following model:\n\\[y_i = \\beta_0 + \\beta_1x_i + \\epsilon_i \\quad \\text{where} \\quad \\epsilon_i \\stackrel{\\text{i.i.d.}}{\\sim} \\mathcal{N}(0, \\sigma^2)\\]\nUsing the ADEMP framework…\n\n\nA — Aim: Is the coefficient \\(\\beta_1\\) of a linear regression model unbiased?\nD — Data-generating mechanism: We fix \\(\\beta_0, \\beta_1, \\sigma^2\\), and generate a dataset \\((x_i, y_i), i=1, ..., n\\). We also generate \\(\\epsilon_i \\stackrel{\\text{i.i.d.}}{\\sim} \\mathcal{N}(0, \\sigma^2)\\).\nE — Estimands: We estimate \\(\\beta_1\\)\nM — Methods: Fitting a linear regression model.\nP — Performance measures: Bias (i.e. \\(E[\\hat{\\beta}_1] - \\beta_1\\)))"
+    "text": "Simulations\nExample: Evaluating ‘Unbiasedness’ Empirically\nAssume the following model:\n\\[y_i = \\beta_0 + \\beta_1x_i + \\epsilon_i \\quad \\text{where} \\quad \\epsilon_i \\stackrel{\\text{i.i.d.}}{\\sim} \\mathcal{N}(0, \\sigma^2)\\]\nUsing the ADEMP framework…\n\n\nA — Aim: Is the coefficient \\(\\beta_1\\) of a linear regression model unbiased?\nD — Data-generating mechanism: We fix \\(\\beta_0, \\beta_1\\), and generate a dataset \\((x_i, y_i), i=1, ..., n\\) where each \\(X_i \\sim Uniform(0,5)\\). We also generate \\(\\epsilon_i \\stackrel{\\text{i.i.d.}}{\\sim} \\mathcal{N}(0, \\sigma^2)\\).\nE — Estimands: We estimate \\(\\beta_1\\)\nM — Methods: Fitting a linear regression model.\nP — Performance measures: Bias (i.e. \\(E[\\hat{\\beta}_1] - \\beta_1\\)))"
   },
   {
     "objectID": "Week1.html#simulations-8",
@@ -495,5 +495,383 @@
     "title": "Statistical Modelling and Inference",
     "section": "Warm-Up Questions",
     "text": "Warm-Up Questions\nWhat do you think?\n\nSuppose I apply to 20 PhD programs, and each program has an acceptance rate of 20/%.\nIf the decisions were independent, then\n\\[\nP(\\text{at least one acceptance})\n=\n1-(1-0.20)^{20}\n\\approx 0.988.\n\\]\nSo, do I really have a 98.8% chance of getting into at least one program?\n\nWhat assumption is being made here? Is it reasonable?"
+  },
+  {
+    "objectID": "Week2.html#todays-lecture",
+    "href": "Week2.html#todays-lecture",
+    "title": "Topics in Statistical Inference",
+    "section": "Today’s Lecture",
+    "text": "Today’s Lecture\nBy the end of this lecture, you should be able to:\n\nExplain the logic of a permutation test and construct a permutation-based null distribution.\nDescribe why conducting many hypothesis tests increases the risk of false-positive findings.\nCompare family-wise error rate (FWER) and false discovery rate (FDR), and identify when each is appropriate.\nApply Bonferroni and FDR adjustments to account for multiple comparisons.\nRecognize how inappropriate selection and testing practices can inflate error rates and reported effect sizes."
+  },
+  {
+    "objectID": "Week2.html#motivating-example",
+    "href": "Week2.html#motivating-example",
+    "title": "Topics in Statistical Inference",
+    "section": "Motivating Example",
+    "text": "Motivating Example\nResearchers have developed a new drug that inhibits a mouse’s ability to run through a maze. Using three mice receiving the drug and three controls receiving a placebo, they measured the time required to complete the maze.\n\n\n\nGroup\nRunning times (seconds)\n\n\n\n\nDrug\n30, 25, 20\n\n\nPlacebo\n18, 21, 22\n\n\n\nWe want to test\n\\[\nH_0:\\mu_{\\text{Drug}}=\\mu_{\\text{Placebo}}\n\\qquad \\text{versus} \\qquad\nH_1:\\mu_{\\text{Drug}}&gt;\\mu_{\\text{Placebo}}.\n\\]\n\nThe two-sample \\(t\\)-test gives a \\(p\\)-value of approximately \\(0.122\\)."
+  },
+  {
+    "objectID": "Week2.html#why-consider-a-permutation-test",
+    "href": "Week2.html#why-consider-a-permutation-test",
+    "title": "Topics in Statistical Inference",
+    "section": "Why Consider a Permutation Test?",
+    "text": "Why Consider a Permutation Test?\nWith such a small sample, the parametric \\(p\\)-value may be unreliable.\nAre there other methods when this is a concern?\n\n\nA permutation test is a non-parametric method that tests a null hypothesis by “rearranging” the observed data.\n\nKey Idea: If \\(H_0\\) is true (there is no difference between the population means) then swapping the group labels should not make a systematic difference."
+  },
+  {
+    "objectID": "Week2.html#motivating-example-revisited",
+    "href": "Week2.html#motivating-example-revisited",
+    "title": "Topics in Statistical Inference",
+    "section": "Motivating Example Revisited",
+    "text": "Motivating Example Revisited\nShuffle the group labels while keeping three observations in each group.\n\n\n\n\n\n\n\n\n\n\nPermutation\nDrug\nPlacebo\n\\(\\widehat\\mu_D-\\widehat\\mu_P\\)\n\\(t\\) statistic\n\n\n\n\n1 (observed)\n30, 25, 20\n18, 21, 22\n4.67\n1.49\n\n\n2\n30, 25, 18\n20, 21, 22\n3.33\n2.11\n\n\n3\n30, 25, 21\n18, 20, 22\n5.33\n2.76\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n20\n18, 21, 22\n30, 25, 20\n-4.67\n-1.49\n\n\n\n\nThere are three permutations whose differences in means are at least \\(4.67\\):\n\\[\np_{\\text{perm}}=\\frac{3}{20}=0.15.\n\\]\nUsing the \\(t\\) statistic gives the same result: three permuted statistics are at least \\(1.49\\)."
+  },
+  {
+    "objectID": "Week2.html#permutation-test-procedure",
+    "href": "Week2.html#permutation-test-procedure",
+    "title": "Topics in Statistical Inference",
+    "section": "Permutation Test: Procedure",
+    "text": "Permutation Test: Procedure\n\n\nState the null hypothesis.\nCalculate the test statistic from the observed data.\nShuffle (permute) the data: Under the null hypothesis, the grouping or labeling of the data is arbitrary. Therefore, repeatedly shuffle or permute the data to create new datasets where the null hypothesis holds true.\nRecalculate the test statistic for each permutation: After each shuffle, calculate the test statistic on the permuted data.\nUse the permuted statistics to construct the null distribution.\nCompute the \\(p\\)-value as the proportion of permuted statistics at least as extreme as the observed statistic."
+  },
+  {
+    "objectID": "Week2.html#connection-to-parametric-tests",
+    "href": "Week2.html#connection-to-parametric-tests",
+    "title": "Topics in Statistical Inference",
+    "section": "Connection to Parametric Tests",
+    "text": "Connection to Parametric Tests\n\nParametric and permutation tests differ mainly in how they obtain the null distribution (the distribution of the test statistic under \\(H_0\\)).\n\nParametric: obtained by deriving the distributional properties (assumptions)\nPermutation: obtained by a data-driven manner (e.g. without assuming CLT or distributional form of a population)"
+  },
+  {
+    "objectID": "Week2.html#comparing-null-distributions-empirically",
+    "href": "Week2.html#comparing-null-distributions-empirically",
+    "title": "Topics in Statistical Inference",
+    "section": "Comparing Null Distributions Empirically",
+    "text": "Comparing Null Distributions Empirically"
+  },
+  {
+    "objectID": "Week2.html#comparing-null-distributions-empirically-1",
+    "href": "Week2.html#comparing-null-distributions-empirically-1",
+    "title": "Topics in Statistical Inference",
+    "section": "Comparing Null Distributions Empirically",
+    "text": "Comparing Null Distributions Empirically"
+  },
+  {
+    "objectID": "Week2.html#correlation-or-simple-linear-regression",
+    "href": "Week2.html#correlation-or-simple-linear-regression",
+    "title": "Topics in Statistical Inference",
+    "section": "Correlation or Simple Linear Regression",
+    "text": "Correlation or Simple Linear Regression\nSuppose we are testing\n\\[\nH_0:\\rho_{XY}=0\n\\]\nfor the simple linear regression \\(Y\\sim X\\).\nUnder \\(H_0\\), we can randomly shuffle the order of \\(X\\) to break its relationship with \\(Y\\) while preserving the observed values of both variables."
+  },
+  {
+    "objectID": "Week2.html#multiple-regression",
+    "href": "Week2.html#multiple-regression",
+    "title": "Topics in Statistical Inference",
+    "section": "Multiple Regression",
+    "text": "Multiple Regression\nConsider\n\\[\ny_i=\\beta_0+x_i\\beta_1+z_i\\beta_2+w_i\\beta_3+\\epsilon_i,\n\\qquad\nH_0:\\beta_1=\\beta_2=0.\n\\]\nHere, \\(\\beta_1\\) and \\(\\beta_2\\) describe the effects of \\(x_i\\) and \\(z_i\\) on \\(E(Y_i)\\) while controlling for \\(w_i\\)."
+  },
+  {
+    "objectID": "Week2.html#multiple-regression-what-should-we-shuffle",
+    "href": "Week2.html#multiple-regression-what-should-we-shuffle",
+    "title": "Topics in Statistical Inference",
+    "section": "Multiple Regression: What Should We Shuffle?",
+    "text": "Multiple Regression: What Should We Shuffle?\n\nWe cannot shuffle \\(w_i\\): this does not break the relationship between \\((x_i,z_i)\\) and \\(y_i\\).\nWe should not shuffle \\(y_i\\): this also breaks the relationship between \\(y_i\\) and \\(w_i\\).\nWe should not shuffle \\(x_i\\) and \\(z_i\\) separately: their dependence should be preserved.\nWe can shuffle the pairs \\((x_i,z_i)\\) together. This preserves their mutual dependence and leaves the relationship between \\(y_i\\) and \\(w_i\\) intact."
+  },
+  {
+    "objectID": "Week2.html#permutation-tests-summary",
+    "href": "Week2.html#permutation-tests-summary",
+    "title": "Topics in Statistical Inference",
+    "section": "Permutation Tests: Summary",
+    "text": "Permutation Tests: Summary\n\nFew distributional assumptions: Unlike a parametric test, a permutation test does not assume a particular population distribution.\nVersatile: It can be used with many statistics, including differences in means, medians, variances, and correlations.\nComputationally intensive: Many permutations may be needed, especially for large datasets."
+  },
+  {
+    "objectID": "Week2.html#the-jelly-bean-experiment",
+    "href": "Week2.html#the-jelly-bean-experiment",
+    "title": "Topics in Statistical Inference",
+    "section": "The Jelly Bean Experiment",
+    "text": "The Jelly Bean Experiment\n\n\nDo jelly beans cause acne?\n\nWe could conduct a randomized experiment and compare the mean number of acne lesions between treatment and control groups.\nSuspecting that the relationship may depend on jelly bean colour, we test each colour separately.\n\n15 colours \\(\\Rightarrow\\) 15 two-sample \\(t\\)-tests.\nFor each colour, reject \\(H_0\\) when \\(p&lt;0.05\\).\n\n\n\n\n\n\nThis is a pedagogical example, not an actual study.\n\n\n\nQuestion: What problem might arise?"
+  },
+  {
+    "objectID": "Week2.html#examples-from-genetics-gwas",
+    "href": "Week2.html#examples-from-genetics-gwas",
+    "title": "Topics in Statistical Inference",
+    "section": "Examples from Genetics: GWAS",
+    "text": "Examples from Genetics: GWAS\n\nA genome-wide association study fits a model relating a trait—such as cholesterol level—to each genetic variant.\nA modern GWAS may test approximately 4–5 million variants.\nA commonly used significance threshold is\n\n\\[\np&lt;5\\times10^{-8}.\n\\]\n\nHowles et al. (2019). Nature Communications, 10, 5175."
+  },
+  {
+    "objectID": "Week2.html#the-dead-salmon-experiment",
+    "href": "Week2.html#the-dead-salmon-experiment",
+    "title": "Topics in Statistical Inference",
+    "section": "The Dead Salmon Experiment",
+    "text": "The Dead Salmon Experiment\nIn this experiment:\n\nThe brain of a dead Atlantic salmon was scanned in an MRI machine.\nThe salmon was presented with an open-ended mentalizing task.\nThe imaging data were analyzed using a standard fMRI pipeline.\nEach voxel was modeled separately using a GLM, producing a \\(p\\)-value at every location.\n\n\nBennett, C. M., Miller, M. B., & Wolford, G. L. (2009). Neural correlates of interspecies perspective taking in the post-mortem Atlantic Salmon: An argument for multiple comparisons correction. Neuroimage, 47(Suppl 1), S125."
+  },
+  {
+    "objectID": "Week2.html#the-dead-salmon-experiment-result",
+    "href": "Week2.html#the-dead-salmon-experiment-result",
+    "title": "Topics in Statistical Inference",
+    "section": "The Dead Salmon Experiment: Result",
+    "text": "The Dead Salmon Experiment: Result\nSeveral apparently active voxels were identified inside the salmon’s brain cavity, even though no voxel should truly activate.\nQuestion: What went wrong?\n\n\nLyon, L. (2017). Dead salmon and voodoo correlations: should we be sceptical about functional MRI?. Brain, 140(8), e53-e53."
+  },
+  {
+    "objectID": "Week2.html#simulation-in-r",
+    "href": "Week2.html#simulation-in-r",
+    "title": "Topics in Statistical Inference",
+    "section": "Simulation in R",
+    "text": "Simulation in R\nGenerate data for 50 jelly bean colours when every null hypothesis is true. Test each colour separately at \\(\\alpha=0.05\\)."
+  },
+  {
+    "objectID": "Week2.html#repeating-the-simulation",
+    "href": "Week2.html#repeating-the-simulation",
+    "title": "Topics in Statistical Inference",
+    "section": "Repeating the Simulation",
+    "text": "Repeating the Simulation\nTo estimate how often the \\(p&lt;0.05\\) rule produces at least one false positive:\n\nGenerate data for 50 jelly bean colours when every null hypothesis is true.\nCalculate 50 \\(p\\)-values and count the rejected hypotheses.\nRepeat many times and store the counts."
+  },
+  {
+    "objectID": "Week2.html#repeating-the-simulation-1",
+    "href": "Week2.html#repeating-the-simulation-1",
+    "title": "Topics in Statistical Inference",
+    "section": "Repeating the Simulation",
+    "text": "Repeating the Simulation"
+  },
+  {
+    "objectID": "Week2.html#how-often-do-we-get-a-false-positive",
+    "href": "Week2.html#how-often-do-we-get-a-false-positive",
+    "title": "Topics in Statistical Inference",
+    "section": "How Often Do We Get a False Positive?",
+    "text": "How Often Do We Get a False Positive?\n\n\n\n\n\n\n\n\nWhen 50 null hypotheses are tested separately at \\(\\alpha=0.05\\), there is approximately a 92% chance of observing at least one false positive."
+  },
+  {
+    "objectID": "Week2.html#accounting-for-multiple-comparisons",
+    "href": "Week2.html#accounting-for-multiple-comparisons",
+    "title": "Topics in Statistical Inference",
+    "section": "Accounting for Multiple Comparisons",
+    "text": "Accounting for Multiple Comparisons\nTwo common ways to address multiple comparisons are:\n\nFamily-wise error rate (FWER)\nFalse discovery rate (FDR)\n\nThe choice between FWER and FDR should depend on the research context and the goal of the analysis."
+  },
+  {
+    "objectID": "Week2.html#family-wise-error-rate-fwer",
+    "href": "Week2.html#family-wise-error-rate-fwer",
+    "title": "Topics in Statistical Inference",
+    "section": "Family-Wise Error Rate (FWER)",
+    "text": "Family-Wise Error Rate (FWER)\n\nThe Type I error rate describes a single hypothesis test.\nThe family-wise error rate (FWER) is the probability of making at least one false positive across a family of tests.\nFWER guards against any false positive: “none versus at least one.”"
+  },
+  {
+    "objectID": "Week2.html#what-determines-the-fwer",
+    "href": "Week2.html#what-determines-the-fwer",
+    "title": "Topics in Statistical Inference",
+    "section": "What Determines the FWER?",
+    "text": "What Determines the FWER?\n\nNumber of tests: More tests require a more stringent threshold.\nDesired FWER: Often set to 5%.\n\nIf 20 independent null hypotheses are each tested at \\(\\alpha=0.05\\), then \\(P(\\text{at least one false positive}) \\approx 0.64.\\)"
+  },
+  {
+    "objectID": "Week2.html#bonferroni-correction",
+    "href": "Week2.html#bonferroni-correction",
+    "title": "Topics in Statistical Inference",
+    "section": "Bonferroni Correction",
+    "text": "Bonferroni Correction\nTo control the FWER at level \\(\\alpha\\) across \\(m\\) tests, use the per-test threshold\n\\[\n\\alpha^*=\\frac{\\alpha}{m}.\n\\]\nThen, by the union bound,\n\\[\n\\begin{aligned}\n\\operatorname{FWER}\n&=P_{H_0}\\!\\left(\\bigcup_{j=1}^{m}\n\\left\\{p_j\\leq\\frac{\\alpha}{m}\\right\\}\\right)\\\\\n&\\leq\\sum_{j=1}^{m}P_{H_0}\\!\\left(p_j\\leq\\frac{\\alpha}{m}\\right)\\\\\n&=m\\left(\\frac{\\alpha}{m}\\right)=\\alpha.\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "Week2.html#bonferroni-correction-properties",
+    "href": "Week2.html#bonferroni-correction-properties",
+    "title": "Topics in Statistical Inference",
+    "section": "Bonferroni Correction: Properties",
+    "text": "Bonferroni Correction: Properties\n\nSimple and guaranteed to control FWER: \\(\\operatorname{FWER}\\leq\\alpha\\).\nCan be conservative because the bound may be strict.\nIn the dead salmon study, \\(p&lt;0.001\\) would control FWER at 5% only if there were 50 tests:\n\n\\[\n0.001=\\frac{0.05}{50}.\n\\]\nWith many more voxels, that threshold is too loose."
+  },
+  {
+    "objectID": "Week2.html#permutation-based-fwer-control",
+    "href": "Week2.html#permutation-based-fwer-control",
+    "title": "Topics in Statistical Inference",
+    "section": "Permutation-Based FWER Control",
+    "text": "Permutation-Based FWER Control\n\n\n\n\n\n\n\n\nPermutation-based FWER control accounts for dependence among the tests and does not require independent \\(p\\)-values."
+  },
+  {
+    "objectID": "Week2.html#permutation-based-fwer-control-1",
+    "href": "Week2.html#permutation-based-fwer-control-1",
+    "title": "Topics in Statistical Inference",
+    "section": "Permutation-Based FWER Control",
+    "text": "Permutation-Based FWER Control\n\nFor each permutation \\(b=1,\\ldots,B\\):\n\nShuffle the subject labels under \\(H_0\\).\nCalculate all \\(m\\) test statistics \\(t_1^{(b)},\\ldots,t_m^{(b)}\\).\nStore only the maximum:\n\n\\[\nT^{(b)}=\\max\\left\\{t_1^{(b)},\\ldots,t_m^{(b)}\\right\\}.\n\\]\nThe collection \\(T^{(1)},\\ldots,T^{(B)}\\) forms a null distribution for the maximum statistic."
+  },
+  {
+    "objectID": "Week2.html#permutation-based-fwer-control-in-r",
+    "href": "Week2.html#permutation-based-fwer-control-in-r",
+    "title": "Topics in Statistical Inference",
+    "section": "Permutation-Based FWER Control in R",
+    "text": "Permutation-Based FWER Control in R"
+  },
+  {
+    "objectID": "Week2.html#permutation-based-fwer-control-2",
+    "href": "Week2.html#permutation-based-fwer-control-2",
+    "title": "Topics in Statistical Inference",
+    "section": "Permutation-Based FWER Control",
+    "text": "Permutation-Based FWER Control\n\n\n\n\n\n\n\n\nPermutation-based FWER control accounts for dependence among the tests and does not require independent \\(p\\)-values."
+  },
+  {
+    "objectID": "Week2.html#false-discovery-rate-fdr",
+    "href": "Week2.html#false-discovery-rate-fdr",
+    "title": "Topics in Statistical Inference",
+    "section": "False Discovery Rate (FDR)",
+    "text": "False Discovery Rate (FDR)\nControlling FWER can be conservative, and there is a relevant concept of false positive rates in multiple comparisons: False Discovery Rate (FDR).\n\nWhen \\(m\\) hypotheses are tested, each test belongs to one of four categories \\((V, U, S, W )\\):\n\n\n\nDecision\n\\(H_0\\) is true\n\\(H_0\\) is false\nTotal\n\n\n\n\nReject \\(H_0\\)\n\\(V\\)\n\\(S\\)\n\\(R\\)\n\n\nDo not reject \\(H_0\\)\n\\(U\\)\n\\(W\\)\n\\(m-R\\)\n\n\nTotal\n\\(m_0\\)\n\\(m-m_0\\)\n\\(m\\)\n\n\n\n\n\n\nIdeally, we want to minimize the number of false positive \\((V)\\)"
+  },
+  {
+    "objectID": "Week2.html#false-discovery-rate-fdr-1",
+    "href": "Week2.html#false-discovery-rate-fdr-1",
+    "title": "Topics in Statistical Inference",
+    "section": "False Discovery Rate (FDR)",
+    "text": "False Discovery Rate (FDR)\n\n\n\nDecision\n\\(H_0\\) is true\n\\(H_0\\) is false\nTotal\n\n\n\n\nReject \\(H_0\\)\n\\(V\\)\n\\(S\\)\n\\(R\\)\n\n\nDo not reject \\(H_0\\)\n\\(U\\)\n\\(W\\)\n\\(m-R\\)\n\n\nTotal\n\\(m_0\\)\n\\(m-m_0\\)\n\\(m\\)\n\n\n\nFDR controls the expected proportion of false positives among the hypotheses you rejected \\((V/R)\\).\n\nIf FDR is controlled at 5%, approximately 5% of the statistically significant findings are expected to be false positives in the long run.\n- FDR is more lenient than FWER: it tolerates some false positives in exchange for greater ability to identify real effects."
+  },
+  {
+    "objectID": "Week2.html#fdr-adjustment-in-r",
+    "href": "Week2.html#fdr-adjustment-in-r",
+    "title": "Topics in Statistical Inference",
+    "section": "FDR Adjustment in R",
+    "text": "FDR Adjustment in R\n\nChoose the desired FDR level, such as 5%.\nObtain the raw \\(p\\)-values.\nUse p.adjust() to calculate FDR-adjusted \\(p\\)-values.\nDeclare adjusted \\(p\\)-values below 0.05 significant.\n\n\n\n\n\n\n\n\n\nIn this example, hypotheses 1 and 4 are rejected."
+  },
+  {
+    "objectID": "Week2.html#when-should-we-choose-fwer-or-fdr",
+    "href": "Week2.html#when-should-we-choose-fwer-or-fdr",
+    "title": "Topics in Statistical Inference",
+    "section": "When Should We Choose FWER or FDR?",
+    "text": "When Should We Choose FWER or FDR?\nMake this choice before analyzing the data to avoid p-hacking.\nGeneral recommendations: - Use FWER when you care about the specific hypotheses being tested, i.e. you want to minimize the risk of any false positives for individual comparisons.\n\nChoose FDR when you care more about the number of significant findings (for further investigations) rather than the specific hypotheses.\n\nDo not choose FDR simply because it produces more significant findings."
+  },
+  {
+    "objectID": "Week2.html#an-apparently-reasonable-analysis",
+    "href": "Week2.html#an-apparently-reasonable-analysis",
+    "title": "Topics in Statistical Inference",
+    "section": "An Apparently Reasonable Analysis",
+    "text": "An Apparently Reasonable Analysis\nSuppose an fMRI dataset contains 100,000 voxels.\n\nRemove voxels with “uninteresting” correlations, such as \\(|r|&lt;0.5\\), leaving 500 voxels.\nApply Bonferroni correction only to those 500 voxels and analyze the voxels satisfying \\(p&lt;\\frac{0.05}{500}.\\)"
+  },
+  {
+    "objectID": "Week2.html#whats-wrong-with-the-previous-analysis",
+    "href": "Week2.html#whats-wrong-with-the-previous-analysis",
+    "title": "Topics in Statistical Inference",
+    "section": "What’s Wrong with the Previous Analysis?",
+    "text": "What’s Wrong with the Previous Analysis?\n\nDouble dipping: The same data were used first to select the 500 strongest correlations and then to test them.\nThe procedure resembles a multiple-comparison correction, but it does not properly control FWER.\n\nValid alternatives:\n\nPre-specify the 500 voxels before examining the data, then test them using \\(p&lt;0.05/500\\).\nApply Bonferroni correction to all 100,000 voxels using \\(p&lt;0.05/100000\\)."
+  },
+  {
+    "objectID": "Week2.html#voodoo-correlations",
+    "href": "Week2.html#voodoo-correlations",
+    "title": "Topics in Statistical Inference",
+    "section": "“Voodoo” Correlations",
+    "text": "“Voodoo” Correlations\nSome fMRI studies of emotion, personality, and social cognition reported extremely high (sometimes greater than 0.8) correlations between brain activation and personality measures.\n\nNeuroimaging measurements are noisy and often have low reliability.\nBehavioural measurements, such as reaction time and accuracy, are also noisy.\nHow can two noisy measurements correlate above 0.8, sometimes with fewer than 25 subjects?\n\n\nVul, E., Harris, C., Winkielman, P., & Pashler, H. (2009). Puzzlingly high correlations in fMRI studies of emotion, personality, and social cognition. Perspectives on psychological science, 4(3), 274-290."
+  },
+  {
+    "objectID": "Week2.html#simulation-a-correlation-of-0.8-by-chance",
+    "href": "Week2.html#simulation-a-correlation-of-0.8-by-chance",
+    "title": "Topics in Statistical Inference",
+    "section": "Simulation: A Correlation of 0.8 by Chance",
+    "text": "Simulation: A Correlation of 0.8 by Chance\n\nSimulate 40,000 features for each of 20 subjects.\nSimulate an unrelated behavioural measure for the same subjects.\nCalculate the correlation between the behaviour and each feature."
+  },
+  {
+    "objectID": "Week2.html#distribution-of-the-40000-correlations",
+    "href": "Week2.html#distribution-of-the-40000-correlations",
+    "title": "Topics in Statistical Inference",
+    "section": "Distribution of the 40,000 Correlations",
+    "text": "Distribution of the 40,000 Correlations\n\n\n\n\n\n\n\n\nEven though every population correlation is zero, the largest sample correlation can be close to 0.8."
+  },
+  {
+    "objectID": "Week2.html#the-most-highly-correlated-feature",
+    "href": "Week2.html#the-most-highly-correlated-feature",
+    "title": "Topics in Statistical Inference",
+    "section": "The Most Highly Correlated Feature",
+    "text": "The Most Highly Correlated Feature\n\n\n\n\n\n\n\n\nThe fitted red line is a severely inflated sample effect created by selecting the largest of 40,000 correlations. The true population relationship is flat."
+  },
+  {
+    "objectID": "Week2.html#lessons-from-the-simulation",
+    "href": "Week2.html#lessons-from-the-simulation",
+    "title": "Topics in Statistical Inference",
+    "section": "Lessons from the Simulation",
+    "text": "Lessons from the Simulation\n\nPassing a stringent threshold is difficult, for example, Bonferroni gives \\(\\frac{0.05}{40000}=1.25\\times10^{-6}.\\)\nNevertheless, when FWER is controlled at 5%, a false positive can still occur with probability up to 5%.\nIf a feature passes the threshold by chance, its reported sample effect size may appear very large even though the population effect is zero.\nEffect sizes from features selected after many comparisons can be severely inflated."
+  },
+  {
+    "objectID": "Week2.html#lecture-summary",
+    "href": "Week2.html#lecture-summary",
+    "title": "Topics in Statistical Inference",
+    "section": "Lecture Summary",
+    "text": "Lecture Summary\n\nPermutation tests build a null distribution by rearranging the observed data under \\(H_0\\).\nWhen testing many hypotheses, the chance of at least one false positive can be much larger than the per-test Type I error rate.\nFWER controls the probability of any false positive; FDR controls the expected proportion of false discoveries among rejected hypotheses.\nBonferroni is simple but can be conservative; permutation methods can account for dependence among tests.\nSelection and testing with the same data can inflate error rates and effect-size estimates.\n\n\nAnnouncements: Assignment 1 now available on course website! Due Oct. 2nd\nNext Class: Linear Models"
+  },
+  {
+    "objectID": "Week2.html#review",
+    "href": "Week2.html#review",
+    "title": "Topics in Statistical Inference",
+    "section": "Review",
+    "text": "Review\nTo review the topics we discussed from last lecture, we will do an activity. In this week’s announcement I asked you all to read the paper “Chocolate with high Cocoa content as a weight-loss accelerator” by Bohannon et al.\n\nWith 2-3 other people around you, go through the paper (a pdf can be found on the course website) and think about the following questions:\n\nWhat is the research question?\nWho is the population? How did the researches sample that population?\nWhat do you think of the study design?\nAre the results valid?\nWould you be able to reproduce this study?"
+  },
+  {
+    "objectID": "Week2.html#permutation-test-for-other-methods",
+    "href": "Week2.html#permutation-test-for-other-methods",
+    "title": "Topics in Statistical Inference",
+    "section": "Permutation Test for Other Methods",
+    "text": "Permutation Test for Other Methods\nSuppose we are testing \\(H_0:\\rho_{XY}=0\\) for the simple linear regression \\(Y\\sim X\\).\nUnder \\(H_0\\), we can randomly shuffle the order of \\(X\\) to break its relationship with \\(Y\\) while preserving the observed values of both variables."
+  },
+  {
+    "objectID": "Week2.html#permutation-test-for-other-methods-1",
+    "href": "Week2.html#permutation-test-for-other-methods-1",
+    "title": "Topics in Statistical Inference",
+    "section": "Permutation Test for Other Methods",
+    "text": "Permutation Test for Other Methods\nConsider\n\\[\ny_i=\\beta_0+x_i\\beta_1+z_i\\beta_2+w_i\\beta_3+\\epsilon_i,\n\\qquad\nH_0:\\beta_1=\\beta_2=0.\n\\]\nHere, \\(\\beta_1\\) and \\(\\beta_2\\) describe the effects of \\(x_i\\) and \\(z_i\\) on \\(E(Y_i)\\) while controlling for \\(w_i\\).\n\n\nPossible methods to shuffle:\n\nWe cannot shuffle \\(w_i\\): this does not break the relationship between \\((x_i,z_i)\\) and \\(y_i\\).\nWe should not shuffle \\(y_i\\): this also breaks the relationship between \\(y_i\\) and \\(w_i\\).\nWe should not shuffle \\(x_i\\) and \\(z_i\\) separately: their dependence should be preserved.\nWe can shuffle the pairs \\((x_i,z_i)\\) together. This preserves their mutual dependence and leaves the relationship between \\(y_i\\) and \\(w_i\\) intact."
+  },
+  {
+    "objectID": "Week2.html#the-jelly-bean-experiment-1",
+    "href": "Week2.html#the-jelly-bean-experiment-1",
+    "title": "Topics in Statistical Inference",
+    "section": "The Jelly Bean Experiment",
+    "text": "The Jelly Bean Experiment"
+  },
+  {
+    "objectID": "Week2.html#examples-from-genetics-genome-wide-association-study",
+    "href": "Week2.html#examples-from-genetics-genome-wide-association-study",
+    "title": "Topics in Statistical Inference",
+    "section": "Examples from Genetics: Genome-Wide Association Study",
+    "text": "Examples from Genetics: Genome-Wide Association Study\n\nA genome-wide association study fits a model relating a trait (e.g. cholesterol level) to each genetic variant.\nA modern GWAS may test approximately 4–5 million variants.\nA commonly used significance threshold is \\(p&lt;5\\times10^{-8}.\\)\n\n\n\nHowles, S. A., Wiberg, A., Goldsworthy, M., Bayliss, A. L., Gluck, A. K., Ng, M., … & Furniss, D. (2019). Genetic variants of calcium and vitamin D metabolism in kidney stone disease. Nature communications, 10(1), 5175."
+  },
+  {
+    "objectID": "Week2.html#fwer-method-1-bonferroni-correction",
+    "href": "Week2.html#fwer-method-1-bonferroni-correction",
+    "title": "Topics in Statistical Inference",
+    "section": "FWER Method 1: Bonferroni Correction",
+    "text": "FWER Method 1: Bonferroni Correction\nTo control the FWER at level \\(\\alpha\\) across \\(m\\) tests, use the per-test threshold \\(\\alpha^*=\\frac{\\alpha}{m}.\\)\nThen, the FWER would be:\n\\[\n\\begin{aligned}\n\\operatorname{FWER}\n&=P_{H_0}(\\text{at least one of m null hypotheses are rejected}) \\\\\n&=P_{H_0}\\!\\left(\\bigcup_{j=1}^{m}\n\\left\\{p_j\\leq\\frac{\\alpha}{m}\\right\\}\\right)\\\\\n&\\leq\\sum_{j=1}^{m}P_{H_0}\\!\\left(p_j\\leq\\frac{\\alpha}{m}\\right)\\\\\n&=m\\left(\\frac{\\alpha}{m}\\right)=\\alpha.\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "Week2.html#fwer-method-1-bonferroni-correction-1",
+    "href": "Week2.html#fwer-method-1-bonferroni-correction-1",
+    "title": "Topics in Statistical Inference",
+    "section": "FWER Method 1: Bonferroni Correction",
+    "text": "FWER Method 1: Bonferroni Correction\n\nBonferronni correction is very simple and guaranteed to control FWER: \\(\\operatorname{FWER}\\leq\\alpha\\).\nCan be conservative because the bound may be strict.\nIn the dead salmon study, \\(p&lt;0.001\\) would control FWER at 5% only if there were 50 tests:\n\n\\[\n0.001=\\frac{0.05}{50}.\n\\]\nWith many more voxels, that threshold is too loose."
+  },
+  {
+    "objectID": "Week2.html#fwer-method-2-permutation",
+    "href": "Week2.html#fwer-method-2-permutation",
+    "title": "Topics in Statistical Inference",
+    "section": "FWER Method 2: Permutation",
+    "text": "FWER Method 2: Permutation\nControlling FWER is equivalent to setting a threshold for \\(p_{\\min}=\\min\\{p_1,\\ldots,p_m\\}\\) or, for one-sided tests, \\(T_{\\max}=\\max\\{t_1,\\ldots,t_m\\}.\\)\nAt least one rejected hypothesis is equivalent to the minimum \\(p\\)-value crossing its threshold, or the maximum test statistic crossing its threshold.\n\nPermuation testing allows us to set a threshold for the maximum test statistic, providing a method to control FWER.\nPermutation-based control of FWER is exact, and does not depend on independence assumptions of p values."
+  },
+  {
+    "objectID": "Week2.html#fwer-method-2-permutation-1",
+    "href": "Week2.html#fwer-method-2-permutation-1",
+    "title": "Topics in Statistical Inference",
+    "section": "FWER Method 2: Permutation",
+    "text": "FWER Method 2: Permutation\n ## FWER Method 2: Permutation"
+  },
+  {
+    "objectID": "Week2.html#fwer-method-2-permutation-2",
+    "href": "Week2.html#fwer-method-2-permutation-2",
+    "title": "Topics in Statistical Inference",
+    "section": "FWER Method 2: Permutation",
+    "text": "FWER Method 2: Permutation"
+  },
+  {
+    "objectID": "Week2.html#false-discovery-rate-fdr-implementation-in-r",
+    "href": "Week2.html#false-discovery-rate-fdr-implementation-in-r",
+    "title": "Topics in Statistical Inference",
+    "section": "False Discovery Rate (FDR): Implementation in R",
+    "text": "False Discovery Rate (FDR): Implementation in R\n\nChoose the desired FDR level, such as 5% and obtain the raw \\(p\\)-values.\nUse p.adjust() to calculate FDR-adjusted \\(p\\)-values.\nDeclare adjusted \\(p\\)-values below 0.05 significant.\n\n\n\n\n\n\n\n\n\nIn this example, hypotheses 1 and 4 are rejected."
+  },
+  {
+    "objectID": "Week2.html#simulation-a-correlation-of-0.8-by-chance-1",
+    "href": "Week2.html#simulation-a-correlation-of-0.8-by-chance-1",
+    "title": "Topics in Statistical Inference",
+    "section": "Simulation: A Correlation of 0.8 by Chance",
+    "text": "Simulation: A Correlation of 0.8 by Chance\n\n\n\n\n\n\n\n\nEven though every population correlation is zero, the largest sample correlation can be close to 0.8."
+  },
+  {
+    "objectID": "Week2.html#simulation-a-correlation-of-0.8-by-chance-2",
+    "href": "Week2.html#simulation-a-correlation-of-0.8-by-chance-2",
+    "title": "Topics in Statistical Inference",
+    "section": "Simulation: A Correlation of 0.8 by Chance",
+    "text": "Simulation: A Correlation of 0.8 by Chance\n\n\n\n\n\n\n\n\nThe fitted red line is a severely inflated sample effect created by selecting the largest of 40,000 correlations. The true population relationship is flat."
   }
 ]

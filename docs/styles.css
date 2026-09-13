@@ -74,3 +74,49 @@
   line-height: 1.2;
   margin-top: 0.5em;
 }
+
+/* Algorithm box */
+.reveal .algorithm-box {
+  border: 2px solid #7a263a;
+  border-radius: 10px;
+  padding: 0.8em 1.2em;
+  margin: 0.8em 0;
+  background-color: rgba(122, 38, 58, 0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Algorithm title */
+.reveal .algorithm-box h3 {
+  color: #7a263a;
+  margin-top: 0;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid rgba(122, 38, 58, 0.3);
+}
+
+/* Algorithm steps */
+.reveal .algorithm-box ol {
+  margin-left: 1.2em;
+}
+
+.reveal .algorithm-box li {
+  margin-bottom: 0.4em;
+}
+
+/* Live annotation / notes box */
+.annotation-box {
+  width: 100%;
+  min-height: 140px;
+  padding: 15px 18px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.4;
+
+  background-color: #fffdf5;
+  border: 2px solid #d6c98e;
+  border-radius: 8px;
+
+  resize: vertical;
+  box-sizing: border-box;
+}

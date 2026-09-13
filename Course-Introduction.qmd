@@ -112,7 +112,6 @@ This means that the following is assumed to have been learned:
 
 <br>
 
-::: fragment
 **Course Webpage**: Main source of information -- Check regularly!
 
 <br>
@@ -126,7 +125,6 @@ This means that the following is assumed to have been learned:
 <br>
 
 **Crowdmark**: We will use Crowdmark for assignment submission on Quercus.
-:::
 
 ## Delivery Details
 
@@ -136,7 +134,7 @@ Unless otherwise specified, lectures will be held in-person.
 | Section | Category                  | Time        | Location |
 |:-------:|:--------------------------|:------------|:---------|
 | LEC0101 | Lectures                  | Fri (2-5pm) | SS 1073  |
-|         | Instructor's Office Hours | Mon (2–3pm) | OPG 9165 |
+|         | Instructor's Office Hours | Mon (2–3pm) | Online, Quercus for link |
 :::
 
 ## Tentative Course Schedule {.scrollable}
@@ -158,7 +156,7 @@ Unless otherwise specified, lectures will be held in-person.
 
 ## Email Policy
 
-**Course Email**:
+**Course Email**: sta442\@course.utoronto.ca
 
 -   Instructor and TAs will not respond to emails sent to individual accounts
 -   *Response Time*: It will take 24 – 48 hours to respond to emails. I will only respond during working hours (Monday – Friday, 9am – 5pm).
@@ -169,7 +167,8 @@ Unless otherwise specified, lectures will be held in-person.
 For questions...
 
 -   If it is about course material such as lectures / tutorials, or clarification question, post it to Piazza so that other students will benefit.
--   If it is related with solving practical problem sets, use the office hours
+-   If it is related with solving assignments, use the office hours 
+-   If it is related to administrative inquiries, email
 :::
 
 ## Course Grading Scheme
@@ -190,7 +189,7 @@ For questions...
 
 <br>
 
-**Thanksgiving**: October 12th (no classes, no office hours)
+**Thanksgiving**: October 12th (no office hours)
 
 <br>
 
