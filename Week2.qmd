@@ -70,10 +70,6 @@ $$
 
 :::{.fragment}
 The two-sample $t$-test gives a $p$-value of approximately $0.122$.
-
-```{webr}
-t.test()$p.value
-```
 ::: 
 
 ## Why Consider a Permutation Test?
