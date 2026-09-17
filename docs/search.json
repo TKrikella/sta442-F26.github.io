@@ -606,7 +606,7 @@
     "href": "Week2.html#the-dead-salmon-experiment-result",
     "title": "Topics in Statistical Inference",
     "section": "The Dead Salmon Experiment: Result",
-    "text": "The Dead Salmon Experiment: Result\nSeveral apparently active voxels were identified inside the salmon’s brain cavity, even though no voxel should truly activate.\nQuestion: What went wrong?\n\n\nLyon, L. (2017). Dead salmon and voodoo correlations: should we be sceptical about functional MRI?. Brain, 140(8), e53-e53."
+    "text": "The Dead Salmon Experiment: Result\nSeveral apparently active voxels were identified using \\(\\alpha = 0.001\\) inside the salmon’s brain cavity, even though no voxel should truly activate.\nQuestion: What went wrong?\n\n\nLyon, L. (2017). Dead salmon and voodoo correlations: should we be sceptical about functional MRI?. Brain, 140(8), e53-e53."
   },
   {
     "objectID": "Week2.html#simulation-in-r",
@@ -627,7 +627,7 @@
     "href": "Week2.html#repeating-the-simulation-1",
     "title": "Topics in Statistical Inference",
     "section": "Repeating the Simulation",
-    "text": "Repeating the Simulation"
+    "text": "Repeating the Simulation\n\n\n\n\n\n\n\nWhen there are 50 jelly beans and \\(p &lt; 0.05\\) rule is applied, there is a \\(92\\%\\) chance that at least one false positive jelly bean is detected."
   },
   {
     "objectID": "Week2.html#how-often-do-we-get-a-false-positive",
@@ -655,7 +655,7 @@
     "href": "Week2.html#what-determines-the-fwer",
     "title": "Topics in Statistical Inference",
     "section": "What Determines the FWER?",
-    "text": "What Determines the FWER?\n\nNumber of tests: More tests require a more stringent threshold.\nDesired FWER: Often set to 5%.\n\nIf 20 independent null hypotheses are each tested at \\(\\alpha=0.05\\), then \\(P(\\text{at least one false positive}) \\approx 0.64.\\)"
+    "text": "What Determines the FWER?\n\nNumber of tests: More tests require a more stringent threshold.\nDesired FWER: Often set to 5%.\n\n\n\nIf 20 independent null hypotheses are each tested at \\(\\alpha=0.05\\), then\n\\[\n\\begin{aligned}\nP(\\text{at least one false positive})\n&= 1 - P(\\text{no false positives}) \\\\\n&= 1 - (1 - 0.05)^{20} \\\\\n&= 1 - (0.95)^{20} \\\\\n&\\approx 1 - 0.3585 \\\\\n&\\approx 0.6415.\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "Week2.html#bonferroni-correction",
@@ -711,7 +711,7 @@
     "href": "Week2.html#false-discovery-rate-fdr-1",
     "title": "Topics in Statistical Inference",
     "section": "False Discovery Rate (FDR)",
-    "text": "False Discovery Rate (FDR)\n\n\n\nDecision\n\\(H_0\\) is true\n\\(H_0\\) is false\nTotal\n\n\n\n\nReject \\(H_0\\)\n\\(V\\)\n\\(S\\)\n\\(R\\)\n\n\nDo not reject \\(H_0\\)\n\\(U\\)\n\\(W\\)\n\\(m-R\\)\n\n\nTotal\n\\(m_0\\)\n\\(m-m_0\\)\n\\(m\\)\n\n\n\nFDR controls the expected proportion of false positives among the hypotheses you rejected \\((V/R)\\).\n\nIf FDR is controlled at 5%, approximately 5% of the statistically significant findings are expected to be false positives in the long run.\n- FDR is more lenient than FWER: it tolerates some false positives in exchange for greater ability to identify real effects."
+    "text": "False Discovery Rate (FDR)\n\n\n\nDecision\n\\(H_0\\) is true\n\\(H_0\\) is false\nTotal\n\n\n\n\nReject \\(H_0\\)\n\\(V\\)\n\\(S\\)\n\\(R\\)\n\n\nDo not reject \\(H_0\\)\n\\(U\\)\n\\(W\\)\n\\(m-R\\)\n\n\nTotal\n\\(m_0\\)\n\\(m-m_0\\)\n\\(m\\)\n\n\n\nFDR controls the expected proportion of false positives among the hypotheses you rejected \\((V/R)\\).\n\n\nIf FDR is controlled at 5%, approximately 5% of the statistically significant findings are expected to be false positives in the long run.\n\nFDR is more lenient than FWER: it tolerates some false positives in exchange for greater ability to identify real effects."
   },
   {
     "objectID": "Week2.html#fdr-adjustment-in-r",
@@ -725,7 +725,7 @@
     "href": "Week2.html#when-should-we-choose-fwer-or-fdr",
     "title": "Topics in Statistical Inference",
     "section": "When Should We Choose FWER or FDR?",
-    "text": "When Should We Choose FWER or FDR?\nMake this choice before analyzing the data to avoid p-hacking.\nGeneral recommendations: - Use FWER when you care about the specific hypotheses being tested, i.e. you want to minimize the risk of any false positives for individual comparisons.\n\nChoose FDR when you care more about the number of significant findings (for further investigations) rather than the specific hypotheses.\n\nDo not choose FDR simply because it produces more significant findings."
+    "text": "When Should We Choose FWER or FDR?\nMake this choice before analyzing the data to avoid p-hacking.\n\n\nGeneral recommendations:\n\nUse FWER when you care about the specific hypotheses being tested, i.e. you want to minimize the risk of any false positives for individual comparisons.\nChoose FDR when you care more about the number of significant findings (for further investigations) rather than the specific hypotheses.\n\n\n\n\nDo not choose FDR simply because it produces more significant findings."
   },
   {
     "objectID": "Week2.html#an-apparently-reasonable-analysis",
@@ -739,14 +739,14 @@
     "href": "Week2.html#whats-wrong-with-the-previous-analysis",
     "title": "Topics in Statistical Inference",
     "section": "What’s Wrong with the Previous Analysis?",
-    "text": "What’s Wrong with the Previous Analysis?\n\nDouble dipping: The same data were used first to select the 500 strongest correlations and then to test them.\nThe procedure resembles a multiple-comparison correction, but it does not properly control FWER.\n\nValid alternatives:\n\nPre-specify the 500 voxels before examining the data, then test them using \\(p&lt;0.05/500\\).\nApply Bonferroni correction to all 100,000 voxels using \\(p&lt;0.05/100000\\)."
+    "text": "What’s Wrong with the Previous Analysis?\n\nDouble dipping: The same data were used first to select the 500 strongest correlations and then to test them.\nThe procedure resembles a multiple-comparison correction, but it does not properly control FWER.\n\n\n\nValid alternatives:\n\nPre-specify the 500 voxels before examining the data, then test them using \\(p&lt;0.05/500\\).\nApply Bonferroni correction to all 100,000 voxels using \\(p&lt;0.05/100000\\)."
   },
   {
     "objectID": "Week2.html#voodoo-correlations",
     "href": "Week2.html#voodoo-correlations",
     "title": "Topics in Statistical Inference",
     "section": "“Voodoo” Correlations",
-    "text": "“Voodoo” Correlations\nSome fMRI studies of emotion, personality, and social cognition reported extremely high (sometimes greater than 0.8) correlations between brain activation and personality measures.\n\nNeuroimaging measurements are noisy and often have low reliability.\nBehavioural measurements, such as reaction time and accuracy, are also noisy.\nHow can two noisy measurements correlate above 0.8, sometimes with fewer than 25 subjects?\n\n\nVul, E., Harris, C., Winkielman, P., & Pashler, H. (2009). Puzzlingly high correlations in fMRI studies of emotion, personality, and social cognition. Perspectives on psychological science, 4(3), 274-290."
+    "text": "“Voodoo” Correlations\nSome fMRI studies of emotion, personality, and social cognition reported extremely high (sometimes greater than 0.8) correlations between brain activation and personality measures.\n\n\nNeuroimaging measurements are noisy and often have low reliability.\nBehavioural measurements, such as reaction time and accuracy, are also noisy.\nHow can two noisy measurements correlate above 0.8, sometimes with fewer than 25 subjects?\n\n\n\nVul, E., Harris, C., Winkielman, P., & Pashler, H. (2009). Puzzlingly high correlations in fMRI studies of emotion, personality, and social cognition. Perspectives on psychological science, 4(3), 274-290."
   },
   {
     "objectID": "Week2.html#simulation-a-correlation-of-0.8-by-chance",
@@ -823,28 +823,28 @@
     "href": "Week2.html#fwer-method-1-bonferroni-correction",
     "title": "Topics in Statistical Inference",
     "section": "FWER Method 1: Bonferroni Correction",
-    "text": "FWER Method 1: Bonferroni Correction\nTo control the FWER at level \\(\\alpha\\) across \\(m\\) tests, use the per-test threshold \\(\\alpha^*=\\frac{\\alpha}{m}.\\)\nThen, the FWER would be:\n\\[\n\\begin{aligned}\n\\operatorname{FWER}\n&=P_{H_0}(\\text{at least one of m null hypotheses are rejected}) \\\\\n&=P_{H_0}\\!\\left(\\bigcup_{j=1}^{m}\n\\left\\{p_j\\leq\\frac{\\alpha}{m}\\right\\}\\right)\\\\\n&\\leq\\sum_{j=1}^{m}P_{H_0}\\!\\left(p_j\\leq\\frac{\\alpha}{m}\\right)\\\\\n&=m\\left(\\frac{\\alpha}{m}\\right)=\\alpha.\n\\end{aligned}\n\\]"
+    "text": "FWER Method 1: Bonferroni Correction\nTo control the FWER at level \\(\\alpha\\) across \\(m\\) tests, use the per-test threshold \\(\\alpha^*=\\frac{\\alpha}{m}.\\)\nRecall that \\(P(A \\cup B) \\leq P(A) + P(B)\\).\n\n\nThen, the FWER would be:\n\\[\n\\begin{aligned}\n\\operatorname{FWER}\n&= P_{H_0}(\\text{at least one of the $m$ null hypotheses is rejected}) \\\\\n&= P_{H_0}\\left(\n\\bigcup_{j=1}^{m}\n\\left\\{p_j \\leq \\frac{\\alpha}{m}\\right\\}\n\\right) \\\\\n&\\leq \\sum_{j=1}^{m}\nP_{H_0}\\left(\np_j \\leq \\frac{\\alpha}{m}\n\\right) \\\\\n&= m\\left(\\frac{\\alpha}{m}\\right) \\\\\n&= \\alpha.\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "Week2.html#fwer-method-1-bonferroni-correction-1",
     "href": "Week2.html#fwer-method-1-bonferroni-correction-1",
     "title": "Topics in Statistical Inference",
     "section": "FWER Method 1: Bonferroni Correction",
-    "text": "FWER Method 1: Bonferroni Correction\n\nBonferronni correction is very simple and guaranteed to control FWER: \\(\\operatorname{FWER}\\leq\\alpha\\).\nCan be conservative because the bound may be strict.\nIn the dead salmon study, \\(p&lt;0.001\\) would control FWER at 5% only if there were 50 tests:\n\n\\[\n0.001=\\frac{0.05}{50}.\n\\]\nWith many more voxels, that threshold is too loose."
+    "text": "FWER Method 1: Bonferroni Correction\n\nBonferronni correction is very simple and guaranteed to control FWER: (\\(\\operatorname{FWER}\\leq\\alpha\\)).\nCan be conservative because the bound may be strict.\nIn the dead salmon study, \\(p&lt;0.001\\) would control FWER at 5% only if there were 50 tests:\n\n\\[\n0.001=\\frac{0.05}{50}.\n\\]\nWith many more voxels, that threshold is too loose."
   },
   {
     "objectID": "Week2.html#fwer-method-2-permutation",
     "href": "Week2.html#fwer-method-2-permutation",
     "title": "Topics in Statistical Inference",
     "section": "FWER Method 2: Permutation",
-    "text": "FWER Method 2: Permutation\nControlling FWER is equivalent to setting a threshold for \\(p_{\\min}=\\min\\{p_1,\\ldots,p_m\\}\\) or, for one-sided tests, \\(T_{\\max}=\\max\\{t_1,\\ldots,t_m\\}.\\)\nAt least one rejected hypothesis is equivalent to the minimum \\(p\\)-value crossing its threshold, or the maximum test statistic crossing its threshold.\n\nPermuation testing allows us to set a threshold for the maximum test statistic, providing a method to control FWER.\nPermutation-based control of FWER is exact, and does not depend on independence assumptions of p values."
+    "text": "FWER Method 2: Permutation\nControlling FWER is equivalent to setting a threshold for \\(p_{\\min}=\\min\\{p_1,\\ldots,p_m\\}\\) or, for one-sided tests, \\(T_{\\max}=\\max\\{t_1,\\ldots,t_m\\}.\\)\nAt least one rejected hypothesis is equivalent to the minimum \\(p\\)-value crossing its threshold, or the maximum test statistic crossing its threshold.\n \n\nPermuation testing allows us to set a threshold for the maximum test statistic, providing a method to control FWER.\nPermutation-based control of FWER is exact, and does not depend on independence assumptions of p values."
   },
   {
     "objectID": "Week2.html#fwer-method-2-permutation-1",
     "href": "Week2.html#fwer-method-2-permutation-1",
     "title": "Topics in Statistical Inference",
     "section": "FWER Method 2: Permutation",
-    "text": "FWER Method 2: Permutation\n ## FWER Method 2: Permutation"
+    "text": "FWER Method 2: Permutation\nSuppose we are testing \\(m\\) hypotheses simultaneously.\n\nPermutation Procedure\n\nCalculate the observed test statistics: \\[\nT_1,\\ldots,T_m.\n\\]\nPermute the data under \\(H_0\\) and recompute all \\(m\\) test statistics.\nFor permutation \\(b\\), keep only the most extreme statistic: \\[\nT_{\\max}^{(b)}=\\max_j |T_j^{(b)}|.\n\\]\nRepeat for \\(b=1,\\ldots,B\\) to form the null distribution of \\(T_{\\max}\\).\nFor \\(\\alpha=0.05\\), use the 95th percentile as the cutoff \\(c\\).\nReject \\(H_{0j}\\) if \\[\n|T_j|&gt;c.\n\\]"
   },
   {
     "objectID": "Week2.html#fwer-method-2-permutation-2",
@@ -880,5 +880,19 @@
     "title": "STA442",
     "section": "Office Hours",
     "text": "Office Hours\nOffice hours will be held online through Zoom. See Quercus for links.\nTatiana: Mondays, 2pm-3pm"
+  },
+  {
+    "objectID": "Week2.html#what-determines-the-fwer-1",
+    "href": "Week2.html#what-determines-the-fwer-1",
+    "title": "Topics in Statistical Inference",
+    "section": "What Determines the FWER",
+    "text": "What Determines the FWER"
+  },
+  {
+    "objectID": "Week2.html#fwer-method-2-permutation-3",
+    "href": "Week2.html#fwer-method-2-permutation-3",
+    "title": "Topics in Statistical Inference",
+    "section": "FWER Method 2: Permutation",
+    "text": "FWER Method 2: Permutation"
   }
 ]

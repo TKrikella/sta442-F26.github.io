@@ -120,3 +120,7 @@
   resize: vertical;
   box-sizing: border-box;
 }
+
+.cell-output-stdout {
+  font-size: 1.5em; /* Makes text 20% larger */
+}

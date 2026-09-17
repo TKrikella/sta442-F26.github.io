@@ -203,6 +203,7 @@ y_i=\beta_0+x_i\beta_1+z_i\beta_2+w_i\beta_3+\epsilon_i,
 H_0:\beta_1=\beta_2=0.
 $$
 
+
 Here, $\beta_1$ and $\beta_2$ describe the effects of $x_i$ and $z_i$ on $E(Y_i)$ while controlling for $w_i$.
 
 <br> 
@@ -291,7 +292,7 @@ Bennett, C. M., Miller, M. B., & Wolford, G. L. (2009). Neural correlates of int
 
 ## The Dead Salmon Experiment: Result
 
-Several apparently active voxels were identified inside the salmon's brain cavity, even though no voxel should truly activate.
+Several apparently active voxels were identified using $\alpha = 0.001$ inside the salmon's brain cavity, even though no voxel should truly activate.
 
 [Question]{style="color: maroon;"}: What went wrong? 
 
@@ -339,38 +340,19 @@ To estimate how often the $p<0.05$ rule produces at least one false positive:
 
 ## Repeating the Simulation
 
-```{webr}
-set.seed(442)
+:::::::: columns
+::::: {.column width="50%"}
 
-false_positives <- numeric(10000)
+![](images/Week2-FalsePositives.png){fig-align="center" width="60%"}
 
-for (sim in seq_len(10000)) {
-  data <- matrix(rnorm(10 * 50), nrow = 10, ncol = 50)
-  pvalues <- numeric(50)
+When there are 50 jelly beans and $p < 0.05$ rule is applied, there is a $92\%$ chance that at least one false positive jelly bean is detected.
+:::::
 
-  for (j in seq_len(50)) {
-    pvalues[j] <- t.test(data[, j], mu = 0)$p.value
-  }
+:::: {.column width="50%"}
 
-  false_positives[sim] <- sum(pvalues < 0.05)
-}
-
-mean(false_positives > 0)
-```
-
-## How Often Do We Get a False Positive?
-
-```{webr}
-barplot(
-  table(false_positives),
-  col = "#b7c9e2",
-  border = "white",
-  xlab = "Number of false positives",
-  ylab = "Frequency"
-)
-```
-
-When 50 null hypotheses are tested separately at $\alpha=0.05$, there is approximately a **92% chance** of observing at least one false positive.
+![](images/Week2-Code.png){fig-align="center" width="75%"}
+::::
+::::::::
 
 ## Accounting for Multiple Comparisons
 
@@ -392,31 +374,60 @@ The choice between FWER and FDR should depend on the research context and the go
 -   **Number of tests:** More tests require a more stringent threshold.
 -   **Desired FWER:** Often set to 5%.
 
-If 20 independent null hypotheses are each tested at $\alpha=0.05$, then $P(\text{at least one false positive}) \approx 0.64.$
+<br> 
+
+:::{.fragment}
+If 20 independent null hypotheses are each tested at $\alpha=0.05$, then 
+
+$$
+\begin{aligned}
+P(\text{at least one false positive})
+&= 1 - P(\text{no false positives}) \\
+&= 1 - (1 - 0.05)^{20} \\
+&= 1 - (0.95)^{20} \\
+&\approx 1 - 0.3585 \\
+&\approx 0.6415.
+\end{aligned}
+$$
+::: 
+
+## What Determines the FWER
 
 ![](images/Week2-FWER.png){fig-align="center" width="60%"}
 
-
 ## FWER Method 1: Bonferroni Correction
 
-To control the FWER at level $\alpha$ across $m$ tests, use the per-test threshold $\alpha^*=\frac{\alpha}{m}.$
+To control the FWER at level $\alpha$ across $m$ tests, use the per-test threshold $\alpha^*=\frac{\alpha}{m}.$ 
 
+Recall that $P(A \cup B) \leq P(A) + P(B)$.
+
+<br> 
+
+:::{.fragment}
 Then, the FWER would be:
 
 $$
 \begin{aligned}
 \operatorname{FWER} 
-&=P_{H_0}(\text{at least one of m null hypotheses are rejected}) \\
-&=P_{H_0}\!\left(\bigcup_{j=1}^{m}
-\left\{p_j\leq\frac{\alpha}{m}\right\}\right)\\
-&\leq\sum_{j=1}^{m}P_{H_0}\!\left(p_j\leq\frac{\alpha}{m}\right)\\
-&=m\left(\frac{\alpha}{m}\right)=\alpha.
+&= P_{H_0}(\text{at least one of the $m$ null hypotheses is rejected}) \\
+&= P_{H_0}\left(
+\bigcup_{j=1}^{m}
+\left\{p_j \leq \frac{\alpha}{m}\right\}
+\right) \\
+&\leq \sum_{j=1}^{m}
+P_{H_0}\left(
+p_j \leq \frac{\alpha}{m}
+\right) \\
+&= m\left(\frac{\alpha}{m}\right) \\
+&= \alpha.
 \end{aligned}
 $$
+:::
+
 
 ## FWER Method 1: Bonferroni Correction
 
--   Bonferronni correction is very simple and guaranteed to control FWER: $\operatorname{FWER}\leq\alpha$.
+-   Bonferronni correction is very simple and guaranteed to control FWER: ($\operatorname{FWER}\leq\alpha$).
 -   Can be conservative because the bound may be strict.
 -   In the dead salmon study, $p<0.001$ would control FWER at 5% only if there were 50 tests:
 
@@ -432,6 +443,9 @@ Controlling FWER is equivalent to setting a threshold for $p_{\min}=\min\{p_1,\l
 
 At least one rejected hypothesis is equivalent to the minimum $p$-value crossing its threshold, or the maximum test statistic crossing its threshold. 
 
+<br> 
+<br>
+
 :::{.fragment}
 Permuation testing allows us to set a threshold for the maximum test statistic, providing a method to control FWER.
 
@@ -440,10 +454,32 @@ Permutation-based control of FWER is exact, and does not depend on independence 
 
 ## FWER Method 2: Permutation
 
-![](images/Week2-FWERPerm1.png){fig-align="center" width="80%"}
-## FWER Method 2: Permutation
+Suppose we are testing $m$ hypotheses simultaneously.
 
-![](images/Week2-FWERPerm2.png){fig-align="center" width="80%"}
+::: algorithm-box
+**Permutation Procedure**
+
+1. Calculate the observed test statistics:
+   $$
+   T_1,\ldots,T_m.
+   $$
+
+2. Permute the data under $H_0$ and recompute all $m$ test statistics.
+
+3. For permutation $b$, keep only the most extreme statistic:
+   $$
+   T_{\max}^{(b)}=\max_j |T_j^{(b)}|.
+   $$
+
+4. Repeat for $b=1,\ldots,B$ to form the null distribution of $T_{\max}$.
+
+5. For $\alpha=0.05$, use the 95th percentile as the cutoff $c$.
+
+6. Reject $H_{0j}$ if
+   $$
+   |T_j|>c.
+   $$
+:::
 
 ## FWER Method 2: Permutation
 
@@ -454,15 +490,19 @@ y <- rnorm(20)                 # 20 subjects
 X <- matrix(rnorm(20 * 40),    # 20 subjects, 40 features
             nrow = 20)
 
-observed_max <- max(abs(cor(X, y)))
+# we want to test the hypothesis: H_0: correlation_j=0
+observed_max <- max(abs(cor(X, y))) # store max correlation
 permuted_max <- numeric(1000)
 
-for (b in seq_len(1000)) {
-  y_shuffled <- sample(y)
-  permuted_max[b] <- max(abs(cor(X, y_shuffled)))
+for (b in seq_len(1000)) { # repeat 1000 times
+  y_shuffled <- sample(y) # shuffle y
+  permuted_max[b] <- max(abs(cor(X, y_shuffled))) # recalculate correlations, take max one
 }
 
-mean(permuted_max >= observed_max) # permutation test p-value
+cutoff <- quantile(permuted_max, 0.95)
+cutoff
+
+observed_max > cutoff
 ```
 
 ## Permutation-Based FWER Control
@@ -516,11 +556,16 @@ When $m$ hypotheses are tested, each test belongs to one of four categories $(V,
 
 FDR controls the expected proportion of false positives among the *hypotheses you rejected* $(V/R)$.
 
+<br> 
+
 :::{.fragment}
 If FDR is controlled at 5%, approximately 5% of the statistically significant findings are expected to be false positives in the long run.
 
-    - FDR is more lenient than FWER: it tolerates some false positives in exchange for greater ability to identify real effects.
+<br> 
+
+FDR is more lenient than FWER: it tolerates some false positives in exchange for greater ability to identify real effects.
 :::
+
 ## False Discovery Rate (FDR): Implementation in R
 
 1.  Choose the desired FDR level, such as 5% and obtain the raw $p$-values.
@@ -540,12 +585,20 @@ In this example, hypotheses 1 and 4 are rejected.
 
 Make this choice **before** analyzing the data to avoid p-hacking.
 
-General recommendations: 
-  - Use FWER when you care about the [specific hypotheses]{style="color: maroon;"} being tested, i.e. you want to minimize the risk of any false positives for individual comparisons.
-  
-  - Choose FDR when you care more about the [number of significant findings]{style="color: maroon;"} (for further investigations) rather than the specific hypotheses.
+<br> 
 
+:::{.fragment}
+**General recommendations:** 
+
+  - Use FWER when you care about the [specific hypotheses]{style="color: maroon;"} being tested, i.e. you want to minimize the risk of any false positives for individual comparisons.
+  - Choose FDR when you care more about the [number of significant findings]{style="color: maroon;"} (for further investigations) rather than the specific hypotheses.
+::: 
+
+<br> 
+
+:::{.fragment}
 **Do not choose FDR simply because it produces more significant findings.**
+::: 
 
 # Inappropriate Uses of Multiple Comparisons
 
@@ -561,10 +614,14 @@ Suppose an fMRI dataset contains 100,000 voxels.
 -   **Double dipping:** The same data were used first to select the 500 strongest correlations and then to test them.
 -   The procedure resembles a multiple-comparison correction, but it does not properly control FWER.
 
+<br> 
+
+:::{.fragment}
 **Valid alternatives:**
 
 1.  Pre-specify the 500 voxels [before examining the data]{style="color: maroon;"}, then test them using $p<0.05/500$.
 2.  Apply Bonferroni correction to all 100,000 voxels using $p<0.05/100000$.
+::: 
 
 # Puzzlingly High Correlations
 
@@ -572,9 +629,11 @@ Suppose an fMRI dataset contains 100,000 voxels.
 
 Some fMRI studies of emotion, personality, and social cognition reported [extremely high (sometimes greater than 0.8) correlations]{style="color: maroon;"} between brain activation and personality measures.
 
+:::{.fragment}
 -   Neuroimaging measurements are [noisy]{style="color: maroon;"} and often have low reliability.
 -   Behavioural measurements, such as reaction time and accuracy, are also [noisy]{style="color: maroon;"}.
 -   How can two noisy measurements correlate above 0.8, sometimes with fewer than 25 subjects?
+::: 
 
 :::{.citation}
 Vul, E., Harris, C., Winkielman, P., & Pashler, H. (2009). Puzzlingly high correlations in fMRI studies of emotion, personality, and social cognition. Perspectives on psychological science, 4(3), 274-290.
