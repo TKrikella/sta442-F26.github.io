@@ -76,7 +76,7 @@ The two-sample $t$-test gives a $p$-value of approximately $0.122$.
 
 With such a small sample, the parametric $p$-value may be unreliable.
 
-Are there other methods when this is a concern?
+Can we test the hypothesis without relying as heavily on parametric assumptions?
 
 <br> 
 
@@ -220,7 +220,8 @@ Possible methods to shuffle:
 
 -   **Few distributional assumptions:** Unlike a parametric test, a permutation test does not assume a particular population distribution.
 -   **Versatile:** It can be used with many statistics, including differences in means, medians, variances, and correlations.
--   **Computationally intensive:** Many permutations may be needed, especially for large datasets.
+-   **Computationally intensive:** Many permutations may be needed, especially for large datasets.  
+-   We need to take care when permutating as to not break relationships that are allowed under the null hypothesis
 
 # Multiple Testing
 

@@ -515,7 +515,7 @@
     "href": "Week2.html#why-consider-a-permutation-test",
     "title": "Topics in Statistical Inference",
     "section": "Why Consider a Permutation Test?",
-    "text": "Why Consider a Permutation Test?\nWith such a small sample, the parametric \\(p\\)-value may be unreliable.\nAre there other methods when this is a concern?\n\n\nA permutation test is a non-parametric method that tests a null hypothesis by “rearranging” the observed data.\n\nKey Idea: If \\(H_0\\) is true (there is no difference between the population means) then swapping the group labels should not make a systematic difference."
+    "text": "Why Consider a Permutation Test?\nWith such a small sample, the parametric \\(p\\)-value may be unreliable.\nCan we test the hypothesis without relying as heavily on parametric assumptions?\n\n\nA permutation test is a non-parametric method that tests a null hypothesis by “rearranging” the observed data.\n\nKey Idea: If \\(H_0\\) is true (there is no difference between the population means) then swapping the group labels should not make a systematic difference."
   },
   {
     "objectID": "Week2.html#motivating-example-revisited",
@@ -578,7 +578,7 @@
     "href": "Week2.html#permutation-tests-summary",
     "title": "Topics in Statistical Inference",
     "section": "Permutation Tests: Summary",
-    "text": "Permutation Tests: Summary\n\nFew distributional assumptions: Unlike a parametric test, a permutation test does not assume a particular population distribution.\nVersatile: It can be used with many statistics, including differences in means, medians, variances, and correlations.\nComputationally intensive: Many permutations may be needed, especially for large datasets."
+    "text": "Permutation Tests: Summary\n\nFew distributional assumptions: Unlike a parametric test, a permutation test does not assume a particular population distribution.\nVersatile: It can be used with many statistics, including differences in means, medians, variances, and correlations.\nComputationally intensive: Many permutations may be needed, especially for large datasets.\n\nWe need to take care when permutating as to not break relationships that are allowed under the null hypothesis"
   },
   {
     "objectID": "Week2.html#the-jelly-bean-experiment",

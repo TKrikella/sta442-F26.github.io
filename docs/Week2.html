@@ -202,7 +202,7 @@ H_1:\mu_{\text{Drug}}&gt;\mu_{\text{Placebo}}.
 <section id="why-consider-a-permutation-test" class="slide level2">
 <h2>Why Consider a Permutation Test?</h2>
 <p>With such a small sample, the parametric <span class="math inline">\(p\)</span>-value may be unreliable.</p>
-<p>Are there other methods when this is a concern?</p>
+<p>Can we test the hypothesis without relying as heavily on parametric assumptions?</p>
 <p><br></p>
 <div class="fragment">
 <p>A <span style="color: maroon;"><strong>permutation test</strong></span> is a <em>non-parametric</em> method that tests a null hypothesis by “rearranging” the observed data.</p>
@@ -355,7 +355,9 @@ H_0:\beta_1=\beta_2=0.
 <ul>
 <li><strong>Few distributional assumptions:</strong> Unlike a parametric test, a permutation test does not assume a particular population distribution.</li>
 <li><strong>Versatile:</strong> It can be used with many statistics, including differences in means, medians, variances, and correlations.</li>
-<li><strong>Computationally intensive:</strong> Many permutations may be needed, especially for large datasets.</li>
+<li><strong>Computationally intensive:</strong> Many permutations may be needed, especially for large datasets.<br>
+</li>
+<li>We need to take care when permutating as to not break relationships that are allowed under the null hypothesis</li>
 </ul>
 </section></section>
 <section>
