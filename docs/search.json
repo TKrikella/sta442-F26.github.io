@@ -459,7 +459,7 @@
     "href": "index.html#announcements",
     "title": "STA442",
     "section": "Announcements",
-    "text": "Announcements\n\nThe Syllabus is available.\nAnnouncements will be through Quercus and here, on the course website."
+    "text": "Announcements\n\nAssignment 1 is now available, due October 2nd by 11:59pm. Read syllabus for late policy. Assignment is to be submitted through Crowdmark, link will become available soon.\nThe Syllabus is available.\nAnnouncements will be through Quercus and here, on the course website."
   },
   {
     "objectID": "index.html#computing",
@@ -894,5 +894,12 @@
     "title": "Topics in Statistical Inference",
     "section": "FWER Method 2: Permutation",
     "text": "FWER Method 2: Permutation"
+  },
+  {
+    "objectID": "index.html#assignments",
+    "href": "index.html#assignments",
+    "title": "STA442",
+    "section": "Assignments",
+    "text": "Assignments\n\n\n\n\nAssignment\nDue Date\n\n\n\n\nAssignment 1\nOctober 2, 11:59pm\n\n\nAssignment 2\nNovember 6, 11:59pm\n\n\nAssignment 3\nDecember 4, 11:59pm"
   }
 ]

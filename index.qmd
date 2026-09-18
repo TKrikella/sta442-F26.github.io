@@ -12,7 +12,19 @@ I have high expectations for this course, but I am also committed to creating a 
 
 I hope this course helps you develop the confidence to work with data independently and responsibly, and to approach statistical problems with curiosity, care, and a healthy degree of skepticism. I'm looking forward to a great semester with all of you!
 
+## Assignments 
+
+::: {.table-responsive}
+| Assignment | Due Date |
+|:----------:|:--------:|
+| [Assignment 1](STA442_Assignment1.pdf) | October 2, 11:59pm |
+| Assignment 2 | November 6, 11:59pm |
+| Assignment 3 | December 4, 11:59pm |
+:::
+
 ## Announcements
+
+- Assignment 1 is now available, due October 2nd by 11:59pm. Read syllabus for late policy. Assignment is to be submitted through Crowdmark, link will become available soon.
 
 -   The [Syllabus](STA442-Syllabus.pdf) is available.
 
