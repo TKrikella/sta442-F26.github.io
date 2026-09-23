@@ -24,6 +24,8 @@ I hope this course helps you develop the confidence to work with data independen
 
 ## Announcements
 
+- The Department of Statistical Sciences is hosting a graduate school open house on Saturday, September 26th. [See the website](https://www.statistics.utoronto.ca/events/doss-graduate-school-open-house) for more information, and to register!
+
 - Assignment 1 is now available, due October 2nd by 11:59pm. Read syllabus for late policy. Assignment is to be submitted through Crowdmark, link will become available soon.
 
 -   The [Syllabus](STA442-Syllabus.pdf) is available.
