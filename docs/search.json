@@ -901,5 +901,544 @@
     "title": "STA442",
     "section": "Assignments",
     "text": "Assignments\n\n\n\n\nAssignment\nDue Date\n\n\n\n\nAssignment 1\nOctober 2, 11:59pm\n\n\nAssignment 2\nNovember 6, 11:59pm\n\n\nAssignment 3\nDecember 4, 11:59pm"
+  },
+  {
+    "objectID": "Weeks3-4.html#review-case-study",
+    "href": "Weeks3-4.html#review-case-study",
+    "title": "Linear Models",
+    "section": "Review: Case Study",
+    "text": "Review: Case Study\nResearchers measure 40 different outcomes in a wellness intervention. They report that 3 outcomes are statistically significant at \\(p&lt;0.05\\), and conclude that the intervention is effective. They do not mention any adjustment for multiple testing.\n\nIn a follow-up analysis, they apply Bonferroni correction and none of the outcomes remain significant. Another researcher argues that Bonferroni is “too conservative” and that FDR control would be more appropriate.\n \n\n\nWhat concerns do you have with the original analysis?\nWhat information would you want before deciding how to adjust for multiple testing?\nDo you agree that FDR is automatically “better” because it gives more discoveries? Why or why not?"
+  },
+  {
+    "objectID": "Weeks3-4.html#topics-for-the-next-two-weeks",
+    "href": "Weeks3-4.html#topics-for-the-next-two-weeks",
+    "title": "Linear Models",
+    "section": "Topics for the Next Two Weeks",
+    "text": "Topics for the Next Two Weeks\n\nReview of estimators\nReview of correlation and simple linear regression\nLeast squares\nConstruction of \\(t\\) and \\(F\\) tests\nAssumptions on linear models and violations\nWeighted least squares (WLS)\nModeling considerations\nModel selection"
+  },
+  {
+    "objectID": "Weeks3-4.html#estimation",
+    "href": "Weeks3-4.html#estimation",
+    "title": "Linear Models",
+    "section": "Estimation",
+    "text": "Estimation\nSuppose that\n\\[\ny_1,\\ldots,y_n \\overset{\\text{i.i.d.}}{\\sim} N(\\mu,\\sigma^2).\n\\]\nWe often use the sample mean to estimate \\(\\mu:\\widehat\\mu=\\frac{1}{n}\\sum_{i=1}^n y_i.\\).\n\n\nWhy not use another estimator?\n\n\\(\\widehat\\mu_2=y_1\\)\n\\(\\widehat\\mu_3=1/n+\\bar y\\)\n\\(\\widehat\\mu_4=\\dfrac{\\sum_{i=1}^n w_i y_i}{\\sum_{i=1}^n w_i}\\) for \\(w_i&gt;0\\)\n\n\nIs there a setting in which \\(\\widehat\\mu_4\\) is better than the others?"
+  },
+  {
+    "objectID": "Weeks3-4.html#expected-value-of-an-estimator",
+    "href": "Weeks3-4.html#expected-value-of-an-estimator",
+    "title": "Linear Models",
+    "section": "Expected Value of an Estimator",
+    "text": "Expected Value of an Estimator\n\\[\n\\begin{aligned}\nE[\\widehat\\mu]\n&=E\\left[\\frac{1}{n}\\sum_{i=1}^n y_i\\right]\n=\\frac{1}{n}\\sum_{i=1}^n E[y_i]\n=\\mu,\\\\[0.4em]\nE[\\widehat\\mu_2]&=E[y_1]=\\mu,\\\\[0.4em]\nE[\\widehat\\mu_3]&=E\\left[\\frac{1}{n}+\\bar y\\right]=\\frac{1}{n}+\\mu,\\\\[0.4em]\nE[\\widehat\\mu_4]\n&=E\\left[\\frac{\\sum_{i=1}^n w_i y_i}{\\sum_{i=1}^n w_i}\\right]\n=\\frac{\\sum_{i=1}^n w_i\\mu}{\\sum_{i=1}^n w_i}\n=\\mu.\n\\end{aligned}\n\\]\n\\(\\widehat\\mu_3\\) is biased. However, its bias approaches zero as \\(n\\to\\infty\\)."
+  },
+  {
+    "objectID": "Weeks3-4.html#variance-of-an-estimator",
+    "href": "Weeks3-4.html#variance-of-an-estimator",
+    "title": "Linear Models",
+    "section": "Variance of an Estimator",
+    "text": "Variance of an Estimator\n\\[\n\\begin{aligned}\n\\operatorname{Var}(\\widehat\\mu)&=\\frac{\\sigma^2}{n},\\\\\n\\operatorname{Var}(\\widehat\\mu_2)&=\\sigma^2,\\\\\n\\operatorname{Var}(\\widehat\\mu_3)&=\\frac{\\sigma^2}{n},\\\\\n\\operatorname{Var}(\\widehat\\mu_4)\n&=\\frac{\\sum_{i=1}^n w_i^2}{\\left(\\sum_{i=1}^n w_i\\right)^2}\\sigma^2\n\\geq \\frac{\\sigma^2}{n}.\n\\end{aligned}\n\\]\nThe unweighted sample mean has the lowest variance among the unbiased estimators \\(\\widehat\\mu\\), \\(\\widehat\\mu_2\\), and \\(\\widehat\\mu_4\\)."
+  },
+  {
+    "objectID": "Weeks3-4.html#the-goal-of-estimation",
+    "href": "Weeks3-4.html#the-goal-of-estimation",
+    "title": "Linear Models",
+    "section": "The Goal of Estimation",
+    "text": "The Goal of Estimation\n\nThis lecture focuses on finding an unbiased estimator with the lowest variance.\n\nConnections to statistical inference: Lower variance generally leads to higher statistical power.\n\n\n\n\nIf we restrict attention to linear estimators of the form \\(\\widehat\\theta=A\\mathbf y\\), this is equivalent to finding the Best Linear Unbiased Estimator (BLUE).\n\n\n\n\nLater in the course:\n\nWe will include estimators whose bias approaches zero as \\(n\\to\\infty\\), such as maximum likelihood estimators.\nIf inference is not the main objective, we may use\n\n\\[\n\\operatorname{Bias}(\\widehat\\theta)^2+\\operatorname{Var}(\\widehat\\theta),\n\\]\nwhich is the mean squared error."
+  },
+  {
+    "objectID": "Weeks3-4.html#correlation-review",
+    "href": "Weeks3-4.html#correlation-review",
+    "title": "Linear Models",
+    "section": "Correlation: Review",
+    "text": "Correlation: Review\nPearson correlation measures linear dependence between two random variables.\n\\[\n\\rho_{XY}\n=\\frac{\\operatorname{Cov}(X,Y)}\n{\\sqrt{\\operatorname{Var}(X)\\operatorname{Var}(Y)}}\n=E\\left[\n\\frac{X-E(X)}{\\sqrt{\\operatorname{Var}(X)}}\n\\frac{Y-E(Y)}{\\sqrt{\\operatorname{Var}(Y)}}\n\\right].\n\\]\n\nNotes:\n\n\\(\\rho_{XY}=0\\) implies that \\(X\\) and \\(Y\\) are uncorrelated.\nIn the special case where \\((X,Y)\\) follows a multivariate normal distribution, \\(\\rho_{XY}=0\\) implies independence."
+  },
+  {
+    "objectID": "Weeks3-4.html#sample-correlation",
+    "href": "Weeks3-4.html#sample-correlation",
+    "title": "Linear Models",
+    "section": "Sample Correlation",
+    "text": "Sample Correlation\nGiven data \\(\\{(x_i,y_i):i=1,\\ldots,n\\}\\), estimate \\(\\rho_{XY}\\) using\n\\[\n\\widehat\\rho_{XY}\n=\\frac{1}{n-1}\\sum_{i=1}^n\n\\left(\\frac{x_i-\\bar x}{s_x}\\right)\n\\left(\\frac{y_i-\\bar y}{s_y}\\right).\n\\]\n\n\nTo test \\(H_0:\\rho_{XY}=0\\), construct\n\\[\nT=\\widehat\\rho_{XY}\n\\sqrt{\\frac{n-2}{1-\\widehat\\rho_{XY}^2}}\n\\sim t_{n-2}\n\\]\nwhen \\(H_0\\) is true."
+  },
+  {
+    "objectID": "Weeks3-4.html#correlation-in-r",
+    "href": "Weeks3-4.html#correlation-in-r",
+    "title": "Linear Models",
+    "section": "Correlation in R",
+    "text": "Correlation in R"
+  },
+  {
+    "objectID": "Weeks3-4.html#connection-to-simple-linear-regression",
+    "href": "Weeks3-4.html#connection-to-simple-linear-regression",
+    "title": "Linear Models",
+    "section": "Connection to Simple Linear Regression",
+    "text": "Connection to Simple Linear Regression\nWhen \\(y_i=\\beta_0+x_i\\beta_1+\\epsilon_i\\),\n\\[\n\\widehat\\beta_1=\\widehat\\rho_{XY}\\frac{s_y}{s_x}.\n\\]\nTesting \\(H_0:\\rho_{XY}=0\\) is equivalent to testing \\(H_0:\\beta_1=0\\).\n\n\nIt can be shown that\n\\[\n\\widehat\\beta_0=\\bar y-\\bar x\\widehat\\beta_1,\n\\] With standardized \\(x\\) and \\(y\\), the intercept term would be ignored."
+  },
+  {
+    "objectID": "Weeks3-4.html#the-same-test-statistic",
+    "href": "Weeks3-4.html#the-same-test-statistic",
+    "title": "Linear Models",
+    "section": "The Same Test Statistic",
+    "text": "The Same Test Statistic\n\n\n\n\n\n\n\n\n\n\n\nThe statistic\n\\[\nT=\\frac{\\widehat\\beta_1}{\\operatorname{SE}(\\widehat\\beta_1)}\n\\]\nproduces the same \\(t\\) statistic and \\(p\\)-value as the correlation test."
+  },
+  {
+    "objectID": "Weeks3-4.html#linear-models-review",
+    "href": "Weeks3-4.html#linear-models-review",
+    "title": "Linear Models",
+    "section": "Linear Models: Review",
+    "text": "Linear Models: Review\nThe scalar notation for a multiple linear regression model is\n\\[\ny_i=\\beta_0+x_{i1}\\beta_1+\\cdots+x_{ip}\\beta_p+\\epsilon_i\n=\\mathbf x_i^T\\boldsymbol\\beta+\\epsilon_i,\n\\]\nwhere \\(\\mathbf x_i=(1,x_{i1},\\ldots,x_{ip})^T\\).\n\n\nStandard assumptions:\n\nThe covariates \\(\\{x_{ij}\\}\\) are known and fixed.\n\\(\\beta_0,\\ldots,\\beta_p\\) are unknown but fixed.\nThe errors are mutually independent.\n\\(E(\\epsilon_i)=0\\).\n\\(\\operatorname{Var}(\\epsilon_i)\\) exists and is the same for every \\(i\\).\n\nIn this lecture, we also assume \\(n&gt;p\\) and there is no multicollinearity."
+  },
+  {
+    "objectID": "Weeks3-4.html#matrix-notation",
+    "href": "Weeks3-4.html#matrix-notation",
+    "title": "Linear Models",
+    "section": "Matrix Notation",
+    "text": "Matrix Notation\nStacking the observations gives\n\\[\n\\mathbf y=\\mathbf X\\boldsymbol\\beta+\\boldsymbol\\epsilon,\n\\]\nwhere\n\\[\n\\mathbf y=\n\\begin{bmatrix}y_1\\\\y_2\\\\\\vdots\\\\y_n\\end{bmatrix},\n\\quad\n\\mathbf X=\n\\begin{bmatrix}\n1&x_{11}&\\cdots&x_{1p}\\\\\n1&x_{21}&\\cdots&x_{2p}\\\\\n\\vdots&\\vdots&\\ddots&\\vdots\\\\\n1&x_{n1}&\\cdots&x_{np}\n\\end{bmatrix},\n\\quad\n\\boldsymbol\\beta=\n\\begin{bmatrix}\\beta_0\\\\\\beta_1\\\\\\vdots\\\\\\beta_p\\end{bmatrix},\n\\quad\n\\boldsymbol\\epsilon=\n\\begin{bmatrix}\\epsilon_1\\\\\\epsilon_2\\\\\\vdots\\\\\\epsilon_n\\end{bmatrix}.\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#error-distribution-in-matrix-form",
+    "href": "Weeks3-4.html#error-distribution-in-matrix-form",
+    "title": "Linear Models",
+    "section": "Error Distribution in Matrix Form",
+    "text": "Error Distribution in Matrix Form\nIf\n\\[\n\\epsilon_i\\sim N(0,\\sigma^2)\n\\quad\\text{and}\\quad\n\\operatorname{Cor}(\\epsilon_i,\\epsilon_{i^*})=0\n\\text{ for } i\\neq i^*,\n\\]\nthen\n\\[\n\\boldsymbol\\epsilon\\sim N_n(\\mathbf 0,\\sigma^2\\mathbf I_n).\n\\]\n\nEquivalently,\n\\[\n\\boldsymbol\\epsilon\\sim N_n\\left(\n\\begin{bmatrix}0\\\\0\\\\\\vdots\\\\0\\end{bmatrix},\n\\sigma^2\n\\begin{bmatrix}\n1&0&\\cdots&0\\\\\n0&1&\\cdots&0\\\\\n\\vdots&\\vdots&\\ddots&\\vdots\\\\\n0&0&\\cdots&1\n\\end{bmatrix}\n\\right).\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#linear-models-for-familiar-tests",
+    "href": "Weeks3-4.html#linear-models-for-familiar-tests",
+    "title": "Linear Models",
+    "section": "Linear Models for Familiar Tests",
+    "text": "Linear Models for Familiar Tests\nOne-sample \\(t\\) test\n\\[\ny_i=\\beta_0+\\epsilon_i,\n\\qquad H_0:\\beta_0=c,\n\\qquad\n\\mathbf X=\\begin{bmatrix}1\\\\1\\\\\\vdots\\\\1\\end{bmatrix}.\n\\]\n\nTwo-sample \\(t\\) test (where \\(x_i=1\\) for group 1 and \\(x_i=0\\) for group 2.)\n\\[\ny_i=\\beta_0+x_i\\beta_1+\\epsilon_i,\n\\qquad H_0:\\beta_1=0,\n\\qquad\n\\mathbf X=\\left[\n\\begin{array}{cc}\n1 & 1 \\\\\n1 & 1 \\\\\n\\vdots & \\vdots \\\\\n1 & 1 \\\\[0.2em]\n1 & 0 \\\\\n1 & 0 \\\\\n\\vdots & \\vdots \\\\\n1 & 0\n\\end{array}\n\\right]\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#matrix-notation-of-linear-models",
+    "href": "Weeks3-4.html#matrix-notation-of-linear-models",
+    "title": "Linear Models",
+    "section": "Matrix Notation of Linear Models",
+    "text": "Matrix Notation of Linear Models\n\n\nFormulate a one-way ANOVA as a linear model:\n\\[\ny_i\n=\n\\beta_0+x_{i1}\\beta_1+x_{i2}\\beta_2+\\epsilon_i,\n\\qquad\nH_0:\\beta_1=\\beta_2=0.\n\\]\nHere,\n\n\\(x_{i1}=1\\) if subject \\(i\\) belongs to group 1 and \\(0\\) otherwise.\n\\(x_{i2}=1\\) if subject \\(i\\) belongs to group 2 and \\(0\\) otherwise.\n\n\nIf we have \\(G\\) groups, we use \\(G-1\\) dummy variables. Including an indicator for every group, together with an intercept, would create perfect multicollinearity and prevent the parameters from being identified.\n\n\\[\n\\mathbf X=\n\\left[\n\\begin{array}{ccc}\n1 & 1 & 0\\\\\n1 & 1 & 0\\\\\n\\vdots & \\vdots & \\vdots\\\\\n1 & 1 & 0\\\\[0.2em]\n1 & 0 & 1\\\\\n1 & 0 & 1\\\\\n\\vdots & \\vdots & \\vdots\\\\\n1 & 0 & 1\\\\[0.2em]\n1 & 0 & 0\\\\\n1 & 0 & 0\\\\\n\\vdots & \\vdots & \\vdots\\\\\n1 & 0 & 0\n\\end{array}\n\\right]\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#least-squares-1",
+    "href": "Weeks3-4.html#least-squares-1",
+    "title": "Linear Models",
+    "section": "Least Squares",
+    "text": "Least Squares\nThe least-squares estimator minimizes the sum of squared errors:\n\\[\n\\widehat{\\boldsymbol\\beta}_{LS}\n=\\underset{\\boldsymbol\\beta}{\\arg\\min}\n\\sum_{i=1}^n(y_i-\\mathbf x_i^T\\boldsymbol\\beta)^2.\n\\]\n\n\nEquivalently, it minimizes\n\\[\n(\\mathbf y-\\mathbf X\\boldsymbol\\beta)^T\n(\\mathbf y-\\mathbf X\\boldsymbol\\beta),\n\\]\nor solves the score equation\n\\[\n\\mathbf X^T(\\mathbf y-\\mathbf X\\boldsymbol\\beta)=\\mathbf 0.\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#least-squares-solution",
+    "href": "Weeks3-4.html#least-squares-solution",
+    "title": "Linear Models",
+    "section": "Least-Squares Solution",
+    "text": "Least-Squares Solution\n\\[\n\\widehat{\\boldsymbol\\beta}_{LS}\n=(\\mathbf X^T\\mathbf X)^{-1}\\mathbf X^T\\mathbf y.\n\\]\n\n\nIt is unbiased:\n\\[\nE[\\widehat{\\boldsymbol\\beta}_{LS}]\n=(\\mathbf X^T\\mathbf X)^{-1}\\mathbf X^TE[\\mathbf y]\n=\\boldsymbol\\beta.\n\\]\n\n\n\nIts covariance matrix is\n\\[\n\\begin{aligned}\n\\operatorname{Cov}(\\widehat{\\boldsymbol\\beta}_{LS})\n&=(\\mathbf X^T\\mathbf X)^{-1}\\mathbf X^T\n\\operatorname{Cov}(\\mathbf y)\n\\mathbf X(\\mathbf X^T\\mathbf X)^{-1}\\\\\n&=\\sigma^2(\\mathbf X^T\\mathbf X)^{-1}.\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#geometry-of-least-squares",
+    "href": "Weeks3-4.html#geometry-of-least-squares",
+    "title": "Linear Models",
+    "section": "Geometry of Least Squares",
+    "text": "Geometry of Least Squares\n\\[\n\\mathbf y\n=\\underbrace{\\widehat{\\mathbf y}}_{\\mathbf P\\mathbf y}\n+\\underbrace{\\widehat{\\boldsymbol\\epsilon}}_{(\\mathbf I-\\mathbf P)\\mathbf y},\n\\qquad\n\\mathbf P=\\mathbf X(\\mathbf X^T\\mathbf X)^{-1}\\mathbf X^T.\n\\]\n\n\\(\\mathbf P\\) is the ‘hat matrix’, with \\(\\mathbf P^2=\\mathbf P\\) and \\(\\mathbf P^T=\\mathbf P\\).\n\\(\\mathbf P\\) projects \\(\\mathbf y\\) orthogonally onto the column space of \\(\\mathbf X\\).\n\\(\\mathbf Q=\\mathbf I-\\mathbf P\\) projects onto the orthogonal complement of the column space of \\(\\mathbf X\\).\nThe fitted values and residuals are orthogonal:\n\n\\[\n\\widehat{\\mathbf y}^{,T}\\widehat{\\boldsymbol\\epsilon}=0.\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#gaussmarkov-theorem",
+    "href": "Weeks3-4.html#gaussmarkov-theorem",
+    "title": "Linear Models",
+    "section": "Gauss–Markov Theorem",
+    "text": "Gauss–Markov Theorem\nAmong all possible linear, unbiased estimators of \\(\\mathbf a^T\\boldsymbol\\beta\\),\n\\[\n\\mathbf a^T\\widehat{\\boldsymbol\\beta}_{LS},\n\\qquad\n\\widehat{\\boldsymbol\\beta}_{LS}\n=(\\mathbf X^T\\mathbf X)^{-1}\\mathbf X^T\\mathbf y,\n\\]\nhas the lowest variance when\n\nthe errors are uncorrelated, and\nthe errors have the same variance.\n\n\nTherefore, \\(\\widehat{\\boldsymbol\\beta}_{LS}\\) is the Best Linear Unbiased Estimator (BLUE) of \\(\\boldsymbol\\beta\\).\n\n\n\nImplications:\n\nNormality of \\(\\epsilon_i\\)s not required\nIdentical distributions not required\n\ne.g. \\(y_1 \\sim \\mathcal{N}(0,1)\\) and \\(y_2 \\sim \\text{Exp}(1)-1\\)\n\nWhen \\(\\epsilon_i\\)s are correlated to each other, GMT would not be applicable\nGMT cannot be applied to non-linear estimators"
+  },
+  {
+    "objectID": "Weeks3-4.html#gaussmarkov-two-sample-testing",
+    "href": "Weeks3-4.html#gaussmarkov-two-sample-testing",
+    "title": "Linear Models",
+    "section": "Gauss–Markov: Two-Sample Testing",
+    "text": "Gauss–Markov: Two-Sample Testing\nConsider\n\\[\ny_i=\\beta_0+x_i\\beta_1+\\epsilon_i,\n\\qquad \\epsilon_i\\sim N(0,\\sigma^2),\n\\]\nwhere \\(x_i=1\\) for group 1 and \\(x_i=0\\) for group 2.\n\n\nSetting \\(\\mathbf a=(0,1)^T\\) means that \\(\\widehat\\beta_1\\) is BLUE for \\(\\beta_1\\). Its minimum variance makes it attractive when constructing a powerful test statistic.\n\nNote that this result relies on homoscedasticity, meaning equal variance across the groups."
+  },
+  {
+    "objectID": "Weeks3-4.html#knowledge-check-does-gaussmarkov-apply",
+    "href": "Weeks3-4.html#knowledge-check-does-gaussmarkov-apply",
+    "title": "Linear Models",
+    "section": "Knowledge Check: Does Gauss–Markov Apply?",
+    "text": "Knowledge Check: Does Gauss–Markov Apply?\nFor each situation, discuss whether we can conclude that the least-squares estimator is BLUE.\n\nThe errors are strongly right-skewed, but they are uncorrelated and have the same variance.\nThe errors are normally distributed, but their variance increases as the fitted value increases.\nEach participant contributes five observations, and measurements from the same participant tend to be similar.\nA researcher proposes an unbiased estimator that is a cubic function of the responses."
+  },
+  {
+    "objectID": "Weeks3-4.html#gaussmarkov-theorem-proof",
+    "href": "Weeks3-4.html#gaussmarkov-theorem-proof",
+    "title": "Linear Models",
+    "section": "Gauss–Markov Theorem: Proof",
+    "text": "Gauss–Markov Theorem: Proof\nOptional, if interested\n\nLet \\(\\widetilde{\\boldsymbol\\beta}=\\mathbf C\\mathbf y\\) be another linear estimator. Write \\(\\mathbf C=(\\mathbf X^T\\mathbf X)^{-1}\\mathbf X^T+\\mathbf D.\\)\nFor \\(\\widetilde{\\boldsymbol\\beta}\\) to be unbiased,\n\\[\nE[\\widetilde{\\boldsymbol\\beta}]\n=\\boldsymbol\\beta+\\mathbf D\\mathbf X\\boldsymbol\\beta,\n\\]\nso \\(\\mathbf D\\mathbf X=0\\). Then\n\\[\n\\begin{aligned}\n\\operatorname{Cov}(\\widetilde{\\boldsymbol\\beta})\n&=\\sigma^2\\mathbf C\\mathbf C^T\\\\\n&=\\sigma^2(\\mathbf X^T\\mathbf X)^{-1}+\\sigma^2\\mathbf D\\mathbf D^T.\n\\end{aligned}\n\\]\nThus,\n\\[\n\\operatorname{Var}(\\mathbf a^T\\widetilde{\\boldsymbol\\beta})\n=\\operatorname{Var}(\\mathbf a^T\\widehat{\\boldsymbol\\beta}_{LS})\n+\\sigma^2\\mathbf a^T\\mathbf D\\mathbf D^T\\mathbf a\n\\geq \\operatorname{Var}(\\mathbf a^T\\widehat{\\boldsymbol\\beta}_{LS}).\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#likelihood-perspective-of-least-squares",
+    "href": "Weeks3-4.html#likelihood-perspective-of-least-squares",
+    "title": "Linear Models",
+    "section": "Likelihood Perspective of Least Squares",
+    "text": "Likelihood Perspective of Least Squares\nIf \\(\\boldsymbol\\epsilon\\sim N_n(\\mathbf0,\\sigma^2\\mathbf I)\\), then\n\\[\nL(\\boldsymbol\\beta,\\sigma^2;\\mathbf y)\n=\\frac{1}{(2\\pi\\sigma^2)^{n/2}}\n\\exp\\left\\{-\\frac{1}{2\\sigma^2}\n(\\mathbf y-\\mathbf X\\boldsymbol\\beta)^T\n(\\mathbf y-\\mathbf X\\boldsymbol\\beta)\\right\\}.\n\\]\n\nThe log-likelihood is\n\\[\n\\log L(\\boldsymbol\\beta,\\sigma^2;\\mathbf y)\n=-\\frac n2\\log(\\sigma^2)\n-\\frac{1}{2\\sigma^2}\n(\\mathbf y-\\mathbf X\\boldsymbol\\beta)^T\n(\\mathbf y-\\mathbf X\\boldsymbol\\beta)+C.\n\\]\n\n\nMaximizing it gives\n\\[\n\\widehat{\\boldsymbol\\beta}_{MLE}\n=(\\mathbf X^T\\mathbf X)^{-1}\\mathbf X^T\\mathbf y\n=\\widehat{\\boldsymbol\\beta}_{LS}.\n\\]\n\n\nTherefore, \\(\\widehat{\\boldsymbol\\beta}_{MLE} = \\widehat{\\boldsymbol\\beta}_{LS}\\)"
+  },
+  {
+    "objectID": "Weeks3-4.html#why-maximum-likelihood",
+    "href": "Weeks3-4.html#why-maximum-likelihood",
+    "title": "Linear Models",
+    "section": "Why Maximum Likelihood?",
+    "text": "Why Maximum Likelihood?\n\nThe Gauss–Markov theorem compares linear, unbiased estimators only.\n\n\n\nMaximum likelihood estimators have useful large-sample properties:\n\nAsymptotic unbiasedness: bias approaches zero as \\(n\\to\\infty\\).\nAsymptotic efficiency: among regular, asymptotically unbiased estimators, the MLE achieves the smallest possible variance asymptotically.\n\n\n\n\nUnder the normal linear model, \\(\\widehat{\\boldsymbol\\beta}_{MLE}\\) is unbiased even in finite samples."
+  },
+  {
+    "objectID": "Weeks3-4.html#hypothesis-testing-in-least-squares",
+    "href": "Weeks3-4.html#hypothesis-testing-in-least-squares",
+    "title": "Linear Models",
+    "section": "Hypothesis Testing in Least Squares",
+    "text": "Hypothesis Testing in Least Squares\nUnder the multivariate normal model,\n\\[\n\\widehat{\\boldsymbol\\beta}_{MLE}\n\\sim N_{p+1}\\left(\n\\boldsymbol\\beta,\n\\sigma^2(\\mathbf X^T\\mathbf X)^{-1}\n\\right).\n\\]\n\nImplications:\n\n\\(\\widehat\\beta_j\\sim N\\left(\\beta_j,\\{\\sigma^2(\\mathbf X^T\\mathbf X)^{-1}\\}_{j,j}\\right).\\)\nAfter transformation,\n\n\\[ \\frac{\\widehat{\\beta}_j - \\beta_j}{\\sqrt{\\{\\sigma^2\\left(\\mathbf{X^T\\mathbf{X}}\\right)^{-1}\\}_{j,j}}} \\sim \\mathcal{N}(0,1)\\]\n\nUnder \\(H_0:\\beta_j=0\\),\n\n\\[\nZ=\\frac{\\widehat\\beta_j}\n{\\sqrt{\\{\\sigma^2(\\mathbf X^T\\mathbf X)^{-1}\\}_{jj}}}\n\\sim N(0,1).\n\\]\nThis is a \\(z\\) test when \\(\\sigma^2\\) is known."
+  },
+  {
+    "objectID": "Weeks3-4.html#estimating-the-error-variance",
+    "href": "Weeks3-4.html#estimating-the-error-variance",
+    "title": "Linear Models",
+    "section": "Estimating the Error Variance",
+    "text": "Estimating the Error Variance\nThe problem is that \\(\\sigma^2\\) is usually unknown.\nThe maximum likelihood estimator is\n\\[\n\\widehat\\sigma^2_{MLE}\n=\\frac{1}{n}\n(\\mathbf y-\\mathbf X\\widehat{\\boldsymbol\\beta})^T\n(\\mathbf y-\\mathbf X\\widehat{\\boldsymbol\\beta}).\n\\]\n\nHowever,\n\\[\nE[\\widehat\\sigma^2_{MLE}]\n=\\frac{n-p-1}{n}\\sigma^2,\n\\]\nso it is biased.\n\n\nNote:\n\\[\n\\frac{(\\mathbf y-\\mathbf X\\widehat{\\boldsymbol\\beta}_{LS})^T\n(\\mathbf y-\\mathbf X\\widehat{\\boldsymbol\\beta}_{LS})}{\\sigma^2}\n\\sim \\chi^2_{n-p-1}.\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#review-of-probability",
+    "href": "Weeks3-4.html#review-of-probability",
+    "title": "Linear Models",
+    "section": "Review of Probability",
+    "text": "Review of Probability\n\nIf \\(X\\sim N(0,1)\\), \\(Y\\sim\\chi_q^2\\), and \\(X\\) and \\(Y\\) are independent, then\n\n\\[\n\\frac{X}{\\sqrt{Y/q}}\\sim t_q.\n\\]\n\nIf \\(X\\sim\\chi_p^2\\), \\(Y\\sim\\chi_q^2\\), and \\(X\\) and \\(Y\\) are independent, then\n\n\\[\n\\frac{X/p}{Y/q}\\sim F_{p,q}.\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#construction-of-the-t-test",
+    "href": "Weeks3-4.html#construction-of-the-t-test",
+    "title": "Linear Models",
+    "section": "Construction of the \\(t\\) Test",
+    "text": "Construction of the \\(t\\) Test\nUnder \\(H_0:\\beta_j=0\\),\n\\[\nT=\n\\frac{\\widehat\\beta_j}\n{\\sqrt{\\{\\widehat\\sigma^2(\\mathbf X^T\\mathbf X)^{-1}\\}_{jj}}}.\n\\]\n\nRewrite this as\n\\[\nT=\n\\frac{\n\\widehat\\beta_j/\n\\sqrt{\\{\\sigma^2(\\mathbf X^T\\mathbf X)^{-1}\\}_{jj}}\n}{\n\\sqrt{\\widehat\\sigma^2/\\sigma^2}\n}.\n\\]\n\n\nUsing\n\\[\n\\widehat\\sigma^2\n=\\frac{(\\mathbf y-\\mathbf X\\widehat{\\boldsymbol\\beta})^T\n(\\mathbf y-\\mathbf X\\widehat{\\boldsymbol\\beta})}{n-p-1},\n\\]\nthe numerator is standard normal and the squared denominator is \\(\\chi^2_{n-p-1}/(n-p-1)\\). These quantities are independent under \\(H_0\\), so\n\\[\nT\\sim t_{n-p-1}.\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#construction-of-the-f-test",
+    "href": "Weeks3-4.html#construction-of-the-f-test",
+    "title": "Linear Models",
+    "section": "Construction of the \\(F\\) test",
+    "text": "Construction of the \\(F\\) test\nMotivation\n\nLet \\(\\mathbf X=[\\mathbf X_1,\\mathbf X_2]\\). Then\n\\[\n\\min_{\\boldsymbol\\beta,\\boldsymbol\\gamma}\n\\|\\mathbf y-\\mathbf X_1\\boldsymbol\\beta-\\mathbf X_2\\boldsymbol\\gamma\\|^2\n\\leq\n\\min_{\\boldsymbol\\beta}\n\\|\\mathbf y-\\mathbf X_1\\boldsymbol\\beta\\|^2.\n\\]\nwhich implies that the addition of covariates would lead to a reduced SSE.\nIf I add more predictors, the fit can only improve - but is the improvement large enough to matter?"
+  },
+  {
+    "objectID": "Weeks3-4.html#construction-of-the-f-test-1",
+    "href": "Weeks3-4.html#construction-of-the-f-test-1",
+    "title": "Linear Models",
+    "section": "Construction of the \\(F\\) Test",
+    "text": "Construction of the \\(F\\) Test\n\n\nConsider the hypothesis\n\\[\nH_0:\\beta_1=\\cdots=\\beta_p=0.\n\\]\n\nIn an introductory regression course, we typically extract the \\(F\\) statistic from the ANOVA table and compare it with an \\(F\\) distribution to calculate a \\(p\\)-value."
+  },
+  {
+    "objectID": "Weeks3-4.html#construction-of-the-f-test-2",
+    "href": "Weeks3-4.html#construction-of-the-f-test-2",
+    "title": "Linear Models",
+    "section": "Construction of the \\(F\\) Test",
+    "text": "Construction of the \\(F\\) Test\nFor a mean-centered response,\n\\[\n\\underbrace{\\sum_{i=1}^n(y_i-\\bar y)^2}_{SST}\n=\n\\underbrace{\\sum_{i=1}^n(y_i-\\mathbf x_i^T\\widehat{\\boldsymbol\\beta})^2}_{SSE}\n+\n\\underbrace{\\sum_{i=1}^n(\\mathbf x_i^T\\widehat{\\boldsymbol\\beta})^2}_{SS_{Reg}}.\n\\]\n\n\\(SST\\) is the SSE under \\(H_0\\).\n\\(SSE\\) is the SSE under the full model.\n\n\nUnder \\(H_0:\\beta_1=\\cdots=\\beta_p=0\\),\n\\[\nF=\\frac{SS_{Reg}/p}{SSE/(n-p-1)}\n\\sim F_{p,n-p-1}.\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#construction-of-the-f-test-3",
+    "href": "Weeks3-4.html#construction-of-the-f-test-3",
+    "title": "Linear Models",
+    "section": "Construction of the \\(F\\) Test",
+    "text": "Construction of the \\(F\\) Test\nA direct method: use distributional properties\n\nNote that \\(\\boldsymbol{\\widehat{\\beta}} \\sim \\mathcal{MVN}(\\boldsymbol{\\beta}, \\sigma^2\\left(\\boldsymbol{X}^T\\boldsymbol{X}\\right)^{-1}\\). Then, under \\(H_0:\\boldsymbol\\beta=\\mathbf0\\),\n\n\\[\n\\frac{SS_{Reg}}{\\sigma^2}\n=\\widehat{\\boldsymbol\\beta}^{,T}\n\\left(\\frac{\\mathbf X^T\\mathbf X}{\\sigma^2}\\right)\n\\widehat{\\boldsymbol\\beta}\n\\sim\\chi_p^2.\n\\]\n\n\nFrom the previous slides,\n\n\\[\n\\frac{SSE}{\\sigma^2}\n=\\frac{(\\mathbf y-\\mathbf X\\widehat{\\boldsymbol\\beta})^T\n(\\mathbf y-\\mathbf X\\widehat{\\boldsymbol\\beta})}{\\sigma^2}\n\\sim\\chi^2_{n-p-1}.\n\\]\n\n\n\nThe regression and residual components are independent because they are orthogonal projections:\n\n\\[\n(\\mathbf I-\\mathbf P)\\mathbf P=\\mathbf0.\n\\]\nThe ratio of the two scaled independent chi-squared variables therefore follows an \\(F\\) distribution."
+  },
+  {
+    "objectID": "Weeks3-4.html#notes-on-the-f-test",
+    "href": "Weeks3-4.html#notes-on-the-f-test",
+    "title": "Linear Models",
+    "section": "Notes on the \\(F\\) Test",
+    "text": "Notes on the \\(F\\) Test\n\nWhen testing one regression coefficient, the \\(F\\) test and the two-sided \\(t\\) test are equivalent:\n\n\\[\nF_{1,n-p-1}=T_{n-p-1}^2.\n\\]\n\nThe \\(F\\) test is not the only way to test regression coefficients. Alternative procedures may offer more power in particular settings.\nExact \\(t\\) and \\(F\\) tests rely on normally distributed errors to derive the null distributions.\n\nWith sufficiently large samples, asymptotic approximations may still work when normality fails."
+  },
+  {
+    "objectID": "Weeks3-4.html#extensions-linear-hypothesis",
+    "href": "Weeks3-4.html#extensions-linear-hypothesis",
+    "title": "Linear Models",
+    "section": "Extensions: Linear Hypothesis",
+    "text": "Extensions: Linear Hypothesis\nConsider\n\\[\ny_i=\\beta_0+x_{i1}\\beta_1+\\cdots+x_{i8}\\beta_8+\\epsilon_i,\n\\]\nwhere:\n\nPRICE: selling price in thousands of dollars\nFLR: floor space in square feet\nRMS: number of rooms\nBDR: number of bedrooms\nBTH: number of bathrooms\nGAR: garage size\nLOT: front footage of the lot\nFP: number of fireplaces\nST: indicator for storm windows"
+  },
+  {
+    "objectID": "Weeks3-4.html#extensions-linear-hypothesis-1",
+    "href": "Weeks3-4.html#extensions-linear-hypothesis-1",
+    "title": "Linear Models",
+    "section": "Extensions: Linear Hypothesis",
+    "text": "Extensions: Linear Hypothesis\n\n\n\nDo floor area and lot size affect price equally?\n\n\\[H_0:\\beta_1-\\beta_6=0.\\]\n\nDoes either floor area or lot size affect price?\n\n\\[H_0:\\beta_1=\\beta_6=0.\\]\n\nCould storm windows add \\(\\$6{,}000\\) and a garage add \\(\\$4{,}000\\) to the price?\n\n\\[H_0:\\beta_5=4,\\quad\\beta_8=6.\\]\nEach is a special case of the general linear hypothesis \\[\nH_0:\\mathbf A\\boldsymbol\\beta=\\mathbf c.\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#extensions-linear-hypothesis-2",
+    "href": "Weeks3-4.html#extensions-linear-hypothesis-2",
+    "title": "Linear Models",
+    "section": "Extensions: Linear Hypothesis",
+    "text": "Extensions: Linear Hypothesis\nTo test \\(H_0:\\mathbf A\\boldsymbol\\beta=\\mathbf c\\), use\n\\[\nF=\n\\frac{1}{q}\n\\frac{\n(\\mathbf A\\widehat{\\boldsymbol\\beta}-\\mathbf c)^T\n[\\mathbf A(\\mathbf X^T\\mathbf X)^{-1}\\mathbf A^T]^{-1}\n(\\mathbf A\\widehat{\\boldsymbol\\beta}-\\mathbf c)\n}{\\widehat\\sigma^2}\n\\sim F_{q,n-p-1},\n\\]\nunder \\(H_0\\), where\n\n\\(q\\) is the number of rows in \\(\\mathbf A\\),\n\\(\\widehat\\sigma^2\\) is the MSE from the full model."
+  },
+  {
+    "objectID": "Weeks3-4.html#extensions-linear-hypothesis-3",
+    "href": "Weeks3-4.html#extensions-linear-hypothesis-3",
+    "title": "Linear Models",
+    "section": "Extensions: Linear Hypothesis",
+    "text": "Extensions: Linear Hypothesis"
+  },
+  {
+    "objectID": "Weeks3-4.html#summary-of-assumptions",
+    "href": "Weeks3-4.html#summary-of-assumptions",
+    "title": "Linear Models",
+    "section": "Summary of Assumptions",
+    "text": "Summary of Assumptions\n\nLinearity — generally straightforward to assess\nNormality — generally straightforward to assess\nConstant variance — more difficult to assess\nIndependence of the errors — often difficult to assess"
+  },
+  {
+    "objectID": "Weeks3-4.html#consequences-of-violations",
+    "href": "Weeks3-4.html#consequences-of-violations",
+    "title": "Linear Models",
+    "section": "Consequences of Violations",
+    "text": "Consequences of Violations\nFor prediction\n\nViolating linearity can lead to severe bias.\n\n\n\nFor inference\n\nViolating constant variance or independence can produce inaccurate standard errors.\nInaccurate standard errors can inflate the Type I error rate.\n\nViolating normality is often less concerning with sufficiently large samples because the Central Limit Theorem can justify approximate inference."
+  },
+  {
+    "objectID": "Weeks3-4.html#checking-assumptions",
+    "href": "Weeks3-4.html#checking-assumptions",
+    "title": "Linear Models",
+    "section": "Checking Assumptions",
+    "text": "Checking Assumptions\n\nMost assumptions concern the unobserved errors \\(\\epsilon_i\\).\n\nWe use the residuals \\(\\widehat\\epsilon_i\\) as proxies.\n\nUnder the data-generating process, \\(\\mathbf X\\boldsymbol\\beta\\) and \\(\\boldsymbol\\epsilon\\) should not be associated in any way.\n\nCan be checked using a scatterplot\n\nA residual-versus-fitted plot can reveal nonlinearity and heteroscedasticity.\nA histogram or Q–Q plot of residuals can help assess normality."
+  },
+  {
+    "objectID": "Weeks3-4.html#checking-assumptions-1",
+    "href": "Weeks3-4.html#checking-assumptions-1",
+    "title": "Linear Models",
+    "section": "Checking Assumptions",
+    "text": "Checking Assumptions\nResidual Plot: Linearity, Heteroscedasticity\n\nResidual-versus-fitted plots can help identify:\n\nnonlinearity in the mean structure, and\nvariance that changes with the fitted value or covariates.\n\nFor heteroscedasticity, the plot only allows us to investigate whether the noise variance appears to depend on observed covariates (i.e. limited investigation)."
+  },
+  {
+    "objectID": "Weeks3-4.html#qq-plot",
+    "href": "Weeks3-4.html#qq-plot",
+    "title": "Linear Models",
+    "section": "Q–Q Plot",
+    "text": "Q–Q Plot\nQQ Plot: Normality\n\nA normal Q–Q plot compares the empirical residual quantiles with the theoretical quantiles of a normal distribution.\n\nPoints close to a straight line support approximate normality.\nSystematic curvature can indicate skewness or heavy tails.\nExtreme departures at the ends can indicate unusual observations or tail behavior."
+  },
+  {
+    "objectID": "Weeks3-4.html#checking-assumptions-2",
+    "href": "Weeks3-4.html#checking-assumptions-2",
+    "title": "Linear Models",
+    "section": "Checking Assumptions",
+    "text": "Checking Assumptions\nChecking Uncorrelatedness of Errors\nWith \\(n\\) observations, there are \\(n(n-1)/2\\) pairs of errors whose correlations might be considered.\n\n\nWe cannot use a completely data-drive approach to check this assumption\nIt could be investigated based on the data and study characteristics\n\nFor example, we can build a linear model to predict the air quality since 1856 and then subsequently use this to predict earlier air quality based on proxy information.\n\nIn this case, we know there might be time-dependent correlations in noise (i.e. temporal autocorrelations).\nIf \\(\\epsilon_i\\)s are truly uncorrelated, any combination of \\(\\epsilon_i\\)s should be uncorrelated as well .\nWe may check \\(\\operatorname{cor}(\\widehat\\epsilon_i,\\widehat\\epsilon_{i+1})\\) to determine if there is any temporal dependence.\n\n\\[\n\\operatorname{Cor}(\\widehat\\epsilon_i,\\widehat\\epsilon_{i+1}).\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#checking-assumptions-3",
+    "href": "Weeks3-4.html#checking-assumptions-3",
+    "title": "Linear Models",
+    "section": "Checking Assumptions",
+    "text": "Checking Assumptions\nChecking Uncorrelatedness of Errors"
+  },
+  {
+    "objectID": "Weeks3-4.html#checking-assumptions-4",
+    "href": "Weeks3-4.html#checking-assumptions-4",
+    "title": "Linear Models",
+    "section": "Checking Assumptions",
+    "text": "Checking Assumptions\nOutliers?\n\nThere is no universal quantitative definition of an outlier.\nMeasures such as Cook’s distance, standardized residuals, and DFFITS can identify influential observations.\n\nA large Cook’s distance, for instance, indicates that the observation is influential\n\nInvestigate possible explanations:\n\nWas there a data-entry or measurement error?\nIs the observation scientifically possible?\n\nIf unusual observations can naturally occur, deleting them may distort the target population.\nIdeally, define exclusion rules during study planning, before examining the data.\nRobust regression can reduce sensitivity to unusual observations without automatically excluding them."
+  },
+  {
+    "objectID": "Weeks3-4.html#outlier-diagnostics",
+    "href": "Weeks3-4.html#outlier-diagnostics",
+    "title": "Linear Models",
+    "section": "Outlier Diagnostics",
+    "text": "Outlier Diagnostics\nReal Consequence\n\n\nNASA launched the Nimbus 7 satellite to record atmospheric information\nAfter several years of operation in 1985, the British Antarctic Survey observed a large decrease in atmospheric ozone over the Antarctic\nTurns out, the data processing program was automatrically discarding extremely low observations because they were assumed to be mistakes\nThus the discovery of the Antarctic ozone hole was delayed by several years"
+  },
+  {
+    "objectID": "Weeks3-4.html#activity-keep-correct-exclude-or-investigate",
+    "href": "Weeks3-4.html#activity-keep-correct-exclude-or-investigate",
+    "title": "Linear Models",
+    "section": "Activity: Keep, Correct, Exclude, or Investigate?",
+    "text": "Activity: Keep, Correct, Exclude, or Investigate?\nJustify your decision and explain what the researcher should report.\n\nCase 1: A participant’s weight is recorded as 720 kg. The original questionnaire shows that the participant reported a weight of 72.0 kg.\nCase 2: An air-pollution measurement is extremely high. Maintenance records confirm that the sensor malfunctioned during that measurement.\nCase 3: A household-income study includes one billionaire. The observation has a large Cook’s distance.\nCase 4: An observation is correctly recorded, scientifically plausible, and belongs to the target population. Removing it changes the primary result from \\(p=0.08\\) to \\(p=0.03\\).\nCase 5: A study was designed for adults aged 18–65, but researchers later discover that one enrolled participant was 16 years old.\nCase 6: An air-pollution monitor records a value nearly ten times higher than its usual measurements. A wildfire was reported in the region that day. However, the monitor had also produced a calibration warning earlier that week. Nearby monitors were offline, so there are no direct measurements available for comparison."
+  },
+  {
+    "objectID": "Weeks3-4.html#weighted-least-squares-1",
+    "href": "Weeks3-4.html#weighted-least-squares-1",
+    "title": "Linear Models",
+    "section": "Weighted Least Squares",
+    "text": "Weighted Least Squares\nGiven known positive variance factors \\(w_1,\\ldots,w_n\\), the WLS estimator minimizes\n\\[\n\\widehat{\\boldsymbol\\beta}_{WLS}\n=\\underset{\\boldsymbol\\beta}{\\arg\\min}\n\\sum_{i=1}^n\\frac{1}{w_i}\n(y_i-\\mathbf x_i^T\\boldsymbol\\beta)^2.\n\\]\nIf \\(\\mathbf W=\\operatorname{diag}(w_1,\\ldots,w_n)\\), then\n\\[\n\\widehat{\\boldsymbol\\beta}_{WLS}\n=\\underset{\\boldsymbol\\beta}{\\arg\\min}\n(\\mathbf y-\\mathbf X\\boldsymbol\\beta)^T\n\\mathbf W^{-1}\n(\\mathbf y-\\mathbf X\\boldsymbol\\beta),\n\\]\nand\n\\[\n\\widehat{\\boldsymbol\\beta}_{WLS}\n=(\\mathbf X^T\\mathbf W^{-1}\\mathbf X)^{-1}\n\\mathbf X^T\\mathbf W^{-1}\\mathbf y.\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#weighted-least-squares-2",
+    "href": "Weeks3-4.html#weighted-least-squares-2",
+    "title": "Linear Models",
+    "section": "Weighted Least Squares",
+    "text": "Weighted Least Squares\n\nDo we really need weights in estimation of \\(\\boldsymbol{\\beta}\\)?\n\nWe already have GMT or the properties of ML!\n\nHowever, don’t forget they require certain assumptions\n\nSpecifically, the constant-variance assumption\nLeast squares is BLUE only under these assumptions\n\n\n\nConsider instead\n\\[\ny_i=\\mathbf x_i^T\\boldsymbol\\beta+\\epsilon_i,\n\\qquad\n\\epsilon_i\\sim N(0,w_i\\sigma^2),\n\\]\nwith independent errors. In matrix form,\n\\[\n\\mathbf y=\\mathbf X\\boldsymbol\\beta+\\boldsymbol\\epsilon,\n\\qquad\n\\boldsymbol\\epsilon\\sim N_n(\\mathbf0,\\sigma^2\\mathbf W).\n\\]\nIf the error variances differ, ordinary least squares may no longer have the smallest variance."
+  },
+  {
+    "objectID": "Weeks3-4.html#comparing-ls-and-wls",
+    "href": "Weeks3-4.html#comparing-ls-and-wls",
+    "title": "Linear Models",
+    "section": "Comparing LS and WLS",
+    "text": "Comparing LS and WLS\nBoth estimators are unbiased:\n\\[\nE[\\widehat{\\boldsymbol\\beta}_{LS}]=\\boldsymbol\\beta,\n\\qquad\nE[\\widehat{\\boldsymbol\\beta}_{WLS}]=\\boldsymbol\\beta.\n\\]\nTheir covariance matrices differ:\n\\[\n\\operatorname{Cov}(\\widehat{\\boldsymbol\\beta}_{LS})\n=\\sigma^2(\\mathbf X^T\\mathbf X)^{-1}\n\\mathbf X^T\\mathbf W\\mathbf X\n(\\mathbf X^T\\mathbf X)^{-1},\n\\]\nwhereas\n\\[\n\\operatorname{Cov}(\\widehat{\\boldsymbol\\beta}_{WLS})\n=\\sigma^2(\\mathbf X^T\\mathbf W^{-1}\\mathbf X)^{-1}.\n\\]\nWhich estimator is more efficient under this heteroscedastic model?"
+  },
+  {
+    "objectID": "Weeks3-4.html#transforming-the-model",
+    "href": "Weeks3-4.html#transforming-the-model",
+    "title": "Linear Models",
+    "section": "Transforming the Model",
+    "text": "Transforming the Model\nConsider the following transformation:\n\\[\n\\underbrace{\\mathbf W^{-1/2}\\mathbf y}_{\\mathbf y^*}\n=\n\\underbrace{\\mathbf W^{-1/2}\\mathbf X}_{\\mathbf X^*}\n\\boldsymbol\\beta\n+\n\\underbrace{\\mathbf W^{-1/2}\\boldsymbol\\epsilon}_{\\boldsymbol\\epsilon^*}.\n\\]\nNow \\(\\operatorname{Var}(\\boldsymbol\\epsilon^*)=\\sigma^2\\mathbf I,\\) (constant variance), where GMT is applicable\nTherefore, \\([(\\mathbf X^*)^T\\mathbf X^*]^{-1}(\\mathbf X^*)^T\\mathbf y^*\\) is the BLUE for \\(\\boldsymbol{\\beta}\\)! - But it is equivalent to \\(\\widehat{\\boldsymbol\\beta}_{WLS}\\)\nNote that in this case, \\(\\widehat{\\boldsymbol\\beta}_{WLS} = \\widehat{\\boldsymbol\\beta}_{MLE}\\), but \\(\\widehat{\\boldsymbol\\beta}_{WLS} \\neq \\widehat{\\boldsymbol\\beta}_{LS}\\)"
+  },
+  {
+    "objectID": "Weeks3-4.html#wls-simulation",
+    "href": "Weeks3-4.html#wls-simulation",
+    "title": "Linear Models",
+    "section": "WLS Simulation",
+    "text": "WLS Simulation"
+  },
+  {
+    "objectID": "Weeks3-4.html#heteroscedasticity",
+    "href": "Weeks3-4.html#heteroscedasticity",
+    "title": "Linear Models",
+    "section": "Heteroscedasticity",
+    "text": "Heteroscedasticity\n\n\nA plausible scenario is that variance depends on a covariate:\n\\[\ny_i\\sim N(\\beta_0+x_i\\beta_1,\\sigma^2x_i^2).\n\\]\n\n\n\n\n\n\n\n\n\nLS and WLS are both unbiased for the regression coefficients.\nLS can still produce unbiased mean predictions.\nExploratory plots can help detect nonconstant variance."
+  },
+  {
+    "objectID": "Weeks3-4.html#heteroscedasticity-1",
+    "href": "Weeks3-4.html#heteroscedasticity-1",
+    "title": "Linear Models",
+    "section": "Heteroscedasticity",
+    "text": "Heteroscedasticity\nRepeated simulations show that WLS can substantially reduce standard errors relative to LS when the variance weights are correctly specified.\nIf the weights are misspecified, WLS may lose this advantage. The variance model therefore requires careful justification."
+  },
+  {
+    "objectID": "Weeks3-4.html#overfitting-and-bias",
+    "href": "Weeks3-4.html#overfitting-and-bias",
+    "title": "Linear Models",
+    "section": "Overfitting and Bias",
+    "text": "Overfitting and Bias\nSuppose the true model is \\(E[\\mathbf y]=\\mathbf X_1\\boldsymbol\\beta_1,\\) where \\(\\mathbf X_1\\) contains the first \\(k\\) columns of \\(\\mathbf X=(\\mathbf X_1,\\mathbf X_2)\\). Then\n\\[\nE[\\widehat{\\boldsymbol\\beta}]\n=(\\mathbf X^T\\mathbf X)^{-1}\\mathbf X^T\\mathbf X_1\\boldsymbol\\beta_1\n=\n\\begin{bmatrix}\\boldsymbol\\beta_1\\\\\\mathbf0\\end{bmatrix}.\n\\]\nTherefore, \\(\\widehat{\\boldsymbol{\\beta}}\\) is (still) unbiased for \\(\\boldsymbol{\\beta_1}\\)\nThe fitted values are also unbiased:\n\\[\nE[\\widehat{\\mathbf y}]\n=\\mathbf X\n\\begin{bmatrix}\\boldsymbol\\beta_1\\\\\\mathbf0\\end{bmatrix}\n=\\mathbf X_1\\boldsymbol\\beta_1.\n\\]\nBecause \\((\\mathbf I-\\mathbf P)\\mathbf X=\\mathbf0\\),\n\\[\nE[\\widehat\\sigma^2]=\\sigma^2.\n\\]\nIncluding unnecessary variables does not introduce bias under these assumptions."
+  },
+  {
+    "objectID": "Weeks3-4.html#overfitting-and-bias-1",
+    "href": "Weeks3-4.html#overfitting-and-bias-1",
+    "title": "Linear Models",
+    "section": "Overfitting and Bias",
+    "text": "Overfitting and Bias\nIf adding unnecessary covariates does not induce bias, why avoid it?\n\nBias is not the only consideration. In the overfitted model,\n\\[\n\\operatorname{Cov}(\\widehat{\\boldsymbol\\beta})_{1:k,1:k}\n=\\sigma^2(\\mathbf X^T\\mathbf X)^{-1}_{1:k,1:k}\n\\neq\n\\sigma^2(\\mathbf X_1^T\\mathbf X_1)^{-1}.\n\\]\n\n\nBy the Gauss–Markov theorem, estimating unnecessary coefficients increases the variability of the estimated coefficients of interest."
+  },
+  {
+    "objectID": "Weeks3-4.html#underfitting-and-bias",
+    "href": "Weeks3-4.html#underfitting-and-bias",
+    "title": "Linear Models",
+    "section": "Underfitting and Bias",
+    "text": "Underfitting and Bias\nSuppose the true model is \\(E[\\mathbf y]=\\mathbf X\\boldsymbol\\beta+\\mathbf Z\\boldsymbol\\gamma,\\) but the fitted model uses only \\(\\mathbf X\\). Then\n\\[\nE[\\widehat{\\boldsymbol\\beta}]\n=\\boldsymbol\\beta\n+(\\mathbf X^T\\mathbf X)^{-1}\\mathbf X^T\\mathbf Z\\boldsymbol\\gamma.\n\\]\n\nIf \\(\\mathbf X^T\\mathbf Z\\neq\\mathbf0\\), the estimator is biased.\nIf \\(\\mathbf X^T\\mathbf Z=\\mathbf0\\), it remains unbiased.\n\nThe fitted values satisfy\n\\[\nE[\\widehat{\\mathbf y}]\n=\\mathbf X\\boldsymbol\\beta+\\mathbf P\\mathbf Z\\boldsymbol\\gamma.\n\\]\nAlso,\n\\[\nE[\\widehat\\sigma^2]\n=\\sigma^2+\n\\frac{\\boldsymbol\\gamma^T\\mathbf Z^T(\\mathbf I-\\mathbf P)\\mathbf Z\\boldsymbol\\gamma}\n{n-p-1}\n\\geq\\sigma^2.\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#underfitting-and-bias-1",
+    "href": "Weeks3-4.html#underfitting-and-bias-1",
+    "title": "Linear Models",
+    "section": "Underfitting and Bias",
+    "text": "Underfitting and Bias\nSimpson’s paradox: a trend appears within several groups but disappears or reverses when the groups are combined.\n\nA confounder is associated with both the response and a predictor.\n\nFor example,\n\\[\ny_i=\\beta_0+x_i\\beta_1+z_i\\beta_2+\\epsilon_i\n\\]\nand\n\\[\nz_i=\\gamma_0+x_i\\gamma_1+\\delta_i.\n\\]\nIf \\(z_i\\) is omitted, the simple-regression slope has bias \\(\\gamma_1\\beta_2\\). The direction and size of the omitted-variable bias depend on both the association between \\(x\\) and \\(z\\) and the effect of \\(z\\) on \\(y\\)."
+  },
+  {
+    "objectID": "Weeks3-4.html#simpsons-paradox",
+    "href": "Weeks3-4.html#simpsons-paradox",
+    "title": "Linear Models",
+    "section": "Simpson’s Paradox",
+    "text": "Simpson’s Paradox\nAn ecological fallacy occurs when conclusions about individuals are incorrectly drawn from group-level patterns.\nFor example, suppose \\(z\\) is a two-group factor such as sex. A regression line fitted after combining the groups can differ substantially from the within-group relationship obtained after adjusting for \\(z\\)."
+  },
+  {
+    "objectID": "Weeks3-4.html#motivation-for-model-selection",
+    "href": "Weeks3-4.html#motivation-for-model-selection",
+    "title": "Linear Models",
+    "section": "Motivation for Model Selection",
+    "text": "Motivation for Model Selection\nWhich model is better?"
+  },
+  {
+    "objectID": "Weeks3-4.html#motivation-for-model-selection-1",
+    "href": "Weeks3-4.html#motivation-for-model-selection-1",
+    "title": "Linear Models",
+    "section": "Motivation for Model Selection",
+    "text": "Motivation for Model Selection\nThe goal is not to fit the observed data perfectly. We want to understand the population that generated the data and predict new observations well.\nWhen performance is evaluated on new data (blue points):\n\nLinear-model test MSE: \\(5.13\\)\nPolynomial-model test MSE: \\(6.65\\)\n\nAlthough the polynomial fits the training data better, the linear model generalizes better in this example."
+  },
+  {
+    "objectID": "Weeks3-4.html#model-selection-1",
+    "href": "Weeks3-4.html#model-selection-1",
+    "title": "Linear Models",
+    "section": "Model Selection",
+    "text": "Model Selection\nHow should we choose a subset of predictors?\n\nIncluding every available variable can increase estimation noise and reduce interpretability.\nWe want a model that explains or predicts the response well without unnecessary complexity.\n\n\nCommon approaches include:\n\nTesting-based procedures\nAdjusted \\(R^2\\)\nInformation criteria\nCross-validation\n\nTesting-based procedures are generally not recommended as the primary selection strategy. The other approaches explicitly account for complexity or out-of-sample performance."
+  },
+  {
+    "objectID": "Weeks3-4.html#testing-based-methods",
+    "href": "Weeks3-4.html#testing-based-methods",
+    "title": "Linear Models",
+    "section": "Testing-Based Methods",
+    "text": "Testing-Based Methods\nForward selection\n\nStart with no predictors.\nAdd the predictor with the smallest \\(p\\)-value (most statistically significant)\nStop when no remaining predictor meets the chosen threshold.\n\n\nBackward selection\n\nStart with all predictors.\nRemove the predictor with the largest \\(p\\)-value.\nStop when all remaining predictors meet the threshold.\n\n\n\nStepwise selection\n\nAdd predictors using forward selection.\nAfter each addition, check whether any included predictor should be removed.\nStop when no addition or deletion meets the chosen criterion."
+  },
+  {
+    "objectID": "Weeks3-4.html#testing-based-methods-1",
+    "href": "Weeks3-4.html#testing-based-methods-1",
+    "title": "Linear Models",
+    "section": "Testing-Based Methods",
+    "text": "Testing-Based Methods\nAdvantages:\n\nThey can reduce model complexity.\nA smaller model may be easier to interpret.\n\n\n\nDisadvantages:\n\n\\(p\\)-values depend strongly on sample size.\nMulticollinearity can cause important variables to appear nonsignificant.\nData-driven selection can overfit."
+  },
+  {
+    "objectID": "Weeks3-4.html#r2",
+    "href": "Weeks3-4.html#r2",
+    "title": "Linear Models",
+    "section": "\\(R^2\\)",
+    "text": "\\(R^2\\)\nFor a model \\(M\\),\n\\[\nR^2(M)=1-\\frac{SSE(M)}{SST}\n=\\operatorname{Cor}(\\mathbf y,\\widehat{\\mathbf y})^2,\n\\]\nwhere\n\\[\nSSE(M)=\\|\\mathbf y-\\widehat{\\mathbf y}_M\\|_2^2,\n\\qquad\nSST=\\|\\mathbf y-\\bar y\\mathbf1\\|_2^2.\n\\]\nAdding covariates can only decrease the training SSE, so \\(R^2\\) can only increase.\nTherefore, \\(R^2\\) tends to favor larger models and is most useful when comparing models with the same number of predictors."
+  },
+  {
+    "objectID": "Weeks3-4.html#adjusted-r2",
+    "href": "Weeks3-4.html#adjusted-r2",
+    "title": "Linear Models",
+    "section": "Adjusted \\(R^2\\)",
+    "text": "Adjusted \\(R^2\\)\n\\[\nR^2_{adj}(M)\n=1-\n\\frac{SSE(M)/(n-p_M)}{SST/(n-1)}\n=1-\\frac{\\widehat\\sigma_M^2}{\\widehat\\sigma_{null}^2}.\n\\]\n\n\\(p_M\\) is the number of parameters in model \\(M\\), including the intercept.\nDividing by \\(n-p_M\\) penalizes larger models.\nAdjusted \\(R^2\\) increases only when a new predictor improves fit enough to overcome this penalty.\nAdjusted \\(R^2\\) can be negative."
+  },
+  {
+    "objectID": "Weeks3-4.html#information-criteria",
+    "href": "Weeks3-4.html#information-criteria",
+    "title": "Linear Models",
+    "section": "Information Criteria",
+    "text": "Information Criteria\nChoose the model with the lowest information criterion.\n\\[\nAIC(M)=-2\\log L_M(\\widehat\\theta)+2p_M,\n\\]\n\\[\nBIC(M)=-2\\log L_M(\\widehat\\theta)+\\log(n)p_M.\n\\]\nBoth criteria balance model fit against complexity.\nFor \\(n\\geq8\\), \\(\\log(n)&gt;2\\), so BIC penalizes additional parameters more strongly than AIC.\n\nPractical distinction:\n\nAIC often favors predictive performance.\nBIC often favors identifying a smaller candidate model."
+  },
+  {
+    "objectID": "Weeks3-4.html#aic-and-kullbackleibler-divergence",
+    "href": "Weeks3-4.html#aic-and-kullbackleibler-divergence",
+    "title": "Linear Models",
+    "section": "AIC and Kullback–Leibler Divergence",
+    "text": "AIC and Kullback–Leibler Divergence\nOptional, if interested\nMotivation of AIC: The Kullback–Leibler divergence from a candidate model \\(g\\) to the true density \\(f\\) is\n\\[\nKL(f,g)=\\int \\log\\left\\{\\frac{f(z)}{g(z;\\theta)}\\right\\}f(z)\\,dz.\n\\]\nIt measures the discrepancy between the fixed true distribution \\(f\\) and a candidate model \\(g\\).\nProperties:\n\n\\(KL(f,g)\\) is not symmetric.\n\\(KL(f,g)\\geq0\\).\n\\(KL(f,g)=0\\) only when the distributions agree almost everywhere.\nUp to a constant that does not depend on \\(g\\),\n\n\\[\nKL(f,g)=-\\int\\log g(z;\\theta)f(z)\\,dz+C.\n\\]"
+  },
+  {
+    "objectID": "Weeks3-4.html#aic-and-kullbackleibler-divergence-1",
+    "href": "Weeks3-4.html#aic-and-kullbackleibler-divergence-1",
+    "title": "Linear Models",
+    "section": "AIC and Kullback–Leibler Divergence",
+    "text": "AIC and Kullback–Leibler Divergence\nOptional, if interested\nAIC and KL-divergence relationship\nBecause \\(\\theta\\) is unknown, substitute the MLE from the observed data \\(\\mathbf Y\\):\n\\[\n\\Delta\n:=-\\int \\log g(z;\\widehat\\theta_{MLE})f(z)\\,dz\n=-E_Z[\\log g(Z;\\widehat\\theta_{MLE})],\n\\]\nwhere \\(Z\\) is independent of the training data \\(\\mathbf Y\\).\nFor linear regression with known \\(\\sigma^2\\), it can be shown that\n\\[\nE_{\\mathbf Y}[AIC]\n=E_{\\mathbf Y}[2\\Delta]+C.\n\\]\nThis motivates AIC as an estimate of expected out-of-sample discrepancy, up to an additive constant."
+  },
+  {
+    "objectID": "Weeks3-4.html#bic-and-bayesian-model-selection",
+    "href": "Weeks3-4.html#bic-and-bayesian-model-selection",
+    "title": "Linear Models",
+    "section": "BIC and Bayesian Model Selection",
+    "text": "BIC and Bayesian Model Selection\nOptional, if interested\nConsider a linear model with known \\(\\sigma^2\\) and a candidate submodel\n\\[\n\\mathbf y=\\mathbf X_p\\boldsymbol\\beta_p+\\boldsymbol\\epsilon.\n\\]\n\n\\(p\\) may be smaller than the total number of available covariates.\nSuppose \\(\\boldsymbol\\beta_p\\) has a multivariate normal prior.\n\nUnder regularity conditions and a large-sample approximation to the marginal likelihood, the BIC arises as\n\\[\nBIC=-2\\log L(\\widehat\\theta)+p\\log n.\n\\]\nSmaller BIC values provide stronger approximate evidence for a candidate model."
+  },
+  {
+    "objectID": "Weeks3-4.html#cross-validation",
+    "href": "Weeks3-4.html#cross-validation",
+    "title": "Linear Models",
+    "section": "Cross-Validation",
+    "text": "Cross-Validation\nCross-validation partitions the data into non-overlapping subsets and estimates predictive performance on observations that were not used to fit the model."
+  },
+  {
+    "objectID": "Weeks3-4.html#five-fold-cross-validation",
+    "href": "Weeks3-4.html#five-fold-cross-validation",
+    "title": "Linear Models",
+    "section": "Five-Fold Cross-Validation",
+    "text": "Five-Fold Cross-Validation\nTo compare candidate models:\n\nDivide the data into five folds.\nFit each candidate model using four folds.\nPredict the observations in the held-out fold and calculate\n\n\\[\nMSE_{test}=\\frac{1}{n_{test}}\n\\|\\mathbf y_{test}-\\widehat f_{train}(\\mathbf X_{test})\\|_2^2.\n\\]\n\nRepeat until each fold has served once as the test set.\nAverage the five test MSE values for each model.\nSelect the model with the lowest average cross-validated MSE."
+  },
+  {
+    "objectID": "Weeks3-4.html#five-fold-cross-validation-in-r",
+    "href": "Weeks3-4.html#five-fold-cross-validation-in-r",
+    "title": "Linear Models",
+    "section": "Five-Fold Cross-Validation in R",
+    "text": "Five-Fold Cross-Validation in R"
+  },
+  {
+    "objectID": "Weeks3-4.html#cross-validation-and-data-leakage",
+    "href": "Weeks3-4.html#cross-validation-and-data-leakage",
+    "title": "Linear Models",
+    "section": "Cross-Validation and Data Leakage",
+    "text": "Cross-Validation and Data Leakage\nThe test fold must remain completely separate from model training.\n\n\nSuppose we want to predict LDL cholesterol using expression levels from 20,000 genes for 700 subjects. We first screen all 20,000 genes using the full dataset, retain 50 genes with the smallest \\(p\\)-values, and then compare classifiers using 10-fold cross-validation.\n\n\nThis procedure is invalid because the held-out observations influenced which genes entered the model.\nInformation from the test folds has leaked into training, producing an overly optimistic estimate of predictive performance."
+  },
+  {
+    "objectID": "Weeks3-4.html#preventing-data-leakage",
+    "href": "Weeks3-4.html#preventing-data-leakage",
+    "title": "Linear Models",
+    "section": "Preventing Data Leakage",
+    "text": "Preventing Data Leakage\nFeature selection must occur separately within each training fold.\n\n\nFor each fold:\n\nSplit the observations into training and test sets.\nScreen genes using the training set only.\nFit each model using only the predictors selected from that training set.\nEvaluate the fitted models on the held-out test set.\n\n\n\n\nAny data-dependent preprocessing must occur inside the cross-validation loop, including variable selection, imputation, scaling, and tuning."
+  },
+  {
+    "objectID": "Weeks3-4.html#summary",
+    "href": "Weeks3-4.html#summary",
+    "title": "Linear Models",
+    "section": "Summary",
+    "text": "Summary\nWe’ve covered quite a few topics over the last few weeks but what ties them all together is that all topics are related to linear models. Some methods (such as cross validation) can be extended to other types of models, but introducing them via linear models is the most natural.\n\nWe reviewed the OLS estimator of the linear regression coefficients, and now know that, by the Gauss-Markov Theorem, this is the Best Linear Unbiased Estimator\nWe related the OLS estimator the the MLE estimator, and discussed why we would consider an MLE estimator instead\nWe went through the details of constructing the \\(t\\) and \\(F\\) hypothesis tests, and showed how we can represent a linear hypothesis in matrix notation\nWhen assuming a linear model, there are certain assumptions that need to hold; we reviewed assumption diagnostics and went through one remedy to a violation of the constant variance assumption (weighted least squares)\nWe ended this topic reviewing model selection techniques\n\nNext two lectures: Generalized Linear Models\nAnnouncements: First assignment due Oct 2nd"
   }
 ]
