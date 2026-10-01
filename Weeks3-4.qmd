@@ -1051,19 +1051,23 @@ Violating normality is often less concerning with sufficiently large samples bec
 
 - Most assumptions concern the unobserved errors $\epsilon_i$.
   - We use the residuals $\widehat\epsilon_i$ as proxies.
-  
+
+<br> 
+
 - Under the data-generating process, $\mathbf X\boldsymbol\beta$ and $\boldsymbol\epsilon$ should not be associated in any way. 
   - Can be checked using a scatterplot
-  
+
+ <br> 
+ 
 - A residual-versus-fitted plot can reveal nonlinearity and heteroscedasticity.
+
+<br> 
 
 - A histogram or Q–Q plot of residuals can help assess normality.
 
 ## Checking Assumptions
 
-[Residual Plot: Linearity, Heteroscedasticity]{style="color: maroon;"}
-
-![](images/Week3-4-ResidualPlot.png){fig-align="center" width="70%"}
+![](images/Week3-4-ResidualPlot.png){fig-align="center" width="80%"}
 
 [Residual-versus-fitted plots]{style="color: maroon;"} can help identify:
 
@@ -1073,8 +1077,6 @@ Violating normality is often less concerning with sufficiently large samples bec
 For heteroscedasticity, the plot only allows us to investigate whether the noise variance appears to depend on observed covariates (i.e. limited investigation).
 
 ## Q–Q Plot
-
-[QQ Plot: Normality]{style="color: maroon;"}
 
 ![](images/Week3-4-QQPlot.png){fig-align="center" width="70%"}
 
@@ -1093,6 +1095,9 @@ With $n$ observations, there are $n(n-1)/2$ pairs of errors whose correlations m
   - We [cannot]{style="color: maroon;"} use a completely data-drive approach to check this assumption
   - It could be investigated based on the data and study characteristics
 
+<br> 
+
+:::{.fragment}
 For example, we can build a linear model to predict the air quality since 1856 and then subsequently use this to predict earlier air quality based on proxy information.
 
   - In this case, we know there might be time-dependent correlations in noise (i.e. temporal autocorrelations).
@@ -1102,6 +1107,7 @@ For example, we can build a linear model to predict the air quality since 1856 a
 $$
 \operatorname{Cor}(\widehat\epsilon_i,\widehat\epsilon_{i+1}).
 $$
+::: 
 
 ## Checking Assumptions
 
@@ -1117,12 +1123,24 @@ $$
 - There is no universal quantitative definition of an outlier.
 - Measures such as [Cook's distance, standardized residuals]{style="color: maroon;"}, and [DFFITS]{style="color: maroon;"} can identify influential observations. 
   - A large Cook's distance, for instance, indicates that the observation is influential
+  
+  <br> 
+
+:::{.fragment} 
 - Investigate possible explanations:
+
   - Was there a data-entry or measurement error?
   - Is the observation scientifically possible?
-- If unusual observations can naturally occur, deleting them may distort the target population.
-- Ideally, define exclusion rules during study planning, before examining the data.
+  
+::: 
+
+  <br> 
+
+:::{.fragment}
+- If unusual observations can naturally occur, deleting them may distort the target population. 
+- Ideally, define exclusion rules during study planning, before examining the data. 
 - Robust regression can reduce sensitivity to unusual observations without automatically excluding them.
+::: 
 
 ## Outlier Diagnostics
 
@@ -1188,10 +1206,14 @@ $$
 
 - Do we really need weights in estimation of $\boldsymbol{\beta}$? 
   - We already have GMT or the properties of ML! 
-  
+
+<br> 
+
+:::{.fragment}
 - However, don't forget they require certain assumptions 
   - Specifically, the constant-variance assumption
   - Least squares is BLUE only under these assumptions
+::: 
 
 :::{.fragment}
 Consider instead
@@ -1223,6 +1245,7 @@ E[\widehat{\boldsymbol\beta}_{LS}]=\boldsymbol\beta,
 E[\widehat{\boldsymbol\beta}_{WLS}]=\boldsymbol\beta.
 $$
 
+:::{.fragment}
 Their covariance matrices differ:
 
 $$
@@ -1238,8 +1261,11 @@ $$
 \operatorname{Cov}(\widehat{\boldsymbol\beta}_{WLS})
 =\sigma^2(\mathbf X^T\mathbf W^{-1}\mathbf X)^{-1}.
 $$
+::: 
 
+:::{.fragment}
 Which estimator is more efficient under this heteroscedastic model?
+::: 
 
 ## Transforming the Model
 
@@ -1254,26 +1280,37 @@ $$
 \underbrace{\mathbf W^{-1/2}\boldsymbol\epsilon}_{\boldsymbol\epsilon^*}.
 $$
 
+<br> 
+
+:::{.fragment}
 Now $\operatorname{Var}(\boldsymbol\epsilon^*)=\sigma^2\mathbf I,$ (constant variance), where GMT is applicable
 
 Therefore, $[(\mathbf X^*)^T\mathbf X^*]^{-1}(\mathbf X^*)^T\mathbf y^*$ is the BLUE for $\boldsymbol{\beta}$! 
+  
   - But it is equivalent to $\widehat{\boldsymbol\beta}_{WLS}$
+  
+::: 
 
-Note that in this case, $\widehat{\boldsymbol\beta}_{WLS} = \widehat{\boldsymbol\beta}_{MLE}$, but $\widehat{\boldsymbol\beta}_{WLS} \neq \widehat{\boldsymbol\beta}_{LS}$
+<br> 
+
+:::{.fragment}
+Note that in this case, $\widehat{\boldsymbol\beta}_{WLS} = \widehat{\boldsymbol\beta}_{MLE}$, but $\widehat{\boldsymbol\beta}_{WLS} \neq \widehat{\boldsymbol\beta}_{LS}$ 
+::: 
+
 
 ## WLS Simulation
 
 ```{webr}
 library(MASS)
-set.seed(442)
+set.seed(1)
 
 n <- 50
 wts <- rchisq(n, df = 1)
 x <- rnorm(n)
-pval_ls <- numeric(10000)
-pval_wls <- numeric(10000)
+pval_ls <- numeric(1000)
+pval_wls <- numeric(1000)
 
-for (sim in 1:10000) {
+for (sim in 1:1000) {
   eps <- rnorm(n, mean = 0, sd = sqrt(wts))
   y <- 3 + eps  # generated under H0: beta_1 = 0
 
@@ -1345,6 +1382,7 @@ E[\widehat{\boldsymbol\beta}]
 \begin{bmatrix}\boldsymbol\beta_1\\\mathbf0\end{bmatrix}.
 $$
 
+:::{.fragment}
 Therefore, $\widehat{\boldsymbol{\beta}}$ is (still) unbiased for $\boldsymbol{\beta_1}$
 
 The fitted values are also unbiased:
@@ -1355,7 +1393,9 @@ E[\widehat{\mathbf y}]
 \begin{bmatrix}\boldsymbol\beta_1\\\mathbf0\end{bmatrix}
 =\mathbf X_1\boldsymbol\beta_1.
 $$
+::: 
 
+:::{.fragment}
 Because $(\mathbf I-\mathbf P)\mathbf X=\mathbf0$,
 
 $$
@@ -1363,6 +1403,7 @@ E[\widehat\sigma^2]=\sigma^2.
 $$
 
 Including unnecessary variables does not introduce bias under these assumptions.
+::: 
 
 ## Overfitting and Bias
 
@@ -1419,6 +1460,7 @@ $$
 
 <br> 
 
+:::{.fragment}
 A [**confounder**]{style="color: maroon;"} is associated with both the response and a predictor.
 
 <br> 
@@ -1434,8 +1476,11 @@ and
 $$
 z_i=\gamma_0+x_i\gamma_1+\delta_i.
 $$
+::: 
 
+:::{.fragment}
 If $z_i$ is omitted, the simple-regression slope has bias $\gamma_1\beta_2$. The direction and size of the omitted-variable bias depend on both the association between $x$ and $z$ and the effect of $z$ on $y$.
+::: 
 
 ## Simpson's Paradox
 
@@ -1444,6 +1489,35 @@ An [ecological fallacy]{style="color: maroon;"} occurs when conclusions about in
 For example, suppose $z$ is a two-group factor such as sex. A regression line fitted after combining the groups can differ substantially from the within-group relationship obtained after adjusting for $z$.
 
 ![](images/Week3-4-Simpsons.png){fig-align="center" width="80%"}
+
+## Real Example: Simpson's Paradox
+
+A study compared two treatments for kidney stones.
+
+| Stone size | Treatment A | Treatment B |
+|---|---:|---:|
+| **Small stones** | 81/87 = **93%** success | 234/270 = **87%** success |
+| **Large stones** | 192/263 = **73%** success | 55/80 = **69%** success |
+| **Overall** | 273/350 = **78%** success | 289/350 = **87%** success |
+
+:::{.fragment}
+Within **both stone-size groups**, Treatment A has the higher success rate.
+
+But when we ignore stone size and combine everyone together, **Treatment B appears better overall**.
+:::
+
+:::{.fragment}
+Why?
+
+- Patients with **larger, harder-to-treat stones** were much more likely to receive Treatment A.
+- Patients with **smaller, easier-to-treat stones** were much more likely to receive Treatment B.
+
+[Ignoring the confounder (stone size) reverses the apparent relationship between treatment and success.]{style="color: maroon;"}
+
+:::{.citation} 
+Charig CR, Webb DR, Payne SR, Wickham JEA. (1986). “Comparison of treatment of renal calculi by open surgery, percutaneous nephrolithotomy, and extracorporeal shockwave lithotripsy.” British Medical Journal, 292, 879–882.
+:::
+:::
 
 # Model Selection
 
@@ -1457,6 +1531,7 @@ Which model is better?
 
 The goal is not to fit the [observed data]{style="color: maroon;"} perfectly. We want to understand the [population]{style="color: maroon;"} that generated the data and predict new observations well.
 
+:::{.fragment}
 When performance is evaluated on [new data (blue points)]{style="color: maroon;"}:
 
 - Linear-model test MSE: $5.13$
@@ -1464,7 +1539,8 @@ When performance is evaluated on [new data (blue points)]{style="color: maroon;"
 
 Although the polynomial fits the training data better, the linear model generalizes better in this example.
 
-![](images/Week3-4-NewData.png){fig-align="center" width="80%"}
+![](images/Week3-4-NewData.png){fig-align="center" width="50%"}
+::: 
 
 ## Model Selection
 

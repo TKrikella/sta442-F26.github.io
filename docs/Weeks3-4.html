@@ -1034,23 +1034,31 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoibGlicmFyeShjYXIpICMgcGFj
 <section id="checking-assumptions" class="slide level2">
 <h2>Checking Assumptions</h2>
 <ul>
-<li><p>Most assumptions concern the unobserved errors <span class="math inline">\(\epsilon_i\)</span>.</p>
+<li>Most assumptions concern the unobserved errors <span class="math inline">\(\epsilon_i\)</span>.
 <ul>
 <li>We use the residuals <span class="math inline">\(\widehat\epsilon_i\)</span> as proxies.</li>
 </ul></li>
-<li><p>Under the data-generating process, <span class="math inline">\(\mathbf X\boldsymbol\beta\)</span> and <span class="math inline">\(\boldsymbol\epsilon\)</span> should not be associated in any way.</p>
+</ul>
+<p><br></p>
+<ul>
+<li>Under the data-generating process, <span class="math inline">\(\mathbf X\boldsymbol\beta\)</span> and <span class="math inline">\(\boldsymbol\epsilon\)</span> should not be associated in any way.
 <ul>
 <li>Can be checked using a scatterplot</li>
 </ul></li>
-<li><p>A residual-versus-fitted plot can reveal nonlinearity and heteroscedasticity.</p></li>
-<li><p>A histogram or Q–Q plot of residuals can help assess normality.</p></li>
+</ul>
+<p><br></p>
+<ul>
+<li>A residual-versus-fitted plot can reveal nonlinearity and heteroscedasticity.</li>
+</ul>
+<p><br></p>
+<ul>
+<li>A histogram or Q–Q plot of residuals can help assess normality.</li>
 </ul>
 </section>
 <section id="checking-assumptions-1" class="slide level2">
 <h2>Checking Assumptions</h2>
-<p><span style="color: maroon;">Residual Plot: Linearity, Heteroscedasticity</span></p>
 
-<img data-src="images/Week3-4-ResidualPlot.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><p><span style="color: maroon;">Residual-versus-fitted plots</span> can help identify:</p>
+<img data-src="images/Week3-4-ResidualPlot.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><span style="color: maroon;">Residual-versus-fitted plots</span> can help identify:</p>
 <ul>
 <li>nonlinearity in the mean structure, and</li>
 <li>variance that changes with the fitted value or covariates.</li>
@@ -1059,7 +1067,6 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoibGlicmFyeShjYXIpICMgcGFj
 </section>
 <section id="qq-plot" class="slide level2">
 <h2>Q–Q Plot</h2>
-<p><span style="color: maroon;">QQ Plot: Normality</span></p>
 
 <img data-src="images/Week3-4-QQPlot.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><p>A <span style="color: maroon;">normal Q–Q plot</span> compares the empirical residual quantiles with the theoretical quantiles of a normal distribution.</p>
 <ul>
@@ -1077,6 +1084,8 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoibGlicmFyeShjYXIpICMgcGFj
 <li>We <span style="color: maroon;">cannot</span> use a completely data-drive approach to check this assumption</li>
 <li>It could be investigated based on the data and study characteristics</li>
 </ul>
+<p><br></p>
+<div class="fragment">
 <p>For example, we can build a linear model to predict the air quality since 1856 and then subsequently use this to predict earlier air quality based on proxy information.</p>
 <ul>
 <li>In this case, we know there might be time-dependent correlations in noise (i.e.&nbsp;temporal autocorrelations).</li>
@@ -1086,6 +1095,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoibGlicmFyeShjYXIpICMgcGFj
 <p><span class="math display">\[
 \operatorname{Cor}(\widehat\epsilon_i,\widehat\epsilon_{i+1}).
 \]</span></p>
+</div>
 </section>
 <section id="checking-assumptions-3" class="slide level2">
 <h2>Checking Assumptions</h2>
@@ -1100,16 +1110,26 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoibGlicmFyeShjYXIpICMgcGFj
 <li>Measures such as <span style="color: maroon;">Cook’s distance, standardized residuals</span>, and <span style="color: maroon;">DFFITS</span> can identify influential observations.
 <ul>
 <li>A large Cook’s distance, for instance, indicates that the observation is influential</li>
-</ul></li>
-<li>Investigate possible explanations:
+</ul>
+<br></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>Investigate possible explanations:</p>
 <ul>
 <li>Was there a data-entry or measurement error?</li>
 <li>Is the observation scientifically possible?</li>
 </ul></li>
+</ul>
+</div>
+<p><br></p>
+<div class="fragment">
+<ul>
 <li>If unusual observations can naturally occur, deleting them may distort the target population.</li>
 <li>Ideally, define exclusion rules during study planning, before examining the data.</li>
 <li>Robust regression can reduce sensitivity to unusual observations without automatically excluding them.</li>
 </ul>
+</div>
 </section>
 <section id="outlier-diagnostics" class="slide level2">
 <h2>Outlier Diagnostics</h2>
@@ -1169,12 +1189,17 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoibGlicmFyeShjYXIpICMgcGFj
 <ul>
 <li>We already have GMT or the properties of ML!</li>
 </ul></li>
+</ul>
+<p><br></p>
+<div class="fragment">
+<ul>
 <li>However, don’t forget they require certain assumptions
 <ul>
 <li>Specifically, the constant-variance assumption</li>
 <li>Least squares is BLUE only under these assumptions</li>
 </ul></li>
 </ul>
+</div>
 <div class="fragment">
 <p>Consider instead</p>
 <p><span class="math display">\[
@@ -1199,6 +1224,7 @@ E[\widehat{\boldsymbol\beta}_{LS}]=\boldsymbol\beta,
 \qquad
 E[\widehat{\boldsymbol\beta}_{WLS}]=\boldsymbol\beta.
 \]</span></p>
+<div class="fragment">
 <p>Their covariance matrices differ:</p>
 <p><span class="math display">\[
 \operatorname{Cov}(\widehat{\boldsymbol\beta}_{LS})
@@ -1211,7 +1237,10 @@ E[\widehat{\boldsymbol\beta}_{WLS}]=\boldsymbol\beta.
 \operatorname{Cov}(\widehat{\boldsymbol\beta}_{WLS})
 =\sigma^2(\mathbf X^T\mathbf W^{-1}\mathbf X)^{-1}.
 \]</span></p>
+</div>
+<div class="fragment">
 <p>Which estimator is more efficient under this heteroscedastic model?</p>
+</div>
 </section>
 <section id="transforming-the-model" class="slide level2">
 <h2>Transforming the Model</h2>
@@ -1224,9 +1253,18 @@ E[\widehat{\boldsymbol\beta}_{WLS}]=\boldsymbol\beta.
 +
 \underbrace{\mathbf W^{-1/2}\boldsymbol\epsilon}_{\boldsymbol\epsilon^*}.
 \]</span></p>
+<p><br></p>
+<div class="fragment">
 <p>Now <span class="math inline">\(\operatorname{Var}(\boldsymbol\epsilon^*)=\sigma^2\mathbf I,\)</span> (constant variance), where GMT is applicable</p>
-<p>Therefore, <span class="math inline">\([(\mathbf X^*)^T\mathbf X^*]^{-1}(\mathbf X^*)^T\mathbf y^*\)</span> is the BLUE for <span class="math inline">\(\boldsymbol{\beta}\)</span>! - But it is equivalent to <span class="math inline">\(\widehat{\boldsymbol\beta}_{WLS}\)</span></p>
+<p>Therefore, <span class="math inline">\([(\mathbf X^*)^T\mathbf X^*]^{-1}(\mathbf X^*)^T\mathbf y^*\)</span> is the BLUE for <span class="math inline">\(\boldsymbol{\beta}\)</span>!</p>
+<ul>
+<li>But it is equivalent to <span class="math inline">\(\widehat{\boldsymbol\beta}_{WLS}\)</span></li>
+</ul>
+</div>
+<p><br></p>
+<div class="fragment">
 <p>Note that in this case, <span class="math inline">\(\widehat{\boldsymbol\beta}_{WLS} = \widehat{\boldsymbol\beta}_{MLE}\)</span>, but <span class="math inline">\(\widehat{\boldsymbol\beta}_{WLS} \neq \widehat{\boldsymbol\beta}_{LS}\)</span></p>
+</div>
 </section>
 <section id="wls-simulation" class="slide level2">
 <h2>WLS Simulation</h2>
@@ -1236,7 +1274,7 @@ E[\widehat{\boldsymbol\beta}_{WLS}]=\boldsymbol\beta.
 
 </div>
 <script type="webr-5-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoibGlicmFyeShNQVNTKVxuc2V0LnNlZWQoNDQyKVxuXG5uIDwtIDUwXG53dHMgPC0gcmNoaXNxKG4sIGRmID0gMSlcbnggPC0gcm5vcm0obilcbnB2YWxfbHMgPC0gbnVtZXJpYygxMDAwMClcbnB2YWxfd2xzIDwtIG51bWVyaWMoMTAwMDApXG5cbmZvciAoc2ltIGluIDE6MTAwMDApIHtcbiAgZXBzIDwtIHJub3JtKG4sIG1lYW4gPSAwLCBzZCA9IHNxcnQod3RzKSlcbiAgeSA8LSAzICsgZXBzICAjIGdlbmVyYXRlZCB1bmRlciBIMDogYmV0YV8xID0gMFxuXG4gIGZpdF9scyA8LSBsbSh5IH4geClcbiAgcHZhbF9sc1tzaW1dIDwtIGNvZWYoc3VtbWFyeShmaXRfbHMpKVsyLCA0XVxuXG4gIGZpdF93bHMgPC0gbG0oeSB+IHgsIHdlaWdodHMgPSAxIC8gd3RzKVxuICBwdmFsX3dsc1tzaW1dIDwtIGNvZWYoc3VtbWFyeShmaXRfd2xzKSlbMiwgNF1cbn1cblxubWVhbihwdmFsX3dscyA8IDAuMDUpICAjIGFwcHJveGltYXRlbHkgMC4wNVxubWVhbihwdmFsX2xzIDwgMC4wNSkgICAjIGluZmxhdGVkIFR5cGUgSSBlcnJvciJ9
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoibGlicmFyeShNQVNTKVxuc2V0LnNlZWQoMSlcblxubiA8LSA1MFxud3RzIDwtIHJjaGlzcShuLCBkZiA9IDEpXG54IDwtIHJub3JtKG4pXG5wdmFsX2xzIDwtIG51bWVyaWMoMTAwMClcbnB2YWxfd2xzIDwtIG51bWVyaWMoMTAwMClcblxuZm9yIChzaW0gaW4gMToxMDAwKSB7XG4gIGVwcyA8LSBybm9ybShuLCBtZWFuID0gMCwgc2QgPSBzcXJ0KHd0cykpXG4gIHkgPC0gMyArIGVwcyAgIyBnZW5lcmF0ZWQgdW5kZXIgSDA6IGJldGFfMSA9IDBcblxuICBmaXRfbHMgPC0gbG0oeSB+IHgpXG4gIHB2YWxfbHNbc2ltXSA8LSBjb2VmKHN1bW1hcnkoZml0X2xzKSlbMiwgNF1cblxuICBmaXRfd2xzIDwtIGxtKHkgfiB4LCB3ZWlnaHRzID0gMSAvIHd0cylcbiAgcHZhbF93bHNbc2ltXSA8LSBjb2VmKHN1bW1hcnkoZml0X3dscykpWzIsIDRdXG59XG5cbm1lYW4ocHZhbF93bHMgPCAwLjA1KSAgIyBhcHByb3hpbWF0ZWx5IDAuMDVcbm1lYW4ocHZhbF9scyA8IDAuMDUpICAgIyBpbmZsYXRlZCBUeXBlIEkgZXJyb3IifQ==
 </script>
 </div>
 </div>
@@ -1292,6 +1330,7 @@ E[\widehat{\boldsymbol\beta}]
 =
 \begin{bmatrix}\boldsymbol\beta_1\\\mathbf0\end{bmatrix}.
 \]</span></p>
+<div class="fragment">
 <p>Therefore, <span class="math inline">\(\widehat{\boldsymbol{\beta}}\)</span> is (still) unbiased for <span class="math inline">\(\boldsymbol{\beta_1}\)</span></p>
 <p>The fitted values are also unbiased:</p>
 <p><span class="math display">\[
@@ -1300,11 +1339,14 @@ E[\widehat{\mathbf y}]
 \begin{bmatrix}\boldsymbol\beta_1\\\mathbf0\end{bmatrix}
 =\mathbf X_1\boldsymbol\beta_1.
 \]</span></p>
+</div>
+<div class="fragment">
 <p>Because <span class="math inline">\((\mathbf I-\mathbf P)\mathbf X=\mathbf0\)</span>,</p>
 <p><span class="math display">\[
 E[\widehat\sigma^2]=\sigma^2.
 \]</span></p>
 <p>Including unnecessary variables does not introduce bias under these assumptions.</p>
+</div>
 </section>
 <section id="overfitting-and-bias-1" class="slide level2">
 <h2>Overfitting and Bias</h2>
@@ -1352,6 +1394,7 @@ E[\widehat\sigma^2]
 <h2>Underfitting and Bias</h2>
 <p><span style="color: maroon;"><strong>Simpson’s paradox:</strong></span> a trend appears within several groups but disappears or reverses when the groups are combined.</p>
 <p><br></p>
+<div class="fragment">
 <p>A <span style="color: maroon;"><strong>confounder</strong></span> is associated with both the response and a predictor.</p>
 <p><br></p>
 <p>For example,</p>
@@ -1362,14 +1405,67 @@ y_i=\beta_0+x_i\beta_1+z_i\beta_2+\epsilon_i
 <p><span class="math display">\[
 z_i=\gamma_0+x_i\gamma_1+\delta_i.
 \]</span></p>
+</div>
+<div class="fragment">
 <p>If <span class="math inline">\(z_i\)</span> is omitted, the simple-regression slope has bias <span class="math inline">\(\gamma_1\beta_2\)</span>. The direction and size of the omitted-variable bias depend on both the association between <span class="math inline">\(x\)</span> and <span class="math inline">\(z\)</span> and the effect of <span class="math inline">\(z\)</span> on <span class="math inline">\(y\)</span>.</p>
+</div>
 </section>
 <section id="simpsons-paradox" class="slide level2">
 <h2>Simpson’s Paradox</h2>
 <p>An <span style="color: maroon;">ecological fallacy</span> occurs when conclusions about individuals are incorrectly drawn from group-level patterns.</p>
 <p>For example, suppose <span class="math inline">\(z\)</span> is a two-group factor such as sex. A regression line fitted after combining the groups can differ substantially from the within-group relationship obtained after adjusting for <span class="math inline">\(z\)</span>.</p>
 
-<img data-src="images/Week3-4-Simpsons.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section></section>
+<img data-src="images/Week3-4-Simpsons.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="real-example-simpsons-paradox" class="slide level2">
+<h2>Real Example: Simpson’s Paradox</h2>
+<p>A study compared two treatments for kidney stones.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 36%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stone size</th>
+<th style="text-align: right;">Treatment A</th>
+<th style="text-align: right;">Treatment B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Small stones</strong></td>
+<td style="text-align: right;">81/87 = <strong>93%</strong> success</td>
+<td style="text-align: right;">234/270 = <strong>87%</strong> success</td>
+</tr>
+<tr class="even">
+<td><strong>Large stones</strong></td>
+<td style="text-align: right;">192/263 = <strong>73%</strong> success</td>
+<td style="text-align: right;">55/80 = <strong>69%</strong> success</td>
+</tr>
+<tr class="odd">
+<td><strong>Overall</strong></td>
+<td style="text-align: right;">273/350 = <strong>78%</strong> success</td>
+<td style="text-align: right;">289/350 = <strong>87%</strong> success</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>Within <strong>both stone-size groups</strong>, Treatment A has the higher success rate.</p>
+<p>But when we ignore stone size and combine everyone together, <strong>Treatment B appears better overall</strong>.</p>
+</div>
+<div class="fragment">
+<p>Why?</p>
+<ul>
+<li>Patients with <strong>larger, harder-to-treat stones</strong> were much more likely to receive Treatment A.</li>
+<li>Patients with <strong>smaller, easier-to-treat stones</strong> were much more likely to receive Treatment B.</li>
+</ul>
+<p><span style="color: maroon;">Ignoring the confounder (stone size) reverses the apparent relationship between treatment and success.</span></p>
+<div class="citation">
+<p>Charig CR, Webb DR, Payne SR, Wickham JEA. (1986). “Comparison of treatment of renal calculi by open surgery, percutaneous nephrolithotomy, and extracorporeal shockwave lithotripsy.” British Medical Journal, 292, 879–882.</p>
+</div>
+</div>
+</section></section>
 <section>
 <section id="model-selection" class="title-slide slide level1 center">
 <h1>Model Selection</h1>
@@ -1383,14 +1479,20 @@ z_i=\gamma_0+x_i\gamma_1+\delta_i.
 <section id="motivation-for-model-selection-1" class="slide level2">
 <h2>Motivation for Model Selection</h2>
 <p>The goal is not to fit the <span style="color: maroon;">observed data</span> perfectly. We want to understand the <span style="color: maroon;">population</span> that generated the data and predict new observations well.</p>
+<div class="fragment">
 <p>When performance is evaluated on <span style="color: maroon;">new data (blue points)</span>:</p>
 <ul>
 <li>Linear-model test MSE: <span class="math inline">\(5.13\)</span></li>
 <li>Polynomial-model test MSE: <span class="math inline">\(6.65\)</span></li>
 </ul>
 <p>Although the polynomial fits the training data better, the linear model generalizes better in this example.</p>
-
-<img data-src="images/Week3-4-NewData.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Week3-4-NewData.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
+</figure>
+</div>
+</div>
+</section>
 <section id="model-selection-1" class="slide level2 scrollable">
 <h2>Model Selection</h2>
 <p>How should we choose a subset of predictors?</p>
