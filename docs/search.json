@@ -1299,7 +1299,7 @@
     "href": "Weeks3-4.html#overfitting-and-bias-1",
     "title": "Linear Models",
     "section": "Overfitting and Bias",
-    "text": "Overfitting and Bias\nIf adding unnecessary covariates does not induce bias, why avoid it?\n\nBias is not the only consideration. In the overfitted model,\n\\[\n\\operatorname{Cov}(\\widehat{\\boldsymbol\\beta})_{1:k,1:k}\n=\\sigma^2(\\mathbf X^T\\mathbf X)^{-1}_{1:k,1:k}\n\\neq\n\\sigma^2(\\mathbf X_1^T\\mathbf X_1)^{-1}.\n\\]\n\n\nBy the Gauss–Markov theorem, estimating unnecessary coefficients increases the variability of the estimated coefficients of interest."
+    "text": "Overfitting and Bias\nIf adding unnecessary covariates does not induce bias, why avoid it?\n\nBias is not the only consideration. In the overfitted model,\n\\[\n\\operatorname{Cov}(\\widehat{\\boldsymbol\\beta})_{1:k,1:k}\n=\\sigma^2(\\mathbf X^T\\mathbf X)^{-1}_{1:k,1:k}\n\\neq\n\\sigma^2(\\mathbf X_1^T\\mathbf X_1)^{-1}.\n\\]\n\n\nEstimating unnecessary coefficients generally increases the variance of the coefficients of interest, particularly when the unnecessary predictors are correlated with the relevant predictors."
   },
   {
     "objectID": "Weeks3-4.html#underfitting-and-bias",

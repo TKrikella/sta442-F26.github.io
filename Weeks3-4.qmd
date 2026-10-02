@@ -1421,7 +1421,7 @@ $$
 ::: 
 
 :::{.fragment}
-By the Gauss–Markov theorem, estimating unnecessary coefficients increases the variability of the estimated coefficients of interest.
+Estimating unnecessary coefficients generally increases the variance of the coefficients of interest, particularly when the unnecessary predictors are correlated with the relevant predictors.
 ::: 
 
 ## Underfitting and Bias
