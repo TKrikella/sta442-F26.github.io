@@ -18,7 +18,7 @@
     "href": "slides.html",
     "title": "Slides",
     "section": "",
-    "text": "Below is a tentative schedule of topics for the term. You can find the lecture slides in html format, my annotated slides as a pdf, as well as the pdf versions of the tutorial slides. When annotating the html slides in class, you can save them by printing to pdf in your browser.\n\n\n\n\nDate\nTopics\nSlides\nSuggested Reading\nAssessments\n\n\n\n\nSept. 11\nStatistical Modelling and InferenceStudy planning, data-generating process, statistical inference (Type I/II errors), simulation\nHTML SlidesAnnotated Slides\n—\n-\n\n\nSept. 18\nTopics in Statistical InferenceMultiple testing, family-wise error rate, false discovery rate, permutation methods\nHTML SlidesChocolate PaperAnnotated Slides\n[ISL] Ch. 13\nAssignment 1 Released\n\n\nSept. 25Oct. 2\nLinear ModelsLeast squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection\nHTML Slides\n[LM] Ch. 2, 3, 8.2, 10[ISL] Ch. 3, 6.1\nAssignment 1 Due, Oct 2\n\n\nOct. 9Oct. 16\nGeneralized Linear ModelsReview of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood\n\n[ELM] Ch. 2, 5, 8[ISL] Ch. 4.1–4.3, 4.6\n\n\n\nOct. 23\nMidterm Exam\n-\n—\nAssignment 2 Released\n\n\nOct. 30\nNo class — Reading Week\n\n—\n—\n\n\nNov. 6\nBayesian ThinkingPrior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs\n\n—\nAssignment 2 Due\n\n\nNov. 13Nov. 20\nRandom Effects ModelsCorrelated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP\n\n[ELM] Ch. 10, 11\nAssignment 3 Released, Nov. 20\n\n\nNov. 27\nPenalized RegressionBias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation\n\n[ISL] Ch. 6[ESL] Sec. 7.10\n\n\n\nDec. 4\nGeneralized Additive ModelsBasis functions, smoothing splines, generalized additive models\n\n[ELM] Ch. 15[ISL] Ch. 7[ESL] Ch. 5\nAssignment 3 Due"
+    "text": "Below is a tentative schedule of topics for the term. You can find the lecture slides in html format, my annotated slides as a pdf, as well as the pdf versions of the tutorial slides. When annotating the html slides in class, you can save them by printing to pdf in your browser.\n\n\n\n\nDate\nTopics\nSlides\nSuggested Reading\nAssessments\n\n\n\n\nSept. 11\nStatistical Modelling and InferenceStudy planning, data-generating process, statistical inference (Type I/II errors), simulation\nHTML SlidesAnnotated Slides\n—\n-\n\n\nSept. 18\nTopics in Statistical InferenceMultiple testing, family-wise error rate, false discovery rate, permutation methods\nHTML SlidesChocolate PaperAnnotated Slides\n[ISL] Ch. 13\nAssignment 1 Released\n\n\nSept. 25Oct. 2\nLinear ModelsLeast squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection\nHTML Slides\n[LM] Ch. 2, 3, 8.2, 10[ISL] Ch. 3, 6.1\nAssignment 1 Due, Oct 2\n\n\nOct. 9Oct. 16\nGeneralized Linear ModelsReview of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood\nHTML Slides\n[ELM] Ch. 2, 5, 8[ISL] Ch. 4.1–4.3, 4.6\n\n\n\nOct. 23\nMidterm Exam\n-\n—\nAssignment 2 Released\n\n\nOct. 30\nNo class — Reading Week\n\n—\n—\n\n\nNov. 6\nBayesian ThinkingPrior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs\n\n—\nAssignment 2 Due\n\n\nNov. 13Nov. 20\nRandom Effects ModelsCorrelated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP\n\n[ELM] Ch. 10, 11\nAssignment 3 Released, Nov. 20\n\n\nNov. 27\nPenalized RegressionBias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation\n\n[ISL] Ch. 6[ESL] Sec. 7.10\n\n\n\nDec. 4\nGeneralized Additive ModelsBasis functions, smoothing splines, generalized additive models\n\n[ELM] Ch. 15[ISL] Ch. 7[ESL] Ch. 5\nAssignment 3 Due"
   },
   {
     "objectID": "Course-Introduction.html#about-me",
@@ -445,7 +445,7 @@
     "href": "slides.html#tentative-course-schedule",
     "title": "Slides",
     "section": "",
-    "text": "Below is a tentative schedule of topics for the term. You can find the lecture slides in html format, my annotated slides as a pdf, as well as the pdf versions of the tutorial slides. When annotating the html slides in class, you can save them by printing to pdf in your browser.\n\n\n\n\nDate\nTopics\nSlides\nSuggested Reading\nAssessments\n\n\n\n\nSept. 11\nStatistical Modelling and InferenceStudy planning, data-generating process, statistical inference (Type I/II errors), simulation\nHTML SlidesAnnotated Slides\n—\n-\n\n\nSept. 18\nTopics in Statistical InferenceMultiple testing, family-wise error rate, false discovery rate, permutation methods\nHTML SlidesChocolate PaperAnnotated Slides\n[ISL] Ch. 13\nAssignment 1 Released\n\n\nSept. 25Oct. 2\nLinear ModelsLeast squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection\nHTML Slides\n[LM] Ch. 2, 3, 8.2, 10[ISL] Ch. 3, 6.1\nAssignment 1 Due, Oct 2\n\n\nOct. 9Oct. 16\nGeneralized Linear ModelsReview of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood\n\n[ELM] Ch. 2, 5, 8[ISL] Ch. 4.1–4.3, 4.6\n\n\n\nOct. 23\nMidterm Exam\n-\n—\nAssignment 2 Released\n\n\nOct. 30\nNo class — Reading Week\n\n—\n—\n\n\nNov. 6\nBayesian ThinkingPrior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs\n\n—\nAssignment 2 Due\n\n\nNov. 13Nov. 20\nRandom Effects ModelsCorrelated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP\n\n[ELM] Ch. 10, 11\nAssignment 3 Released, Nov. 20\n\n\nNov. 27\nPenalized RegressionBias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation\n\n[ISL] Ch. 6[ESL] Sec. 7.10\n\n\n\nDec. 4\nGeneralized Additive ModelsBasis functions, smoothing splines, generalized additive models\n\n[ELM] Ch. 15[ISL] Ch. 7[ESL] Ch. 5\nAssignment 3 Due"
+    "text": "Below is a tentative schedule of topics for the term. You can find the lecture slides in html format, my annotated slides as a pdf, as well as the pdf versions of the tutorial slides. When annotating the html slides in class, you can save them by printing to pdf in your browser.\n\n\n\n\nDate\nTopics\nSlides\nSuggested Reading\nAssessments\n\n\n\n\nSept. 11\nStatistical Modelling and InferenceStudy planning, data-generating process, statistical inference (Type I/II errors), simulation\nHTML SlidesAnnotated Slides\n—\n-\n\n\nSept. 18\nTopics in Statistical InferenceMultiple testing, family-wise error rate, false discovery rate, permutation methods\nHTML SlidesChocolate PaperAnnotated Slides\n[ISL] Ch. 13\nAssignment 1 Released\n\n\nSept. 25Oct. 2\nLinear ModelsLeast squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection\nHTML Slides\n[LM] Ch. 2, 3, 8.2, 10[ISL] Ch. 3, 6.1\nAssignment 1 Due, Oct 2\n\n\nOct. 9Oct. 16\nGeneralized Linear ModelsReview of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood\nHTML Slides\n[ELM] Ch. 2, 5, 8[ISL] Ch. 4.1–4.3, 4.6\n\n\n\nOct. 23\nMidterm Exam\n-\n—\nAssignment 2 Released\n\n\nOct. 30\nNo class — Reading Week\n\n—\n—\n\n\nNov. 6\nBayesian ThinkingPrior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs\n\n—\nAssignment 2 Due\n\n\nNov. 13Nov. 20\nRandom Effects ModelsCorrelated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP\n\n[ELM] Ch. 10, 11\nAssignment 3 Released, Nov. 20\n\n\nNov. 27\nPenalized RegressionBias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation\n\n[ISL] Ch. 6[ESL] Sec. 7.10\n\n\n\nDec. 4\nGeneralized Additive ModelsBasis functions, smoothing splines, generalized additive models\n\n[ELM] Ch. 15[ISL] Ch. 7[ESL] Ch. 5\nAssignment 3 Due"
   },
   {
     "objectID": "index.html#welcome-to-methods-of-applied-statistics",
@@ -1454,5 +1454,439 @@
     "title": "Linear Models",
     "section": "Real Example: Simpson’s Paradox",
     "text": "Real Example: Simpson’s Paradox\nA study compared two treatments for kidney stones.\n\n\n\n\n\n\n\n\nStone size\nTreatment A\nTreatment B\n\n\n\n\nSmall stones\n81/87 = 93% success\n234/270 = 87% success\n\n\nLarge stones\n192/263 = 73% success\n55/80 = 69% success\n\n\nOverall\n273/350 = 78% success\n289/350 = 87% success\n\n\n\n\nWithin both stone-size groups, Treatment A has the higher success rate.\nBut when we ignore stone size and combine everyone together, Treatment B appears better overall.\n\n\nWhy?\n\nPatients with larger, harder-to-treat stones were much more likely to receive Treatment A.\nPatients with smaller, easier-to-treat stones were much more likely to receive Treatment B.\n\nIgnoring the confounder (stone size) reverses the apparent relationship between treatment and success.\n\nCharig CR, Webb DR, Payne SR, Wickham JEA. (1986). “Comparison of treatment of renal calculi by open surgery, percutaneous nephrolithotomy, and extracorporeal shockwave lithotripsy.” British Medical Journal, 292, 879–882."
+  },
+  {
+    "objectID": "Week5-6.html#review-case-study-physical-activity-and-menstrual-pain",
+    "href": "Week5-6.html#review-case-study-physical-activity-and-menstrual-pain",
+    "title": "Generalized Linear Models",
+    "section": "Review: Case Study Physical Activity and Menstrual Pain",
+    "text": "Review: Case Study Physical Activity and Menstrual Pain\nIn a fictional observational study, 180 adults each report their menstrual pain score for one cycle, weekly physical activity, age, and whether they have endometriosis.\nParticipants with endometriosis tend to report more pain and less physical activity. Pain scores also vary much more among participants with endometriosis.\nResearchers want to determine whether:\n\nPhysical activity is associated with pain after adjusting for age and endometriosis.\nAge and endometriosis jointly contribute to explaining pain beyond physical activity.\n\nDiscuss in groups. Develop an analysis plan.\n\nHow would you check whether a linear model makes sense for these data?\nWould you recommend weighted least squares? Why or why not? If so, what should the weights be, and how would you obtain them?\nHow would you tackle each research question? Specify your model(s), hypotheses, and tests."
+  },
+  {
+    "objectID": "Week5-6.html#table-of-contents",
+    "href": "Week5-6.html#table-of-contents",
+    "title": "Generalized Linear Models",
+    "section": "Table of contents",
+    "text": "Table of contents\n\nModeling binary and count data\nMaximum likelihood and exponential family\nParameter estimation in GLMs\nStatistical inference in GLMs\nChecking assumptions\nModeling considerations"
+  },
+  {
+    "objectID": "Week5-6.html#bernoulli-and-poisson-distributions",
+    "href": "Week5-6.html#bernoulli-and-poisson-distributions",
+    "title": "Generalized Linear Models",
+    "section": "Bernoulli and Poisson distributions",
+    "text": "Bernoulli and Poisson distributions\nBernoulli: used to model binary data, \\(y\\in\\{0,1\\}\\).\n\\[\ny\\sim\\operatorname{Bernoulli}(p),\\qquad f_Y(y)=p^y(1-p)^{1-y}.\n\\]\n\n\\(E(y)=p\\) and \\(\\operatorname{Var}(y)=p(1-p)\\).\nOne parameter (\\(p\\)) characterizes both the mean and variance.\n\n\nPoisson: used to model counts, \\(y\\in\\{0,1,2,\\ldots\\}\\).\n\\[\ny\\sim\\operatorname{Poisson}(\\lambda),\\qquad f_Y(y)=\\frac{e^{-\\lambda}\\lambda^y}{y!}.\n\\]\n\n\\(E(y)=\\lambda\\) and \\(\\operatorname{Var}(y)=\\lambda\\).\nOne parameter (\\(\\lambda\\)) characterizes both the mean and variance."
+  },
+  {
+    "objectID": "Week5-6.html#modeling-binary-data-covariate-effects",
+    "href": "Week5-6.html#modeling-binary-data-covariate-effects",
+    "title": "Generalized Linear Models",
+    "section": "Modeling binary data: covariate effects",
+    "text": "Modeling binary data: covariate effects\n\nConsider the example where we are modelling the admission rate of an MBA program (\\(p_i\\)) based on each applicant’s college GPA (\\(x_i\\)) (this example is American).\n\n\n\nLogistic regression specifies\n\\[y_i\\mid x_i\\sim\\operatorname{Bernoulli}(p_i),\\] \\[\\log\\left(\\frac{p_i}{1-p_i}\\right)=\\beta_0+x_i\\beta_1,\\] \\[\\implies p_i=\\frac{e^{\\beta_0+x_i\\beta_1}}{1+e^{\\beta_0+x_i\\beta_1}}.\\] There is no separate additive \\(\\epsilon_i\\) term: randomness comes from the Bernoulli distribution."
+  },
+  {
+    "objectID": "Week5-6.html#modeling-binary-data-interpretation",
+    "href": "Week5-6.html#modeling-binary-data-interpretation",
+    "title": "Generalized Linear Models",
+    "section": "Modeling binary data: interpretation",
+    "text": "Modeling binary data: interpretation\nWhen fitting a logistic regression, it is modelling by \\(y_i \\sim \\text{Bernoulli}(p_i)\\) where\n\\[\\log\\left(\\frac{p_i}{1-p_i}\\right)=\\beta_0+x_i\\beta_1,\\] \nInterpretation of \\(\\beta_0\\)\n\nInterpretation of \\(\\beta_1\\)"
+  },
+  {
+    "objectID": "Week5-6.html#modeling-binary-data",
+    "href": "Week5-6.html#modeling-binary-data",
+    "title": "Generalized Linear Models",
+    "section": "Modeling binary data",
+    "text": "Modeling binary data"
+  },
+  {
+    "objectID": "Week5-6.html#modeling-binary-data-different-link-functions",
+    "href": "Week5-6.html#modeling-binary-data-different-link-functions",
+    "title": "Generalized Linear Models",
+    "section": "Modeling binary data: different link functions",
+    "text": "Modeling binary data: different link functions"
+  },
+  {
+    "objectID": "Week5-6.html#modeling-count-data-covariate-effects",
+    "href": "Week5-6.html#modeling-count-data-covariate-effects",
+    "title": "Generalized Linear Models",
+    "section": "Modeling count data: covariate effects",
+    "text": "Modeling count data: covariate effects\nConsider another example: A hospital tracks the number of emergency room visits made by each individual in 2019 (\\(y_i\\)). How do age, sex, and chronic health conditions affect the number of visits?\n\nPoisson regression specifies\n\\[y_i\\mid\\mathbf{x}_i\\sim\\operatorname{Poisson}(\\lambda_i),\\] \\[\\log(\\lambda_i)=\\mathbf{x}_i^T\\boldsymbol\\beta\n\\quad\\Longrightarrow\\quad\n\\lambda_i=\\exp(\\mathbf{x}_i^T\\boldsymbol\\beta).\\]\n\nCovariate effects are multiplicative on the expected-count scale.\nRandomness comes from the Poisson distribution, without a separate additive \\(\\epsilon_i\\) term."
+  },
+  {
+    "objectID": "Week5-6.html#modeling-count-data-interpretation",
+    "href": "Week5-6.html#modeling-count-data-interpretation",
+    "title": "Generalized Linear Models",
+    "section": "Modeling count data: interpretation",
+    "text": "Modeling count data: interpretation\nWhen all non-intercept predictors equal zero, i.e. \\(x_i = 0\\)\n\\[\\log(\\lambda_i)=\\beta_0\\quad\\Longrightarrow\\quad \\lambda_i=e^{\\beta_0}.\\]\n\nFor a one-unit increase in \\(x\\), holding other predictors fixed,\n\\[\\log(\\lambda_i)=\\beta_0+x_i\\beta_1,\\] \\[\\log(\\lambda_i^*)=\\beta_0+(x_i+1)\\beta_1.\\]\n\n\nTherefore,\n\\[\\beta_1=\\log\\left(\\frac{\\lambda_i^*}{\\lambda_i}\\right),\\qquad\ne^{\\beta_1}=\\frac{\\lambda_i^*}{\\lambda_i}.\\]\nInterpretation of \\(e^{\\beta_1}\\)"
+  },
+  {
+    "objectID": "Week5-6.html#activity-what-does-the-coefficient-mean",
+    "href": "Week5-6.html#activity-what-does-the-coefficient-mean",
+    "title": "Generalized Linear Models",
+    "section": "Activity: What Does the Coefficient Mean?",
+    "text": "Activity: What Does the Coefficient Mean?\nA researcher fits the following two models.\n\n\nModel 1: Predicting Hypertension\n\\[\n\\log\\left(\\frac{p_i}{1-p_i}\\right)\n=\n-2.1 + 0.35x_i,\n\\]\nwhere \\(x\\) is age measured in decades.\n\nModel 2: Predicting Number of Migraines\n\\[\n\\log(\\lambda_i)\n=\n0.8 - 0.20z_i,\n\\]\nwhere \\(z\\) is hours of weekly physical activity.\n\nDiscuss:\n\nInterpret \\(0.35\\) and \\(e^{0.35}\\) in Model 1.\nInterpret \\(-0.20\\) and \\(e^{-0.20}\\) in Model 2.\nWhy would it be incorrect to say that a one-unit increase in \\(x\\) increases the probability by \\(0.35\\)?"
+  },
+  {
+    "objectID": "Week5-6.html#some-considerations",
+    "href": "Week5-6.html#some-considerations",
+    "title": "Generalized Linear Models",
+    "section": "Some considerations",
+    "text": "Some considerations\n\nShould we always use Bernoulli and Poisson models just because the response is binary or a non-negative integer?\n\n\nDespite convenience in modeling, they are often restrictive in using a single parameter to specify means and variances.\n\nWhat if \\(\\text{Var}(y) \\neq E(y)(1-E(y))\\) in binary data and \\(\\text{Var}(y) \\neq E(y)\\) in count data? Often, there is an issue of zero-inflatedness in count modelling\n\n\n\n\nIs it reasonable to (always) specify canonical link functions as DGP?\n\n\nFor example, in practice, what should we choose between logit and probit link functions in logistic regression?\n\n\n\nIn such cases, your model would be misspecified, impacting statistical inference"
+  },
+  {
+    "objectID": "Week5-6.html#example-1-can-we-just-fit-linear-regression",
+    "href": "Week5-6.html#example-1-can-we-just-fit-linear-regression",
+    "title": "Generalized Linear Models",
+    "section": "Example 1: can we just fit linear regression?",
+    "text": "Example 1: can we just fit linear regression?\n\n\n\nOften, a linear trend is obvious when y is count data, but should we use \\(\\exp({\\boldsymbol{x_i}^\\mathsf{T}\\boldsymbol{\\beta}})\\), (e.g. Poisson)?\n\n\n\nLessons from the previous lecture: is the constant variance assumption satisfied?\n\nIf not, what would be the impact to statistical inference when we fit linear regression?"
+  },
+  {
+    "objectID": "Week5-6.html#example-2-excess-zeros-in-count-data",
+    "href": "Week5-6.html#example-2-excess-zeros-in-count-data",
+    "title": "Generalized Linear Models",
+    "section": "Example 2: excess zeros in count data",
+    "text": "Example 2: excess zeros in count data\nA researcher asks how many cigarettes a participant smoked in the past week.\n\nA non-smoker should not have consumed any\nA smoker may also report zero that week.\n\n\n\n\n\nIn such a case, a more flexible model would be in a more complicated form\n\\[Y_i=\\begin{cases}\n=0,&\\text{with probability }1-p,\\\\\n\\sim \\text{Poisson}(\\lambda) &\\text{with probability }p.\n\\end{cases}\\]\nThis is an example of the Zero-Inflated Poisson (ZIP) model."
+  },
+  {
+    "objectID": "Week5-6.html#example-3-negative-binomial-counts",
+    "href": "Week5-6.html#example-3-negative-binomial-counts",
+    "title": "Generalized Linear Models",
+    "section": "Example 3: negative binomial counts",
+    "text": "Example 3: negative binomial counts\nThe negative binomial distribution can represent the number of failures before a target number of successes.\n\nIt generalizes the geometric distribution.\nMean and variance are specified by two parameters \\(\\implies\\) less restrictive than Poisson\n\n\\[E(Y)=\\mu,\\qquad \\operatorname{Var}(Y)=\\mu+\\frac{\\mu^2}{k}.\\]"
+  },
+  {
+    "objectID": "Week5-6.html#poisson-and-negative-binomial-fits",
+    "href": "Week5-6.html#poisson-and-negative-binomial-fits",
+    "title": "Generalized Linear Models",
+    "section": "Poisson and negative binomial fits",
+    "text": "Poisson and negative binomial fits"
+  },
+  {
+    "objectID": "Week5-6.html#inflated-type-i-error",
+    "href": "Week5-6.html#inflated-type-i-error",
+    "title": "Generalized Linear Models",
+    "section": "Inflated Type I error?",
+    "text": "Inflated Type I error?\n\n\nNegative binomial data\n\n\n\n\n\n\n\n\n\nZero-inflated Poisson data"
+  },
+  {
+    "objectID": "Week5-6.html#inflated-type-i-error-1",
+    "href": "Week5-6.html#inflated-type-i-error-1",
+    "title": "Generalized Linear Models",
+    "section": "Inflated Type I error?",
+    "text": "Inflated Type I error?\nLet’s see if asymptotics help. Repeat the previous simulations with \\(n=10000\\).\nThe code takes too long to run live, but when you run the code below, you will find that both Type 1 Errors are still inflated.\n\n\nNegative binomial data\nset.seed(0)\nn &lt;- 10000\nx &lt;- rnorm(n)\np_values &lt;- numeric(10000)\nfor (sim in seq_along(p_values)) {\n  y &lt;- rnbinom(n, mu = 3, size = 2)\n  fit &lt;- glm(y ~ x, family = poisson())\n  p_values[sim] &lt;- coef(summary(fit))[2, 4]\n}\nmean(p_values &lt; 0.05) # 0.202 (still inflated)\n\nZero-inflated Poisson data\nset.seed(0)\nn &lt;- 10000\nx &lt;- rnorm(n)\np_values &lt;- numeric(10000)\nfor (sim in seq_along(p_values)) {\n  z &lt;- rbinom(n, 1, 0.3)\n  y &lt;- ifelse(z == 0, 0, rpois(n, 3))\n  fit &lt;- glm(y ~ x, family = poisson())\n  p_values[sim] &lt;- coef(summary(fit))[2, 4]\n}\nmean(p_values &lt; 0.05) # 0.271 (still inflated)\n\nThe variance assumption remains wrong as \\(n\\) increases. Model-based standard errors remain too small."
+  },
+  {
+    "objectID": "Week5-6.html#the-next-two-lectures",
+    "href": "Week5-6.html#the-next-two-lectures",
+    "title": "Generalized Linear Models",
+    "section": "The next two lectures",
+    "text": "The next two lectures\n\nLearn how GLMs are estimated and how inference is performed.\nLearn remedies when the distributional assumptions behind a GLM do not hold."
+  },
+  {
+    "objectID": "Week5-6.html#why-maximum-likelihood-in-glms",
+    "href": "Week5-6.html#why-maximum-likelihood-in-glms",
+    "title": "Generalized Linear Models",
+    "section": "Why maximum likelihood in GLMs?",
+    "text": "Why maximum likelihood in GLMs?\n\nIn the linear model with normality assumption, \\(\\hat{\\boldsymbol\\beta}_{\\mathrm{MLE}}=\\hat{\\boldsymbol\\beta}_{\\mathrm{LS}}\\).\nLogistic and Poisson regression generally have no closed-form coefficient estimates.\nWe estimate coefficients by maximum likelihood, using numerical optimization.\nInference relies on MLE properties that hold asymptotically, under regularity conditions.\nThese properties do not guarantee good performance in small samples."
+  },
+  {
+    "objectID": "Week5-6.html#maximum-likelihood",
+    "href": "Week5-6.html#maximum-likelihood",
+    "title": "Generalized Linear Models",
+    "section": "Maximum likelihood",
+    "text": "Maximum likelihood\nA quick review of the scalar parameter: \\(\\theta\\)."
+  },
+  {
+    "objectID": "Week5-6.html#maximum-likelihood-vector-parameter",
+    "href": "Week5-6.html#maximum-likelihood-vector-parameter",
+    "title": "Generalized Linear Models",
+    "section": "Maximum likelihood: vector parameter",
+    "text": "Maximum likelihood: vector parameter\nA quick review of the vector parameter: \\(\\boldsymbol{\\theta}\\)."
+  },
+  {
+    "objectID": "Week5-6.html#score-and-information-identities",
+    "href": "Week5-6.html#score-and-information-identities",
+    "title": "Generalized Linear Models",
+    "section": "Score and information identities",
+    "text": "Score and information identities\nThe score has an expected value of 0:\n\\[E[S(\\theta)]=0.\\]\n\nThe Fisher information is defined by the variance of the score:\n\\[\\mathcal I(\\theta)=\\operatorname{Var}[S(\\theta)]\n=E\\left[\\left(\\frac{\\partial\\log L}{\\partial\\theta}\\right)^2\\right].\\]\nand, under some regularity conditions, it is also equivalent to:\n\\[\\mathcal I(\\theta)=-E\\left[\\frac{\\partial^2\\log L}{\\partial\\theta^2}\\right].\\]"
+  },
+  {
+    "objectID": "Week5-6.html#why-does-the-score-have-mean-zero",
+    "href": "Week5-6.html#why-does-the-score-have-mean-zero",
+    "title": "Generalized Linear Models",
+    "section": "Why does the score have mean zero?",
+    "text": "Why does the score have mean zero?\n\\[\n\\begin{aligned}\nE[S(\\theta)]\n&=\\int \\frac{\\partial}{\\partial\\theta}\\log f(x;\\theta)\\,f(x;\\theta)\\,dx\\\\\n&=\\int \\frac{1}{f(x;\\theta)}\\frac{\\partial f(x;\\theta)}{\\partial\\theta}f(x;\\theta)\\,dx\\\\\n&=\\int \\frac{\\partial f(x;\\theta)}{\\partial\\theta}\\,dx\\\\\n&=\\frac{\\partial}{\\partial\\theta}\\int f(x;\\theta)\\,dx\\\\\n&=\\frac{\\partial}{\\partial\\theta}1=0.\n\\end{aligned}\n\\]\nRegularity conditions allow us to interchange differentiation and integration."
+  },
+  {
+    "objectID": "Week5-6.html#why-are-the-information-expressions-equal",
+    "href": "Week5-6.html#why-are-the-information-expressions-equal",
+    "title": "Generalized Linear Models",
+    "section": "Why are the information expressions equal?",
+    "text": "Why are the information expressions equal?\n\\(E[S'(\\theta)]=-E[S(\\theta)^2]\\) because\n\\[\n\\begin{aligned}\n0&=\\frac{\\partial}{\\partial\\theta}E[S(\\theta)]\\\\\n&=\\int\\frac{\\partial}{\\partial\\theta}\\{S(\\theta)f(x;\\theta)\\}\\,dx\\\\\n&=\\int S'(\\theta)f(x;\\theta)\\,dx\n+\\int S(\\theta)\\frac{\\partial f(x;\\theta)}{\\partial\\theta}\\,dx\\\\\n&=E[S'(\\theta)]+E[S(\\theta)^2].\n\\end{aligned}\n\\]\n\nNote that we used\n\\[S(\\theta)=\\frac{\\partial}{\\partial\\theta}\\log (f(x;\\theta))= \\frac{1}{f(x;\\theta)} \\frac{\\partial}{\\partial\\theta}f(x;\\theta) \\implies \\frac{\\partial}{\\partial\\theta}f(x;\\theta)=S(\\theta)f(x;\\theta)\\] in the last equation above."
+  },
+  {
+    "objectID": "Week5-6.html#properties-of-maximum-likelihood-estimators",
+    "href": "Week5-6.html#properties-of-maximum-likelihood-estimators",
+    "title": "Generalized Linear Models",
+    "section": "Properties of maximum likelihood estimators",
+    "text": "Properties of maximum likelihood estimators\n\nAsymptotic normality:\n\n\\[\\hat{\\boldsymbol\\theta}_{\\mathrm{MLE}}\n\\ \\dot\\sim\\ N\\left(\\boldsymbol\\theta,\\mathcal I_n(\\boldsymbol\\theta)^{-1}\\right).\\]\n\n\n\nAsymptotic efficiency: \\([\\mathcal{I}(\\theta)]^{-1}\\) above achieves the Cramér–Rao lower bound asymptotically under regularity conditions, making it an efficient estimator for large samples.\n\n\n\n\n\nInvariance: for a one-to-one transformation \\(h\\), the MLE of \\(h(\\theta)\\) is \\(h(\\hat\\theta)\\)."
+  },
+  {
+    "objectID": "Week5-6.html#maximum-likelihood-example-median-regression",
+    "href": "Week5-6.html#maximum-likelihood-example-median-regression",
+    "title": "Generalized Linear Models",
+    "section": "Maximum likelihood example: median regression",
+    "text": "Maximum likelihood example: median regression\n\n\nWe consider a median regression, and formulate it with a Laplace distribution\n\\[f(y_i\\mid\\boldsymbol\\beta,b)=\\frac{1}{2b}\n\\exp\\left(-\\frac{|y_i-\\mathbf x_i^T\\boldsymbol\\beta|}{b}\\right).\\]\n\nThen, for fixed \\(b\\),\n\\[\\ell(\\boldsymbol\\beta)=-\\frac{1}{b}\\sum_{i=1}^n\n|y_i-\\mathbf x_i^T\\boldsymbol\\beta|+C.\\]\nMaximizing likelihood is equivalent to minimizing the sum of absolute deviations.\n\n\n\n\n\n\n\n\n\nUnder this Laplace model, median regression is more efficient than least squares asymptotically."
+  },
+  {
+    "objectID": "Week5-6.html#exponential-family",
+    "href": "Week5-6.html#exponential-family",
+    "title": "Generalized Linear Models",
+    "section": "Exponential family",
+    "text": "Exponential family\nThe observed values are assumed to be independent and to have come from a distribution in the exponential family.\n\n\nThe exponential family is characterized by a pmf or pdf of the (simplified) form:\n\\[f(y\\mid\\theta,\\phi)=\\exp\\left\\{\\frac{y\\theta-b(\\theta)}{\\phi}+c(y,\\phi)\\right\\}.\\]\n\n\\(\\theta\\): natural (canonical) parameter.\n\\(\\phi\\): dispersion parameter.\nNormal, Bernoulli, Poisson, and Gamma distributions belong to this family.\nThis framework unifies the theory behind GLMs."
+  },
+  {
+    "objectID": "Week5-6.html#exponential-family-normal-distribution",
+    "href": "Week5-6.html#exponential-family-normal-distribution",
+    "title": "Generalized Linear Models",
+    "section": "Exponential family: normal distribution",
+    "text": "Exponential family: normal distribution\nWe show that the normal distribution is part of the exponential family.\n\\[\n\\begin{aligned}\nf(y\\mid\\mu,\\sigma^2)\n&=\\frac{1}{\\sqrt{2\\pi\\sigma^2}}\\exp\\left[-\\frac{(y-\\mu)^2}{2\\sigma^2}\\right]\\\\\n&=\\exp\\left\\{\\frac{y\\mu-\\mu^2/2}{\\sigma^2}\n-\\frac{y^2}{2\\sigma^2}-\\frac12\\log(2\\pi\\sigma^2)\\right\\}.\n\\end{aligned}\n\\]\n\n\nTherefore,\n\\[\\theta=\\mu,\\qquad \\phi=\\sigma^2,\\qquad b(\\theta)=\\frac{\\theta^2}{2},\\] \\[c(y,\\phi)=-\\frac{y^2}{2\\phi}-\\frac12\\log(2\\pi\\phi).\\]"
+  },
+  {
+    "objectID": "Week5-6.html#exponential-family-bernoulli-distribution",
+    "href": "Week5-6.html#exponential-family-bernoulli-distribution",
+    "title": "Generalized Linear Models",
+    "section": "Exponential family: Bernoulli distribution",
+    "text": "Exponential family: Bernoulli distribution\nWe show that the Bernoulli distribution is part of the exponential family.\n\\[\n\\begin{aligned}\nf(y\\mid\\mu)&=\\mu^y(1-\\mu)^{1-y}\\\\\n&=\\exp\\left\\{y\\log\\left(\\frac{\\mu}{1-\\mu}\\right)+\\log(1-\\mu)\\right\\}.\n\\end{aligned}\n\\]\n\nTherefore,\n\\[\\theta=\\log\\left(\\frac{\\mu}{1-\\mu}\\right),\\qquad \\phi=1,\\] \\[b(\\theta)=\\log(1+e^\\theta)=-\\log(1-\\mu),\\qquad c(y,\\phi)=0.\\]"
+  },
+  {
+    "objectID": "Week5-6.html#exponential-family-1",
+    "href": "Week5-6.html#exponential-family-1",
+    "title": "Generalized Linear Models",
+    "section": "Exponential family",
+    "text": "Exponential family\nWe have the following known properties of the exponential family that come from maximum likelihood.\n\n\\(E[\\partial \\log \\mathcal{L}/\\partial\\theta]=0\\) implies that\n\n\\[E\\left[\\frac{y-b'(\\theta)}{\\phi}\\right]=0 \\implies E[y]=b'(\\theta)\\]\n\n\n\\(E[\\partial^2 \\log \\mathcal{L}/\\partial\\theta^2]=-E[(\\partial \\log \\mathcal{L}/\\partial\\theta)^2]\\) implies that\n\n\\[-E\\left[\\frac{\\partial^2\\ell}{\\partial\\theta^2}\\right]\n=\\frac{b''(\\theta)}{\\phi}\n=E\\left[\\left(\\frac{Y-b'(\\theta)}{\\phi^2}\\right)^2\\right].\\]\nwhich leads to\n\\[\\operatorname{Var}(Y)=\\phi b''(\\theta).\\]"
+  },
+  {
+    "objectID": "Week5-6.html#link-and-variance-functions",
+    "href": "Week5-6.html#link-and-variance-functions",
+    "title": "Generalized Linear Models",
+    "section": "Link and variance functions",
+    "text": "Link and variance functions\nA canonical link makes the linear predictor equal to the natural parameter:\n\\[\\eta=g(\\mu)=\\theta.\\]\n\nCanonical links are one possible choice.\nBernoulli alternatives include probit and complementary log-log.\n\n\n\nThe variance function satisfies\n\\[\\operatorname{Var}(Y)=\\phi v(\\mu),\\qquad v(\\mu)=b''(\\theta).\\]"
+  },
+  {
+    "objectID": "Week5-6.html#exponential-family-summary",
+    "href": "Week5-6.html#exponential-family-summary",
+    "title": "Generalized Linear Models",
+    "section": "Exponential family: summary",
+    "text": "Exponential family: summary\n \n\n\n\n\n\n\n\n\n\n\nDistribution\nCanonical link \\(g(\\mu)\\)\nMean under canonical link\n\\(v(\\mu)\\)\n\\(\\phi\\)\n\n\n\n\nNormal\n\\(\\mu\\)\n\\(\\eta\\)\n\\(1\\)\n\\(\\sigma^2\\)\n\n\nBernoulli\n\\(\\log\\{\\mu/(1-\\mu)\\}\\)\n\\(e^\\eta/(1+e^\\eta)\\)\n\\(\\mu(1-\\mu)\\)\n\\(1\\)\n\n\nPoisson\n\\(\\log\\mu\\)\n\\(e^\\eta\\)\n\\(\\mu\\)\n\\(1\\)\n\n\nExponential\n\\(-1/\\mu\\)\n\\(-1/\\eta\\), \\(\\eta&lt;0\\)\n\\(\\mu^2\\)\n\\(1\\)\n\n\n\n \nHere \\(\\eta=\\mathbf x_i^T\\boldsymbol\\beta\\)."
+  },
+  {
+    "objectID": "Week5-6.html#study-tips",
+    "href": "Week5-6.html#study-tips",
+    "title": "Generalized Linear Models",
+    "section": "Study tips",
+    "text": "Study tips\nBecome familiar with the roles and relationships of\n\\[g(\\cdot),\\quad v(\\cdot),\\quad b(\\cdot),\\quad\\phi,\\quad\\mu,\\quad\\theta,\\quad\\eta.\\]\nReview differentiation rules, especially the chain rule."
+  },
+  {
+    "objectID": "Week5-6.html#review-three-components-of-a-glm",
+    "href": "Week5-6.html#review-three-components-of-a-glm",
+    "title": "Generalized Linear Models",
+    "section": "Review: three components of a GLM",
+    "text": "Review: three components of a GLM\nFor independent responses \\(y_i\\) and covariates \\(\\mathbf x_i\\), the data-generating process for \\(y_i\\) has the following specification:\n\nRandom component: \\(y_i\\) is assumed to follow a distribution that belongs to the exponential family.\nSystematic component: given covariates \\(\\mathbf x_i\\), the mean of \\(y_i\\) can be expressed in terms of the following lienar combination of predictors\n\n\\[\\eta_i=\\mathbf x_i^T\\boldsymbol\\beta.\\]\n\nLink function: relates the linear combination of predictors with the transformed mean response\n\n\\[g(\\mu_i)=\\eta_i,\\quad \\text{where} \\quad \\mu_i=E(y_i).\\]"
+  },
+  {
+    "objectID": "Week5-6.html#review-examples-of-glm-specifications",
+    "href": "Week5-6.html#review-examples-of-glm-specifications",
+    "title": "Generalized Linear Models",
+    "section": "Review: examples of GLM specifications",
+    "text": "Review: examples of GLM specifications\nAssume responses are conditionally independent.\n\nLogistic regression with a logit link:\n\n\\[y_i\\sim\\operatorname{Bernoulli}\\left(\\frac{e^{\\mathbf x_i^T\\boldsymbol\\beta}}{1+e^{\\mathbf x_i^T\\boldsymbol\\beta}}\\right).\\]\n\nLogistic regression with a probit link, where \\(\\Phi(\\cdot)\\) is a CDF function of \\(\\mathcal{N}(0,1)\\)\n\n\\[y_i\\sim\\operatorname{Bernoulli}\\left(\\Phi(\\mathbf x_i^T\\boldsymbol\\beta)\\right).\\]\n\nPoisson with a log link:\n\n\\[y_i\\sim\\operatorname{Poisson}(e^{\\mathbf x_i^T\\boldsymbol\\beta})\\].\n\nPoisson with an identity link (when \\(\\mathbf x_i^T\\boldsymbol\\beta &gt; 0\\) is always satisfied):\n\n\\[y_i\\sim\\operatorname{Poisson}(\\mathbf x_i^T\\boldsymbol\\beta)\\]"
+  },
+  {
+    "objectID": "Week5-6.html#activity-build-the-glm",
+    "href": "Week5-6.html#activity-build-the-glm",
+    "title": "Generalized Linear Models",
+    "section": "Activity: Build the GLM",
+    "text": "Activity: Build the GLM\nSuppose\n\\[\ny_i\\sim\\operatorname{Bernoulli}(\\mu_i),\n\\qquad\n\\log\\left(\\frac{\\mu_i}{1-\\mu_i}\\right)\n=\n\\beta_0+\\beta_1x_i.\n\\]\nIdentify\n\n\n\nThe random component\nThe systematic component\nThe link function\nThe inverse link, \\(g^{-1}(\\eta)\\)\n\n\n\nThe variance function, \\(v(\\mu)\\)\nThe derivative, \\(g'(\\mu)\\)\nWhich quantities vary across observations?\n\n\n\nQuestion: Why might solving for \\(\\boldsymbol\\beta\\) require an iterative algorithm?"
+  },
+  {
+    "objectID": "Week5-6.html#fitting-glms-in-r",
+    "href": "Week5-6.html#fitting-glms-in-r",
+    "title": "Generalized Linear Models",
+    "section": "Fitting GLMs in R",
+    "text": "Fitting GLMs in R\nSpecify the response, predictors, family, and link in glm().\n\nlinear components: what is the response, what is the covariate?\nrandom component and link functions could be specified as follows:\n\n\n\nHow important is the choice of link?\n\nIf we care about inference, choosing the wrong link function can be catastrophic.\nIf we care only about prediction, the choice of link function does not matter much."
+  },
+  {
+    "objectID": "Week5-6.html#glm-maximizing-the-log-likelihood",
+    "href": "Week5-6.html#glm-maximizing-the-log-likelihood",
+    "title": "Generalized Linear Models",
+    "section": "GLM: maximizing the log-likelihood",
+    "text": "GLM: maximizing the log-likelihood\nDerivative of log-likelihood equals to 0:\n\n\n\n\n\nwhere"
+  },
+  {
+    "objectID": "Week5-6.html#glm-a-weighted-least-squares-equation",
+    "href": "Week5-6.html#glm-a-weighted-least-squares-equation",
+    "title": "Generalized Linear Models",
+    "section": "GLM: a weighted least squares equation",
+    "text": "GLM: a weighted least squares equation\nCombining all together:\n\n\nMaking the above a matrix form and setting it equal to 0,\n\\[\n\\boldsymbol X^T\\boldsymbol W^{-1}(\\boldsymbol z - \\boldsymbol X^T\\boldsymbol \\beta)=0 \\quad \\text{with} \\quad \\boldsymbol W = \\text{diag}\\{(\\phi\\cdot v(\\mu_i)g'(\\mu_i)^2)\\}\n\\]\nwhich becomes a weighted least squares problem."
+  },
+  {
+    "objectID": "Week5-6.html#understanding-gmu_igmu_iy_i-mu_i",
+    "href": "Week5-6.html#understanding-gmu_igmu_iy_i-mu_i",
+    "title": "Generalized Linear Models",
+    "section": "Understanding \\(g(\\mu_i)+g'(\\mu_i)(y_i-\\mu_i)\\)",
+    "text": "Understanding \\(g(\\mu_i)+g'(\\mu_i)(y_i-\\mu_i)\\)\n \nNote: \\(z_i\\) is a first-order Taylor approximation of \\(g(y_i)\\) using \\(\\mu_i\\)."
+  },
+  {
+    "objectID": "Week5-6.html#iteratively-reweighted-least-squares",
+    "href": "Week5-6.html#iteratively-reweighted-least-squares",
+    "title": "Generalized Linear Models",
+    "section": "Iteratively reweighted least squares",
+    "text": "Iteratively reweighted least squares\n\nIRLS Algorithm\n\nInitialize \\(\\hat\\eta_i\\) (Typically, fit a linear regression).\nRepeat the following until convergence:\n\n\\[\\hat\\mu_i\\leftarrow g^{-1}(\\hat\\eta_i),\\] \\[\\hat z_i\\leftarrow\\hat\\eta_i+(y_i-\\hat\\mu_i)g'(\\hat\\mu_i),\\] \\[\\hat w_i\\leftarrow\\phi v(\\hat\\mu_i)[g'(\\hat\\mu_i)]^2,\\] \\[\\hat{\\boldsymbol\\beta}\\leftarrow\n(X^T\\hat W^{-1}X)^{-1}X^T\\hat W^{-1}\\hat{\\mathbf z},\\] \\[\\hat{\\boldsymbol\\eta}\\leftarrow X\\hat{\\boldsymbol\\beta}.\\]\n\nBoth the working response (\\(\\hat z_i\\)) and weights (\\(\\hat w_i\\)) are updated each iteration."
+  },
+  {
+    "objectID": "Week5-6.html#logistic-irls-implementation-in-r",
+    "href": "Week5-6.html#logistic-irls-implementation-in-r",
+    "title": "Generalized Linear Models",
+    "section": "Logistic IRLS: implementation in R",
+    "text": "Logistic IRLS: implementation in R"
+  },
+  {
+    "objectID": "Week5-6.html#uncertainty-quantification",
+    "href": "Week5-6.html#uncertainty-quantification",
+    "title": "Generalized Linear Models",
+    "section": "Uncertainty Quantification",
+    "text": "Uncertainty Quantification\nThe score function is expressed by\n\\[\\mathbf S(\\boldsymbol\\beta)=\\sum_{i=1}^n\n\\frac{\\partial\\mu_i}{\\partial\\boldsymbol\\beta}\n\\frac{y_i-\\mu_i}{\\phi v(\\mu_i)}.\\]\n\nThe Fisher information matrix is\n\\[\n\\begin{aligned}\n\\mathcal I(\\boldsymbol\\beta)\n&=\\sum_{i=1}^n\\frac{1}{\\phi v(\\mu_i)}\n\\frac{\\partial\\mu_i}{\\partial\\boldsymbol\\beta}\n\\left(\\frac{\\partial\\mu_i}{\\partial\\boldsymbol\\beta}\\right)^T\\\\\n&=\\sum_{i=1}^n\\mathbf x_i\n\\{\\phi v(\\mu_i)[g'(\\mu_i)]^2\\}^{-1}\\mathbf x_i^T\\\\\n&=X^TW^{-1}X.\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "Week5-6.html#uncertainty-quantification-1",
+    "href": "Week5-6.html#uncertainty-quantification-1",
+    "title": "Generalized Linear Models",
+    "section": "Uncertainty Quantification",
+    "text": "Uncertainty Quantification\nUnder regularity conditions, \\(\\hat{\\boldsymbol\\beta}\\) is approximately normal:\n\\[\\hat{\\boldsymbol\\beta}\\ \\dot\\sim\\ N\\left(\\boldsymbol\\beta,\n\\mathcal I(\\boldsymbol\\beta)^{-1}\\right).\\]\n\nIts asymptotic covariance is\n\\[\\operatorname{aVar}(\\hat{\\boldsymbol\\beta})=(X^TW^{-1}X)^{-1}.\\]\n\n\nSince \\(\\boldsymbol W\\) consists of unknown parameters, we replace \\(\\boldsymbol \\beta\\) with \\(\\boldsymbol{\\hat{\\beta}}_{MLE}\\) to be used in statistical inference (\\(\\boldsymbol{\\hat{W}}\\))"
+  },
+  {
+    "objectID": "Week5-6.html#glm-uncertainty-implementation-in-r",
+    "href": "Week5-6.html#glm-uncertainty-implementation-in-r",
+    "title": "Generalized Linear Models",
+    "section": "GLM uncertainty: implementation in R",
+    "text": "GLM uncertainty: implementation in R"
+  },
+  {
+    "objectID": "Week5-6.html#hypothesis-testing-1-likelihood-ratio-test",
+    "href": "Week5-6.html#hypothesis-testing-1-likelihood-ratio-test",
+    "title": "Generalized Linear Models",
+    "section": "Hypothesis Testing 1: Likelihood ratio test",
+    "text": "Hypothesis Testing 1: Likelihood ratio test\n\n\\[\nH_0:\\underbrace{\\beta_1 = \\cdots = \\beta_p = 0}_{\\text{i.e., } \\mu_i = \\mu}\n\\] Procedure:\n\nFit the null model and obtain \\(\\ell(\\hat{\\boldsymbol\\mu}_{\\mathrm{null}})\\).\nFit the full model and obtain \\(\\ell(\\hat{\\boldsymbol\\mu}_{\\mathrm{full}})\\).\nConstruct the likelihood ratio statistic:\n\n\\[T_{\\mathrm{LRT}}=-2[\\ell(\\hat{\\boldsymbol\\beta}_{\\mathrm{full}})\n-\\ell(\\hat{\\boldsymbol\\beta}_{\\mathrm{null}})].\\] 4. \\(T_{\\mathrm{LRT}}\\ \\dot\\sim\\ \\chi_p^2\\) asymptotically (i.e. as \\(n \\rightarrow 0\\)) when the null hypothesis is true"
+  },
+  {
+    "objectID": "Week5-6.html#hypothesis-testing-1-likelihood-ratio-test-1",
+    "href": "Week5-6.html#hypothesis-testing-1-likelihood-ratio-test-1",
+    "title": "Generalized Linear Models",
+    "section": "Hypothesis Testing 1: Likelihood ratio test",
+    "text": "Hypothesis Testing 1: Likelihood ratio test\n\n\nn &lt;- 20\np_values &lt;- numeric(10000)\nfor (sim in seq_along(p_values)) {\n  x1 &lt;- rnorm(n)\n  x2 &lt;- runif(n)\n  y &lt;- rbinom(n, 1, 0.3)\n  fit0 &lt;- glm(y ~ 1, family = binomial())\n  fit1 &lt;- glm(y ~ x1 + x2,\n              family = binomial())\n  stat &lt;- 2 * as.numeric(\n    logLik(fit1) - logLik(fit0))\n  p_values[sim] &lt;- pchisq(stat, df = 2,\n                         lower.tail = FALSE)\n}"
+  },
+  {
+    "objectID": "Week5-6.html#hypothesis-testing-2-wald-test",
+    "href": "Week5-6.html#hypothesis-testing-2-wald-test",
+    "title": "Generalized Linear Models",
+    "section": "Hypothesis Testing 2: Wald Test",
+    "text": "Hypothesis Testing 2: Wald Test\n\n\\[\nH_0:\\underbrace{\\beta_1 = \\cdots = \\beta_p = 0}_{\\text{i.e., } \\mu_i = \\mu}\n\\]\nProcedure:\n\nEstimate \\(\\hat{\\beta}_{1:p}\\) using MLE\nObtain \\(\\widehat{Var}(\\hat{\\beta}_{1:p})\\), denoted by \\(\\hat\\Sigma_{1:p}\\).\nConstruct the Wald statistic\n\\[T_{\\mathrm{Wald}}=\\hat{\\boldsymbol\\beta}_{1:p}^T\n\\hat\\Sigma_{1:p}^{-1}\\hat{\\boldsymbol\\beta}_{1:p}.\\]\n\\(T_{\\mathrm{Wald}}\\ \\dot\\sim\\ \\chi_p^2\\) asymptotically (i.e. as \\(n \\rightarrow 0\\)) when the null hypothesis is true.\n\n\nThe Wald test requires fitting a full model.\nWald and likelihood ratio tests are asymptotically equivalent under the usual regularity conditions, but can behave differently in small samples."
+  },
+  {
+    "objectID": "Week5-6.html#hypothesis-testing-2-wald-test-1",
+    "href": "Week5-6.html#hypothesis-testing-2-wald-test-1",
+    "title": "Generalized Linear Models",
+    "section": "Hypothesis Testing 2: Wald Test",
+    "text": "Hypothesis Testing 2: Wald Test\n\n\nn &lt;- 20\np_values &lt;- numeric(10000)\nfor (sim in seq_along(p_values)) {\n  x1 &lt;- rnorm(n)\n  x2 &lt;- runif(n)\n  y &lt;- rbinom(n, 1, 0.3)\n  fit &lt;- glm(y ~ x1 + x2,\n             family = binomial())\n  b &lt;- coef(fit)[2:3]\n  V &lt;- vcov(fit)[2:3, 2:3]\n  stat &lt;- as.numeric(t(b) %*% solve(V, b))\n  p_values[sim] &lt;- pchisq(stat, df = 2,\n                         lower.tail = FALSE)\n}"
+  },
+  {
+    "objectID": "Week5-6.html#residuals-to-check-assumptions",
+    "href": "Week5-6.html#residuals-to-check-assumptions",
+    "title": "Generalized Linear Models",
+    "section": "Residuals to check assumptions",
+    "text": "Residuals to check assumptions\nIn linear regression, residuals help assess assumptions related to \\(\\epsilon_i\\)s\n\n\nIn non-Gaussian GLMs, what specific assumptions are we assessing?\n\nwe don’t have such \\(\\epsilon\\) terms in logistic/Poisson GLMs\n\n\n\nThe distributional assumptions could be checked indirectly by studying the mean-variance relationship because\n\nin logistic regression: \\(Var(y_i) = \\mu_i(1-\\mu_i)\\)\nin Poisson regression: \\(Var(y_i) = \\mu_i\\)\n\nStill, we need to define a good residual term for GLM so that we can evaluate such assumptions."
+  },
+  {
+    "objectID": "Week5-6.html#residuals",
+    "href": "Week5-6.html#residuals",
+    "title": "Generalized Linear Models",
+    "section": "Residuals",
+    "text": "Residuals\nPearson (‘standardized’) residuals:\n\\[r_i^P=\\frac{y_i-\\hat\\mu_i}{\\sqrt{v(\\hat\\mu_i)}}.\\]\nDeviance residuals:\n\\[r_i^D=\\operatorname{sign}(y_i-\\hat\\mu_i)\n\\sqrt{2\\{\\ell_i(y_i)-\\ell_i(\\hat\\mu_i)\\}}.\\]\n\n\nHere, \\(\\ell_i(y_i)\\) is the log likelihood from the saturated model (i.e. a hypothetical model that perfectly fits the data so that \\(\\hat{\\mu}_i = y_i\\))\n\\(\\ell_i(\\hat\\mu_i)\\) is the log likelihood from the fitted model"
+  },
+  {
+    "objectID": "Week5-6.html#residuals-poisson-example",
+    "href": "Week5-6.html#residuals-poisson-example",
+    "title": "Generalized Linear Models",
+    "section": "Residuals: Poisson example",
+    "text": "Residuals: Poisson example\nFor a fitted Poisson regression,\n\\[r_i^P=\\frac{y_i-\\hat\\mu_i}{\\sqrt{\\hat\\mu_i}}.\\]\n\nThe deviance residual is\n\\[r_i^D=\\operatorname{sign}(y_i-\\hat\\mu_i)\n\\sqrt{2\\left[y_i\\log\\left(\\frac{y_i}{\\hat\\mu_i}\\right)-(y_i-\\hat\\mu_i)\\right]}.\\]"
+  },
+  {
+    "objectID": "Week5-6.html#checking-linearity",
+    "href": "Week5-6.html#checking-linearity",
+    "title": "Generalized Linear Models",
+    "section": "Checking ‘Linearity’",
+    "text": "Checking ‘Linearity’\n\n\n \nWe can look at the scatterplot between the deviance residuals and \\(\\mathbf x_i^T\\hat{\\boldsymbol\\beta}\\) to check if there is any non-linear pattern."
+  },
+  {
+    "objectID": "Week5-6.html#checking-overdispersion-and-underdispersion",
+    "href": "Week5-6.html#checking-overdispersion-and-underdispersion",
+    "title": "Generalized Linear Models",
+    "section": "Checking overdispersion and underdispersion",
+    "text": "Checking overdispersion and underdispersion\n\n\nThe assumed distribution imposes a mean–variance relationship, so we may perform exploratory analyses to understand overdispersion.\n\nOverdispersion is when the data has more variance than the statistical model expects it to have.\n\nFor example, in Poisson, \\(\\hat\\mu_i\\) and \\((y_i-\\hat\\mu_i)^2\\) characterize the mean and variance. We plot both to compare and look to see if the points are randomly scattered around the 45-degree line."
+  },
+  {
+    "objectID": "Week5-6.html#checking-goodness-of-fit",
+    "href": "Week5-6.html#checking-goodness-of-fit",
+    "title": "Generalized Linear Models",
+    "section": "Checking Goodness of fit",
+    "text": "Checking Goodness of fit\nTwo useful summaries are\n\nDeviance: \\(D=\\sum_{i=1}^n(r_i^D)^2\\),\nPearson \\(X^2\\) statistic: \\(X^2=\\sum_{i=1}^n(r_i^P)^2\\)\n\n\n\nBoth \\(D\\) and \\(X^2\\) follow \\(\\chi^2_{n-p-1}\\) asymptotically when the mean-variance relationship imposed in your DGP is met.\n\nIf \\(D\\) or \\(X^2\\) is significantly larger than \\(n-p-1\\), it suggests a possible overdispersion\nIf \\(D\\) or \\(X^2\\) is significantly less than \\(n-p-1\\), it suggests a possible underdispersion"
+  },
+  {
+    "objectID": "Week5-6.html#modeling-considerations-1",
+    "href": "Week5-6.html#modeling-considerations-1",
+    "title": "Generalized Linear Models",
+    "section": "Modeling Considerations",
+    "text": "Modeling Considerations\nRecall the motivating question at the start of last lecture: Should we use logistic or Poisson regressi0on just because the data type is binary or count?\n\n\nStrong distributional assumptions (in variance) specifying expected value and variance\n\nBernoulli: \\(\\operatorname{Var}(Y\\mid X)=\\mu(1-\\mu)\\).\nPoisson: \\(\\operatorname{Var}(Y\\mid X)=\\mu\\).\n\nNote: When using the normal distribution, there are two separate parameters for the mean and variance.\n\n\n\nWe may perform exploratory data analysis to check if this assumption is true."
+  },
+  {
+    "objectID": "Week5-6.html#overunderdispersion",
+    "href": "Week5-6.html#overunderdispersion",
+    "title": "Generalized Linear Models",
+    "section": "Over/Underdispersion",
+    "text": "Over/Underdispersion\nQuantifying goodness of fit\n\nFrom the exponential family, it is shown that\n\\[\\operatorname{Var}(y_i)=\\phi v(\\mu_i) \\implies \\phi = \\frac{\\operatorname{Var}(y_i)}{v(\\mu)}.\\] where \\(\\phi = 1\\) in the Bernoulli or Poisson case.\n\nWe may estimate the dispersion parameter, \\(\\phi\\), by using the \\(X^2\\) statistic because\n\\[\n\\frac{X^2}{\\phi} \\sim \\chi^2_{n-p-1} \\implies\n\\mathbb{E}\\left[\\frac{X^2}{n-p-1}\\right] = \\phi \\implies\n\\hat\\phi=\\frac{X^2}{n-p-1}\n\\]\n\n\\(\\hat\\phi\\gg1\\): suggests strong evidence of overdispersion\n\\(\\hat\\phi\\ll1\\): suggests strong evidence of underdispersion\n\\(\\hat\\phi\\approx1\\): broadly consistent with its variance assumption."
+  },
+  {
+    "objectID": "Week5-6.html#overunderdispersion-1",
+    "href": "Week5-6.html#overunderdispersion-1",
+    "title": "Generalized Linear Models",
+    "section": "Over/Underdispersion",
+    "text": "Over/Underdispersion\nQuantifying goodness of fit"
+  },
+  {
+    "objectID": "Week5-6.html#dispersion-impact-on-inference",
+    "href": "Week5-6.html#dispersion-impact-on-inference",
+    "title": "Generalized Linear Models",
+    "section": "Dispersion: impact on inference",
+    "text": "Dispersion: impact on inference\nWith overdispersion:\n\nThe actual variance of data is greater than your modeled (assumed) variance\nIt means that the your model underestimates the true variance of parameter estimates\nYour test statistic takes variance of parameter estimates as a denominator, which implies that the test statistic will be greater than what it should be\nIt eventually leads to inflation in Type 1 error.\n\n\n\nSimilarly, your Type 1 error would be overly conservative when underdispersion occurs.\n\nBut it is ‘okay’ in preventing inflated T1E.\nThat’s one of the reasons that underdispersion is considered less serious than overdispersion"
+  },
+  {
+    "objectID": "Week5-6.html#overdispersion-remedies",
+    "href": "Week5-6.html#overdispersion-remedies",
+    "title": "Generalized Linear Models",
+    "section": "Overdispersion: remedies",
+    "text": "Overdispersion: remedies\n\nUse a more flexible DGP (i.e. where mean and variance are specified by two parameters).\n\nGrouped binary counts: beta-binomial distribution.\nCounts: negative binomial distribution, for example MASS::glm.nb().\n\n\n\n\nUse quasi-likelihood with an adjusted variance.\n\n\nThe variance of \\(\\boldsymbol{\\hat{\\beta}}\\) is \\(\\boldsymbol X^T\\boldsymbol W\\boldsymbol X\\), with \\(\\phi = 1\\) in logistic and Poisson GLM\nWe know that \\(\\hat\\phi &gt; 1\\) when overdispersion occurs\nKey Idea: the variance of \\(\\boldsymbol{\\hat{\\beta}}\\) is replaced by \\(\\hat\\phi \\cdot (\\boldsymbol X^T\\boldsymbol W\\boldsymbol X)\\) with \\(\\hat\\phi\\) estimated from the GLM fit (Pearson \\(X^2 statistic\\))\nDoes not change any \\(\\boldsymbol{\\hat{\\beta}}\\), but provides a more robust variance estimate.\n\nAims to prevent inflated T1E\n\n\n\n\nIn R: quasipoisson(link = \"log\") or quasibinomial(link = \"logit\") in glm() to implement Quasi-likelihood."
+  },
+  {
+    "objectID": "Week5-6.html#more-on-quasi-likelihood",
+    "href": "Week5-6.html#more-on-quasi-likelihood",
+    "title": "Generalized Linear Models",
+    "section": "More on quasi-likelihood",
+    "text": "More on quasi-likelihood\n\nQuasi-likelihood does not characterize any specific data-generating process.\n\n\n\nTherefore, you cannot use Likelihood Ratio Test with quasi-poisson or quasi-binomial models (because there is no such likelihood).\n\n\n\nWelcome to robust inference!\n\nM-estimation\nSandwich covariance estimators\nGeneralized estimating equations (GEE)\nGeneralized method of moments (GMM)\n\n\n\nLars Peter Hansen received the 2013 Nobel Prize in Economics for contributions including GMM."
+  },
+  {
+    "objectID": "Week5-6.html#summary",
+    "href": "Week5-6.html#summary",
+    "title": "Generalized Linear Models",
+    "section": "Summary",
+    "text": "Summary\n\nGeneralized linear models extend linear regression to responses such as binary and count data by specifying a response distribution, a linear predictor, and a link function.\nGLM coefficients are typically estimated by maximum likelihood, often using an iterative procedure such as iteratively reweighted least squares.\nStatistical inference in GLMs relies largely on asymptotic results; Wald tests and likelihood ratio tests can be used to assess covariate effects.\nModel checking requires assessing both the mean structure and the distributional mean–variance relationship using residuals and goodness-of-fit measures.\nWhen assumptions such as the Poisson variance relationship are violated, alternatives such as negative binomial models, zero-inflated models, or quasi-likelihood may provide more appropriate modelling or inference.\n\nAnnouncements: Next week is the midterm (Friday, October 23rd) in room FE 230 from 2:10pm – 4:10pm"
   }
 ]

@@ -8,6 +8,7 @@ project:
     - Course-Introduction.qmd 
     - Week2.qmd
     - Weeks3-4.qmd
+    - Week5-6.qmd
 
 website:
   title: "STA442"

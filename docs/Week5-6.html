@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="Week5-6_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Week5-6_files/libs/quarto-html/tabby.min.js"></script>
-<script src="Week5-6_files/libs/quarto-html/popper.min.js"></script>
-<script src="Week5-6_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="Week5-6_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Week5-6_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="Week5-6_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="Week5-6_files/libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
-<link href="Week5-6_files/libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet"><meta charset="utf-8">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.42">
 
-  <title>Generalized Linear Models</title>
+  <title>STA442 – Generalized Linear Models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="Week5-6_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="Week5-6_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -95,12 +95,12 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="Week5-6_files/libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
   <link rel="stylesheet" href="styles.css">
-  <link href="Week5-6_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="Week5-6_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="Week5-6_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="Week5-6_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -189,8 +189,8 @@
       margin-right: 0; 
     }
   </style>
-  <script type="module" src="Week5-6_files/libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-  <link href="Week5-6_files/libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+  <script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+  <link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -481,29 +481,29 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2V0LnNlZWQoMClcbm4gPC0g
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Negative binomial data</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">0</span>)</span>
-<span id="cb1-2"><a href=""></a>n <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
-<span id="cb1-3"><a href=""></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
-<span id="cb1-4"><a href=""></a>p_values <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="dv">10000</span>)</span>
-<span id="cb1-5"><a href=""></a><span class="cf">for</span> (sim <span class="cf">in</span> <span class="fu">seq_along</span>(p_values)) {</span>
-<span id="cb1-6"><a href=""></a>  y <span class="ot">&lt;-</span> <span class="fu">rnbinom</span>(n, <span class="at">mu =</span> <span class="dv">3</span>, <span class="at">size =</span> <span class="dv">2</span>)</span>
-<span id="cb1-7"><a href=""></a>  fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> x, <span class="at">family =</span> <span class="fu">poisson</span>())</span>
-<span id="cb1-8"><a href=""></a>  p_values[sim] <span class="ot">&lt;-</span> <span class="fu">coef</span>(<span class="fu">summary</span>(fit))[<span class="dv">2</span>, <span class="dv">4</span>]</span>
-<span id="cb1-9"><a href=""></a>}</span>
-<span id="cb1-10"><a href=""></a><span class="fu">mean</span>(p_values <span class="sc">&lt;</span> <span class="fl">0.05</span>) <span class="co"># 0.202 (still inflated)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">set.seed</span>(<span class="dv">0</span>)</span>
+<span id="cb1-2"><a></a>n <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb1-3"><a></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb1-4"><a></a>p_values <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="dv">10000</span>)</span>
+<span id="cb1-5"><a></a><span class="cf">for</span> (sim <span class="cf">in</span> <span class="fu">seq_along</span>(p_values)) {</span>
+<span id="cb1-6"><a></a>  y <span class="ot">&lt;-</span> <span class="fu">rnbinom</span>(n, <span class="at">mu =</span> <span class="dv">3</span>, <span class="at">size =</span> <span class="dv">2</span>)</span>
+<span id="cb1-7"><a></a>  fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> x, <span class="at">family =</span> <span class="fu">poisson</span>())</span>
+<span id="cb1-8"><a></a>  p_values[sim] <span class="ot">&lt;-</span> <span class="fu">coef</span>(<span class="fu">summary</span>(fit))[<span class="dv">2</span>, <span class="dv">4</span>]</span>
+<span id="cb1-9"><a></a>}</span>
+<span id="cb1-10"><a></a><span class="fu">mean</span>(p_values <span class="sc">&lt;</span> <span class="fl">0.05</span>) <span class="co"># 0.202 (still inflated)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <p><strong>Zero-inflated Poisson data</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">0</span>)</span>
-<span id="cb2-2"><a href=""></a>n <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
-<span id="cb2-3"><a href=""></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
-<span id="cb2-4"><a href=""></a>p_values <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="dv">10000</span>)</span>
-<span id="cb2-5"><a href=""></a><span class="cf">for</span> (sim <span class="cf">in</span> <span class="fu">seq_along</span>(p_values)) {</span>
-<span id="cb2-6"><a href=""></a>  z <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(n, <span class="dv">1</span>, <span class="fl">0.3</span>)</span>
-<span id="cb2-7"><a href=""></a>  y <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(z <span class="sc">==</span> <span class="dv">0</span>, <span class="dv">0</span>, <span class="fu">rpois</span>(n, <span class="dv">3</span>))</span>
-<span id="cb2-8"><a href=""></a>  fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> x, <span class="at">family =</span> <span class="fu">poisson</span>())</span>
-<span id="cb2-9"><a href=""></a>  p_values[sim] <span class="ot">&lt;-</span> <span class="fu">coef</span>(<span class="fu">summary</span>(fit))[<span class="dv">2</span>, <span class="dv">4</span>]</span>
-<span id="cb2-10"><a href=""></a>}</span>
-<span id="cb2-11"><a href=""></a><span class="fu">mean</span>(p_values <span class="sc">&lt;</span> <span class="fl">0.05</span>) <span class="co"># 0.271 (still inflated)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">set.seed</span>(<span class="dv">0</span>)</span>
+<span id="cb2-2"><a></a>n <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb2-3"><a></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb2-4"><a></a>p_values <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="dv">10000</span>)</span>
+<span id="cb2-5"><a></a><span class="cf">for</span> (sim <span class="cf">in</span> <span class="fu">seq_along</span>(p_values)) {</span>
+<span id="cb2-6"><a></a>  z <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(n, <span class="dv">1</span>, <span class="fl">0.3</span>)</span>
+<span id="cb2-7"><a></a>  y <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(z <span class="sc">==</span> <span class="dv">0</span>, <span class="dv">0</span>, <span class="fu">rpois</span>(n, <span class="dv">3</span>))</span>
+<span id="cb2-8"><a></a>  fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> x, <span class="at">family =</span> <span class="fu">poisson</span>())</span>
+<span id="cb2-9"><a></a>  p_values[sim] <span class="ot">&lt;-</span> <span class="fu">coef</span>(<span class="fu">summary</span>(fit))[<span class="dv">2</span>, <span class="dv">4</span>]</span>
+<span id="cb2-10"><a></a>}</span>
+<span id="cb2-11"><a></a><span class="fu">mean</span>(p_values <span class="sc">&lt;</span> <span class="fl">0.05</span>) <span class="co"># 0.271 (still inflated)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
 <p>The <span class="maroon">variance assumption</span> remains wrong as <span class="math inline">\(n\)</span> increases. Model-based standard errors remain too small.</p>
 </section>
@@ -975,20 +975,20 @@ H_0:\underbrace{\beta_1 = \cdots = \beta_p = 0}_{\text{i.e., } \mu_i = \mu}
 <h2>Hypothesis Testing 1: Likelihood ratio test</h2>
 <div class="columns">
 <div class="column" style="width:53%;">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a>n <span class="ot">&lt;-</span> <span class="dv">20</span></span>
-<span id="cb3-2"><a href=""></a>p_values <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="dv">10000</span>)</span>
-<span id="cb3-3"><a href=""></a><span class="cf">for</span> (sim <span class="cf">in</span> <span class="fu">seq_along</span>(p_values)) {</span>
-<span id="cb3-4"><a href=""></a>  x1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
-<span id="cb3-5"><a href=""></a>  x2 <span class="ot">&lt;-</span> <span class="fu">runif</span>(n)</span>
-<span id="cb3-6"><a href=""></a>  y <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(n, <span class="dv">1</span>, <span class="fl">0.3</span>)</span>
-<span id="cb3-7"><a href=""></a>  fit0 <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> <span class="dv">1</span>, <span class="at">family =</span> <span class="fu">binomial</span>())</span>
-<span id="cb3-8"><a href=""></a>  fit1 <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> x1 <span class="sc">+</span> x2,</span>
-<span id="cb3-9"><a href=""></a>              <span class="at">family =</span> <span class="fu">binomial</span>())</span>
-<span id="cb3-10"><a href=""></a>  stat <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> <span class="fu">as.numeric</span>(</span>
-<span id="cb3-11"><a href=""></a>    <span class="fu">logLik</span>(fit1) <span class="sc">-</span> <span class="fu">logLik</span>(fit0))</span>
-<span id="cb3-12"><a href=""></a>  p_values[sim] <span class="ot">&lt;-</span> <span class="fu">pchisq</span>(stat, <span class="at">df =</span> <span class="dv">2</span>,</span>
-<span id="cb3-13"><a href=""></a>                         <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb3-14"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>n <span class="ot">&lt;-</span> <span class="dv">20</span></span>
+<span id="cb3-2"><a></a>p_values <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="dv">10000</span>)</span>
+<span id="cb3-3"><a></a><span class="cf">for</span> (sim <span class="cf">in</span> <span class="fu">seq_along</span>(p_values)) {</span>
+<span id="cb3-4"><a></a>  x1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb3-5"><a></a>  x2 <span class="ot">&lt;-</span> <span class="fu">runif</span>(n)</span>
+<span id="cb3-6"><a></a>  y <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(n, <span class="dv">1</span>, <span class="fl">0.3</span>)</span>
+<span id="cb3-7"><a></a>  fit0 <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> <span class="dv">1</span>, <span class="at">family =</span> <span class="fu">binomial</span>())</span>
+<span id="cb3-8"><a></a>  fit1 <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> x1 <span class="sc">+</span> x2,</span>
+<span id="cb3-9"><a></a>              <span class="at">family =</span> <span class="fu">binomial</span>())</span>
+<span id="cb3-10"><a></a>  stat <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> <span class="fu">as.numeric</span>(</span>
+<span id="cb3-11"><a></a>    <span class="fu">logLik</span>(fit1) <span class="sc">-</span> <span class="fu">logLik</span>(fit0))</span>
+<span id="cb3-12"><a></a>  p_values[sim] <span class="ot">&lt;-</span> <span class="fu">pchisq</span>(stat, <span class="at">df =</span> <span class="dv">2</span>,</span>
+<span id="cb3-13"><a></a>                         <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb3-14"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:47%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1021,20 +1021,20 @@ H_0:\underbrace{\beta_1 = \cdots = \beta_p = 0}_{\text{i.e., } \mu_i = \mu}
 <h2>Hypothesis Testing 2: Wald Test</h2>
 <div class="columns">
 <div class="column" style="width:53%;">
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a>n <span class="ot">&lt;-</span> <span class="dv">20</span></span>
-<span id="cb4-2"><a href=""></a>p_values <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="dv">10000</span>)</span>
-<span id="cb4-3"><a href=""></a><span class="cf">for</span> (sim <span class="cf">in</span> <span class="fu">seq_along</span>(p_values)) {</span>
-<span id="cb4-4"><a href=""></a>  x1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
-<span id="cb4-5"><a href=""></a>  x2 <span class="ot">&lt;-</span> <span class="fu">runif</span>(n)</span>
-<span id="cb4-6"><a href=""></a>  y <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(n, <span class="dv">1</span>, <span class="fl">0.3</span>)</span>
-<span id="cb4-7"><a href=""></a>  fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> x1 <span class="sc">+</span> x2,</span>
-<span id="cb4-8"><a href=""></a>             <span class="at">family =</span> <span class="fu">binomial</span>())</span>
-<span id="cb4-9"><a href=""></a>  b <span class="ot">&lt;-</span> <span class="fu">coef</span>(fit)[<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>]</span>
-<span id="cb4-10"><a href=""></a>  V <span class="ot">&lt;-</span> <span class="fu">vcov</span>(fit)[<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>]</span>
-<span id="cb4-11"><a href=""></a>  stat <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">t</span>(b) <span class="sc">%*%</span> <span class="fu">solve</span>(V, b))</span>
-<span id="cb4-12"><a href=""></a>  p_values[sim] <span class="ot">&lt;-</span> <span class="fu">pchisq</span>(stat, <span class="at">df =</span> <span class="dv">2</span>,</span>
-<span id="cb4-13"><a href=""></a>                         <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb4-14"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>n <span class="ot">&lt;-</span> <span class="dv">20</span></span>
+<span id="cb4-2"><a></a>p_values <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="dv">10000</span>)</span>
+<span id="cb4-3"><a></a><span class="cf">for</span> (sim <span class="cf">in</span> <span class="fu">seq_along</span>(p_values)) {</span>
+<span id="cb4-4"><a></a>  x1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb4-5"><a></a>  x2 <span class="ot">&lt;-</span> <span class="fu">runif</span>(n)</span>
+<span id="cb4-6"><a></a>  y <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(n, <span class="dv">1</span>, <span class="fl">0.3</span>)</span>
+<span id="cb4-7"><a></a>  fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(y <span class="sc">~</span> x1 <span class="sc">+</span> x2,</span>
+<span id="cb4-8"><a></a>             <span class="at">family =</span> <span class="fu">binomial</span>())</span>
+<span id="cb4-9"><a></a>  b <span class="ot">&lt;-</span> <span class="fu">coef</span>(fit)[<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>]</span>
+<span id="cb4-10"><a></a>  V <span class="ot">&lt;-</span> <span class="fu">vcov</span>(fit)[<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>]</span>
+<span id="cb4-11"><a></a>  stat <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">t</span>(b) <span class="sc">%*%</span> <span class="fu">solve</span>(V, b))</span>
+<span id="cb4-12"><a></a>  p_values[sim] <span class="ot">&lt;-</span> <span class="fu">pchisq</span>(stat, <span class="at">df =</span> <span class="dv">2</span>,</span>
+<span id="cb4-13"><a></a>                         <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb4-14"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:47%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1272,6 +1272,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2V0LnNlZWQoMClcbm4gPC0g
 </ul>
 <p><strong>Announcements</strong>: Next week is the midterm (Friday, October 23rd) in room FE 230 from 2:10pm – 4:10pm</p>
 
+
 <script type="webr-data">
 eyJvcHRpb25zIjp7ImJhc2VVcmwiOiJodHRwczovL3dlYnIuci13YXNtLm9yZy92MC41LjQvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsiZXZhbHVhdGUiLCJrbml0ciIsImh0bWx0b29scyIsImRwbHlyIiwiaW5mZXIiLCJnZ3Bsb3QyIiwiY2FyIiwiU2VuU3JpdmFzdGF2YSIsIk1BU1MiXSwicmVwb3MiOltdfSwicmVuZGVyX2RmIjoiZGVmYXVsdCJ9
 </script>
@@ -1300,19 +1301,19 @@ W10=
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="Week5-6_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="Week5-6_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="Week5-6_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="Week5-6_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="Week5-6_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="Week5-6_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="Week5-6_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="Week5-6_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="Week5-6_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="Week5-6_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -1512,8 +1513,8 @@ W10=
     </script>
     <script type="module">
     if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-    window._ojs.paths.runtimeToDoc = "../../..";
-    window._ojs.paths.runtimeToRoot = "../../..";
+    window._ojs.paths.runtimeToDoc = "../..";
+    window._ojs.paths.runtimeToRoot = "../..";
     window._ojs.paths.docToRoot = "";
     window._ojs.selfContained = false;
     window._ojs.runtime.interpretFromScriptTags();
