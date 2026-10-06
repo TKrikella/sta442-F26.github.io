@@ -283,6 +283,39 @@ y\sim\operatorname{Poisson}(\lambda),\qquad f_Y(y)=\frac{e^{-\lambda}\lambda^y}{
 <p><span class="maroon">Interpretation of <span class="math inline">\(\beta_1\)</span></span></p>
 <textarea class="annotation-box" placeholder="Type notes here..."></textarea>
 </section>
+<section id="modeling-binary-data-divide-by-four-rule" class="slide level2">
+<h2>Modeling binary data: divide-by-four rule</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>In logistic regression,</p>
+<p><span class="math display">\[
+p=P(Y=1\mid X_1,\ldots,X_p).
+\]</span> Then, we can show that</p>
+<p><span class="math display">\[
+\frac{\partial p}{\partial X_j}
+=
+\beta_j p(1-p).
+\]</span></p>
+<div class="fragment">
+<p>The quantity <span class="math inline">\(p(1-p)\)</span> is largest when <span class="math inline">\(p=0.5\)</span> where <span class="math inline">\(p(1-p)=\frac14.\)</span></p>
+<p>So the <strong>largest possible slope</strong> is approximately <span class="math inline">\(\frac{\beta_j}{4}.\)</span></p>
+</div>
+<p><br></p>
+<div class="fragment">
+<p>Dividing <span class="math inline">\(\beta_j\)</span> by 4 gives a <span class="maroon">quick approximation</span> to the largest possible change in predicted probability associated with a one-unit increase in <span class="math inline">\(X_j\)</span>.</p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Week5-6_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
 <section id="modeling-binary-data" class="slide level2">
 <h2>Modeling binary data</h2>
 
@@ -1143,7 +1176,7 @@ H_0:\underbrace{\beta_1 = \cdots = \beta_p = 0}_{\text{i.e., } \mu_i = \mu}
 </section>
 <section id="modeling-considerations-1" class="slide level2">
 <h2>Modeling Considerations</h2>
-<p>Recall the motivating question at the start of last lecture: <span class="maroon">Should we use logistic or Poisson regressi0on just because the data type is binary or count?</span></p>
+<p>Recall the motivating question at the start of last lecture: <span class="maroon">Should we use logistic or Poisson regression just because the data type is binary or count?</span></p>
 <p><br></p>
 <div class="fragment">
 <p>Strong distributional assumptions (in variance) specifying expected value and variance</p>
@@ -1157,6 +1190,45 @@ H_0:\underbrace{\beta_1 = \cdots = \beta_p = 0}_{\text{i.e., } \mu_i = \mu}
 <div class="fragment">
 <p>We may perform exploratory data analysis to check if this assumption is true.</p>
 </div>
+</section>
+<section id="separation" class="slide level2">
+<h2>Separation</h2>
+<p>One problem we might face when fitting a logistic regression model is <span class="maroon">separation</span>.</p>
+<p><span class="maroon">Complete separation</span> occurs when a predictor, or combination of predictors, perfectly separates the two outcome classes.</p>
+<p>For example:</p>
+<ul>
+<li>All observations with (x &lt; 5) have (Y=0)</li>
+<li>All observations with (x &gt; 5) have (Y=1)</li>
+</ul>
+<p><br></p>
+<p>In this case, the likelihood keeps increasing as the magnitude of the coefficient increases:</p>
+<p><span class="math display">\[
+|\hat{\beta}_1| \rightarrow \infty.
+\]</span></p>
+<p>Therefore, there is <strong>no finite MLE</strong> for <span class="math display">\[\beta_1\]</span>.</p>
+</section>
+<section id="separation-1" class="slide level2">
+<h2>Separation</h2>
+<p><strong>What might we see in practice?</strong></p>
+<ul>
+<li>Extremely large coefficient estimates</li>
+<li>Extremely large standard errors</li>
+<li>Convergence warnings in R</li>
+<li>Fitted probabilities very close to 0 or 1</li>
+</ul>
+<p><br></p>
+<p><strong>What do we do?</strong></p>
+<ul>
+<li><p><span class="maroon">DO NOT</span> just interpret the huge coefficient</p>
+<ul>
+<li>Under separation, the issue is not simply bias: the usual finite maximum likelihood estimate does not exist.</li>
+</ul></li>
+<li><p>Use a method that stabilizes the estimate</p>
+<ul>
+<li>penalized logistic regression</li>
+<li>Firth logistic regression</li>
+</ul></li>
+</ul>
 </section>
 <section id="overunderdispersion" class="slide level2">
 <h2>Over/Underdispersion</h2>

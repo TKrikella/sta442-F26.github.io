@@ -1845,7 +1845,7 @@
     "href": "Week5-6.html#modeling-considerations-1",
     "title": "Generalized Linear Models",
     "section": "Modeling Considerations",
-    "text": "Modeling Considerations\nRecall the motivating question at the start of last lecture: Should we use logistic or Poisson regressi0on just because the data type is binary or count?\n\n\nStrong distributional assumptions (in variance) specifying expected value and variance\n\nBernoulli: \\(\\operatorname{Var}(Y\\mid X)=\\mu(1-\\mu)\\).\nPoisson: \\(\\operatorname{Var}(Y\\mid X)=\\mu\\).\n\nNote: When using the normal distribution, there are two separate parameters for the mean and variance.\n\n\n\nWe may perform exploratory data analysis to check if this assumption is true."
+    "text": "Modeling Considerations\nRecall the motivating question at the start of last lecture: Should we use logistic or Poisson regression just because the data type is binary or count?\n\n\nStrong distributional assumptions (in variance) specifying expected value and variance\n\nBernoulli: \\(\\operatorname{Var}(Y\\mid X)=\\mu(1-\\mu)\\).\nPoisson: \\(\\operatorname{Var}(Y\\mid X)=\\mu\\).\n\nNote: When using the normal distribution, there are two separate parameters for the mean and variance.\n\n\n\nWe may perform exploratory data analysis to check if this assumption is true."
   },
   {
     "objectID": "Week5-6.html#overunderdispersion",
@@ -1888,5 +1888,26 @@
     "title": "Generalized Linear Models",
     "section": "Summary",
     "text": "Summary\n\nGeneralized linear models extend linear regression to responses such as binary and count data by specifying a response distribution, a linear predictor, and a link function.\nGLM coefficients are typically estimated by maximum likelihood, often using an iterative procedure such as iteratively reweighted least squares.\nStatistical inference in GLMs relies largely on asymptotic results; Wald tests and likelihood ratio tests can be used to assess covariate effects.\nModel checking requires assessing both the mean structure and the distributional mean–variance relationship using residuals and goodness-of-fit measures.\nWhen assumptions such as the Poisson variance relationship are violated, alternatives such as negative binomial models, zero-inflated models, or quasi-likelihood may provide more appropriate modelling or inference.\n\nAnnouncements: Next week is the midterm (Friday, October 23rd) in room FE 230 from 2:10pm – 4:10pm"
+  },
+  {
+    "objectID": "Week5-6.html#separation",
+    "href": "Week5-6.html#separation",
+    "title": "Generalized Linear Models",
+    "section": "Separation",
+    "text": "Separation\nOne problem we might face when fitting a logistic regression model is separation.\nComplete separation occurs when a predictor, or combination of predictors, perfectly separates the two outcome classes.\nFor example:\n\nAll observations with (x &lt; 5) have (Y=0)\nAll observations with (x &gt; 5) have (Y=1)\n\n\nIn this case, the likelihood keeps increasing as the magnitude of the coefficient increases:\n\\[\n|\\hat{\\beta}_1| \\rightarrow \\infty.\n\\]\nTherefore, there is no finite MLE for \\[\\beta_1\\]."
+  },
+  {
+    "objectID": "Week5-6.html#separation-1",
+    "href": "Week5-6.html#separation-1",
+    "title": "Generalized Linear Models",
+    "section": "Separation",
+    "text": "Separation\nWhat might we see in practice?\n\nExtremely large coefficient estimates\nExtremely large standard errors\nConvergence warnings in R\nFitted probabilities very close to 0 or 1\n\n\nWhat do we do?\n\nDO NOT just interpret the huge coefficient\n\nUnder separation, the issue is not simply bias: the usual finite maximum likelihood estimate does not exist.\n\nUse a method that stabilizes the estimate\n\npenalized logistic regression\nFirth logistic regression"
+  },
+  {
+    "objectID": "Week5-6.html#modeling-binary-data-divide-by-four-rule",
+    "href": "Week5-6.html#modeling-binary-data-divide-by-four-rule",
+    "title": "Generalized Linear Models",
+    "section": "Modeling binary data: divide-by-four rule",
+    "text": "Modeling binary data: divide-by-four rule\n\n\nIn logistic regression,\n\\[\np=P(Y=1\\mid X_1,\\ldots,X_p).\n\\] Then, we can show that\n\\[\n\\frac{\\partial p}{\\partial X_j}\n=\n\\beta_j p(1-p).\n\\]\n\nThe quantity \\(p(1-p)\\) is largest when \\(p=0.5\\) where \\(p(1-p)=\\frac14.\\)\nSo the largest possible slope is approximately \\(\\frac{\\beta_j}{4}.\\)\n\n\n\nDividing \\(\\beta_j\\) by 4 gives a quick approximation to the largest possible change in predicted probability associated with a one-unit increase in \\(X_j\\)."
   }
 ]

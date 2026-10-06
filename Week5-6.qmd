@@ -118,6 +118,69 @@ $$\log\left(\frac{p_i}{1-p_i}\right)=\beta_0+x_i\beta_1,$$
           placeholder="Type notes here..."></textarea>
 ```
 
+## Modeling binary data: divide-by-four rule
+
+::: columns
+
+::: {.column width="50%"}
+
+In logistic regression, 
+
+$$
+p=P(Y=1\mid X_1,\ldots,X_p).
+$$
+Then, we can show that
+
+$$
+\frac{\partial p}{\partial X_j}
+=
+\beta_j p(1-p).
+$$
+
+:::{.fragment}
+The quantity $p(1-p)$ is largest when $p=0.5$ where $p(1-p)=\frac14.$
+
+So the **largest possible slope** is approximately $\frac{\beta_j}{4}.$
+::: 
+
+<br> 
+
+:::{.fragment}
+Dividing $\beta_j$ by 4 gives a [quick approximation]{.maroon} to the largest possible change in predicted probability associated with a one-unit increase in $X_j$. 
+:::
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(ggplot2)
+
+eta <- seq(-6, 6, length.out = 500)
+
+dat <- data.frame(
+  eta = eta,
+  p = plogis(eta)
+)
+
+ggplot(dat, aes(x = eta, y = p)) +
+  geom_line(linewidth = 1.2) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_hline(yintercept = 0.5, linetype = "dashed") +
+  labs(
+    x = "Linear predictor",
+    y = "Predicted probability"
+  ) +
+  theme_minimal(base_size = 16)
+``` 
+
+::: 
+::: 
+
 ## Modeling binary data
 
 ![](images/Week5-6-LR.png){fig-align="center" width="60%"}
@@ -1065,7 +1128,7 @@ Both $D$ and $X^2$ follow $\chi^2_{n-p-1}$ asymptotically [when the mean-varianc
 
 ## Modeling Considerations
 
-Recall the motivating question at the start of last lecture: [Should we use logistic or Poisson regressi0on just because the data type is binary or count?]{.maroon} 
+Recall the motivating question at the start of last lecture: [Should we use logistic or Poisson regression just because the data type is binary or count?]{.maroon} 
 
 <br> 
 
@@ -1083,6 +1146,49 @@ Strong distributional assumptions (in variance) specifying expected value and va
 :::{.fragment}
 We may perform exploratory data analysis to check if this assumption is true.
 ::: 
+
+## Separation
+
+One problem we might face when fitting a logistic regression model is [separation]{.maroon}.
+
+[Complete separation]{.maroon} occurs when a predictor, or combination of predictors, perfectly separates the two outcome classes.
+
+For example:
+
+  - All observations with \(x < 5\) have \(Y=0\)
+  - All observations with \(x > 5\) have \(Y=1\)
+
+<br>
+
+In this case, the likelihood keeps increasing as the magnitude of the coefficient increases:
+
+$$
+|\hat{\beta}_1| \rightarrow \infty.
+$$
+
+Therefore, there is **no finite MLE** for $$\beta_1$$.
+
+## Separation 
+
+**What might we see in practice?**
+
+- Extremely large coefficient estimates
+- Extremely large standard errors
+- Convergence warnings in R
+- Fitted probabilities very close to 0 or 1
+
+<br> 
+
+**What do we do?**
+
+  - [DO NOT]{.maroon} just interpret the huge coefficient 
+  
+    - Under separation, the issue is not simply bias: the usual finite maximum likelihood estimate does not exist.
+  
+  - Use a method that stabilizes the estimate 
+    
+    - penalized logistic regression
+    - Firth logistic regression
 
 ## Over/Underdispersion
 
