@@ -1191,6 +1191,71 @@ H_0:\underbrace{\beta_1 = \cdots = \beta_p = 0}_{\text{i.e., } \mu_i = \mu}
 <p>We may perform exploratory data analysis to check if this assumption is true.</p>
 </div>
 </section>
+<section id="exposure" class="slide level2">
+<h2>Exposure</h2>
+<p>Suppose we want to compare the number of infections across two regions.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Region</th>
+<th style="text-align: right;">Population</th>
+<th style="text-align: right;">Number of infections</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td style="text-align: right;">10,000</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: right;">50</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Region A has <span class="maroon"><strong>more infections</strong></span> than Region B, but Region B has a <span class="maroon"><strong>higher infection rate</strong></span>.</p>
+<p><br></p>
+<div class="fragment">
+<p>The population size determines how much <span class="maroon">exposure</span> each region has:</p>
+<blockquote>
+<p>More people <span class="math inline">\(\rightarrow\)</span> more opportunities for infections to occur.</p>
+</blockquote>
+<p>If we model only the raw count, differences in exposure can be mistaken for differences in the underlying event rate.</p>
+</div>
+</section>
+<section id="exposure-1" class="slide level2">
+<h2>Exposure</h2>
+<p>For count data, observations may have different amounts of <span class="maroon">exposure</span>.</p>
+<p>For example:</p>
+<ul>
+<li>number of infections across regions with different population sizes</li>
+<li>number of accidents observed over different driving times</li>
+<li>number of hospitalizations over different follow-up periods</li>
+</ul>
+<div class="fragment">
+<p>If <span class="math inline">\(u_i\)</span> is the exposure, we can model</p>
+<p><span class="math display">\[
+\log(\mu_i)
+=
+\log(u_i)
++
+\beta_0+\beta_1X_{i1}+\cdots+\beta_pX_{ip}.
+\]</span></p>
+<p>The term <span class="math inline">\(\log(u_i)\)</span> is called an <span class="maroon">offset</span>.</p>
+</div>
+<div class="fragment">
+<p>Equivalently,</p>
+<p><span class="math display">\[
+\log\left(\frac{\mu_i}{u_i}\right)
+=
+\beta_0+\beta_1X_{i1}+\cdots+\beta_pX_{ip}.
+\]</span></p>
+<p>So we are modelling an <span class="maroon"><strong>event rate per unit exposure</strong></span>, rather than simply the total count.</p>
+</div>
+</section>
 <section id="separation" class="slide level2">
 <h2>Separation</h2>
 <p>One problem we might face when fitting a logistic regression model is <span class="maroon">separation</span>.</p>

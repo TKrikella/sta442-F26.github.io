@@ -1909,5 +1909,26 @@
     "title": "Generalized Linear Models",
     "section": "Modeling binary data: divide-by-four rule",
     "text": "Modeling binary data: divide-by-four rule\n\n\nIn logistic regression,\n\\[\np=P(Y=1\\mid X_1,\\ldots,X_p).\n\\] Then, we can show that\n\\[\n\\frac{\\partial p}{\\partial X_j}\n=\n\\beta_j p(1-p).\n\\]\n\nThe quantity \\(p(1-p)\\) is largest when \\(p=0.5\\) where \\(p(1-p)=\\frac14.\\)\nSo the largest possible slope is approximately \\(\\frac{\\beta_j}{4}.\\)\n\n\n\nDividing \\(\\beta_j\\) by 4 gives a quick approximation to the largest possible change in predicted probability associated with a one-unit increase in \\(X_j\\)."
+  },
+  {
+    "objectID": "Week5-6.html#counts-vs.-rates-exposure",
+    "href": "Week5-6.html#counts-vs.-rates-exposure",
+    "title": "Generalized Linear Models",
+    "section": "Counts vs. Rates: Exposure",
+    "text": "Counts vs. Rates: Exposure\nFor count data, observations may have different amounts of exposure.\nFor example:\n\nnumber of infections across regions with different population sizes\nnumber of accidents observed over different driving times\nnumber of hospitalizations over different follow-up periods\n\n\nIf \\(u_i\\) is the exposure, we can model\n\\[\n\\log(\\mu_i)\n=\n\\log(u_i)\n+\n\\beta_0+\\beta_1X_{i1}+\\cdots+\\beta_pX_{ip}.\n\\]\nThe term \\(\\log(u_i)\\) is called an offset.\n\n\nEquivalently,\n\\[\n\\log\\left(\\frac{\\mu_i}{u_i}\\right)\n=\n\\beta_0+\\beta_1X_{i1}+\\cdots+\\beta_pX_{ip}.\n\\]\nSo we are modelling an event rate per unit exposure, rather than simply the total count."
+  },
+  {
+    "objectID": "Week5-6.html#exposure",
+    "href": "Week5-6.html#exposure",
+    "title": "Generalized Linear Models",
+    "section": "Exposure",
+    "text": "Exposure\nSuppose we want to compare the number of infections across two regions.\n\n\n\nRegion\nPopulation\nNumber of infections\n\n\n\n\nA\n10,000\n100\n\n\nB\n1,000\n50\n\n\n\n\nRegion A has more infections than Region B, but Region B has a higher infection rate.\n\n\nThe population size determines how much exposure each region has:\n\nMore people \\(\\rightarrow\\) more opportunities for infections to occur.\n\nIf we model only the raw count, differences in exposure can be mistaken for differences in the underlying event rate."
+  },
+  {
+    "objectID": "Week5-6.html#exposure-1",
+    "href": "Week5-6.html#exposure-1",
+    "title": "Generalized Linear Models",
+    "section": "Exposure",
+    "text": "Exposure\nFor count data, observations may have different amounts of exposure.\nFor example:\n\nnumber of infections across regions with different population sizes\nnumber of accidents observed over different driving times\nnumber of hospitalizations over different follow-up periods\n\n\nIf \\(u_i\\) is the exposure, we can model\n\\[\n\\log(\\mu_i)\n=\n\\log(u_i)\n+\n\\beta_0+\\beta_1X_{i1}+\\cdots+\\beta_pX_{ip}.\n\\]\nThe term \\(\\log(u_i)\\) is called an offset.\n\n\nEquivalently,\n\\[\n\\log\\left(\\frac{\\mu_i}{u_i}\\right)\n=\n\\beta_0+\\beta_1X_{i1}+\\cdots+\\beta_pX_{ip}.\n\\]\nSo we are modelling an event rate per unit exposure, rather than simply the total count."
   }
 ]

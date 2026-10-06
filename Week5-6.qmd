@@ -1147,6 +1147,64 @@ Strong distributional assumptions (in variance) specifying expected value and va
 We may perform exploratory data analysis to check if this assumption is true.
 ::: 
 
+## Exposure
+
+Suppose we want to compare the number of infections across two regions.
+
+| Region | Population | Number of infections |
+|--------|-----------:|---------------------:|
+| A | 10,000 | 100 |
+| B | 1,000 | 50 |
+
+<br>
+
+Region A has [**more infections**]{.maroon} than Region B, but Region B has a [**higher infection rate**]{.maroon}.
+
+<br> 
+
+:::{.fragment}
+The population size determines how much [exposure]{.maroon} each region has:
+
+> More people $\rightarrow$ more opportunities for infections to occur.
+
+If we model only the raw count, differences in exposure can be mistaken for differences in the underlying event rate.
+:::
+
+## Exposure
+For count data, observations may have different amounts of [exposure]{.maroon}.
+
+For example:
+
+  - number of infections across regions with different population sizes
+  - number of accidents observed over different driving times
+  - number of hospitalizations over different follow-up periods
+
+:::{.fragment}
+If $u_i$ is the exposure, we can model
+
+$$
+\log(\mu_i)
+=
+\log(u_i)
++
+\beta_0+\beta_1X_{i1}+\cdots+\beta_pX_{ip}.
+$$
+
+The term $\log(u_i)$ is called an [offset]{.maroon}.
+::: 
+
+:::{.fragment}
+Equivalently,
+
+$$
+\log\left(\frac{\mu_i}{u_i}\right)
+=
+\beta_0+\beta_1X_{i1}+\cdots+\beta_pX_{ip}.
+$$
+
+So we are modelling an [**event rate per unit exposure**]{.maroon}, rather than simply the total count.
+::: 
+
 ## Separation
 
 One problem we might face when fitting a logistic regression model is [separation]{.maroon}.
