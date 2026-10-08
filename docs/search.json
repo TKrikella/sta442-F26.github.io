@@ -1663,7 +1663,7 @@
     "href": "Week5-6.html#exponential-family-1",
     "title": "Generalized Linear Models",
     "section": "Exponential family",
-    "text": "Exponential family\nWe have the following known properties of the exponential family that come from maximum likelihood.\n\n\\(E[\\partial \\log \\mathcal{L}/\\partial\\theta]=0\\) implies that\n\n\\[E\\left[\\frac{y-b'(\\theta)}{\\phi}\\right]=0 \\implies E[y]=b'(\\theta)\\]\n\n\n\\(E[\\partial^2 \\log \\mathcal{L}/\\partial\\theta^2]=-E[(\\partial \\log \\mathcal{L}/\\partial\\theta)^2]\\) implies that\n\n\\[-E\\left[\\frac{\\partial^2\\ell}{\\partial\\theta^2}\\right]\n=\\frac{b''(\\theta)}{\\phi}\n=E\\left[\\left(\\frac{Y-b'(\\theta)}{\\phi^2}\\right)^2\\right].\\]\nwhich leads to\n\\[\\operatorname{Var}(Y)=\\phi b''(\\theta).\\]"
+    "text": "Exponential family\nWe have the following known properties of the exponential family that come from maximum likelihood.\n\n\\(E[\\partial \\log \\mathcal{L}/\\partial\\theta]=0\\) implies that\n\n\\[E\\left[\\frac{y-b'(\\theta)}{\\phi}\\right]=0 \\implies E[y]=b'(\\theta)\\]\n\n\n\\(E[\\partial^2 \\log \\mathcal{L}/\\partial\\theta^2]=-E[(\\partial \\log \\mathcal{L}/\\partial\\theta)^2]\\) implies that\n\n\\[-E\\left[\\frac{\\partial^2\\ell}{\\partial\\theta^2}\\right]\n=\\frac{b''(\\theta)}{\\phi}\n=E\\left[\\left(\\frac{Y-b'(\\theta)}{\\phi}\\right)^2\\right].\\]\nwhich leads to\n\\[\\operatorname{Var}(Y)=\\phi b''(\\theta).\\]"
   },
   {
     "objectID": "Week5-6.html#link-and-variance-functions",
