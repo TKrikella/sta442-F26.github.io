@@ -796,6 +796,20 @@ f(y\mid\mu)&amp;=\mu^y(1-\mu)^{1-y}\\
 <p>Become familiar with the roles and relationships of</p>
 <p><span class="math display">\[g(\cdot),\quad v(\cdot),\quad b(\cdot),\quad\phi,\quad\mu,\quad\theta,\quad\eta.\]</span></p>
 <p>Review differentiation rules, especially the <span class="maroon">chain rule</span>.</p>
+</section>
+<section id="knowledge-check" class="slide level2">
+<h2>Knowledge Check</h2>
+<p>I fit two Poisson regression models to the same dataset, one using a log link and another using a square-root link. Do both models assume the same relationship between the conditional mean and variance?</p>
+<textarea class="annotation-box" placeholder="Type notes here..."></textarea>
+<p>Two fitted Bernoulli GLMs use different link functions and give different predicted probabilities for the same individual. Will their predicted conditional variances necessarily be the same?</p>
+<textarea class="annotation-box" placeholder="Type notes here..."></textarea>
+</section>
+<section id="knowledge-check-1" class="slide level2">
+<h2>Knowledge Check</h2>
+<p>We proved that the expected score equals zero. Does this mean the score evaluated at the true parameter is zero for every observed dataset?</p>
+<textarea class="annotation-box" placeholder="Type notes here..."></textarea>
+<p>Spoiler for next week: Why can we use approximately normal confidence intervals for logistic regression coefficients even though the response follows a Bernoulli distribution?</p>
+<textarea class="annotation-box" placeholder="Type notes here..."></textarea>
 </section></section>
 <section>
 <section id="parameter-estimation-in-glms" class="title-slide slide level1 center">
@@ -852,12 +866,10 @@ y_i\sim\operatorname{Bernoulli}(\mu_i),
 <li>The <span class="maroon">random component</span></li>
 <li>The <span class="maroon">systematic component</span></li>
 <li>The <span class="maroon">link function</span></li>
-<li>The inverse link, <span class="math inline">\(g^{-1}(\eta)\)</span></li>
 </ol>
 </div><div class="column" style="width:50%;">
-<ol start="5" type="1">
+<ol start="4" type="1">
 <li>The variance function, <span class="math inline">\(v(\mu)\)</span></li>
-<li>The derivative, <span class="math inline">\(g'(\mu)\)</span></li>
 <li>Which quantities vary across observations?</li>
 </ol>
 </div></div>

@@ -1705,7 +1705,7 @@
     "href": "Week5-6.html#activity-build-the-glm",
     "title": "Generalized Linear Models",
     "section": "Activity: Build the GLM",
-    "text": "Activity: Build the GLM\nSuppose\n\\[\ny_i\\sim\\operatorname{Bernoulli}(\\mu_i),\n\\qquad\n\\log\\left(\\frac{\\mu_i}{1-\\mu_i}\\right)\n=\n\\beta_0+\\beta_1x_i.\n\\]\nIdentify\n\n\n\nThe random component\nThe systematic component\nThe link function\nThe inverse link, \\(g^{-1}(\\eta)\\)\n\n\n\nThe variance function, \\(v(\\mu)\\)\nThe derivative, \\(g'(\\mu)\\)\nWhich quantities vary across observations?\n\n\n\nQuestion: Why might solving for \\(\\boldsymbol\\beta\\) require an iterative algorithm?"
+    "text": "Activity: Build the GLM\nSuppose\n\\[\ny_i\\sim\\operatorname{Bernoulli}(\\mu_i),\n\\qquad\n\\log\\left(\\frac{\\mu_i}{1-\\mu_i}\\right)\n=\n\\beta_0+\\beta_1x_i.\n\\]\nIdentify\n\n\n\nThe random component\nThe systematic component\nThe link function\n\n\n\nThe variance function, \\(v(\\mu)\\)\nWhich quantities vary across observations?\n\n\n\nQuestion: Why might solving for \\(\\boldsymbol\\beta\\) require an iterative algorithm?"
   },
   {
     "objectID": "Week5-6.html#fitting-glms-in-r",
@@ -1930,5 +1930,19 @@
     "title": "Generalized Linear Models",
     "section": "Exposure",
     "text": "Exposure\nFor count data, observations may have different amounts of exposure.\nFor example:\n\nnumber of infections across regions with different population sizes\nnumber of accidents observed over different driving times\nnumber of hospitalizations over different follow-up periods\n\n\nIf \\(u_i\\) is the exposure, we can model\n\\[\n\\log(\\mu_i)\n=\n\\log(u_i)\n+\n\\beta_0+\\beta_1X_{i1}+\\cdots+\\beta_pX_{ip}.\n\\]\nThe term \\(\\log(u_i)\\) is called an offset.\n\n\nEquivalently,\n\\[\n\\log\\left(\\frac{\\mu_i}{u_i}\\right)\n=\n\\beta_0+\\beta_1X_{i1}+\\cdots+\\beta_pX_{ip}.\n\\]\nSo we are modelling an event rate per unit exposure, rather than simply the total count."
+  },
+  {
+    "objectID": "Week5-6.html#knowledge-check",
+    "href": "Week5-6.html#knowledge-check",
+    "title": "Generalized Linear Models",
+    "section": "Knowledge Check",
+    "text": "Knowledge Check\nI fit two Poisson regression models to the same dataset, one using a log link and another using a square-root link. Do both models assume the same relationship between the conditional mean and variance?\n\nTwo fitted Bernoulli GLMs use different link functions and give different predicted probabilities for the same individual. Will their predicted conditional variances necessarily be the same?"
+  },
+  {
+    "objectID": "Week5-6.html#knowledge-check-1",
+    "href": "Week5-6.html#knowledge-check-1",
+    "title": "Generalized Linear Models",
+    "section": "Knowledge Check",
+    "text": "Knowledge Check\nWe proved that the expected score equals zero. Does this mean the score evaluated at the true parameter is zero for every observed dataset?\n\nSpoiler for next week: Why can we use approximately normal confidence intervals for logistic regression coefficients even though the response follows a Bernoulli distribution?"
   }
 ]

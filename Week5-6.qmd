@@ -696,6 +696,38 @@ $$g(\cdot),\quad v(\cdot),\quad b(\cdot),\quad\phi,\quad\mu,\quad\theta,\quad\et
 
 Review differentiation rules, especially the [chain rule]{.maroon}.
 
+## Knowledge Check 
+
+I fit two Poisson regression models to the same dataset, one using a log link and another using a square-root link. Do both models assume the same relationship between the conditional mean and variance? 
+
+```{=html}
+<textarea class="annotation-box"
+          placeholder="Type notes here..."></textarea>
+```
+
+Two fitted Bernoulli GLMs use different link functions and give different predicted probabilities for the same individual. Will their predicted conditional variances necessarily be the same? 
+
+```{=html}
+<textarea class="annotation-box"
+          placeholder="Type notes here..."></textarea>
+```
+
+## Knowledge Check 
+
+We proved that the expected score equals zero. Does this mean the score evaluated at the true parameter is zero for every observed dataset? 
+
+```{=html}
+<textarea class="annotation-box"
+          placeholder="Type notes here..."></textarea>
+```
+
+Spoiler for next week: Why can we use approximately normal confidence intervals for logistic regression coefficients even though the response follows a Bernoulli distribution? 
+
+```{=html}
+<textarea class="annotation-box"
+          placeholder="Type notes here..."></textarea>
+```
+
 # Parameter estimation in GLMs
 
 ## Review: three components of a GLM
@@ -751,15 +783,13 @@ Identify
 1. The [random component]{.maroon}
 2. The [systematic component]{.maroon}
 3. The [link function]{.maroon}
-4. The inverse link, $g^{-1}(\eta)$
 
 :::
 
 ::: {.column width="50%"}
 
-5. The variance function, $v(\mu)$
-6. The derivative, $g'(\mu)$
-7. Which quantities vary across observations?
+4. The variance function, $v(\mu)$
+5. Which quantities vary across observations?
 
 :::
 ::::
