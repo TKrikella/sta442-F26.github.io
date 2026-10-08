@@ -714,7 +714,7 @@ Two fitted Bernoulli GLMs use different link functions and give different predic
 
 ## Knowledge Check 
 
-We proved that the expected score equals zero. Does this mean the score evaluated at the true parameter is zero for every observed dataset? 
+Suppose a Bernoulli GLM uses a probit link instead of a logit link. Is the linear predictor still equal to the natural parameter? 
 
 ```{=html}
 <textarea class="annotation-box"

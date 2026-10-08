@@ -1943,6 +1943,6 @@
     "href": "Week5-6.html#knowledge-check-1",
     "title": "Generalized Linear Models",
     "section": "Knowledge Check",
-    "text": "Knowledge Check\nWe proved that the expected score equals zero. Does this mean the score evaluated at the true parameter is zero for every observed dataset?\n\nSpoiler for next week: Why can we use approximately normal confidence intervals for logistic regression coefficients even though the response follows a Bernoulli distribution?"
+    "text": "Knowledge Check\nSuppose a Bernoulli GLM uses a probit link instead of a logit link. Is the linear predictor still equal to the natural parameter?\n\nSpoiler for next week: Why can we use approximately normal confidence intervals for logistic regression coefficients even though the response follows a Bernoulli distribution?"
   }
 ]
