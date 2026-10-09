@@ -22,7 +22,18 @@ I hope this course helps you develop the confidence to work with data independen
 | Assignment 3 | December 4, 11:59pm |
 :::
 
+## Tests  
+
+::: {.table-responsive}
+| Test | Date | Information |
+|:----------:|:--------:|:--------:|
+| Midterm | October 23rd, 2pm -- 4pm | [Information + Practice](Midterm_Information.pdf) |
+| Final | TBD | |
+:::
+
 ## Announcements
+
+- I have added the midterm information, as well as some practice questions, to the course website.
 
 - The Department of Statistical Sciences is hosting a graduate school open house on Saturday, September 26th. [See the website](https://www.statistics.utoronto.ca/events/doss-graduate-school-open-house) for more information, and to register!
 

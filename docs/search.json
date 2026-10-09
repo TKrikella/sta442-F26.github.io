@@ -459,7 +459,7 @@
     "href": "index.html#announcements",
     "title": "STA442",
     "section": "Announcements",
-    "text": "Announcements\n\nThe Department of Statistical Sciences is hosting a graduate school open house on Saturday, September 26th. See the website for more information, and to register!\nAssignment 1 is now available, due October 2nd by 11:59pm. Read syllabus for late policy. Assignment is to be submitted through Crowdmark, link will become available soon.\nThe Syllabus is available.\nAnnouncements will be through Quercus and here, on the course website."
+    "text": "Announcements\n\nI have added the midterm information, as well as some practice questions, to the course website.\nThe Department of Statistical Sciences is hosting a graduate school open house on Saturday, September 26th. See the website for more information, and to register!\nAssignment 1 is now available, due October 2nd by 11:59pm. Read syllabus for late policy. Assignment is to be submitted through Crowdmark, link will become available soon.\nThe Syllabus is available.\nAnnouncements will be through Quercus and here, on the course website."
   },
   {
     "objectID": "index.html#computing",
@@ -1944,5 +1944,12 @@
     "title": "Generalized Linear Models",
     "section": "Knowledge Check",
     "text": "Knowledge Check\nSuppose a Bernoulli GLM uses a probit link instead of a logit link. Is the linear predictor still equal to the natural parameter?\n\nSpoiler for next week: Why can we use approximately normal confidence intervals for logistic regression coefficients even though the response follows a Bernoulli distribution?"
+  },
+  {
+    "objectID": "index.html#tests",
+    "href": "index.html#tests",
+    "title": "STA442",
+    "section": "Tests",
+    "text": "Tests\n\n\n\n\nTest\nDate\nInformation\n\n\n\n\nMidterm\nOctober 23rd, 2pm – 4pm\nInformation + Practice\n\n\nFinal\nTBD"
   }
 ]
