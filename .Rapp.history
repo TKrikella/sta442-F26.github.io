@@ -1,0 +1,14 @@
+set.seed(442) #
+#
+x <- c(2, 6, 10, 14, 18) # given in question#
+#
+beta0 <- 15 # given#
+beta1 <- 3 # given#
+sigma <- 4 #given#
+#
+# Generate 5 error terms #
+epsilon <- rnorm(5, mean = 0, sd = sigma)#
+#
+# Generate y values #
+y <- beta0 + beta1*x + epsilon #
+y
