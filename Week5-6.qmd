@@ -757,7 +757,7 @@ $$y_i\sim\operatorname{Bernoulli}\left(\Phi(\mathbf x_i^T\boldsymbol\beta)\right
 
 - Poisson with a **log** link: 
 
-$$y_i\sim\operatorname{Poisson}(e^{\mathbf x_i^T\boldsymbol\beta})$$.
+$$y_i\sim\operatorname{Poisson}(e^{\mathbf x_i^T\boldsymbol\beta}).$$
 
 - Poisson with an **identity** link (when $\mathbf x_i^T\boldsymbol\beta > 0$ is always satisfied): 
 
@@ -964,9 +964,9 @@ Procedure:
 2. Fit the full model and obtain $\ell(\hat{\boldsymbol\mu}_{\mathrm{full}})$.
 3. Construct the [likelihood ratio statistic]{.maroon}:
 
-$$T_{\mathrm{LRT}}=-2[\ell(\hat{\boldsymbol\beta}_{\mathrm{full}})
--\ell(\hat{\boldsymbol\beta}_{\mathrm{null}})].$$
-4. $T_{\mathrm{LRT}}\ \dot\sim\ \chi_p^2$ [asymptotically (i.e. as $n \rightarrow 0$)]{.maroon} when the null hypothesis is true
+$$T_{\mathrm{LRT}}=-2[\ell(\hat{\boldsymbol\beta}_{\mathrm{null}})
+-\ell(\hat{\boldsymbol\beta}_{\mathrm{full}})].$$
+4. $T_{\mathrm{LRT}}\ \dot\sim\ \chi_p^2$ [asymptotically (i.e. as $n \rightarrow \infty$)]{.maroon} when the null hypothesis is true
 
 ## Hypothesis Testing 1: Likelihood ratio test
 
@@ -1010,11 +1010,9 @@ Procedure:
 3. Construct the [Wald statistic]{.maroon}  
 $$T_{\mathrm{Wald}}=\hat{\boldsymbol\beta}_{1:p}^T
 \hat\Sigma_{1:p}^{-1}\hat{\boldsymbol\beta}_{1:p}.$$
-4. $T_{\mathrm{Wald}}\ \dot\sim\ \chi_p^2$ [asymptotically (i.e. as $n \rightarrow 0$)]{.maroon} when the null hypothesis is true.
+4. $T_{\mathrm{Wald}}\ \dot\sim\ \chi_p^2$ [asymptotically (i.e. as $n \rightarrow \infty$)]{.maroon} when the null hypothesis is true.
 
 :::{.fragment}
-The Wald test requires fitting a full model. 
-
 Wald and likelihood ratio tests are [asymptotically equivalent]{.maroon} under the usual regularity conditions, but can behave differently in small samples.
 ::: 
 
@@ -1094,11 +1092,25 @@ $$r_i^P=\frac{y_i-\hat\mu_i}{\sqrt{\hat\mu_i}}.$$
 
 <br> 
 
-The deviance residual is
+:::{.fragment}
+To calculate the deviance residual, we start with the Poisson log-likelihood for one observation: 
+
+$$
+\ell_i(\mu_i) = y_i \log (\mu_i) - \mu_i - \log (y_i!).
+$$
+
+To get the log likelihood of the saturated model, we plug in $y_i$ for $\mu_i$. 
+
+To get the log-likelihood of the fitted model, we plug in $\hat \mu_i$ for $\mu_i$.
+::: 
+
+:::{.fragment}
+
+Then, the deviance residual is
 
 $$r_i^D=\operatorname{sign}(y_i-\hat\mu_i)
 \sqrt{2\left[y_i\log\left(\frac{y_i}{\hat\mu_i}\right)-(y_i-\hat\mu_i)\right]}.$$
-
+:::
 
 ## Checking 'Linearity'
 
@@ -1248,6 +1260,7 @@ For example:
 
 <br>
 
+:::{.fragment}
 In this case, the likelihood keeps increasing as the magnitude of the coefficient increases:
 
 $$
@@ -1255,6 +1268,7 @@ $$
 $$
 
 Therefore, there is **no finite MLE** for $$\beta_1$$.
+::: 
 
 ## Separation 
 
@@ -1267,6 +1281,7 @@ Therefore, there is **no finite MLE** for $$\beta_1$$.
 
 <br> 
 
+:::{.fragment}
 **What do we do?**
 
   - [DO NOT]{.maroon} just interpret the huge coefficient 
@@ -1277,6 +1292,8 @@ Therefore, there is **no finite MLE** for $$\beta_1$$.
     
     - penalized logistic regression
     - Firth logistic regression
+    
+::: 
 
 ## Over/Underdispersion
 

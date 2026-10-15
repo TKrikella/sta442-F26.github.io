@@ -1698,7 +1698,7 @@
     "href": "Week5-6.html#review-examples-of-glm-specifications",
     "title": "Generalized Linear Models",
     "section": "Review: examples of GLM specifications",
-    "text": "Review: examples of GLM specifications\nAssume responses are conditionally independent.\n\nLogistic regression with a logit link:\n\n\\[y_i\\sim\\operatorname{Bernoulli}\\left(\\frac{e^{\\mathbf x_i^T\\boldsymbol\\beta}}{1+e^{\\mathbf x_i^T\\boldsymbol\\beta}}\\right).\\]\n\nLogistic regression with a probit link, where \\(\\Phi(\\cdot)\\) is a CDF function of \\(\\mathcal{N}(0,1)\\)\n\n\\[y_i\\sim\\operatorname{Bernoulli}\\left(\\Phi(\\mathbf x_i^T\\boldsymbol\\beta)\\right).\\]\n\nPoisson with a log link:\n\n\\[y_i\\sim\\operatorname{Poisson}(e^{\\mathbf x_i^T\\boldsymbol\\beta})\\].\n\nPoisson with an identity link (when \\(\\mathbf x_i^T\\boldsymbol\\beta &gt; 0\\) is always satisfied):\n\n\\[y_i\\sim\\operatorname{Poisson}(\\mathbf x_i^T\\boldsymbol\\beta)\\]"
+    "text": "Review: examples of GLM specifications\nAssume responses are conditionally independent.\n\nLogistic regression with a logit link:\n\n\\[y_i\\sim\\operatorname{Bernoulli}\\left(\\frac{e^{\\mathbf x_i^T\\boldsymbol\\beta}}{1+e^{\\mathbf x_i^T\\boldsymbol\\beta}}\\right).\\]\n\nLogistic regression with a probit link, where \\(\\Phi(\\cdot)\\) is a CDF function of \\(\\mathcal{N}(0,1)\\)\n\n\\[y_i\\sim\\operatorname{Bernoulli}\\left(\\Phi(\\mathbf x_i^T\\boldsymbol\\beta)\\right).\\]\n\nPoisson with a log link:\n\n\\[y_i\\sim\\operatorname{Poisson}(e^{\\mathbf x_i^T\\boldsymbol\\beta}).\\]\n\nPoisson with an identity link (when \\(\\mathbf x_i^T\\boldsymbol\\beta &gt; 0\\) is always satisfied):\n\n\\[y_i\\sim\\operatorname{Poisson}(\\mathbf x_i^T\\boldsymbol\\beta)\\]"
   },
   {
     "objectID": "Week5-6.html#activity-build-the-glm",
@@ -1775,7 +1775,7 @@
     "href": "Week5-6.html#hypothesis-testing-1-likelihood-ratio-test",
     "title": "Generalized Linear Models",
     "section": "Hypothesis Testing 1: Likelihood ratio test",
-    "text": "Hypothesis Testing 1: Likelihood ratio test\n\n\\[\nH_0:\\underbrace{\\beta_1 = \\cdots = \\beta_p = 0}_{\\text{i.e., } \\mu_i = \\mu}\n\\] Procedure:\n\nFit the null model and obtain \\(\\ell(\\hat{\\boldsymbol\\mu}_{\\mathrm{null}})\\).\nFit the full model and obtain \\(\\ell(\\hat{\\boldsymbol\\mu}_{\\mathrm{full}})\\).\nConstruct the likelihood ratio statistic:\n\n\\[T_{\\mathrm{LRT}}=-2[\\ell(\\hat{\\boldsymbol\\beta}_{\\mathrm{full}})\n-\\ell(\\hat{\\boldsymbol\\beta}_{\\mathrm{null}})].\\] 4. \\(T_{\\mathrm{LRT}}\\ \\dot\\sim\\ \\chi_p^2\\) asymptotically (i.e. as \\(n \\rightarrow 0\\)) when the null hypothesis is true"
+    "text": "Hypothesis Testing 1: Likelihood ratio test\n\n\\[\nH_0:\\underbrace{\\beta_1 = \\cdots = \\beta_p = 0}_{\\text{i.e., } \\mu_i = \\mu}\n\\] Procedure:\n\nFit the null model and obtain \\(\\ell(\\hat{\\boldsymbol\\mu}_{\\mathrm{null}})\\).\nFit the full model and obtain \\(\\ell(\\hat{\\boldsymbol\\mu}_{\\mathrm{full}})\\).\nConstruct the likelihood ratio statistic:\n\n\\[T_{\\mathrm{LRT}}=-2[\\ell(\\hat{\\boldsymbol\\beta}_{\\mathrm{null}})\n-\\ell(\\hat{\\boldsymbol\\beta}_{\\mathrm{full}})].\\] 4. \\(T_{\\mathrm{LRT}}\\ \\dot\\sim\\ \\chi_p^2\\) asymptotically (i.e. as \\(n \\rightarrow \\infty\\)) when the null hypothesis is true"
   },
   {
     "objectID": "Week5-6.html#hypothesis-testing-1-likelihood-ratio-test-1",
@@ -1789,7 +1789,7 @@
     "href": "Week5-6.html#hypothesis-testing-2-wald-test",
     "title": "Generalized Linear Models",
     "section": "Hypothesis Testing 2: Wald Test",
-    "text": "Hypothesis Testing 2: Wald Test\n\n\\[\nH_0:\\underbrace{\\beta_1 = \\cdots = \\beta_p = 0}_{\\text{i.e., } \\mu_i = \\mu}\n\\]\nProcedure:\n\nEstimate \\(\\hat{\\beta}_{1:p}\\) using MLE\nObtain \\(\\widehat{Var}(\\hat{\\beta}_{1:p})\\), denoted by \\(\\hat\\Sigma_{1:p}\\).\nConstruct the Wald statistic\n\\[T_{\\mathrm{Wald}}=\\hat{\\boldsymbol\\beta}_{1:p}^T\n\\hat\\Sigma_{1:p}^{-1}\\hat{\\boldsymbol\\beta}_{1:p}.\\]\n\\(T_{\\mathrm{Wald}}\\ \\dot\\sim\\ \\chi_p^2\\) asymptotically (i.e. as \\(n \\rightarrow 0\\)) when the null hypothesis is true.\n\n\nThe Wald test requires fitting a full model.\nWald and likelihood ratio tests are asymptotically equivalent under the usual regularity conditions, but can behave differently in small samples."
+    "text": "Hypothesis Testing 2: Wald Test\n\n\\[\nH_0:\\underbrace{\\beta_1 = \\cdots = \\beta_p = 0}_{\\text{i.e., } \\mu_i = \\mu}\n\\]\nProcedure:\n\nEstimate \\(\\hat{\\beta}_{1:p}\\) using MLE\nObtain \\(\\widehat{Var}(\\hat{\\beta}_{1:p})\\), denoted by \\(\\hat\\Sigma_{1:p}\\).\nConstruct the Wald statistic\n\\[T_{\\mathrm{Wald}}=\\hat{\\boldsymbol\\beta}_{1:p}^T\n\\hat\\Sigma_{1:p}^{-1}\\hat{\\boldsymbol\\beta}_{1:p}.\\]\n\\(T_{\\mathrm{Wald}}\\ \\dot\\sim\\ \\chi_p^2\\) asymptotically (i.e. as \\(n \\rightarrow \\infty\\)) when the null hypothesis is true.\n\n\nWald and likelihood ratio tests are asymptotically equivalent under the usual regularity conditions, but can behave differently in small samples."
   },
   {
     "objectID": "Week5-6.html#hypothesis-testing-2-wald-test-1",
@@ -1817,7 +1817,7 @@
     "href": "Week5-6.html#residuals-poisson-example",
     "title": "Generalized Linear Models",
     "section": "Residuals: Poisson example",
-    "text": "Residuals: Poisson example\nFor a fitted Poisson regression,\n\\[r_i^P=\\frac{y_i-\\hat\\mu_i}{\\sqrt{\\hat\\mu_i}}.\\]\n\nThe deviance residual is\n\\[r_i^D=\\operatorname{sign}(y_i-\\hat\\mu_i)\n\\sqrt{2\\left[y_i\\log\\left(\\frac{y_i}{\\hat\\mu_i}\\right)-(y_i-\\hat\\mu_i)\\right]}.\\]"
+    "text": "Residuals: Poisson example\nFor a fitted Poisson regression,\n\\[r_i^P=\\frac{y_i-\\hat\\mu_i}{\\sqrt{\\hat\\mu_i}}.\\]\n\n\nTo calculate the deviance residual, we start with the Poisson log-likelihood for one observation:\n\\[\n\\ell_i(\\mu_i) = y_i \\log (\\mu_i) - \\mu_i - \\log (y_i!).\n\\]\nTo get the log likelihood of the saturated model, we plug in \\(y_i\\) for \\(\\mu_i\\).\nTo get the log-likelihood of the fitted model, we plug in \\(\\hat \\mu_i\\) for \\(\\mu_i\\).\n\n\nThen, the deviance residual is\n\\[r_i^D=\\operatorname{sign}(y_i-\\hat\\mu_i)\n\\sqrt{2\\left[y_i\\log\\left(\\frac{y_i}{\\hat\\mu_i}\\right)-(y_i-\\hat\\mu_i)\\right]}.\\]"
   },
   {
     "objectID": "Week5-6.html#checking-linearity",
@@ -1894,14 +1894,14 @@
     "href": "Week5-6.html#separation",
     "title": "Generalized Linear Models",
     "section": "Separation",
-    "text": "Separation\nOne problem we might face when fitting a logistic regression model is separation.\nComplete separation occurs when a predictor, or combination of predictors, perfectly separates the two outcome classes.\nFor example:\n\nAll observations with (x &lt; 5) have (Y=0)\nAll observations with (x &gt; 5) have (Y=1)\n\n\nIn this case, the likelihood keeps increasing as the magnitude of the coefficient increases:\n\\[\n|\\hat{\\beta}_1| \\rightarrow \\infty.\n\\]\nTherefore, there is no finite MLE for \\[\\beta_1\\]."
+    "text": "Separation\nOne problem we might face when fitting a logistic regression model is separation.\nComplete separation occurs when a predictor, or combination of predictors, perfectly separates the two outcome classes.\nFor example:\n\nAll observations with (x &lt; 5) have (Y=0)\nAll observations with (x &gt; 5) have (Y=1)\n\n\n\nIn this case, the likelihood keeps increasing as the magnitude of the coefficient increases:\n\\[\n|\\hat{\\beta}_1| \\rightarrow \\infty.\n\\]\nTherefore, there is no finite MLE for \\[\\beta_1\\]."
   },
   {
     "objectID": "Week5-6.html#separation-1",
     "href": "Week5-6.html#separation-1",
     "title": "Generalized Linear Models",
     "section": "Separation",
-    "text": "Separation\nWhat might we see in practice?\n\nExtremely large coefficient estimates\nExtremely large standard errors\nConvergence warnings in R\nFitted probabilities very close to 0 or 1\n\n\nWhat do we do?\n\nDO NOT just interpret the huge coefficient\n\nUnder separation, the issue is not simply bias: the usual finite maximum likelihood estimate does not exist.\n\nUse a method that stabilizes the estimate\n\npenalized logistic regression\nFirth logistic regression"
+    "text": "Separation\nWhat might we see in practice?\n\nExtremely large coefficient estimates\nExtremely large standard errors\nConvergence warnings in R\nFitted probabilities very close to 0 or 1\n\n\n\nWhat do we do?\n\nDO NOT just interpret the huge coefficient\n\nUnder separation, the issue is not simply bias: the usual finite maximum likelihood estimate does not exist.\n\nUse a method that stabilizes the estimate\n\npenalized logistic regression\nFirth logistic regression"
   },
   {
     "objectID": "Week5-6.html#modeling-binary-data-divide-by-four-rule",

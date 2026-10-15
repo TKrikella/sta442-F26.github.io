@@ -843,7 +843,7 @@ f(y\mid\mu)&amp;=\mu^y(1-\mu)^{1-y}\\
 <ul>
 <li>Poisson with a <strong>log</strong> link:</li>
 </ul>
-<p><span class="math display">\[y_i\sim\operatorname{Poisson}(e^{\mathbf x_i^T\boldsymbol\beta})\]</span>.</p>
+<p><span class="math display">\[y_i\sim\operatorname{Poisson}(e^{\mathbf x_i^T\boldsymbol\beta}).\]</span></p>
 <ul>
 <li>Poisson with an <strong>identity</strong> link (when <span class="math inline">\(\mathbf x_i^T\boldsymbol\beta &gt; 0\)</span> is always satisfied):</li>
 </ul>
@@ -1013,8 +1013,8 @@ H_0:\underbrace{\beta_1 = \cdots = \beta_p = 0}_{\text{i.e., } \mu_i = \mu}
 <li>Fit the full model and obtain <span class="math inline">\(\ell(\hat{\boldsymbol\mu}_{\mathrm{full}})\)</span>.</li>
 <li>Construct the <span class="maroon">likelihood ratio statistic</span>:</li>
 </ol>
-<p><span class="math display">\[T_{\mathrm{LRT}}=-2[\ell(\hat{\boldsymbol\beta}_{\mathrm{full}})
--\ell(\hat{\boldsymbol\beta}_{\mathrm{null}})].\]</span> 4. <span class="math inline">\(T_{\mathrm{LRT}}\ \dot\sim\ \chi_p^2\)</span> <span class="maroon">asymptotically (i.e.&nbsp;as <span class="math inline">\(n \rightarrow 0\)</span>)</span> when the null hypothesis is true</p>
+<p><span class="math display">\[T_{\mathrm{LRT}}=-2[\ell(\hat{\boldsymbol\beta}_{\mathrm{null}})
+-\ell(\hat{\boldsymbol\beta}_{\mathrm{full}})].\]</span> 4. <span class="math inline">\(T_{\mathrm{LRT}}\ \dot\sim\ \chi_p^2\)</span> <span class="maroon">asymptotically (i.e.&nbsp;as <span class="math inline">\(n \rightarrow \infty\)</span>)</span> when the null hypothesis is true</p>
 </section>
 <section id="hypothesis-testing-1-likelihood-ratio-test-1" class="slide level2">
 <h2>Hypothesis Testing 1: Likelihood ratio test</h2>
@@ -1055,10 +1055,9 @@ H_0:\underbrace{\beta_1 = \cdots = \beta_p = 0}_{\text{i.e., } \mu_i = \mu}
 <li>Construct the <span class="maroon">Wald statistic</span><br>
 <span class="math display">\[T_{\mathrm{Wald}}=\hat{\boldsymbol\beta}_{1:p}^T
 \hat\Sigma_{1:p}^{-1}\hat{\boldsymbol\beta}_{1:p}.\]</span></li>
-<li><span class="math inline">\(T_{\mathrm{Wald}}\ \dot\sim\ \chi_p^2\)</span> <span class="maroon">asymptotically (i.e.&nbsp;as <span class="math inline">\(n \rightarrow 0\)</span>)</span> when the null hypothesis is true.</li>
+<li><span class="math inline">\(T_{\mathrm{Wald}}\ \dot\sim\ \chi_p^2\)</span> <span class="maroon">asymptotically (i.e.&nbsp;as <span class="math inline">\(n \rightarrow \infty\)</span>)</span> when the null hypothesis is true.</li>
 </ol>
 <div class="fragment">
-<p>The Wald test requires fitting a full model.</p>
 <p>Wald and likelihood ratio tests are <span class="maroon">asymptotically equivalent</span> under the usual regularity conditions, but can behave differently in small samples.</p>
 </div>
 </section>
@@ -1130,9 +1129,19 @@ H_0:\underbrace{\beta_1 = \cdots = \beta_p = 0}_{\text{i.e., } \mu_i = \mu}
 <p>For a fitted Poisson regression,</p>
 <p><span class="math display">\[r_i^P=\frac{y_i-\hat\mu_i}{\sqrt{\hat\mu_i}}.\]</span></p>
 <p><br></p>
-<p>The deviance residual is</p>
+<div class="fragment">
+<p>To calculate the deviance residual, we start with the Poisson log-likelihood for one observation:</p>
+<p><span class="math display">\[
+\ell_i(\mu_i) = y_i \log (\mu_i) - \mu_i - \log (y_i!).
+\]</span></p>
+<p>To get the log likelihood of the saturated model, we plug in <span class="math inline">\(y_i\)</span> for <span class="math inline">\(\mu_i\)</span>.</p>
+<p>To get the log-likelihood of the fitted model, we plug in <span class="math inline">\(\hat \mu_i\)</span> for <span class="math inline">\(\mu_i\)</span>.</p>
+</div>
+<div class="fragment">
+<p>Then, the deviance residual is</p>
 <p><span class="math display">\[r_i^D=\operatorname{sign}(y_i-\hat\mu_i)
 \sqrt{2\left[y_i\log\left(\frac{y_i}{\hat\mu_i}\right)-(y_i-\hat\mu_i)\right]}.\]</span></p>
+</div>
 </section>
 <section id="checking-linearity" class="slide level2">
 <h2>Checking ‘Linearity’</h2>
@@ -1278,11 +1287,13 @@ H_0:\underbrace{\beta_1 = \cdots = \beta_p = 0}_{\text{i.e., } \mu_i = \mu}
 <li>All observations with (x &gt; 5) have (Y=1)</li>
 </ul>
 <p><br></p>
+<div class="fragment">
 <p>In this case, the likelihood keeps increasing as the magnitude of the coefficient increases:</p>
 <p><span class="math display">\[
 |\hat{\beta}_1| \rightarrow \infty.
 \]</span></p>
 <p>Therefore, there is <strong>no finite MLE</strong> for <span class="math display">\[\beta_1\]</span>.</p>
+</div>
 </section>
 <section id="separation-1" class="slide level2">
 <h2>Separation</h2>
@@ -1294,6 +1305,7 @@ H_0:\underbrace{\beta_1 = \cdots = \beta_p = 0}_{\text{i.e., } \mu_i = \mu}
 <li>Fitted probabilities very close to 0 or 1</li>
 </ul>
 <p><br></p>
+<div class="fragment">
 <p><strong>What do we do?</strong></p>
 <ul>
 <li><p><span class="maroon">DO NOT</span> just interpret the huge coefficient</p>
@@ -1306,6 +1318,7 @@ H_0:\underbrace{\beta_1 = \cdots = \beta_p = 0}_{\text{i.e., } \mu_i = \mu}
 <li>Firth logistic regression</li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="overunderdispersion" class="slide level2">
 <h2>Over/Underdispersion</h2>
