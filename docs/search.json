@@ -1951,5 +1951,306 @@
     "title": "STA442",
     "section": "Tests",
     "text": "Tests\n\n\n\n\nTest\nDate\nInformation\n\n\n\n\nMidterm\nOctober 23rd, 2pm – 4pm\nInformation + Practice\n\n\nFinal\nTBD"
+  },
+  {
+    "objectID": "Week9.html#table-of-contents",
+    "href": "Week9.html#table-of-contents",
+    "title": "Bayesian Thinking",
+    "section": "Table of Contents",
+    "text": "Table of Contents\n\nBayesian viewpoint\nBayesian linear regression\nModelling considerations\nVariants of priors in Bayesian linear regression"
+  },
+  {
+    "objectID": "Week9.html#where-are-we-so-far",
+    "href": "Week9.html#where-are-we-so-far",
+    "title": "Bayesian Thinking",
+    "section": "Where are we so far",
+    "text": "Where are we so far\n\nGauss-Markov Theorem:\n\ncompares linear, unbiased estimators\ndoes not depend on specific DGPs.\n\nMaximum likelihood:\n\nallows biased (yet asymptotically unbiased) estimators to be compared (asymptotically) under specific DGPs.\n\nSo far, we were mostly interested in comparing the variance of different estimators that are (nearly) unbiased.\nThis lecture investigates whether potentially biased estimators could be useful."
+  },
+  {
+    "objectID": "Week9.html#two-schools-in-statistics",
+    "href": "Week9.html#two-schools-in-statistics",
+    "title": "Bayesian Thinking",
+    "section": "Two schools in statistics",
+    "text": "Two schools in statistics\nFrequentist vs Bayesian\n\n\nCompetitive or complimentary?"
+  },
+  {
+    "objectID": "Week9.html#bayesian-viewpoint-1",
+    "href": "Week9.html#bayesian-viewpoint-1",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian viewpoint",
+    "text": "Bayesian viewpoint\n\nThis course focuses on frequentist (i.e. classical) view on parameters and does not cover Bayesian statistics in details. However, some comparisons are warranted.\n\n\n\nFrequentists view parameters as fixed, unknown constants.\n\n\n“I use data only to estimate parameters.”\n\n\nBayesians assign subjective belief on the parameters using additional probability distributions.\n\n\n“I believe the probability that \\(\\mu\\) is between -3 and 4 is 70%”"
+  },
+  {
+    "objectID": "Week9.html#bayesian-viewpoint-2",
+    "href": "Week9.html#bayesian-viewpoint-2",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian viewpoint",
+    "text": "Bayesian viewpoint\nExample: ‘your belief’ on average condo ceilings in Toronto\n\n\nprior belief (\\(\\mu\\approx 8\\)) + data (\\(y_1,\\ldots,y_{20}\\)) \\(\\Rightarrow\\) new belief (\\(\\mu\\approx 9.2\\))"
+  },
+  {
+    "objectID": "Week9.html#bayesian-viewpoint-3",
+    "href": "Week9.html#bayesian-viewpoint-3",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian viewpoint",
+    "text": "Bayesian viewpoint\nExample: ‘your updated belief’ when you’re given ‘new’ dataset\n\n\nprior belief (\\(\\mu\\approx 9.2\\)) + new data (\\(y_{21},\\ldots,y_{30}\\)) \\(\\Rightarrow\\) new belief (\\(\\mu\\approx 9.05\\))\n(The prior belief is from initial prior + \\(y_1,\\ldots,y_{20}\\).)"
+  },
+  {
+    "objectID": "Week9.html#bayesian-viewpoint²",
+    "href": "Week9.html#bayesian-viewpoint²",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian viewpoint²",
+    "text": "Bayesian viewpoint²\n\n\n\nGiven your DGP specified,\n\nFrequentist: use data only\nBayesian: use data + your prior knowledge\n\n\n\n\n\n\n\n\n\n\nBayesians use data to update the subjective belief of the parameter. Based on this ‘updated distribution (belief)’, one can predict the best location of the parameter (e.g. mean of the posterior distribution).\n\n\n“I have prior belief on parameters. Once data is given, I use it to update my belief. Based on my updated belief, I choose the most probable value.”\n\n\n² Figure adapted from https://freshbiostats.wordpress.com/"
+  },
+  {
+    "objectID": "Week9.html#practicality-of-bayesian-modeling",
+    "href": "Week9.html#practicality-of-bayesian-modeling",
+    "title": "Bayesian Thinking",
+    "section": "Practicality of Bayesian modeling",
+    "text": "Practicality of Bayesian modeling\n\n\n\nBayesian methods allow researchers to incorporate data from previous studies, expert knowledge, or historical data into the current trial.\nThis can be useful in areas where large (historical) datasets are available or where ethical concerns limit the size of new trials (e.g., rare diseases).\nIn frequentist’s, statistical decision is made solely based on the data you collected."
+  },
+  {
+    "objectID": "Week9.html#bayesian-viewpoint-4",
+    "href": "Week9.html#bayesian-viewpoint-4",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian viewpoint",
+    "text": "Bayesian viewpoint\n\nBy viewing parameter as a random variable (that reflects subjective belief), one can use Bayes Theorem to show that\n\n\\[\np(\\text{parameter}\\mid\\text{data})=\\frac{p(\\text{data}\\mid\\text{parameter})\\times p(\\text{parameter})}{p(\\text{data})}.\n\\]\nwhere \\(p\\) denotes for any probability distribution function (pdf) (or probability mass function (pmf)).\n\n\\(p(\\text{parameter}\\mid\\text{data})\\) is the posterior distribution\n\\(p(\\text{data}\\mid\\text{parameter})\\) is the likelihood\n\\(p(\\text{parameter})\\) is the prior\n\\(p(\\text{data})\\) is a constant that can be ignored. It is sufficient to get a valid form of the likelihood and prior to have a posterior."
+  },
+  {
+    "objectID": "Week9.html#bayesian-viewpoint-5",
+    "href": "Week9.html#bayesian-viewpoint-5",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian Viewpoint",
+    "text": "Bayesian Viewpoint\nBayes Rule\n\nBoth frequentist and Bayesian start modeling with specifying a DGP for the data, which naturally leads to a likelihood. For example,\n\n\\[y_i\\overset{\\text{i.i.d.}}{\\sim}N(\\mu,\\sigma^2)\\tag{1}\\]\n\nFrequentists use this information to estimate parameters (e.g., \\(\\mu\\) and \\(\\sigma^2\\) in this example).\nBayesian uses additional probability models for parameters to reflect subjective belief. For example,\n\n\\[\\mu\\sim N(\\theta,\\tau^2)\\tag{2}\\]\nThen use (1) and (2) to update your belief with data (posterior)."
+  },
+  {
+    "objectID": "Week9.html#bayesian-viewpoint-6",
+    "href": "Week9.html#bayesian-viewpoint-6",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian Viewpoint",
+    "text": "Bayesian Viewpoint\nMarginalized model\n\nWhen \\(\\mathbf y=\\mu\\mathbf 1+\\boldsymbol\\epsilon\\) with \\(\\boldsymbol\\epsilon\\sim MVN(0,\\sigma^2I)\\) with and \\(\\mu\\sim N(\\theta,\\tau^2)\\), and assuming that \\(\\mu\\) and \\(\\epsilon\\)s are independent,\n\n\\[\n\\begin{aligned}\nE[\\mathbf y]&=E[E[\\mathbf y\\mid\\mu]]=E[\\mu\\mathbf1]=\\theta\\mathbf1\\\\\n\\operatorname{Var}[\\mathbf y]&=\\operatorname{Var}(E[\\mathbf y\\mid\\mu])+E(\\operatorname{Var}[\\mathbf y\\mid\\mu])\\\\\n&=\\operatorname{Var}(\\mu\\mathbf1)+E(\\sigma^2I)\\\\\n&=\\tau^2\\mathbf1\\mathbf1^T+\\sigma^2I.\n\\end{aligned}\n\\]\n\nDoes \\(\\mathbf y\\) have the independent entries now?\n\n\\[\\operatorname{Var}(\\mathbf y)=\\begin{pmatrix}\n\\tau^2+\\sigma^2&\\tau^2&\\cdots&\\tau^2\\\\\n\\tau^2&\\tau^2+\\sigma^2&\\cdots&\\tau^2\\\\\n\\vdots&\\vdots&\\ddots&\\vdots\\\\\n\\tau^2&\\tau^2&\\cdots&\\tau^2+\\sigma^2\n\\end{pmatrix}\\ \\Rightarrow\\ \\text{Not independent anymore}.\\]"
+  },
+  {
+    "objectID": "Week9.html#bayesian-viewpoint-7",
+    "href": "Week9.html#bayesian-viewpoint-7",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian viewpoint",
+    "text": "Bayesian viewpoint\n\nWith \\(y_i\\overset{\\text{i.i.d.}}\\sim N(\\mu,\\sigma^2)\\) with \\(\\mu\\sim N(\\theta,\\tau^2)\\), where \\(\\sigma^2,\\theta,\\tau^2\\) are fixed,\n\n\\[\n\\begin{aligned}\np(\\mu\\mid\\mathbf y)&\\propto\\underbrace{p(\\mathbf y\\mid\\mu)}_{\\text{likelihood}}\\times\\underbrace{p(\\mu)}_{\\text{prior}}\\\\\n&\\propto\\exp\\!\\left[-\\frac{n}{2\\sigma^2}(\\mu^2-2\\bar y\\mu)\\right]\\exp\\!\\left[-\\frac{(\\mu-\\theta)^2}{2\\tau^2}\\right]\\\\\n&\\propto\\exp\\!\\left[-\\frac12\\left(\\frac n{\\sigma^2}(\\mu^2-2\\bar y\\mu)+\\frac1{\\tau^2}(\\mu^2-2\\theta\\mu+\\theta^2)\\right)\\right]\\\\\n&\\propto\\exp\\!\\left[-\\frac12\\left(\\left(\\frac n{\\sigma^2}+\\frac1{\\tau^2}\\right)\\mu^2-2\\left(\\frac{n\\bar y}{\\sigma^2}+\\frac\\theta{\\tau^2}\\right)\\mu+\\frac{\\theta^2}{\\tau^2}\\right)\\right]\\\\\n&\\propto\\exp\\!\\left[-\\frac1{2b^2}(\\mu-a)^2\\right]\n\\end{aligned}\n\\]\nwhere\n\\[a=\\frac{\\sigma^2\\theta+n\\tau^2\\bar y}{\\sigma^2+n\\tau^2},\\qquad b^2=\\frac{\\sigma^2\\tau^2}{\\sigma^2+n\\tau^2}.\\]\n\nQ: what is ‘the’ probability distribution that is defined on \\(\\mathbb R\\) and has the pdf shown above?"
+  },
+  {
+    "objectID": "Week9.html#bayes-estimator",
+    "href": "Week9.html#bayes-estimator",
+    "title": "Bayesian Thinking",
+    "section": "Bayes estimator",
+    "text": "Bayes estimator\n\nWhen \\(y_i\\overset{\\text{i.i.d.}}\\sim N(\\mu,\\sigma^2)\\) with a prior \\(\\mu\\sim N(\\theta,\\tau^2)\\), where \\(\\sigma^2,\\theta,\\tau^2\\) are fixed, the posterior distribution of \\(\\mu\\) given data is\n\n\\[\\mu\\mid\\mathbf y\\sim N\\!\\left(\\frac{\\sigma^2\\theta+n\\tau^2\\bar y}{\\sigma^2+n\\tau^2},\\frac{\\sigma^2\\tau^2}{\\sigma^2+n\\tau^2}\\right)\\]\nso that a reasonable estimator of \\(\\mu\\) would be its posterior mean:\n\\[\\hat\\mu_{\\text{bayes}}=\\frac{\\sigma^2\\theta+n\\tau^2\\bar y}{\\sigma^2+n\\tau^2}.\\]\n\nNote that \\(\\hat\\mu_{\\text{bayes}}\\) is a biased estimator of \\(\\mu\\) because\n\n\\[E[\\hat\\mu_{\\text{bayes}}]=E\\!\\left[\\frac{\\sigma^2\\theta+n\\tau^2\\bar y}{\\sigma^2+n\\tau^2}\\right]=\\frac{\\sigma^2}{\\sigma^2+n\\tau^2}\\theta+\\frac{n\\tau^2}{\\sigma^2+n\\tau^2}\\mu\\ne\\mu\\]\nunless \\(\\theta=\\mu\\)."
+  },
+  {
+    "objectID": "Week9.html#bayes-estimator-1",
+    "href": "Week9.html#bayes-estimator-1",
+    "title": "Bayesian Thinking",
+    "section": "Bayes estimator",
+    "text": "Bayes estimator\n\nIn this case, posterior mean is the weighted average of sample mean (from your data) and prior mean (from your ‘belief’)\n\n\\[\\frac{\\sigma^2\\theta+n\\tau^2\\bar y}{\\sigma^2+n\\tau^2}=\\underbrace{\\frac{\\sigma^2}{\\sigma^2+n\\tau^2}}_{w_1}\\theta+\\underbrace{\\frac{n\\tau^2}{\\sigma^2+n\\tau^2}}_{w_2}\\bar y.\\]\n\nNotes\n\nAs \\(n\\to\\infty\\) it means \\(w_1\\to0\\) and \\(w_2\\to1\\), implying that posterior mean \\(\\approx\\) sample mean. If \\(n\\) is large, the posterior mean is less affected by the prior mean.\nIf \\(\\tau^2\\gg\\sigma^2\\) for a fixed \\(n\\), then \\(w_1\\approx0\\) and \\(w_2\\approx1\\), implying that posterior mean is affected more by your data.\nIf your prior mean is 0, then the posterior mean is not affected by your prior mean but prior variance."
+  },
+  {
+    "objectID": "Week9.html#simulation",
+    "href": "Week9.html#simulation",
+    "title": "Bayesian Thinking",
+    "section": "Simulation",
+    "text": "Simulation\n\n\n\nWhen \\(y_i\\overset{\\text{i.i.d.}}\\sim N(3,5^2)\\), we compare:\n\n\\(\\hat\\mu_1\\) = sample mean\n\\(\\hat\\mu_2\\) = posterior mean with \\(\\mu\\sim N(3,10^2)\\)\n\\(\\hat\\mu_3\\) = posterior mean with \\(\\mu\\sim N(3,1^2)\\)\n\nAll estimators are unbiased because prior mean is correctly specified by the population mean.\n\\(\\hat\\mu_3\\) is the best in reducing the variance because prior variance was the lowest."
+  },
+  {
+    "objectID": "Week9.html#simulation-1",
+    "href": "Week9.html#simulation-1",
+    "title": "Bayesian Thinking",
+    "section": "Simulation",
+    "text": "Simulation\n\n\n\nWhen \\(y_i\\overset{\\text{i.i.d.}}\\sim N(3,5^2)\\), we compare:\n\n\\(\\hat\\mu_1\\) = sample mean\n\\(\\hat\\mu_2\\) = posterior mean with \\(\\mu\\sim N(0,10^2)\\)\n\\(\\hat\\mu_3\\) = posterior mean with \\(\\mu\\sim N(0,1^2)\\)\n\n\\(\\hat\\mu_2\\), \\(\\hat\\mu_3\\) are biased as prior mean isn’t specified correctly as the population mean.\n\\(\\hat\\mu_3\\) is still the best in reducing the variance.\n\nIs it meaningful, considering huge bias?"
+  },
+  {
+    "objectID": "Week9.html#bayesian-viewpoint-on-frequentist-methods",
+    "href": "Week9.html#bayesian-viewpoint-on-frequentist-methods",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian viewpoint on frequentist methods",
+    "text": "Bayesian viewpoint on frequentist methods\n\nThe parameter estimates, e.g. the sample mean, could be interpreted by the posterior mean with a non-informative prior³:\n\n\\[\\mu\\sim\\operatorname{Unif}(-\\infty,\\infty)\\ \\Rightarrow\\ p(\\mu)=1.\\]\nWe don’t have any prior information about \\(\\mu\\) — we don’t assume anything.\n\nIn this case,\n\n\\[p(\\mu\\mid\\mathbf y)\\propto p(\\mathbf y\\mid\\mu)\\times p(\\mu)\\propto\\exp\\!\\left[-\\frac1{2\\sigma^2}\\sum_{i=1}^n(y_i-\\mu)^2\\right]\\times1\\propto\\exp\\!\\left[-\\frac n{2\\sigma^2}(\\mu-\\bar y)^2\\right]\\]\nso that the posterior mean is just the sample mean.\n\n³ Of course \\(\\operatorname{Unif}(-\\infty,\\infty)\\) is not a valid probability distribution as it does not integral is \\(\\infty\\) (not 1). However, it is considered as a valid prior in constructing the posterior distribution."
+  },
+  {
+    "objectID": "Week9.html#examples-from-non-normal-dgp",
+    "href": "Week9.html#examples-from-non-normal-dgp",
+    "title": "Bayesian Thinking",
+    "section": "Examples from non-normal DGP",
+    "text": "Examples from non-normal DGP\n\nExample: You conduct a poll of UofT students and ask “Do you have an Instagram account?” Of the \\(n=50\\) randomly chosen students you survey, \\(x=28\\) say “yes.” Let \\(\\theta\\) be the true proportion of students at UofT who would say yes.\nWhen \\(y_i\\) is the response from the \\(i\\)th student, then a possible DGP is\n\n\\[y_i\\sim\\operatorname{Bernoulli}(p)\\]\n\nOne way to use prior for \\(p\\in(0,1)\\) is the \\(\\operatorname{Unif}(0,1)\\) that does not assume anything."
+  },
+  {
+    "objectID": "Week9.html#examples-from-non-normal-dgp-1",
+    "href": "Week9.html#examples-from-non-normal-dgp-1",
+    "title": "Bayesian Thinking",
+    "section": "Examples from non-normal DGP",
+    "text": "Examples from non-normal DGP\n\n\n\nSuppose that, based on the University of Waterloo’s comprehensive survey results, you have a reasonable belief that \\(p\\) will be around 0.7. One possible prior is the Beta distribution, defined on (0,1). It depends on two parameters \\(\\alpha\\) and \\(\\beta\\) and\n\n\\[E(X)=\\frac\\alpha{\\alpha+\\beta}\\quad\\text{and}\\quad\\operatorname{Var}(X)=\\frac{\\alpha\\beta}{(\\alpha+\\beta+1)(\\alpha+\\beta)^2}\\]\n\nNote that \\(\\operatorname{Unif}(0,1)\\equiv\\operatorname{Beta}(1,1)\\)\n\n\n\n\n\n\n\n\n\nTherefore, we set a prior \\(p\\sim\\operatorname{Beta}(\\alpha,\\beta)\\).\nWe may choose \\(\\alpha\\) and \\(\\beta\\) flexibly that the prior mean is around 0.7 and the variance depends on the degree of your belief.\n\nFor example, \\(\\operatorname{Beta}(42,3)\\) is a much stronger prior than \\(\\operatorname{Beta}(7,3)\\)."
+  },
+  {
+    "objectID": "Week9.html#examples-from-non-normal-dgp-2",
+    "href": "Week9.html#examples-from-non-normal-dgp-2",
+    "title": "Bayesian Thinking",
+    "section": "Examples from non-normal DGP",
+    "text": "Examples from non-normal DGP\n\n\n\nIt can be shown that when \\(y_i\\overset{\\text{i.i.d.}}\\sim\\operatorname{Bernoulli}(p)\\) and \\(p\\sim\\operatorname{Beta}(\\alpha,\\beta)\\), then\n\n\\[p\\mid\\mathbf y\\sim\\operatorname{Beta}\\!\\left(\\alpha+\\sum_{i=1}^ny_i,\\ \\beta+n-\\sum_{i=1}^ny_i\\right).\\]\n\n\n\n\n\n\n\n\nStill, the Bayes estimator reflects (i) your prior mean and (ii) sample mean, and the prior variance reflects how much weights you put on priors."
+  },
+  {
+    "objectID": "Week9.html#drawbacks-and-counterpoints",
+    "href": "Week9.html#drawbacks-and-counterpoints",
+    "title": "Bayesian Thinking",
+    "section": "Drawbacks and counterpoints",
+    "text": "Drawbacks and counterpoints\n\nSubjectivity in prior selection\n\n“Why should I trust your prior”?\nStrong priors usually reduce variance, but it comes with increased biases.\n\n\n\n\nComputational burden\n\nExamples covered in this lecture is relatively ‘simple’ so that your posterior is given by normal distribution with a closed-form estimates.\n\nFor example: Normal DGP + Normal prior on \\(\\mu\\) \\(\\Rightarrow\\) Normal posterior\nFor example: Bernoulli DGP + Beta prior on \\(p\\) \\(\\Rightarrow\\) Beta posterior\n\nIn many cases, it isn’t.\nBayesian methods often require intensive computational techniques like Markov Chain Monte Carlo (MCMC), which can be slow and difficult to implement.\n\n\nIt requires knowledge of probability and statistics (and programming) that are beyond undergraduate level.\n\nNot straightforward as glm()"
+  },
+  {
+    "objectID": "Week9.html#drawbacks-and-counterpoints-2",
+    "href": "Week9.html#drawbacks-and-counterpoints-2",
+    "title": "Bayesian Thinking",
+    "section": "Drawbacks and counterpoints",
+    "text": "Drawbacks and counterpoints\n\nBayesian CLT: under general conditions, when \\(y_1,\\ldots,y_n\\overset{\\text{i.i.d.}}\\sim p(\\cdot\\mid\\theta)\\) are i.i.d and \\(n\\to\\infty\\),\n\n\\[p(\\theta\\mid\\mathbf y)\\sim AN(\\hat\\theta_{\\text{mle}},I(\\theta))\\]\nMore and more data points will dominate prior and the posterior mean \\(\\approx\\) MLE. - Weakly informative (or even non-informative) priors can be used when no clear prior knowledge is available. - Advances in computational power and the development of efficient algorithms make Bayesian methods more accessible."
+  },
+  {
+    "objectID": "Week9.html#bayesian-linear-regression-1",
+    "href": "Week9.html#bayesian-linear-regression-1",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian linear regression",
+    "text": "Bayesian linear regression\n\nRevisiting the linear regression,\n\n\\[y_i=\\mathbf x_i^T\\boldsymbol\\beta+\\epsilon_i\\qquad\\text{where}\\qquad\\epsilon_i\\overset{\\text{i.i.d.}}\\sim N(0,\\sigma^2)\\]\n\nSuppose for now that \\(\\sigma^2\\) is known and \\(\\mathbf y\\) as well as each covariate are standardized (so that we don’t need \\(\\beta_0\\)). The only parameters we have here are \\(\\beta_1,\\ldots,\\beta_p\\) and we put our ‘prior’ by\n\n\\[\\beta_j\\overset{\\text{i.i.d.}}\\sim N(0,\\tau^2)\\qquad\\text{or, equivalently,}\\qquad\\boldsymbol\\beta\\sim MVN(0,\\tau^2I)\\]\n\nIntuitively, we make a prior that the regression parameters \\(\\beta_1,\\ldots,\\beta_p\\) are mostly centered around 0.\n\nQ: How does the normal curve look like when \\(\\tau^2\\) increases to \\(\\infty\\)?\nQ: And what does it imply?"
+  },
+  {
+    "objectID": "Week9.html#bayesian-linear-regression-2",
+    "href": "Week9.html#bayesian-linear-regression-2",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian linear regression",
+    "text": "Bayesian linear regression\n\nThe normal prior in the previous slide gives us\n\n\\[p(\\boldsymbol\\beta)\\propto\\exp\\!\\left(-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right)=\\exp\\!\\left(-\\frac1{2\\tau^2}\\sum_{j=1}^p\\beta_j^2\\right)\\]\n\nTherefore, the posterior of \\(\\boldsymbol\\beta\\) is\n\n\\[\\begin{aligned}\np(\\boldsymbol\\beta\\mid\\mathbf y)&\\propto\\exp\\!\\left[-\\frac1{2\\sigma^2}(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)\\right]\\times\\exp\\!\\left[-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right]\\\\\n&\\propto\\exp\\!\\left[-\\frac1{2\\sigma^2}(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right].\n\\end{aligned}\\]\n\nTherefore, the maximum a posteriori (Bayes) estimator is \\(\\hat{\\boldsymbol\\beta}_{\\text{bayes}}\\) that minimizes\n\n\\[(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)+\\lambda\\boldsymbol\\beta^T\\boldsymbol\\beta\\qquad\\text{where}\\quad\\lambda=\\sigma^2/\\tau^2.\\]"
+  },
+  {
+    "objectID": "Week9.html#bayesian-linear-regression-3",
+    "href": "Week9.html#bayesian-linear-regression-3",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian linear regression",
+    "text": "Bayesian linear regression\nObservation 1\n\\[(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)+\\lambda\\boldsymbol\\beta^T\\boldsymbol\\beta\\qquad\\text{where}\\quad\\lambda=\\sigma^2/\\tau^2\\]\n\nRecall the Lagrangian multiplier from multivariable calculus. The \\(\\lambda\\boldsymbol\\beta^T\\boldsymbol\\beta\\) term corresponds to the penalty that restricts the domain of \\(\\beta_1,\\ldots,\\beta_p\\) by\n\n\\[\\sum_{j=1}^{n}\\beta_j^2\\le t\\qquad\\text{for some}\\quad t&gt;0\\]\nTherefore, Bayesian linear regression naturally prevents the model from overfitting the data, because it’s imposing restrictions about \\(\\beta_j\\)s being too large. The degree of regularization depends on your prior variance \\(\\tau^2\\)."
+  },
+  {
+    "objectID": "Week9.html#bayesian-linear-regression-4",
+    "href": "Week9.html#bayesian-linear-regression-4",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian linear regression",
+    "text": "Bayesian linear regression\nObservation 2\n\\[(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)+\\lambda\\boldsymbol\\beta^T\\boldsymbol\\beta\\qquad\\text{where}\\quad\\lambda=\\sigma^2/\\tau^2\\]\n\nRecall AIC and BIC in model selection: find the model \\(\\boldsymbol\\beta\\) that the following criterion is minimized:\n\n\\[\\operatorname{AIC}:\\operatorname{SSE}(\\boldsymbol\\beta)+2\\times\\sum_{j=1}^p I(\\beta_j\\ne0)\\]\n\\[\\operatorname{BIC}:\\operatorname{SSE}(\\boldsymbol\\beta)+\\log(n)\\times\\sum_{j=1}^p I(\\beta_j\\ne0)\\]\n\nAIC/BIC prevented overfitting by imposing a penalty.\nBayesian linear regression could be viewed as imposing another form of penalty."
+  },
+  {
+    "objectID": "Week9.html#bayesian-linear-regression-5",
+    "href": "Week9.html#bayesian-linear-regression-5",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian linear regression",
+    "text": "Bayesian linear regression\nObservation 3\n\nThe Bayes estimator of \\(\\boldsymbol\\beta\\) is equivalent to\n\n\\[\\hat{\\boldsymbol\\beta}_{\\text{bayes}}=(X^TX+\\lambda I)^{-1}X^T\\mathbf y\\qquad\\text{where}\\quad\\lambda=\\sigma^2/\\tau^2\\]\n\n\\((X^TX+\\lambda I)\\) is invertible as long as \\(\\tau&lt;\\infty\\). (i) Multicolinearity or (ii) \\(p&gt;n\\) isn’t a big issue in Bayesian linear regression.\nIt is biased in general, unless \\(\\boldsymbol\\beta=0\\) or \\(\\tau^2=\\infty\\).\n\n\\[E[\\hat{\\boldsymbol\\beta}_{\\text{bayes}}]=(X^TX+\\lambda I)^{-1}X^TX\\boldsymbol\\beta\\ne\\boldsymbol\\beta\\]\nbut what does \\(\\tau^2=\\infty\\) mean?"
+  },
+  {
+    "objectID": "Week9.html#glm-with-normal-prior",
+    "href": "Week9.html#glm-with-normal-prior",
+    "title": "Bayesian Thinking",
+    "section": "GLM with normal prior",
+    "text": "GLM with normal prior\n\nLogistic regression with a logit link: the likelihood is specified by\n\n\\[\\begin{aligned}\nL(\\boldsymbol\\beta\\mid\\mathbf y)&=\\prod_{i=1}^n\\left(\\frac{e^{\\mathbf x_i^T\\boldsymbol\\beta}}{1+e^{\\mathbf x_i^T\\boldsymbol\\beta}}\\right)^{y_i}\\left(\\frac1{1+e^{\\mathbf x_i^T\\boldsymbol\\beta}}\\right)^{1-y_i}\\\\\n&\\propto\\exp\\!\\left[\\sum_{i=1}^n\\left\\{y_i(\\mathbf x_i^T\\boldsymbol\\beta)-\\log(1+e^{\\mathbf x_i^T\\boldsymbol\\beta})\\right\\}\\right].\n\\end{aligned}\\]\n\nThe posterior of \\(\\boldsymbol\\beta\\), when given a prior \\(\\boldsymbol\\beta\\sim MVN(0,\\tau^2I)\\) would be\n\n\\[p(\\boldsymbol\\beta\\mid\\mathbf y)\\propto L(\\boldsymbol\\beta\\mid\\mathbf y)\\times p(\\boldsymbol\\beta)\\propto\\exp\\!\\left[\\sum_{i=1}^n\\left\\{y_i(\\mathbf x_i^T\\boldsymbol\\beta)-\\log(1+e^{\\mathbf x_i^T\\boldsymbol\\beta})\\right\\}-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right]\\]\n\nTherefore \\(\\hat{\\boldsymbol\\beta}_{\\text{bayes}}\\) is obtained by minimizing\n\n\\[-\\sum_{i=1}^n\\left\\{y_i(\\mathbf x_i^T\\boldsymbol\\beta)-\\log(1+e^{\\mathbf x_i^T\\boldsymbol\\beta})\\right\\}+\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\]\nNo closed form solution, which makes things more complicated."
+  },
+  {
+    "objectID": "Week9.html#variants-of-priors-in-bayesian-linear-regression",
+    "href": "Week9.html#variants-of-priors-in-bayesian-linear-regression",
+    "title": "Bayesian Thinking",
+    "section": "Variants of priors in Bayesian linear regression",
+    "text": "Variants of priors in Bayesian linear regression"
+  },
+  {
+    "objectID": "Week9.html#independent-non-gaussian-priors-on-boldsymbolbeta",
+    "href": "Week9.html#independent-non-gaussian-priors-on-boldsymbolbeta",
+    "title": "Bayesian Thinking",
+    "section": "1. Independent non-Gaussian priors on \\(\\boldsymbol\\beta\\)",
+    "text": "1. Independent non-Gaussian priors on \\(\\boldsymbol\\beta\\)\n\nYour prior on \\(\\boldsymbol\\beta\\) doesn’t need to be normal. Consider a prior that \\(\\beta_j\\)s are independent and\n\n\\[p(\\beta_j)=\\frac1{2\\tau}\\exp\\!\\left(-\\frac1\\tau|\\beta_j|\\right)\\]\nwhich leads to \\(p(\\boldsymbol\\beta)\\propto\\exp\\left(-\\frac1\\tau\\times\\sum_{j=1}^p|\\beta_j|\\right)\\).\n\nYou still impose a prior that each of \\(\\beta_j\\)s have mean 0, but with a different distributional form.\n\nQ: Would it make a huge difference?"
+  },
+  {
+    "objectID": "Week9.html#independent-non-gaussian-priors-on-boldsymbolbeta-1",
+    "href": "Week9.html#independent-non-gaussian-priors-on-boldsymbolbeta-1",
+    "title": "Bayesian Thinking",
+    "section": "1. Independent non-Gaussian priors on \\(\\boldsymbol\\beta\\)",
+    "text": "1. Independent non-Gaussian priors on \\(\\boldsymbol\\beta\\)\n\nThe posterior of \\(\\boldsymbol\\beta\\) is\n\n\\[\\begin{aligned}\np(\\boldsymbol\\beta\\mid\\mathbf y)&\\propto\\exp\\!\\left[-\\frac1{2\\sigma^2}(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)\\right]\\times\\exp\\!\\left[-\\frac1\\tau\\sum_{j=1}^p|\\beta_j|\\right]\\\\\n&\\propto\\exp\\!\\left[-\\frac1{2\\sigma^2}(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)-\\frac1\\tau\\sum_{j=1}^p|\\beta_j|\\right].\n\\end{aligned}\\]\n\nTherefore, the Bayes estimator where \\(p(\\boldsymbol\\beta\\mid\\mathbf y)\\) is maximized is the \\(\\boldsymbol\\beta\\) value that minimizes\n\n\\[(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)+\\lambda\\sum_{j=1}^p|\\beta_j|\\qquad\\text{where}\\quad\\lambda=2\\sigma^2/\\tau\\]\n\nThis becomes a LASSO problem, still a form of penalized regression that prevents overfitting."
+  },
+  {
+    "objectID": "Week9.html#non-independent-gaussian-priors-on-boldsymbolbeta",
+    "href": "Week9.html#non-independent-gaussian-priors-on-boldsymbolbeta",
+    "title": "Bayesian Thinking",
+    "section": "2. Non-independent Gaussian priors on \\(\\boldsymbol\\beta\\)",
+    "text": "2. Non-independent Gaussian priors on \\(\\boldsymbol\\beta\\)\nExample: Cortical thickness\n\n\nTwo types of prior information:\n\naverage cortical thickness \\(\\approx2.5\\)mm\nspatial dependencies: two nearby vertices would have similar cortical thickness values."
+  },
+  {
+    "objectID": "Week9.html#non-independent-gaussian-priors-on-boldsymbolbeta-1",
+    "href": "Week9.html#non-independent-gaussian-priors-on-boldsymbolbeta-1",
+    "title": "Bayesian Thinking",
+    "section": "2. Non-independent Gaussian priors on \\(\\boldsymbol\\beta\\)",
+    "text": "2. Non-independent Gaussian priors on \\(\\boldsymbol\\beta\\)\n\nIf \\(\\boldsymbol\\beta=(\\beta_1,\\ldots,\\beta_V)^T\\) parametrizes the average cortical thickness at each \\(v\\), a possible prior that incorporates both type of prior information would be\n\n\\[\\begin{pmatrix}\\beta_1\\\\\\beta_2\\\\\\vdots\\\\\\beta_V\\end{pmatrix}\\sim MVN\\!\\left(\\begin{pmatrix}2.5\\\\2.5\\\\\\vdots\\\\2.5\\end{pmatrix},\\Sigma\\right)\\]\nwhere \\(\\Sigma[j,k]=\\sigma^2\\exp(-\\phi d_{jk})\\) and \\(d_{jk}\\) is the distance between two vertices \\(j\\) and \\(k\\). - \\(\\phi&gt;0\\) controls the degree of spatial correlation. - If \\(d_{jk}\\) is large, our prior specifies that the correlation between \\(\\beta_j\\) and \\(\\beta_k\\) is low. - If \\(d_{jk}\\) is nearly 0, our prior specifies that the correlation between \\(\\beta_j\\) and \\(\\beta_k\\) is nearly 1. - In practice, \\(\\phi\\) is unknown \\(\\Rightarrow\\) specify additional prior on \\(\\phi\\)!"
+  },
+  {
+    "objectID": "Week9.html#drawbacks-and-counterpoints-1",
+    "href": "Week9.html#drawbacks-and-counterpoints-1",
+    "title": "Bayesian Thinking",
+    "section": "Drawbacks and counterpoints",
+    "text": "Drawbacks and counterpoints\n\nBayesian CLT: under general conditions, when \\(y_1,\\ldots,y_n\\overset{\\text{i.i.d.}}\\sim p(\\cdot\\mid\\theta)\\) are i.i.d and \\(n\\to\\infty\\),\n\n\\[p(\\theta\\mid\\mathbf y)\\sim AN(\\hat\\theta_{\\text{mle}},I(\\theta))\\]\nMore and more data points will dominate prior and the posterior mean \\(\\approx\\) MLE.\n\nWeakly informative (or even non-informative) priors can be used when no clear prior knowledge is available.\nAdvances in computational power and the development of efficient algorithms make Bayesian methods more accessible."
+  },
+  {
+    "objectID": "Week9.html#bayesian-linear-regression",
+    "href": "Week9.html#bayesian-linear-regression",
+    "title": "Bayesian Thinking",
+    "section": "Bayesian linear regression",
+    "text": "Bayesian linear regression"
+  },
+  {
+    "objectID": "Week9.html#modelling-considerations",
+    "href": "Week9.html#modelling-considerations",
+    "title": "Bayesian Thinking",
+    "section": "Modelling considerations",
+    "text": "Modelling considerations\nWhat if our prior is incorrect?\n\nRecall that for \\(y_i\\overset{i.i.d.}{\\sim}N(\\mu,\\sigma^2)\\) and \\(\\mu\\sim N(\\theta,\\tau^2)\\), the posterior mean is\n\n\\[\n\\hat\\mu_{\\text{bayes}} = \\frac{\\sigma^2}{\\sigma^2+n\\tau^2}\\theta+\\frac{n\\tau^2}{\\sigma^2+n\\tau^2}\\bar y.\n\\]\n\nIf \\(\\theta\\) is far from the true \\(\\mu\\), a small prior variance \\(\\tau^2\\) can pull our estimate toward the wrong value.\nA larger prior variance makes the estimate less sensitive to the prior mean; as \\(n\\) increases, the data receive more weight.\nRemedy: Perform a prior sensitivity analysis: compare posterior estimates under several reasonable prior means and variances."
+  },
+  {
+    "objectID": "Week9.html#modelling-considerations-1",
+    "href": "Week9.html#modelling-considerations-1",
+    "title": "Bayesian Thinking",
+    "section": "Modelling considerations",
+    "text": "Modelling considerations\nWhat if the likelihood is misspecified?\n\nIn Bayesian inference, we specify both a model for the data (the likelihood) and a prior for the parameters.\nFor example, suppose we model counts using\n\n\\[Y_i\\mid\\lambda_i\\sim\\operatorname{Poisson}(\\lambda_i),\\qquad E(Y_i\\mid\\lambda_i)=\\operatorname{Var}(Y_i\\mid\\lambda_i)=\\lambda_i.\\]\n\nIf the counts are overdispersed, a well-chosen prior for \\(\\lambda_i\\) does not, by itself, fix an inappropriate Poisson sampling model.\nRemedy: Reconsider the data-generating process; for example, a negative binomial likelihood may be more appropriate."
+  },
+  {
+    "objectID": "Week9.html#modelling-considerations-2",
+    "href": "Week9.html#modelling-considerations-2",
+    "title": "Bayesian Thinking",
+    "section": "Modelling considerations",
+    "text": "Modelling considerations\nPosterior Predictive Checks\n\nHow can we assess whether our fitted Bayesian model describes the observed data reasonably well?\nGenerate replicated data from the posterior predictive distribution:\n\n\\[p(\\mathbf y^{\\mathrm{rep}}\\mid\\mathbf y)=\\int p(\\mathbf y^{\\mathrm{rep}}\\mid\\boldsymbol\\theta)\\,p(\\boldsymbol\\theta\\mid\\mathbf y)\\,d\\boldsymbol\\theta.\\]\n\nCompare features of the replicated datasets with the observed data (e.g., mean, variance, proportion of zeros).\nIf the model consistently produces much less variation than the observed counts, it may not capture the data-generating process.\n\nNote: Posterior predictive checks can reveal lack of fit; they do not prove a model is correct."
+  },
+  {
+    "objectID": "Week9.html#modelling-considerations-3",
+    "href": "Week9.html#modelling-considerations-3",
+    "title": "Bayesian Thinking",
+    "section": "Modelling considerations",
+    "text": "Modelling considerations\nChoosing and evaluating a prior\n\nThe prior affects how strongly the data are regularized. For regression coefficients:\n\nA normal prior centered at zero gives an \\(L_2\\) penalty (ridge-type estimation).\nA Laplace prior centered at zero gives an \\(L_1\\) penalty (lasso-type estimation).\n\nConsider whether the prior reflects reasonable knowledge about the parameters and how much shrinkage is appropriate.\nRemedy: Compare sensible priors and assess whether substantive conclusions change.\n\nQuestions to ask before interpreting a Bayesian model:\n\nIs the likelihood appropriate for the response and its variability?\nHow sensitive are the results to the prior assumptions?\nDoes the fitted model reproduce important features of the observed data?"
+  },
+  {
+    "objectID": "Week9.html#knowledge-check",
+    "href": "Week9.html#knowledge-check",
+    "title": "Bayesian Thinking",
+    "section": "Knowledge Check",
+    "text": "Knowledge Check\n  \n\nBoth Bayesian and Frequentist approaches begin by specifying a data-generating process. What is the main difference between how frequentists and Bayesians treat unknown parameters? How does this affect the interpretation of their estimates?"
+  },
+  {
+    "objectID": "Week9.html#summary",
+    "href": "Week9.html#summary",
+    "title": "Bayesian Thinking",
+    "section": "Summary",
+    "text": "Summary\n\nBayesian inference combines observed data (likelihood) with prior information to obtain a posterior distribution:\n\\[p(\\boldsymbol\\theta\\mid\\mathbf y)\\propto p(\\mathbf y\\mid\\boldsymbol\\theta)p(\\boldsymbol\\theta).\\]\nBayesian estimators can introduce bias but may reduce variance, depending on the choice of prior.\nBayesian linear regression connects naturally to regularization:\n\nNormal priors lead to \\(L_2\\) penalties (ridge regression).\nLaplace priors lead to \\(L_1\\) penalties (lasso regression).\n\nPrior assumptions matter: the choice and strength of a prior affect parameter estimates, particularly with small samples.\nModelling considerations: assess prior sensitivity, check the appropriateness of the likelihood, and use posterior predictive checks to evaluate model fit."
+  },
+  {
+    "objectID": "Week9.html#knowledge-check-1",
+    "href": "Week9.html#knowledge-check-1",
+    "title": "Bayesian Thinking",
+    "section": "Knowledge Check",
+    "text": "Knowledge Check\n  \n\nSuppose two researchers analyze the same dataset using the same likelihood, but obtain different posterior estimates. How could this happen? Under what circumstances would you expect their estimates to become more similar?"
+  },
+  {
+    "objectID": "Week9.html#knowledge-check-2",
+    "href": "Week9.html#knowledge-check-2",
+    "title": "Bayesian Thinking",
+    "section": "Knowledge Check",
+    "text": "Knowledge Check\n  \n\nWe saw that introducing a prior can reduce the variance of an estimator while introducing bias. Does this necessarily mean the Bayesian estimator is worse than an unbiased estimator? Explain your reasoning."
   }
 ]
