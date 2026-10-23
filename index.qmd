@@ -18,7 +18,7 @@ I hope this course helps you develop the confidence to work with data independen
 | Assignment | Due Date |
 |:----------:|:--------:|
 | [Assignment 1](STA442_Assignment1.pdf) | October 2, 11:59pm |
-| Assignment 2 | November 6, 11:59pm |
+| [Assignment 2](STA442_Assignment2.pdf) | November 6, 11:59pm |
 | Assignment 3 | December 4, 11:59pm |
 :::
 
@@ -32,6 +32,8 @@ I hope this course helps you develop the confidence to work with data independen
 :::
 
 ## Announcements
+
+- Assignment 2 is now available, due November 6th by 11:59pm. Read syllabus for late policy. Assignment is to be submitted through Crowdmark, link will become available soon.
 
 - I have added the midterm information, as well as some practice questions, to the course website.
 
