@@ -18,7 +18,7 @@
     "href": "slides.html",
     "title": "Slides",
     "section": "",
-    "text": "Below is a tentative schedule of topics for the term. You can find the lecture slides in html format, my annotated slides as a pdf, as well as the pdf versions of the tutorial slides. When annotating the html slides in class, you can save them by printing to pdf in your browser.\n\n\n\n\nDate\nTopics\nSlides\nSuggested Reading\nAssessments\n\n\n\n\nSept. 11\nStatistical Modelling and InferenceStudy planning, data-generating process, statistical inference (Type I/II errors), simulation\nHTML SlidesAnnotated Slides\n—\n-\n\n\nSept. 18\nTopics in Statistical InferenceMultiple testing, family-wise error rate, false discovery rate, permutation methods\nHTML SlidesChocolate PaperAnnotated Slides\n[ISL] Ch. 13\nAssignment 1 Released\n\n\nSept. 25Oct. 2\nLinear ModelsLeast squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection\nHTML SlidesPDF Slides\n[LM] Ch. 2, 3, 8.2, 10[ISL] Ch. 3, 6.1\nAssignment 1 Due, Oct 2\n\n\nOct. 9Oct. 16\nGeneralized Linear ModelsReview of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood\nHTML SlidesWadden Sea PaperCrime PaperAnnotated Slides\n[ELM] Ch. 2, 5, 8[ISL] Ch. 4.1–4.3, 4.6\n\n\n\nOct. 23\nMidterm Exam\n-\n—\nAssignment 2 Released\n\n\nOct. 30\nNo class — Reading Week\n\n—\n—\n\n\nNov. 6\nBayesian ThinkingPrior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs\n\n—\nAssignment 2 Due\n\n\nNov. 13Nov. 20\nRandom Effects ModelsCorrelated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP\n\n[ELM] Ch. 10, 11\nAssignment 3 Released, Nov. 20\n\n\nNov. 27\nPenalized RegressionBias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation\n\n[ISL] Ch. 6[ESL] Sec. 7.10\n\n\n\nDec. 4\nGeneralized Additive ModelsBasis functions, smoothing splines, generalized additive models\n\n[ELM] Ch. 15[ISL] Ch. 7[ESL] Ch. 5\nAssignment 3 Due"
+    "text": "Below is a tentative schedule of topics for the term. You can find the lecture slides in html format, my annotated slides as a pdf, as well as the pdf versions of the tutorial slides. When annotating the html slides in class, you can save them by printing to pdf in your browser.\n\n\n\n\nDate\nTopics\nSlides\nSuggested Reading\nAssessments\n\n\n\n\nSept. 11\nStatistical Modelling and InferenceStudy planning, data-generating process, statistical inference (Type I/II errors), simulation\nHTML SlidesAnnotated Slides\n—\n-\n\n\nSept. 18\nTopics in Statistical InferenceMultiple testing, family-wise error rate, false discovery rate, permutation methods\nHTML SlidesChocolate PaperAnnotated Slides\n[ISL] Ch. 13\nAssignment 1 Released\n\n\nSept. 25Oct. 2\nLinear ModelsLeast squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection\nHTML SlidesPDF Slides\n[LM] Ch. 2, 3, 8.2, 10[ISL] Ch. 3, 6.1\nAssignment 1 Due, Oct 2\n\n\nOct. 9Oct. 16\nGeneralized Linear ModelsReview of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood\nHTML SlidesWadden Sea PaperCrime PaperAnnotated Slides\n[ELM] Ch. 2, 5, 8[ISL] Ch. 4.1–4.3, 4.6\n\n\n\nOct. 23\nMidterm Exam\n-\n—\nAssignment 2 Released\n\n\nOct. 30\nNo class — Reading Week\n\n—\n—\n\n\nNov. 6\nBayesian ThinkingPrior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs\nHTML Slides\n—\nAssignment 2 Due\n\n\nNov. 13Nov. 20\nRandom Effects ModelsCorrelated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP\n\n[ELM] Ch. 10, 11\nAssignment 3 Released, Nov. 20\n\n\nNov. 27\nPenalized RegressionBias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation\n\n[ISL] Ch. 6[ESL] Sec. 7.10\n\n\n\nDec. 4\nGeneralized Additive ModelsBasis functions, smoothing splines, generalized additive models\n\n[ELM] Ch. 15[ISL] Ch. 7[ESL] Ch. 5\nAssignment 3 Due"
   },
   {
     "objectID": "Course-Introduction.html#about-me",
@@ -445,7 +445,7 @@
     "href": "slides.html#tentative-course-schedule",
     "title": "Slides",
     "section": "",
-    "text": "Below is a tentative schedule of topics for the term. You can find the lecture slides in html format, my annotated slides as a pdf, as well as the pdf versions of the tutorial slides. When annotating the html slides in class, you can save them by printing to pdf in your browser.\n\n\n\n\nDate\nTopics\nSlides\nSuggested Reading\nAssessments\n\n\n\n\nSept. 11\nStatistical Modelling and InferenceStudy planning, data-generating process, statistical inference (Type I/II errors), simulation\nHTML SlidesAnnotated Slides\n—\n-\n\n\nSept. 18\nTopics in Statistical InferenceMultiple testing, family-wise error rate, false discovery rate, permutation methods\nHTML SlidesChocolate PaperAnnotated Slides\n[ISL] Ch. 13\nAssignment 1 Released\n\n\nSept. 25Oct. 2\nLinear ModelsLeast squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection\nHTML SlidesPDF Slides\n[LM] Ch. 2, 3, 8.2, 10[ISL] Ch. 3, 6.1\nAssignment 1 Due, Oct 2\n\n\nOct. 9Oct. 16\nGeneralized Linear ModelsReview of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood\nHTML SlidesWadden Sea PaperCrime PaperAnnotated Slides\n[ELM] Ch. 2, 5, 8[ISL] Ch. 4.1–4.3, 4.6\n\n\n\nOct. 23\nMidterm Exam\n-\n—\nAssignment 2 Released\n\n\nOct. 30\nNo class — Reading Week\n\n—\n—\n\n\nNov. 6\nBayesian ThinkingPrior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs\n\n—\nAssignment 2 Due\n\n\nNov. 13Nov. 20\nRandom Effects ModelsCorrelated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP\n\n[ELM] Ch. 10, 11\nAssignment 3 Released, Nov. 20\n\n\nNov. 27\nPenalized RegressionBias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation\n\n[ISL] Ch. 6[ESL] Sec. 7.10\n\n\n\nDec. 4\nGeneralized Additive ModelsBasis functions, smoothing splines, generalized additive models\n\n[ELM] Ch. 15[ISL] Ch. 7[ESL] Ch. 5\nAssignment 3 Due"
+    "text": "Below is a tentative schedule of topics for the term. You can find the lecture slides in html format, my annotated slides as a pdf, as well as the pdf versions of the tutorial slides. When annotating the html slides in class, you can save them by printing to pdf in your browser.\n\n\n\n\nDate\nTopics\nSlides\nSuggested Reading\nAssessments\n\n\n\n\nSept. 11\nStatistical Modelling and InferenceStudy planning, data-generating process, statistical inference (Type I/II errors), simulation\nHTML SlidesAnnotated Slides\n—\n-\n\n\nSept. 18\nTopics in Statistical InferenceMultiple testing, family-wise error rate, false discovery rate, permutation methods\nHTML SlidesChocolate PaperAnnotated Slides\n[ISL] Ch. 13\nAssignment 1 Released\n\n\nSept. 25Oct. 2\nLinear ModelsLeast squares from likelihood and Gauss–Markov perspectives, weighted least squares, modelling considerations, model selection\nHTML SlidesPDF Slides\n[LM] Ch. 2, 3, 8.2, 10[ISL] Ch. 3, 6.1\nAssignment 1 Due, Oct 2\n\n\nOct. 9Oct. 16\nGeneralized Linear ModelsReview of logistic and Poisson regression, likelihood-based inference, overdispersion, quasi-likelihood\nHTML SlidesWadden Sea PaperCrime PaperAnnotated Slides\n[ELM] Ch. 2, 5, 8[ISL] Ch. 4.1–4.3, 4.6\n\n\n\nOct. 23\nMidterm Exam\n-\n—\nAssignment 2 Released\n\n\nOct. 30\nNo class — Reading Week\n\n—\n—\n\n\nNov. 6\nBayesian ThinkingPrior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs\nHTML Slides\n—\nAssignment 2 Due\n\n\nNov. 13Nov. 20\nRandom Effects ModelsCorrelated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP\n\n[ELM] Ch. 10, 11\nAssignment 3 Released, Nov. 20\n\n\nNov. 27\nPenalized RegressionBias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation\n\n[ISL] Ch. 6[ESL] Sec. 7.10\n\n\n\nDec. 4\nGeneralized Additive ModelsBasis functions, smoothing splines, generalized additive models\n\n[ELM] Ch. 15[ISL] Ch. 7[ESL] Ch. 5\nAssignment 3 Due"
   },
   {
     "objectID": "index.html#welcome-to-methods-of-applied-statistics",
@@ -2013,7 +2013,7 @@
     "href": "Week9.html#bayesian-viewpoint-4",
     "title": "Bayesian Thinking",
     "section": "Bayesian viewpoint",
-    "text": "Bayesian viewpoint\n\nBy viewing parameter as a random variable (that reflects subjective belief), one can use Bayes Theorem to show that\n\n\\[\np(\\text{parameter}\\mid\\text{data})=\\frac{p(\\text{data}\\mid\\text{parameter})\\times p(\\text{parameter})}{p(\\text{data})}.\n\\]\nwhere \\(p\\) denotes for any probability distribution function (pdf) (or probability mass function (pmf)).\n\n\\(p(\\text{parameter}\\mid\\text{data})\\) is the posterior distribution\n\\(p(\\text{data}\\mid\\text{parameter})\\) is the likelihood\n\\(p(\\text{parameter})\\) is the prior\n\\(p(\\text{data})\\) is a constant that can be ignored. It is sufficient to get a valid form of the likelihood and prior to have a posterior."
+    "text": "Bayesian viewpoint\n\nBy viewing parameter as a random variable (that reflects subjective belief), one can use Bayes Theorem to show that\n\n\\[\np(\\text{parameter}\\mid\\text{data})=\\frac{p(\\text{data}\\mid\\text{parameter})\\times p(\\text{parameter})}{p(\\text{data})}.\n\\]\nwhere \\(p\\) denotes for any probability distribution function (pdf) (or probability mass function (pmf)).\n\n\n\\(p(\\text{parameter}\\mid\\text{data})\\) is the posterior distribution\n\\(p(\\text{data}\\mid\\text{parameter})\\) is the likelihood\n\\(p(\\text{parameter})\\) is the prior\n\\(p(\\text{data})\\) is a constant that can be ignored. It is sufficient to get a valid form of the likelihood and prior to have a posterior."
   },
   {
     "objectID": "Week9.html#bayesian-viewpoint-5",
@@ -2027,7 +2027,7 @@
     "href": "Week9.html#bayesian-viewpoint-6",
     "title": "Bayesian Thinking",
     "section": "Bayesian Viewpoint",
-    "text": "Bayesian Viewpoint\nMarginalized model\n\nWhen \\(\\mathbf y=\\mu\\mathbf 1+\\boldsymbol\\epsilon\\) with \\(\\boldsymbol\\epsilon\\sim MVN(0,\\sigma^2I)\\) with and \\(\\mu\\sim N(\\theta,\\tau^2)\\), and assuming that \\(\\mu\\) and \\(\\epsilon\\)s are independent,\n\n\\[\n\\begin{aligned}\nE[\\mathbf y]&=E[E[\\mathbf y\\mid\\mu]]=E[\\mu\\mathbf1]=\\theta\\mathbf1\\\\\n\\operatorname{Var}[\\mathbf y]&=\\operatorname{Var}(E[\\mathbf y\\mid\\mu])+E(\\operatorname{Var}[\\mathbf y\\mid\\mu])\\\\\n&=\\operatorname{Var}(\\mu\\mathbf1)+E(\\sigma^2I)\\\\\n&=\\tau^2\\mathbf1\\mathbf1^T+\\sigma^2I.\n\\end{aligned}\n\\]\n\nDoes \\(\\mathbf y\\) have the independent entries now?\n\n\\[\\operatorname{Var}(\\mathbf y)=\\begin{pmatrix}\n\\tau^2+\\sigma^2&\\tau^2&\\cdots&\\tau^2\\\\\n\\tau^2&\\tau^2+\\sigma^2&\\cdots&\\tau^2\\\\\n\\vdots&\\vdots&\\ddots&\\vdots\\\\\n\\tau^2&\\tau^2&\\cdots&\\tau^2+\\sigma^2\n\\end{pmatrix}\\ \\Rightarrow\\ \\text{Not independent anymore}.\\]"
+    "text": "Bayesian Viewpoint\nMarginalized model\n\nWhen \\(\\mathbf y=\\mu \\cdot \\mathbf 1+\\boldsymbol\\epsilon\\) with \\(\\boldsymbol\\epsilon\\sim MVN(0,\\sigma^2I)\\) with and \\(\\mu\\sim N(\\theta,\\tau^2)\\), and assuming that \\(\\mu\\) and \\(\\epsilon\\)s are independent,\n\n\\[\n\\begin{aligned}\nE[\\mathbf y]&=E[E[\\mathbf y\\mid\\mu]]=E[\\mu \\cdot \\mathbf1]=\\theta \\cdot \\mathbf1\\\\\n\\operatorname{Var}[\\mathbf y]&=\\operatorname{Var}(E[\\mathbf y\\mid\\mu])+E(\\operatorname{Var}[\\mathbf y\\mid\\mu])\\\\\n&=\\operatorname{Var}(\\mu \\cdot \\mathbf1)+E(\\sigma^2I)\\\\\n&=\\tau^2\\mathbf1\\mathbf1^T+\\sigma^2I.\n\\end{aligned}\n\\]\n\nDoes \\(\\mathbf y\\) have the independent entries now?\n\n\\[\\operatorname{Var}(\\mathbf y)=\\begin{pmatrix}\n\\tau^2+\\sigma^2&\\tau^2&\\cdots&\\tau^2\\\\\n\\tau^2&\\tau^2+\\sigma^2&\\cdots&\\tau^2\\\\\n\\vdots&\\vdots&\\ddots&\\vdots\\\\\n\\tau^2&\\tau^2&\\cdots&\\tau^2+\\sigma^2\n\\end{pmatrix}\\ \\Rightarrow\\ \\text{Not independent anymore}.\\]"
   },
   {
     "objectID": "Week9.html#bayesian-viewpoint-7",
@@ -2041,7 +2041,7 @@
     "href": "Week9.html#bayes-estimator",
     "title": "Bayesian Thinking",
     "section": "Bayes estimator",
-    "text": "Bayes estimator\n\nWhen \\(y_i\\overset{\\text{i.i.d.}}\\sim N(\\mu,\\sigma^2)\\) with a prior \\(\\mu\\sim N(\\theta,\\tau^2)\\), where \\(\\sigma^2,\\theta,\\tau^2\\) are fixed, the posterior distribution of \\(\\mu\\) given data is\n\n\\[\\mu\\mid\\mathbf y\\sim N\\!\\left(\\frac{\\sigma^2\\theta+n\\tau^2\\bar y}{\\sigma^2+n\\tau^2},\\frac{\\sigma^2\\tau^2}{\\sigma^2+n\\tau^2}\\right)\\]\nso that a reasonable estimator of \\(\\mu\\) would be its posterior mean:\n\\[\\hat\\mu_{\\text{bayes}}=\\frac{\\sigma^2\\theta+n\\tau^2\\bar y}{\\sigma^2+n\\tau^2}.\\]\n\nNote that \\(\\hat\\mu_{\\text{bayes}}\\) is a biased estimator of \\(\\mu\\) because\n\n\\[E[\\hat\\mu_{\\text{bayes}}]=E\\!\\left[\\frac{\\sigma^2\\theta+n\\tau^2\\bar y}{\\sigma^2+n\\tau^2}\\right]=\\frac{\\sigma^2}{\\sigma^2+n\\tau^2}\\theta+\\frac{n\\tau^2}{\\sigma^2+n\\tau^2}\\mu\\ne\\mu\\]\nunless \\(\\theta=\\mu\\)."
+    "text": "Bayes estimator\n\nWhen \\(y_i\\overset{\\text{i.i.d.}}\\sim N(\\mu,\\sigma^2)\\) with a prior \\(\\mu\\sim N(\\theta,\\tau^2)\\), where \\(\\sigma^2,\\theta,\\tau^2\\) are fixed, the posterior distribution of \\(\\mu\\) given data is\n\n\\[\\mu\\mid\\mathbf y\\sim N\\!\\left(\\frac{\\sigma^2\\theta+n\\tau^2\\bar y}{\\sigma^2+n\\tau^2},\\frac{\\sigma^2\\tau^2}{\\sigma^2+n\\tau^2}\\right)\\]\nso that a reasonable estimator of \\(\\mu\\) would be its posterior mean:\n\\[\\hat\\mu_{\\text{bayes}}=\\frac{\\sigma^2\\theta+n\\tau^2\\bar y}{\\sigma^2+n\\tau^2}.\\]\n\n\nNote that \\(\\hat\\mu_{\\text{bayes}}\\) is a biased estimator of \\(\\mu\\) because\n\n\\[E[\\hat\\mu_{\\text{bayes}}]=E\\!\\left[\\frac{\\sigma^2\\theta+n\\tau^2\\bar y}{\\sigma^2+n\\tau^2}\\right]=\\frac{\\sigma^2}{\\sigma^2+n\\tau^2}\\theta+\\frac{n\\tau^2}{\\sigma^2+n\\tau^2}\\mu\\ne\\mu\\]\nunless \\(\\theta=\\mu\\)."
   },
   {
     "objectID": "Week9.html#bayes-estimator-1",
@@ -2069,14 +2069,14 @@
     "href": "Week9.html#bayesian-viewpoint-on-frequentist-methods",
     "title": "Bayesian Thinking",
     "section": "Bayesian viewpoint on frequentist methods",
-    "text": "Bayesian viewpoint on frequentist methods\n\nThe parameter estimates, e.g. the sample mean, could be interpreted by the posterior mean with a non-informative prior³:\n\n\\[\\mu\\sim\\operatorname{Unif}(-\\infty,\\infty)\\ \\Rightarrow\\ p(\\mu)=1.\\]\nWe don’t have any prior information about \\(\\mu\\) — we don’t assume anything.\n\nIn this case,\n\n\\[p(\\mu\\mid\\mathbf y)\\propto p(\\mathbf y\\mid\\mu)\\times p(\\mu)\\propto\\exp\\!\\left[-\\frac1{2\\sigma^2}\\sum_{i=1}^n(y_i-\\mu)^2\\right]\\times1\\propto\\exp\\!\\left[-\\frac n{2\\sigma^2}(\\mu-\\bar y)^2\\right]\\]\nso that the posterior mean is just the sample mean.\n\n³ Of course \\(\\operatorname{Unif}(-\\infty,\\infty)\\) is not a valid probability distribution as it does not integral is \\(\\infty\\) (not 1). However, it is considered as a valid prior in constructing the posterior distribution."
+    "text": "Bayesian viewpoint on frequentist methods\n\nThe parameter estimates, e.g. the sample mean, could be interpreted by the posterior mean with a non-informative prior³:\n\n\\[\\mu\\sim\\operatorname{Unif}(-\\infty,\\infty)\\ \\Rightarrow\\ p(\\mu)=1.\\]\nWe don’t have any prior information about \\(\\mu\\) — we don’t assume anything.\n\n\nIn this case,\n\n\\[p(\\mu\\mid\\mathbf y)\\propto p(\\mathbf y\\mid\\mu)\\times p(\\mu)\\propto\\exp\\!\\left[-\\frac1{2\\sigma^2}\\sum_{i=1}^n(y_i-\\mu)^2\\right]\\times1\\propto\\exp\\!\\left[-\\frac n{2\\sigma^2}(\\mu-\\bar y)^2\\right]\\]\nso that the posterior mean is just the sample mean.\n\n\n³ Of course \\(\\operatorname{Unif}(-\\infty,\\infty)\\) is not a valid probability distribution as it does not integral is \\(\\infty\\) (not 1). However, it is considered as a valid prior in constructing the posterior distribution."
   },
   {
     "objectID": "Week9.html#examples-from-non-normal-dgp",
     "href": "Week9.html#examples-from-non-normal-dgp",
     "title": "Bayesian Thinking",
     "section": "Examples from non-normal DGP",
-    "text": "Examples from non-normal DGP\n\nExample: You conduct a poll of UofT students and ask “Do you have an Instagram account?” Of the \\(n=50\\) randomly chosen students you survey, \\(x=28\\) say “yes.” Let \\(\\theta\\) be the true proportion of students at UofT who would say yes.\nWhen \\(y_i\\) is the response from the \\(i\\)th student, then a possible DGP is\n\n\\[y_i\\sim\\operatorname{Bernoulli}(p)\\]\n\nOne way to use prior for \\(p\\in(0,1)\\) is the \\(\\operatorname{Unif}(0,1)\\) that does not assume anything."
+    "text": "Examples from non-normal DGP\n\nExample: You conduct a poll of UofT students and ask “Do you have an Instagram account?” Of the \\(n=50\\) randomly chosen students you survey, \\(x=28\\) say “yes.” Let \\(\\theta\\) be the true proportion of students at UofT who would say yes.\n\n\n\n\nWhen \\(y_i\\) is the response from the \\(i\\)th student, then a possible DGP is\n\n\\[y_i\\sim\\operatorname{Bernoulli}(p)\\]\n\nOne way to use prior for \\(p\\in(0,1)\\) is the \\(\\operatorname{Unif}(0,1)\\) that does not assume anything."
   },
   {
     "objectID": "Week9.html#examples-from-non-normal-dgp-1",
@@ -2097,7 +2097,7 @@
     "href": "Week9.html#drawbacks-and-counterpoints",
     "title": "Bayesian Thinking",
     "section": "Drawbacks and counterpoints",
-    "text": "Drawbacks and counterpoints\n\nSubjectivity in prior selection\n\n“Why should I trust your prior”?\nStrong priors usually reduce variance, but it comes with increased biases.\n\n\n\n\nComputational burden\n\nExamples covered in this lecture is relatively ‘simple’ so that your posterior is given by normal distribution with a closed-form estimates.\n\nFor example: Normal DGP + Normal prior on \\(\\mu\\) \\(\\Rightarrow\\) Normal posterior\nFor example: Bernoulli DGP + Beta prior on \\(p\\) \\(\\Rightarrow\\) Beta posterior\n\nIn many cases, it isn’t.\nBayesian methods often require intensive computational techniques like Markov Chain Monte Carlo (MCMC), which can be slow and difficult to implement.\n\n\nIt requires knowledge of probability and statistics (and programming) that are beyond undergraduate level.\n\nNot straightforward as glm()"
+    "text": "Drawbacks and counterpoints\n\nSubjectivity in prior selection\n\n“Why should I trust your prior”?\nStrong priors usually reduce variance, but it comes with increased biases.\n\nComputational burden\n\nExamples covered in this lecture are relatively ‘simple’ so that your posterior is given by normal distribution with a closed-form estimates.\n\nFor example: Normal DGP + Normal prior on \\(\\mu\\) \\(\\Rightarrow\\) Normal posterior\nFor example: Bernoulli DGP + Beta prior on \\(p\\) \\(\\Rightarrow\\) Beta posterior\n\nIn many cases, it isn’t.\nBayesian methods often require intensive computational techniques like Markov Chain Monte Carlo (MCMC), which can be slow and difficult to implement.\n\nIt requires knowledge of probability and statistics (and programming) that are beyond undergraduate level.\n\nNot straightforward as glm()"
   },
   {
     "objectID": "Week9.html#drawbacks-and-counterpoints-2",
@@ -2111,14 +2111,14 @@
     "href": "Week9.html#bayesian-linear-regression-1",
     "title": "Bayesian Thinking",
     "section": "Bayesian linear regression",
-    "text": "Bayesian linear regression\n\nRevisiting the linear regression,\n\n\\[y_i=\\mathbf x_i^T\\boldsymbol\\beta+\\epsilon_i\\qquad\\text{where}\\qquad\\epsilon_i\\overset{\\text{i.i.d.}}\\sim N(0,\\sigma^2)\\]\n\nSuppose for now that \\(\\sigma^2\\) is known and \\(\\mathbf y\\) as well as each covariate are standardized (so that we don’t need \\(\\beta_0\\)). The only parameters we have here are \\(\\beta_1,\\ldots,\\beta_p\\) and we put our ‘prior’ by\n\n\\[\\beta_j\\overset{\\text{i.i.d.}}\\sim N(0,\\tau^2)\\qquad\\text{or, equivalently,}\\qquad\\boldsymbol\\beta\\sim MVN(0,\\tau^2I)\\]\n\nIntuitively, we make a prior that the regression parameters \\(\\beta_1,\\ldots,\\beta_p\\) are mostly centered around 0.\n\nQ: How does the normal curve look like when \\(\\tau^2\\) increases to \\(\\infty\\)?\nQ: And what does it imply?"
+    "text": "Bayesian linear regression\n\nRevisiting the linear regression,\n\n\\[y_i=\\mathbf x_i^T\\boldsymbol\\beta+\\epsilon_i\\qquad\\text{where}\\qquad\\epsilon_i\\overset{\\text{i.i.d.}}\\sim N(0,\\sigma^2)\\]\n\nSuppose for now that \\(\\sigma^2\\) is known and \\(\\mathbf y\\) as well as each covariate are standardized (so that we don’t need \\(\\beta_0\\)). The only parameters we have here are \\(\\beta_1,\\ldots,\\beta_p\\) and we put our ‘prior’ by\n\n\\[\\beta_j\\overset{\\text{i.i.d.}}\\sim N(0,\\tau^2)\\qquad\\text{or, equivalently,}\\qquad\\boldsymbol\\beta\\sim MVN(0,\\tau^2I)\\]\n\n\nIntuitively, we make a prior that the regression parameters \\(\\beta_1,\\ldots,\\beta_p\\) are mostly centered around 0.\n\nQ: How does the normal curve look like when \\(\\tau^2\\) increases to \\(\\infty\\)?\nQ: And what does it imply?"
   },
   {
     "objectID": "Week9.html#bayesian-linear-regression-2",
     "href": "Week9.html#bayesian-linear-regression-2",
     "title": "Bayesian Thinking",
     "section": "Bayesian linear regression",
-    "text": "Bayesian linear regression\n\nThe normal prior in the previous slide gives us\n\n\\[p(\\boldsymbol\\beta)\\propto\\exp\\!\\left(-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right)=\\exp\\!\\left(-\\frac1{2\\tau^2}\\sum_{j=1}^p\\beta_j^2\\right)\\]\n\nTherefore, the posterior of \\(\\boldsymbol\\beta\\) is\n\n\\[\\begin{aligned}\np(\\boldsymbol\\beta\\mid\\mathbf y)&\\propto\\exp\\!\\left[-\\frac1{2\\sigma^2}(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)\\right]\\times\\exp\\!\\left[-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right]\\\\\n&\\propto\\exp\\!\\left[-\\frac1{2\\sigma^2}(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right].\n\\end{aligned}\\]\n\nTherefore, the maximum a posteriori (Bayes) estimator is \\(\\hat{\\boldsymbol\\beta}_{\\text{bayes}}\\) that minimizes\n\n\\[(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)+\\lambda\\boldsymbol\\beta^T\\boldsymbol\\beta\\qquad\\text{where}\\quad\\lambda=\\sigma^2/\\tau^2.\\]"
+    "text": "Bayesian linear regression\n\nThe normal prior in the previous slide gives us\n\n\\[p(\\boldsymbol\\beta)\\propto\\exp\\!\\left(-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right)=\\exp\\!\\left(-\\frac1{2\\tau^2}\\sum_{j=1}^p\\beta_j^2\\right)\\]\n\n\nTherefore, the posterior of \\(\\boldsymbol\\beta\\) is\n\n\\[\\begin{aligned}\np(\\boldsymbol\\beta\\mid\\mathbf y)&\\propto\\exp\\!\\left[-\\frac1{2\\sigma^2}(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)\\right]\\times\\exp\\!\\left[-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right]\\\\\n&\\propto\\exp\\!\\left[-\\frac1{2\\sigma^2}(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right].\n\\end{aligned}\\]\n\n\n\nTherefore, the maximum a posteriori (Bayes) estimator is \\(\\hat{\\boldsymbol\\beta}_{\\text{bayes}}\\) that minimizes\n\n\\[(\\mathbf y-X\\boldsymbol\\beta)^T(\\mathbf y-X\\boldsymbol\\beta)+\\lambda\\boldsymbol\\beta^T\\boldsymbol\\beta\\qquad\\text{where}\\quad\\lambda=\\sigma^2/\\tau^2.\\]"
   },
   {
     "objectID": "Week9.html#bayesian-linear-regression-3",
@@ -2146,7 +2146,7 @@
     "href": "Week9.html#glm-with-normal-prior",
     "title": "Bayesian Thinking",
     "section": "GLM with normal prior",
-    "text": "GLM with normal prior\n\nLogistic regression with a logit link: the likelihood is specified by\n\n\\[\\begin{aligned}\nL(\\boldsymbol\\beta\\mid\\mathbf y)&=\\prod_{i=1}^n\\left(\\frac{e^{\\mathbf x_i^T\\boldsymbol\\beta}}{1+e^{\\mathbf x_i^T\\boldsymbol\\beta}}\\right)^{y_i}\\left(\\frac1{1+e^{\\mathbf x_i^T\\boldsymbol\\beta}}\\right)^{1-y_i}\\\\\n&\\propto\\exp\\!\\left[\\sum_{i=1}^n\\left\\{y_i(\\mathbf x_i^T\\boldsymbol\\beta)-\\log(1+e^{\\mathbf x_i^T\\boldsymbol\\beta})\\right\\}\\right].\n\\end{aligned}\\]\n\nThe posterior of \\(\\boldsymbol\\beta\\), when given a prior \\(\\boldsymbol\\beta\\sim MVN(0,\\tau^2I)\\) would be\n\n\\[p(\\boldsymbol\\beta\\mid\\mathbf y)\\propto L(\\boldsymbol\\beta\\mid\\mathbf y)\\times p(\\boldsymbol\\beta)\\propto\\exp\\!\\left[\\sum_{i=1}^n\\left\\{y_i(\\mathbf x_i^T\\boldsymbol\\beta)-\\log(1+e^{\\mathbf x_i^T\\boldsymbol\\beta})\\right\\}-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right]\\]\n\nTherefore \\(\\hat{\\boldsymbol\\beta}_{\\text{bayes}}\\) is obtained by minimizing\n\n\\[-\\sum_{i=1}^n\\left\\{y_i(\\mathbf x_i^T\\boldsymbol\\beta)-\\log(1+e^{\\mathbf x_i^T\\boldsymbol\\beta})\\right\\}+\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\]\nNo closed form solution, which makes things more complicated."
+    "text": "GLM with normal prior\n\nLogistic regression with a logit link: the likelihood is specified by\n\n\\[\\begin{aligned}\nL(\\boldsymbol\\beta\\mid\\mathbf y)&=\\prod_{i=1}^n\\left(\\frac{e^{\\mathbf x_i^T\\boldsymbol\\beta}}{1+e^{\\mathbf x_i^T\\boldsymbol\\beta}}\\right)^{y_i}\\left(\\frac1{1+e^{\\mathbf x_i^T\\boldsymbol\\beta}}\\right)^{1-y_i}\\\\\n&\\propto\\exp\\!\\left[\\sum_{i=1}^n\\left\\{y_i(\\mathbf x_i^T\\boldsymbol\\beta)-\\log(1+e^{\\mathbf x_i^T\\boldsymbol\\beta})\\right\\}\\right].\n\\end{aligned}\\]\n\n\nThe posterior of \\(\\boldsymbol\\beta\\), when given a prior \\(\\boldsymbol\\beta\\sim MVN(0,\\tau^2I)\\) would be\n\n\\[p(\\boldsymbol\\beta\\mid\\mathbf y)\\propto L(\\boldsymbol\\beta\\mid\\mathbf y)\\times p(\\boldsymbol\\beta)\\propto\\exp\\!\\left[\\sum_{i=1}^n\\left\\{y_i(\\mathbf x_i^T\\boldsymbol\\beta)-\\log(1+e^{\\mathbf x_i^T\\boldsymbol\\beta})\\right\\}-\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\right]\\]\n\n\n\nTherefore \\(\\hat{\\boldsymbol\\beta}_{\\text{bayes}}\\) is obtained by minimizing\n\n\\[-\\sum_{i=1}^n\\left\\{y_i(\\mathbf x_i^T\\boldsymbol\\beta)-\\log(1+e^{\\mathbf x_i^T\\boldsymbol\\beta})\\right\\}+\\frac1{2\\tau^2}\\boldsymbol\\beta^T\\boldsymbol\\beta\\]\n\nNo closed form solution, which makes things more complicated."
   },
   {
     "objectID": "Week9.html#variants-of-priors-in-bayesian-linear-regression",
@@ -2181,14 +2181,14 @@
     "href": "Week9.html#non-independent-gaussian-priors-on-boldsymbolbeta-1",
     "title": "Bayesian Thinking",
     "section": "2. Non-independent Gaussian priors on \\(\\boldsymbol\\beta\\)",
-    "text": "2. Non-independent Gaussian priors on \\(\\boldsymbol\\beta\\)\n\nIf \\(\\boldsymbol\\beta=(\\beta_1,\\ldots,\\beta_V)^T\\) parametrizes the average cortical thickness at each \\(v\\), a possible prior that incorporates both type of prior information would be\n\n\\[\\begin{pmatrix}\\beta_1\\\\\\beta_2\\\\\\vdots\\\\\\beta_V\\end{pmatrix}\\sim MVN\\!\\left(\\begin{pmatrix}2.5\\\\2.5\\\\\\vdots\\\\2.5\\end{pmatrix},\\Sigma\\right)\\]\nwhere \\(\\Sigma[j,k]=\\sigma^2\\exp(-\\phi d_{jk})\\) and \\(d_{jk}\\) is the distance between two vertices \\(j\\) and \\(k\\). - \\(\\phi&gt;0\\) controls the degree of spatial correlation. - If \\(d_{jk}\\) is large, our prior specifies that the correlation between \\(\\beta_j\\) and \\(\\beta_k\\) is low. - If \\(d_{jk}\\) is nearly 0, our prior specifies that the correlation between \\(\\beta_j\\) and \\(\\beta_k\\) is nearly 1. - In practice, \\(\\phi\\) is unknown \\(\\Rightarrow\\) specify additional prior on \\(\\phi\\)!"
+    "text": "2. Non-independent Gaussian priors on \\(\\boldsymbol\\beta\\)\n\nIf \\(\\boldsymbol\\beta=(\\beta_1,\\ldots,\\beta_V)^T\\) parametrizes the average cortical thickness at each \\(v\\), a possible prior that incorporates both type of prior information would be\n\n\\[\\begin{pmatrix}\\beta_1\\\\\\beta_2\\\\\\vdots\\\\\\beta_V\\end{pmatrix}\\sim MVN\\!\\left(\\begin{pmatrix}2.5\\\\2.5\\\\\\vdots\\\\2.5\\end{pmatrix},\\Sigma\\right)\\]\nwhere \\(\\Sigma[j,k]=\\sigma^2\\exp(-\\phi d_{jk})\\) and \\(d_{jk}\\) is the distance between two vertices \\(j\\) and \\(k\\).\n\n\\(\\phi&gt;0\\) controls the degree of spatial correlation.\nIf \\(d_{jk}\\) is large, our prior specifies that the correlation between \\(\\beta_j\\) and \\(\\beta_k\\) is low.\nIf \\(d_{jk}\\) is nearly 0, our prior specifies that the correlation between \\(\\beta_j\\) and \\(\\beta_k\\) is nearly 1.\nIn practice, \\(\\phi\\) is unknown \\(\\Rightarrow\\) specify additional prior on \\(\\phi\\)!"
   },
   {
     "objectID": "Week9.html#drawbacks-and-counterpoints-1",
     "href": "Week9.html#drawbacks-and-counterpoints-1",
     "title": "Bayesian Thinking",
     "section": "Drawbacks and counterpoints",
-    "text": "Drawbacks and counterpoints\n\nBayesian CLT: under general conditions, when \\(y_1,\\ldots,y_n\\overset{\\text{i.i.d.}}\\sim p(\\cdot\\mid\\theta)\\) are i.i.d and \\(n\\to\\infty\\),\n\n\\[p(\\theta\\mid\\mathbf y)\\sim AN(\\hat\\theta_{\\text{mle}},I(\\theta))\\]\nMore and more data points will dominate prior and the posterior mean \\(\\approx\\) MLE.\n\nWeakly informative (or even non-informative) priors can be used when no clear prior knowledge is available.\nAdvances in computational power and the development of efficient algorithms make Bayesian methods more accessible."
+    "text": "Drawbacks and counterpoints\n\nBayesian CLT: under general conditions, when \\(y_1,\\ldots,y_n\\overset{\\text{i.i.d.}}\\sim p(\\cdot\\mid\\theta)\\) are i.i.d and \\(n\\to\\infty\\),\n\n\\[p(\\theta\\mid\\mathbf y)\\sim \\mathcal{AN}(\\hat\\theta_{\\text{mle}},I(\\theta))\\]\nMore and more data points will dominate prior and the posterior mean \\(\\approx\\) MLE.\n\nWeakly informative (or even non-informative) priors can be used when no clear prior knowledge is available.\nAdvances in computational power and the development of efficient algorithms make Bayesian methods more accessible."
   },
   {
     "objectID": "Week9.html#bayesian-linear-regression",
@@ -2223,7 +2223,7 @@
     "href": "Week9.html#modelling-considerations-3",
     "title": "Bayesian Thinking",
     "section": "Modelling considerations",
-    "text": "Modelling considerations\nChoosing and evaluating a prior\n\nThe prior affects how strongly the data are regularized. For regression coefficients:\n\nA normal prior centered at zero gives an \\(L_2\\) penalty (ridge-type estimation).\nA Laplace prior centered at zero gives an \\(L_1\\) penalty (lasso-type estimation).\n\nConsider whether the prior reflects reasonable knowledge about the parameters and how much shrinkage is appropriate.\nRemedy: Compare sensible priors and assess whether substantive conclusions change.\n\nQuestions to ask before interpreting a Bayesian model:\n\nIs the likelihood appropriate for the response and its variability?\nHow sensitive are the results to the prior assumptions?\nDoes the fitted model reproduce important features of the observed data?"
+    "text": "Modelling considerations\nChoosing and evaluating a prior\n\nThe prior affects how strongly the data are regularized. For regression coefficients:\n\nA normal prior centered at zero gives an \\(L_2\\) penalty (ridge-type estimation).\nA Laplace prior centered at zero gives an \\(L_1\\) penalty (lasso-type estimation).\n\nConsider whether the prior reflects reasonable knowledge about the parameters and how much shrinkage is appropriate.\nRemedy: Compare sensible priors and assess whether substantive conclusions change.\n\n\nQuestions to ask before interpreting a Bayesian model:\n\nIs the likelihood appropriate for the response and its variability?\nHow sensitive are the results to the prior assumptions?\nDoes the fitted model reproduce important features of the observed data?"
   },
   {
     "objectID": "Week9.html#knowledge-check",
@@ -2237,7 +2237,7 @@
     "href": "Week9.html#summary",
     "title": "Bayesian Thinking",
     "section": "Summary",
-    "text": "Summary\n\nBayesian inference combines observed data (likelihood) with prior information to obtain a posterior distribution:\n\\[p(\\boldsymbol\\theta\\mid\\mathbf y)\\propto p(\\mathbf y\\mid\\boldsymbol\\theta)p(\\boldsymbol\\theta).\\]\nBayesian estimators can introduce bias but may reduce variance, depending on the choice of prior.\nBayesian linear regression connects naturally to regularization:\n\nNormal priors lead to \\(L_2\\) penalties (ridge regression).\nLaplace priors lead to \\(L_1\\) penalties (lasso regression).\n\nPrior assumptions matter: the choice and strength of a prior affect parameter estimates, particularly with small samples.\nModelling considerations: assess prior sensitivity, check the appropriateness of the likelihood, and use posterior predictive checks to evaluate model fit."
+    "text": "Summary\n\nBayesian inference combines observed data (likelihood) with prior information to obtain a posterior distribution:\n\\[p(\\boldsymbol\\theta\\mid\\mathbf y)\\propto p(\\mathbf y\\mid\\boldsymbol\\theta)p(\\boldsymbol\\theta).\\]\nBayesian estimators can introduce bias but may reduce variance, depending on the choice of prior.\nBayesian linear regression connects naturally to regularization:\n\nNormal priors lead to \\(L_2\\) penalties (ridge regression).\nLaplace priors lead to \\(L_1\\) penalties (lasso regression).\n\nPrior assumptions matter: the choice and strength of a prior affect parameter estimates, particularly with small samples.\nModelling considerations: assess prior sensitivity, check the appropriateness of the likelihood, and use posterior predictive checks to evaluate model fit.\n\nAnnouncements: Assignment due tonight on Crowdmark!\nNext Week: Random Effects Models"
   },
   {
     "objectID": "Week9.html#knowledge-check-1",
@@ -2252,5 +2252,474 @@
     "title": "Bayesian Thinking",
     "section": "Knowledge Check",
     "text": "Knowledge Check\n  \n\nWe saw that introducing a prior can reduce the variance of an estimator while introducing bias. Does this necessarily mean the Bayesian estimator is worse than an unbiased estimator? Explain your reasoning."
+  },
+  {
+    "objectID": "Week10.html",
+    "href": "Week10.html",
+    "title": "Random Effects Models",
+    "section": "",
+    "text": "Examples of correlated data\nGeneralized least squares\nRandom effects modeling\nStatistical inference\nLongitudinal data analysis\nRandom effects modeling of linear regression"
+  },
+  {
+    "objectID": "Week10.html#table-of-contents",
+    "href": "Week10.html#table-of-contents",
+    "title": "Random Effects Models",
+    "section": "",
+    "text": "Examples of correlated data\nGeneralized least squares\nRandom effects modeling\nStatistical inference\nLongitudinal data analysis\nRandom effects modeling of linear regression"
+  },
+  {
+    "objectID": "Week10.html#where-are-we-so-far",
+    "href": "Week10.html#where-are-we-so-far",
+    "title": "Random Effects Models",
+    "section": "Where are we so far?",
+    "text": "Where are we so far?\n\nStarting with linear model, could we relax assumptions and still be able to derive efficient estimators?"
+  },
+  {
+    "objectID": "Week10.html#examples-of-correlated-data-temporal-data",
+    "href": "Week10.html#examples-of-correlated-data-temporal-data",
+    "title": "Random Effects Models",
+    "section": "Examples of Correlated Data: Temporal Data",
+    "text": "Examples of Correlated Data: Temporal Data\n\nThe issue of global warming has attracted significant interest in recent years. Reliable records of annual temperatures taken with thermometers are only available back to the 1850s. We can build a linear model to predict temperature since 1856 and then subsequently use this to predict earlier temperatures based on proxy information."
+  },
+  {
+    "objectID": "Week10.html#examples-of-correlated-data-spatial-data",
+    "href": "Week10.html#examples-of-correlated-data-spatial-data",
+    "title": "Random Effects Models",
+    "section": "Examples of Correlated Data: Spatial Data",
+    "text": "Examples of Correlated Data: Spatial Data\n\nThe statewide average of the SAT verbal exam scores are reported by College Board and the map of the raw data shows spatial pattern."
+  },
+  {
+    "objectID": "Week10.html#examples-of-correlated-data-repeated-measures",
+    "href": "Week10.html#examples-of-correlated-data-repeated-measures",
+    "title": "Random Effects Models",
+    "section": "Examples of Correlated Data: Repeated Measures",
+    "text": "Examples of Correlated Data: Repeated Measures\n\n48 chicks at birth are assigned to four different diets and their weights were observed every 2 weeks until 21 weeks.\nWe are interested in whether the effects of diets on the weight gain over time is the same.\nMeasurements made on the same chick are likely to be correlated.\n\n(within-subject correlation)"
+  },
+  {
+    "objectID": "Week10.html#covariance-matrix",
+    "href": "Week10.html#covariance-matrix",
+    "title": "Random Effects Models",
+    "section": "Covariance Matrix",
+    "text": "Covariance Matrix\n\nIn (simple and multiple) linear regression, we assumed that the noises are normally distributed and independent. In other words,\n\n\\[\n\\operatorname{Cov}(\\epsilon_i,\\epsilon_j)=\\operatorname{Cov}(\\epsilon_j,\\epsilon_i)=0\\quad\\text{for all subjects }i\\text{ and }j\n\\]\n\nThe covariance can be computed for all pairs of subjects, which may be stacked in a form of matrix:\n\n\\[\n\\operatorname{Cov}\\begin{pmatrix}\\epsilon_1\\\\\\epsilon_2\\\\\\vdots\\\\\\epsilon_n\\end{pmatrix}=\\begin{bmatrix}\\operatorname{Var}(\\epsilon_1)&\\operatorname{Cov}(\\epsilon_1,\\epsilon_2)&\\cdots&\\operatorname{Cov}(\\epsilon_1,\\epsilon_n)\\\\\\operatorname{Cov}(\\epsilon_2,\\epsilon_1)&\\operatorname{Var}(\\epsilon_2)&\\cdots&\\operatorname{Cov}(\\epsilon_2,\\epsilon_n)\\\\\\vdots&\\vdots&\\ddots&\\vdots\\\\\\operatorname{Cov}(\\epsilon_n,\\epsilon_1)&\\operatorname{Cov}(\\epsilon_n,\\epsilon_2)&\\cdots&\\operatorname{Var}(\\epsilon_n)\\end{bmatrix}\n\\]"
+  },
+  {
+    "objectID": "Week10.html#covariance-matrix-1",
+    "href": "Week10.html#covariance-matrix-1",
+    "title": "Random Effects Models",
+    "section": "Covariance Matrix",
+    "text": "Covariance Matrix\n\\[\n\\operatorname{Cov}\\begin{pmatrix}\\epsilon_1\\\\\\epsilon_2\\\\\\vdots\\\\\\epsilon_n\\end{pmatrix}=\\begin{bmatrix}\\operatorname{Var}(\\epsilon_1)&\\operatorname{Cov}(\\epsilon_1,\\epsilon_2)&\\cdots&\\operatorname{Cov}(\\epsilon_1,\\epsilon_n)\\\\\\operatorname{Cov}(\\epsilon_2,\\epsilon_1)&\\operatorname{Var}(\\epsilon_2)&\\cdots&\\operatorname{Cov}(\\epsilon_2,\\epsilon_n)\\\\\\vdots&\\vdots&\\ddots&\\vdots\\\\\\operatorname{Cov}(\\epsilon_n,\\epsilon_1)&\\operatorname{Cov}(\\epsilon_n,\\epsilon_2)&\\cdots&\\operatorname{Var}(\\epsilon_n)\\end{bmatrix}\n\\]\n\nIn linear regression, we assumed that \\(\\\\operatorname{Cov}(\\\\epsilon_i,\\\\epsilon_j)=0\\) when \\(i\\\\ne j\\) (independence) and \\(\\\\operatorname{Var}(\\\\epsilon_i)=\\\\sigma^2\\) (constant variance), in which the first assumption would not hold in correlated data.\nKey idea: Similar to how we used parametric (linear) mean structure in linear regression, we use parametric covariance structure in modeling correlated data."
+  },
+  {
+    "objectID": "Week10.html#covariance-structures",
+    "href": "Week10.html#covariance-structures",
+    "title": "Random Effects Models",
+    "section": "Covariance Structures",
+    "text": "Covariance Structures\n\\[\n\\operatorname{Cov}\\begin{pmatrix}\\epsilon_1\\\\\\epsilon_2\\\\\\vdots\\\\\\epsilon_n\\end{pmatrix}\n=\\begin{bmatrix}\\sigma^2&\\sigma^2\\phi&\\cdots&\\sigma^2\\phi\\\\\\sigma^2\\phi&\\sigma^2&\\cdots&\\sigma^2\\phi\\\\\\vdots&\\vdots&\\ddots&\\vdots\\\\\\sigma^2\\phi&\\sigma^2\\phi&\\cdots&\\sigma^2\\end{bmatrix}\n\\]\n\nCompound symmetry (CS) is one of the most commonly used forms to model covariance.\n\nThe covariance between \\(\\epsilon_i\\) and \\(\\epsilon_j\\) are the same for all \\(i\\ne j\\): \\(\\sigma^2\\phi\\).\nThe correlation between \\(\\epsilon_i\\) and \\(\\epsilon_j\\) are the same for all \\(i\\ne j\\): \\(\\phi\\).\nDoes not consider the ordered structure of \\(\\epsilon_1,\\ldots,\\epsilon_n\\)."
+  },
+  {
+    "objectID": "Week10.html#covariance-structures-1",
+    "href": "Week10.html#covariance-structures-1",
+    "title": "Random Effects Models",
+    "section": "Covariance Structures",
+    "text": "Covariance Structures\n\\[\n\\operatorname{Cov}\\begin{pmatrix}\\epsilon_1\\\\\\epsilon_2\\\\\\epsilon_3\\\\\\vdots\\\\\\epsilon_n\\end{pmatrix}\n=\\sigma^2\\begin{bmatrix}1&\\phi&\\phi^2&\\cdots&\\phi^{n-1}\\\\\\phi&1&\\phi&\\cdots&\\phi^{n-2}\\\\\\phi^2&\\phi&1&\\cdots&\\phi^{n-3}\\\\\\vdots&\\vdots&\\vdots&\\ddots&\\vdots\\\\\\phi^{n-1}&\\phi^{n-2}&\\phi^{n-3}&\\cdots&1\\end{bmatrix}\n\\]\n\nAR(1) correlation structure (when \\(|\\phi|&lt;1\\)) is best motivated to model structured dependencies over time (i.e. time series).\n\\(\\operatorname{Cor}(\\epsilon_i,\\epsilon_j)=\\phi^{|i-j|}\\) decreases as \\(|i-j|\\) increases."
+  },
+  {
+    "objectID": "Week10.html#covariance-structures-2",
+    "href": "Week10.html#covariance-structures-2",
+    "title": "Random Effects Models",
+    "section": "Covariance Structures",
+    "text": "Covariance Structures\n\nWhen \\(\\epsilon_i\\overset{\\mathrm{i.i.d.}}{\\sim}N(0,\\sigma^2)\\), assume that \\(y_0=\\epsilon_0\\) and\n\n\\[\n\\epsilon_i\\overset{\\mathrm{i.i.d.}}{\\sim}N(0,\\sigma^2),\\quad y_0=\\epsilon_0,\\quad y_1=\\phi y_0+\\epsilon_1,\\quad y_2=\\phi y_1+\\epsilon_2,\\quad\\ldots,\\quad y_n=\\phi y_{n-1}+\\epsilon_n\n\\]\n\nThis recursive process induces AR(1) correlation structure.\n\n\\[\n\\begin{aligned}\\operatorname{Cov}(y_1,y_2)&=\\operatorname{Cov}(y_1,\\phi y_1+\\epsilon_2)=\\operatorname{Cov}(y_1,\\phi y_1)+\\operatorname{Cov}(y_1,\\epsilon_2)\\\\&=\\phi\\operatorname{Cov}(y_1,y_1)+0=\\sigma^2\\phi\\\\\\operatorname{Cov}(y_1,y_3)&=\\operatorname{Cov}(y_1,\\phi y_2+\\epsilon_3)=\\operatorname{Cov}(y_1,\\phi y_2)+\\operatorname{Cov}(y_1,\\epsilon_3)\\\\&=\\phi\\operatorname{Cov}(y_1,y_2)+0=\\sigma^2\\phi^2\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "Week10.html#covariance-structures-3",
+    "href": "Week10.html#covariance-structures-3",
+    "title": "Random Effects Models",
+    "section": "Covariance Structures",
+    "text": "Covariance Structures\n\\[\n\\operatorname{Cov}\\begin{pmatrix}\\epsilon_1\\\\\\epsilon_2\\\\\\vdots\\\\\\epsilon_n\\end{pmatrix}=\n\\sigma^2\\begin{bmatrix}1&\\phi_{1,2}&\\cdots&\\phi_{1,n}\\\\\\phi_{1,2}&1&\\cdots&\\phi_{2,n}\\\\\\vdots&\\vdots&\\ddots&\\vdots\\\\\\phi_{1,n}&\\phi_{2,n}&\\cdots&1\\end{bmatrix}\n\\]\n\nThe unstructured model uses \\(\\binom{n}{2}\\) correlation parameters to model all possible pairs of correlations.\n\nProbably the most exact form, because the true correlation structure does not necessarily follow a simple parametrization (e.g., CS, AR(1), Gaussian, . . . )\nHowever, this model requires too many correlation parameters (especially when \\(n\\) is large), which may reduce statistical power substantially.\nIn statistical modeling, choosing a specific structured form is preferred for both (i) modeling for covariance structures and (ii) using the smallest number of parameters to maintain power."
+  },
+  {
+    "objectID": "Week10.html#modeling-correlated-data-general-guidelines",
+    "href": "Week10.html#modeling-correlated-data-general-guidelines",
+    "title": "Random Effects Models",
+    "section": "Modeling Correlated Data: General Guidelines",
+    "text": "Modeling Correlated Data: General Guidelines\n\nUnlike simple/multiple linear regression models, we need pay attention to both the mean model and the covariance model for correlated data.\nWhen the mean model is of primary interest, it may be sufficient to use a simple variance model and accept increased standard errors of the parameter estimates.\nStill it might be worthwhile to find an appropriate covariance structure to improve efficiency. (i.e., to reduce standard errors to improve power)\nWhen the variance model is also of interest, care must be taken to model it correctly. In addition, the mean model is also critical. When the wrong mean model is used, the variance estimation will not even be consistent."
+  },
+  {
+    "objectID": "Week10.html#gls",
+    "href": "Week10.html#gls",
+    "title": "Random Effects Models",
+    "section": "GLS",
+    "text": "GLS\n\nSuppose that the true DGP is now\n\n\\[\n\\mathbf{y}=\\mathbf{X}\\boldsymbol{\\beta}+\\boldsymbol{\\epsilon},\n\\quad\\text{where}\\quad\nE(\\boldsymbol{\\epsilon})=\\mathbf{0}_n\n\\quad\\text{and}\\quad\n\\operatorname{Cov}(\\boldsymbol{\\epsilon})=\\Sigma\n\\]\n\nThe least square estimator is still unbiased, but it does not guarantee BLUE since the uncorrelatedness assumption does not hold.\n\n\\[\n\\begin{aligned}\nE[(\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y}]\n&=(\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^TE[\\mathbf{y}]\\\\\n&=(\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{X}\\boldsymbol{\\beta}\\\\\n&=\\boldsymbol{\\beta}\\\\[6pt]\n\\operatorname{Cov}((\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y})\n&=(\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\operatorname{Cov}(\\mathbf{y})\\mathbf{X}(\\mathbf{X}^T\\mathbf{X})^{-1}\\\\\n&=(\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\Sigma\\mathbf{X}(\\mathbf{X}^T\\mathbf{X})^{-1}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "Week10.html#gls-1",
+    "href": "Week10.html#gls-1",
+    "title": "Random Effects Models",
+    "section": "GLS",
+    "text": "GLS\n\nResults from the singular value decomposition: There is \\(\\mathbf{U}\\) and \\(\\mathbf{D}\\) matrix that \\(\\mathbf{\\Sigma}=\\mathbf{UDU}^T\\) where\n\n\\(U\\) is a \\(n × n\\) matrix that satisfies \\(U^TU=UU^T=I\\).\n\nIn other words, the columns of \\(U\\) are orthonormal (orthogonal + unit length)\n\n\\(D\\) is a \\(n × n\\) diagonal matrix with entries &gt; 0\nIt is straightforward to show that \\(\\mathbf{\\Sigma}^{-1} = \\mathbf{UD}^{-1}\\mathbf{U}^T\\)\n\nNote that when \\(\\operatorname{Cov}(\\mathbf{y})=\\mathbf{\\Sigma}\\) and \\(\\mathbf{D}^{1/2} = \\text{diag}\\left(\\sqrt{1/d_{11}}, ..., \\sqrt{1/d_{nn}}\\right)\\) then,\n\n\\[\n\\begin{aligned}\\operatorname{Cov}(\\mathbf{D^{-1/2}U^Ty})&=\\mathbf{D^{-1/2}U^TUDU^TUD}^{-1/2}\\\\&=\\mathbf{D^{-1/2}DD}^{-1/2}=\\mathbf{I}\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "Week10.html#gls-2",
+    "href": "Week10.html#gls-2",
+    "title": "Random Effects Models",
+    "section": "GLS",
+    "text": "GLS\n\nThe previous slide indicates that, when true \\(\\Sigma\\) is given, the BLUE could be constructed.\n\n\\[\n\\mathbf{y}=\\mathbf{X}\\boldsymbol{\\beta}+\\boldsymbol{\\epsilon}\n\\quad\\Longrightarrow\\quad\n\\mathbf{D}^{-1/2}\\mathbf{U}^T\\mathbf{y}\n=\n\\underbrace{\\mathbf{D}^{-1/2}\\mathbf{U}^T\\mathbf{X}}_{\\mathbf{X}^\\star}\\boldsymbol{\\beta}\n+\n\\underbrace{\\mathbf{D}^{-1/2}\\mathbf{U}^T\\boldsymbol{\\epsilon}}_{\\boldsymbol{\\epsilon}^\\star}\n\\]\n\n\\(\\boldsymbol{\\beta}\\) remains unchanged.\n\\(\\operatorname{Cov}(\\boldsymbol{\\epsilon}^\\star)=\\mathbf{I}\\) (uncorrelated + constant variance) \\(\\Rightarrow\\) GMT could be applied."
+  },
+  {
+    "objectID": "Week10.html#gls-3",
+    "href": "Week10.html#gls-3",
+    "title": "Random Effects Models",
+    "section": "GLS",
+    "text": "GLS\n\nBLUE of \\(\\boldsymbol{\\beta}\\) in this case is the generalized least squares (GLS) estimator:\n\n\\[\n\\begin{aligned}\n\\hat{\\boldsymbol{\\beta}}_{\\mathrm{GLS}}\n&=(\\mathbf{X}^{\\star T}\\mathbf{X}^\\star)^{-1}\n\\mathbf{X}^{\\star T}\\mathbf{y}^\\star\\\\\n&=(\\mathbf{X}^T\\mathbf{U}\\mathbf{D}^{-1/2}\\mathbf{D}^{-1/2}\\mathbf{U}^T\\mathbf{X})^{-1}\n\\mathbf{X}^T\\mathbf{U}\\mathbf{D}^{-1/2}\\mathbf{D}^{-1/2}\\mathbf{U}^T\\mathbf{y}\\\\\n&=(\\mathbf{X}^T\\boldsymbol{\\Sigma}^{-1}\\mathbf{X})^{-1}\n\\mathbf{X}^T\\boldsymbol{\\Sigma}^{-1}\\mathbf{y}\n\\end{aligned}\n\\]\n\nNote that\n\n\\(\\hat{\\boldsymbol{\\beta}}_{\\mathrm{GLS}}\\) is unbiased for \\(\\boldsymbol{\\beta}\\) as long as the mean is correctly specified (e.g., \\(E[\\mathbf{y}] = \\mathbf{X}\\boldsymbol{\\beta}\\))\n\n\n\\[\n\\begin{aligned}\nE[\\hat{\\boldsymbol{\\beta}}_{\\mathrm{GLS}}]\n&=(\\mathbf{X}^T\\boldsymbol{\\Sigma}^{-1}\\mathbf{X})^{-1}\n\\mathbf{X}^T\\boldsymbol{\\Sigma}^{-1}E[\\mathbf{y}]\\\\\n&=(\\mathbf{X}^T\\boldsymbol{\\Sigma}^{-1}\\mathbf{X})^{-1}\n\\mathbf{X}^T\\boldsymbol{\\Sigma}^{-1}\\mathbf{X}\\boldsymbol{\\beta}\\\\\n&=\\boldsymbol{\\beta}\n\\end{aligned}\n\\]\n\nThe covariance is derived by\n\n\\[\n\\begin{aligned}\n\\operatorname{Cov}(\\hat{\\boldsymbol{\\beta}}_{\\mathrm{GLS}})\n&=(\\mathbf{X}^T\\boldsymbol{\\Sigma}^{-1}\\mathbf{X})^{-1}\n\\mathbf{X}^T\\boldsymbol{\\Sigma}^{-1}\n\\operatorname{Cov}(\\mathbf{y})\n\\boldsymbol{\\Sigma}^{-1}\\mathbf{X}\n(\\mathbf{X}^T\\boldsymbol{\\Sigma}^{-1}\\mathbf{X})^{-1}\\\\\n&=(\\mathbf{X}^T\\boldsymbol{\\Sigma}^{-1}\\mathbf{X})^{-1}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "Week10.html#feasible-gls",
+    "href": "Week10.html#feasible-gls",
+    "title": "Random Effects Models",
+    "section": "Feasible GLS",
+    "text": "Feasible GLS\n\nProblem: In practice, \\(\\mathbf{\\Sigma}\\) is not known.\n\nAnd that’s where the paramterized covariance plays a role.\n\nFeasible GLS replaces \\(\\mathbf{\\Sigma}\\) with an estimated \\(\\mathbf{\\Sigma}\\) (\\(\\mathbf{\\hat\\Sigma}\\)) to obtain the coefficient estimate.\n\n\\[\n\\mathbf{\\hat\\beta}_{\\mathrm{FGLS}}=(\\mathbf{X^T\\hat\\Sigma}^{-1}\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{\\hat\\Sigma^{-1}y}\n\\]\n\nProvided that \\(\\mathbf{\\hat\\Sigma}\\) is a consistent estimate of \\(\\mathbf{\\Sigma}\\), appropriate statistical inference can be carried out.\nCould be fitted with gls function in the nlme package for common correlation functions."
+  },
+  {
+    "objectID": "Week10.html#simulations",
+    "href": "Week10.html#simulations",
+    "title": "Random Effects Models",
+    "section": "Simulations",
+    "text": "Simulations\nlibrary(MASS)\nlibrary(nlme)\n\ncov_ar1 = function(n, rho) {\n  # Initialize the matrix\n  cov_mat = matrix(0, n, n)\n  # Fill elements based on AR(1)\n  for (i in 1:n) {\n    for (j in 1:n) {\n      cov_mat[i,j] = rho^abs(i-j)\n    }\n  }\n  return(cov_mat)\n}\n\ngls_ar1 = function(y, x, rho) {\n  n = length(y)\n  X = cbind(1, x)\n  cov_mat = cov_ar1(n, rho)\n  cov_inv = solve(cov_mat)\n  A = solve(t(X) %*% cov_inv %*% X)\n  B = t(X) %*% cov_inv %*% y\n  beta = c(A %*% B)\n  return(beta)\n}\n\ncov = cov_ar1(n = 50, rho = 0.7)\nx = runif(n = 50)\ncoef1 = vector() #gls\ncoef2 = vector() #fgls\ncoef3 = vector() #ls\nfor (sim in 1:1000) {\n  eps = mvrnorm(n = 1, mu = rep(0, 50), Sigma = cov)\n  y = 1 + 2*x + eps\n  coef1[sim] = gls_ar1(y, x, rho = 0.7)[2]\n  coef2[sim] = gls(y ~ x, correlation = corAR1())$coef[2]\n  coef3[sim] = lm(y ~ x)$coef[2]\n}\nc(mean(coef1), mean(coef2), mean(coef3))\nc(var(coef1), var(coef2), var(coef3))"
+  },
+  {
+    "objectID": "Week10.html#random-effects",
+    "href": "Week10.html#random-effects",
+    "title": "Random Effects Models",
+    "section": "Random Effects",
+    "text": "Random Effects\n\nRandom effects play a key role in modeling correlated data. A key distinction between fixed effects and random effects is that\n\nIn fixed effects, parameters are fixed but unknown constant,\n\nin which we use data to estimate them and its variability via standard errors. (analogous to ‘confidence’ intervals).\n\nIn random effects, parameters are random variables.\n\nThat is, we can predict those values (and get ‘prediction’ intervals).\nRandom effects are useful when\n\nInducing correlation structures to the dependent variable.\nIt reflects true nature of study and the results need to be generalized."
+  },
+  {
+    "objectID": "Week10.html#random-effects-1",
+    "href": "Week10.html#random-effects-1",
+    "title": "Random Effects Models",
+    "section": "Random Effects",
+    "text": "Random Effects\nExample 1: One Way Mixed Effects ANOVA\n\nSuppose that a researcher is interested in the natural degree of variation in sodium content across brands of beer. There are hundreds of brands of beer being sold in the U.S., and you only have time to test 8 of them. You select your 8 brands randomly from a list of all brands available, and you test 6 bottles of beer for each brand.\n\n\\[\ny_{ij}=\\mu+\\alpha_i+\\epsilon_{ij}\\qquad\\text{where}\\quad\\epsilon_{ij}\\sim N(0,\\sigma^2)\n\\]\nwhere \\(y_{ij}\\) is the sodium content, \\(i = 1, . . . , 8\\) is the index for beer brands, and \\(j = 1, . . . , 6\\) is the index for beer bottles."
+  },
+  {
+    "objectID": "Week10.html#random-effects-2",
+    "href": "Week10.html#random-effects-2",
+    "title": "Random Effects Models",
+    "section": "Random Effects",
+    "text": "Random Effects\nExample 1: One Way Mixed Effects ANOVA\n\\[\ny_{ij}=\\mu+\\alpha_i+\\epsilon_{ij}\\qquad\\text{where}\\quad\\epsilon_{ij}\\overset{\\mathrm{i.i.d.}}{\\sim}N(0,\\sigma^2)\n\\]\n\nHere, we treat \\(\\alpha_i\\) as random effects: \\(\\alpha_i \\overset{\\mathrm{i.i.d.}}{\\sim} \\mathcal{N}(0, \\tau^2)\\) and assume \\(\\alpha_i\\) and \\(\\epsilon_{ij}\\) are independent.\n\nWhy? we want to generalize our findings to all beer brands.\nIf we treat \\(\\alpha_i\\) as fixed effects (using 7 dummy variables) and test for \\(\\alpha_1, ..., \\alpha_7=0\\), we can only say that among the 8 brands there are at least one brand that has a different sodium levels.\n\nIn random effects settings, we view 8 brands as randomly sampled from the population (all brands), and the unknown population-level effect sizes αi are normally distributed.\n\nRandom effects use \\(H_0: \\tau^2=0\\)to test equality of sodium levels across brands."
+  },
+  {
+    "objectID": "Week10.html#random-effects-3",
+    "href": "Week10.html#random-effects-3",
+    "title": "Random Effects Models",
+    "section": "Random Effects",
+    "text": "Random Effects\nExample 1: One Way Mixed Effects ANOVA\n\nNote that this random effect induces correlations!\n\n\\[\n\\begin{aligned}\\operatorname{Var}(y_{ij})&=\\operatorname{Var}(\\alpha_i+\\epsilon_{ij})=\\operatorname{Var}(\\alpha_i)+\\operatorname{Var}(\\epsilon_{ij})=\\tau^2+\\sigma^2\\\\\\operatorname{Cov}(y_{ij},y_{ik})&=\\operatorname{Cov}(\\alpha_i+\\epsilon_{ij},\\alpha_i+\\epsilon_{ik})\\\\&=\\operatorname{Cov}(\\alpha_i,\\alpha_i)+\\operatorname{Cov}(\\alpha_i,\\epsilon_{ik})+\\operatorname{Cov}(\\epsilon_{ij},\\alpha_i)+\\operatorname{Cov}(\\epsilon_{ij},\\epsilon_{ik})\\\\&=\\operatorname{Var}(\\alpha_i)+0+0+0=\\tau^2\\\\\\operatorname{Cor}(y_{ij},y_{ik})&=\\frac{\\operatorname{Cov}(y_{ij},y_{ik})}{\\sqrt{\\operatorname{Var}(y_{ij})\\operatorname{Var}(y_{ik})}}=\\frac{\\tau^2}{\\tau^2+\\sigma^2}&gt;0\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "Week10.html#random-effects-4",
+    "href": "Week10.html#random-effects-4",
+    "title": "Random Effects Models",
+    "section": "Random Effects",
+    "text": "Random Effects\nExample 1: One Way Mixed Effects ANOVA\n\\[\n\\operatorname{Cov}\n\\begin{pmatrix}\ny_{11}\\\\\ny_{12}\\\\\n\\vdots\\\\\ny_{16}\\\\\ny_{21}\\\\\ny_{22}\\\\\n\\vdots\\\\\ny_{26}\\\\\n\\vdots\\\\\ny_{81}\\\\\ny_{82}\\\\\n\\vdots\\\\\ny_{86}\n\\end{pmatrix}\n=\n\\left[\n\\begin{array}{ccccccccccccc}\n\\tau^2+\\sigma^2 & \\tau^2 & \\cdots & \\tau^2\n& & & & & & & & &\\\\\n\\tau^2 & \\tau^2+\\sigma^2 & \\cdots & \\tau^2\n& & & & & & & & &\\\\\n\\vdots & \\vdots & \\ddots & \\vdots\n& & & & & & & & &\\\\\n\\tau^2 & \\tau^2 & \\cdots & \\tau^2+\\sigma^2\n& & & & & & & & &\\\\\n& & & &\n\\tau^2+\\sigma^2 & \\tau^2 & \\cdots & \\tau^2\n& & & & &\\\\\n& & & &\n\\tau^2 & \\tau^2+\\sigma^2 & \\cdots & \\tau^2\n& & & & &\\\\\n& & & &\n\\vdots & \\vdots & \\ddots & \\vdots\n& & & & &\\\\\n& & & &\n\\tau^2 & \\tau^2 & \\cdots & \\tau^2+\\sigma^2\n& & & & &\\\\\n& & & & & & & & \\ddots & & & &\\\\\n& & & & & & & & &\n\\tau^2+\\sigma^2 & \\tau^2 & \\cdots & \\tau^2\\\\\n& & & & & & & & &\n\\tau^2 & \\tau^2+\\sigma^2 & \\cdots & \\tau^2\\\\\n& & & & & & & & &\n\\vdots & \\vdots & \\ddots & \\vdots\\\\\n& & & & & & & & &\n\\tau^2 & \\tau^2 & \\cdots & \\tau^2+\\sigma^2\n\\end{array}\n\\right]\n\\]\n\nExchangeable correlation structure within each brand\nIndependence across brands"
+  },
+  {
+    "objectID": "Week10.html#random-effects-5",
+    "href": "Week10.html#random-effects-5",
+    "title": "Random Effects Models",
+    "section": "Random Effects",
+    "text": "Random Effects\nExample 2: Heritability\n\nIn genetics, twin study is useful to study heritability\\(^1\\) of a trait (e.g., cholesterol level or alcohol consumption levels)\nSince monozygotic twins share 100% of the genetic information with their co-twin, adopting twin structure is a nice way to separate genetic heritability from the noise.\n\n\n\\(^1\\) that is, how much variability of a phenotype is explained by the genetic factor."
+  },
+  {
+    "objectID": "Week10.html#random-effects-6",
+    "href": "Week10.html#random-effects-6",
+    "title": "Random Effects Models",
+    "section": "Random Effects",
+    "text": "Random Effects\nExample 2: Heritability\n\nSuppose that \\(N\\) twin pairs are recruited in a study and their alcohol consumption levels are obtained. The model would be\n\n\\[\n\\begin{pmatrix}\ny_{i1}\\\\\ny_{i2}\n\\end{pmatrix}\n=\n\\mu+\\alpha_i+\n\\begin{pmatrix}\n\\epsilon_{i1}\\\\\n\\epsilon_{i2}\n\\end{pmatrix}\n\\]\nwhere all \\(\\epsilon_{ij}\\overset{i.i.d.}{\\sim}N(0,\\sigma^2)\\), \\(\\alpha_i\\overset{i.i.d.}{\\sim}N(0,\\tau^2)\\) and \\(\\alpha_i\\), \\(\\epsilon_{ij}\\) are independent.\n\nHere, our central interest is not \\(\\mu\\). Rather, it is \\(\\sigma^2\\) and \\(\\tau^2\\) and see how much variability is explained by “being a twin” (e.g. “genetic factor”).\nThe correlation \\(y\\) between twins in a family would be \\(\\tau^2/(\\tau^2+\\sigma^2)\\)."
+  },
+  {
+    "objectID": "Week10.html#random-effects-7",
+    "href": "Week10.html#random-effects-7",
+    "title": "Random Effects Models",
+    "section": "Random Effects",
+    "text": "Random Effects\nExample 2: Heritability\n\nWhy treating it random?\n\nRandom effects specification can induce correlation within each subject.\nSubjects/groups/items are chosen randomly from the population of interest.\nTo separate the sources of variations and quantify the non-noise variations.\n\nWould it be wrong if I treat random effects as parameters?\n\nWe’re not interested in computing the exact subject-level deviation for all subjects – we’re rather interested in comparing the group-level means.\nIn this case, our generalization may be limited to this set of samples only.\nRandom effects use fewer degrees of freedom than adding n parameters (fixed effects), which would lead to an increased power."
+  },
+  {
+    "objectID": "Week10.html#linear-mixed-models",
+    "href": "Week10.html#linear-mixed-models",
+    "title": "Random Effects Models",
+    "section": "Linear Mixed Models",
+    "text": "Linear Mixed Models\n\nMany models using random effects have a form of “mixed effects”, that is\n\n\\[\ny_{ij}=\\underbrace{\\beta_0+x_{ij}\\beta_1}_{\\text{some fixed effects}}+\\underbrace{b_{0i}}_{\\text{some random effects}}+\\underbrace{\\epsilon_{ij}}_{\\text{noise}}\n\\] - LMM is closely related to the Multilevel models or Hierarchical linear models - Both models have fixed effects and random effects, and these models are more or less the same as LMM. - LMM originated from biological sciences, and HLM/multilevel models originated from social sciences."
+  },
+  {
+    "objectID": "Week10.html#linear-mixed-models-1",
+    "href": "Week10.html#linear-mixed-models-1",
+    "title": "Random Effects Models",
+    "section": "Linear Mixed Models",
+    "text": "Linear Mixed Models\n\nIn general, LMM is reduced to the following matrix form\n\n\\[\n\\mathbf{y=X\\beta+Zb+\\epsilon}\n\\]\nwhere - \\(\\mathbf{\\beta}\\) is a parameter that needs to be estimated. - \\(\\mathbf{b}\\) is a random variable that is assumed to follow a specific distribution. For example,\n\\[\n\\mathbf{b}\\sim\\operatorname{MVN}(0,\\mathbf{\\tau^2I})\n\\]\nIt needs to be predicted after obtaining estimates of variance components. - \\(\\mathbf{\\epsilon}\\) is a noise term, assumed to be independent to each other. For example,\n\\[\n\\mathbf{\\epsilon}\\sim\\operatorname{MVN}(0,\\mathbf{\\sigma^2I})\n\\]\n\nWe assume that \\(\\mathbf{b}\\) and \\(\\mathbf{\\epsilon}\\) are independent."
+  },
+  {
+    "objectID": "Week10.html#linear-mixed-models-2",
+    "href": "Week10.html#linear-mixed-models-2",
+    "title": "Random Effects Models",
+    "section": "Linear Mixed Models",
+    "text": "Linear Mixed Models\n\nIn general, LMM is reduced to the following matrix form\n\n\\[\n\\mathbf{y}=\\mathbf{X\\beta+Zb+\\epsilon}\n\\]\n\nThe random effect \\(\\mathbf{Zb}\\) does not change the expected value of \\(\\mathbf{y}\\).\n\n\\[\nE[\\mathbf{y}]=\\mathbf{X\\beta+Z}E[\\mathbf{b}]+E[\\mathbf{\\epsilon}]=\\mathbf{X\\beta}\n\\]\n\nThe random effect \\(\\mathbf{Zb}\\) induces a structured covariance structure of \\(\\mathbf{y}\\), parametrized by \\(\\tau^2\\) and \\(\\sigma^2\\) .\n\n\\[\n\\underbrace{\\operatorname{Cov}(\\mathbf{y})}_{\\mathbf{\\Sigma}=\\operatorname{Cov}(\\mathbf{Zb+\\epsilon})=\\tau^2\\mathbf{ZZ}^T+\\sigma^2\\mathbf{I}\n\\] ## Linear Mixed Models: Matrix Formulation\n\nFrom the one-way mixed effects ANOVA,\n\n\\[\n\\underbrace{\\begin{pmatrix}y_{1,1}\\\\y_{1,2}\\\\\\vdots\\\\y_{1,6}\\\\y_{2,1}\\\\\\vdots\\\\y_{2,6}\\\\\\vdots\\\\y_{8,1}\\\\\\vdots\\\\y_{8,6}\\end{pmatrix}}_\\mathbf{y}\n=\\underbrace{\\begin{pmatrix}1\\\\1\\\\\\vdots\\\\1\\\\1\\\\\\vdots\\\\1\\\\\\vdots\\\\1\\\\\\vdots\\\\1\\end{pmatrix}}_\\mathbf{X}\\beta_0+\n\\underbrace{\\begin{bmatrix}1&0&\\cdots&0\\\\1&0&\\cdots&0\\\\\\vdots&\\vdots&&\\vdots\\\\1&0&\\cdots&0\\\\0&1&\\cdots&0\\\\\\vdots&\\vdots&&\\vdots\\\\0&1&\\cdots&0\\\\\\vdots&\\vdots&&\\vdots\\\\0&0&\\cdots&1\\\\\\vdots&\\vdots&&\\vdots\\\\0&0&\\cdots&1\\end{bmatrix}}_\\mathbf{Z}\n\\begin{pmatrix}b_1\\\\b_2\\\\\\vdots\\\\b_8\\end{pmatrix}\n+\\underbrace{\\begin{pmatrix}\\epsilon_{1,1}\\\\\\epsilon_{1,2}\\\\\\vdots\\\\\\epsilon_{1,6}\\\\\\epsilon_{2,1}\\\\\\vdots\\\\\\epsilon_{2,6}\\\\\\vdots\\\\\\epsilon_{8,1}\\\\\\vdots\\\\\\epsilon_{8,6}\\end{pmatrix}}_\\mathbf{\\epsilon}\n\\]"
+  },
+  {
+    "objectID": "Week10.html#estimation",
+    "href": "Week10.html#estimation",
+    "title": "Random Effects Models",
+    "section": "Estimation",
+    "text": "Estimation\n\nThe corresponding DGP would be\n\n\\[\n\\mathbf{y}\\sim\\operatorname{MVN}(\\mathbf{X\\beta,\\Sigma})\\quad\\text{where}\\quad\\mathbf{\\Sigma}=\\tau^2\\mathbf{ZZ}^T+\\sigma^2\\mathbf{I}\n\\]\n\nThe corresponding likelihood is\n\n\\[\nL(\\mathbf{\\beta},\\tau^2,\\sigma^2\\mid \\mathbf{y})\\propto\\det(\\mathbf{\\Sigma})^{-1/2}\\exp\\left\\{-\\frac12(\\mathbf{y-X\\beta})^T\\mathbf{\\Sigma}^{-1}(\\mathbf{y-X\\beta})\\right\\}\n\\] which could be maximized with the MLE solution.\n\nHowever, when the likelihood involves multiple variance component terms, a direct optimization is not straightforward and there are many different methods to estimate parameters such as ML/REML with Newton-Raphson, EM, etc."
+  },
+  {
+    "objectID": "Week10.html#restricted-maximum-likelihood-reml",
+    "href": "Week10.html#restricted-maximum-likelihood-reml",
+    "title": "Random Effects Models",
+    "section": "Restricted Maximum Likelihood (REML)",
+    "text": "Restricted Maximum Likelihood (REML)\n\nREML is an estimation method used in linear mixed models to estimate variance components.\nFrom \\(\\mathbf{y} \\sim \\operatorname{MVN}(\\mathbf{X\\beta}, \\mathbf{Σ})\\), we consider the following transformation:\n\n\\[\n\\mathbf{Q=I-X(X^TX)^{-1}X^T}\n\\]\nThis leads to:\n\\[\n\\mathbf{Qy}\\sim\\operatorname{MVN}(\\mathbf{QX\\beta,Q\\Sigma Q})\\quad\\Rightarrow\\quad \\mathbf{Qy}\\sim\\operatorname{MVN}(0,\\tau^2\\mathbf{QZZ^TQ}+\\sigma^2\\mathbf{Q})\n\\]\nThen, under this restricted scenario, only \\(\\tau^2\\) and \\(\\sigma^2\\) could be estimated via likelihood."
+  },
+  {
+    "objectID": "Week10.html#restricted-maximum-likelihood-reml-1",
+    "href": "Week10.html#restricted-maximum-likelihood-reml-1",
+    "title": "Random Effects Models",
+    "section": "Restricted Maximum Likelihood (REML)",
+    "text": "Restricted Maximum Likelihood (REML)\n\nThe Key idea of REML is that REML separates that part of the data used for estimation of variance components from that used for estimation of \\(\\beta\\).\n\nREML is equivalent to using residuals from least squares to estimate variance components.\n\nOnce variance components are estimated from REML, \\(\\beta\\) can be estimated by the FGLS estimator.\nProperties of REML:\n\nThe REML estimator is asymptotically equivalent to MLE when \\(p\\) is fixed and \\(n \\rightarrow \\infty\\)\nThe estimates of \\(\\beta\\) do differ between ML and REML, but not substantially."
+  },
+  {
+    "objectID": "Week10.html#prediction",
+    "href": "Week10.html#prediction",
+    "title": "Random Effects Models",
+    "section": "Prediction",
+    "text": "Prediction\n\nNote that\n\n\\[\n\\begin{pmatrix}\\mathbf{Zb}\\\\\\mathbf{y}\\end{pmatrix}\\sim \\operatorname{MVN}\\left(\\begin{pmatrix}0\\\\\\mathbf{X\\beta}\\end{pmatrix},\\begin{bmatrix}\\tau^2\\mathbf{ZZ}^T&\\tau^2\\mathbf{ZZ}^T\\\\\\tau^2\\mathbf{ZZ}^T&\\tau^2\\mathbf{ZZ}^T+\\sigma^2\\mathbf{I}\\end{bmatrix}\\right)\n\\]\n\n\\(\\mathbf{b}\\) is a random variable and is not a parameter. Thus we cannot estimate it. However, we can predict it with the conditional expectation.\n\n\\[E[\\mathbf{Zb\\mid y}]=(\\tau^2\\mathbf{ZZ}^T)\\mathbf{\\Sigma}^{-1}(\\mathbf{y-X\\beta})\\]\n\nAfter all the parameters are estimated,\n\n\\[\\mathbf{Z\\hat b}=\\widehat E[\\mathbf{Zb\\mid y}]=\\hat\\tau^2\\mathbf{ZZ}^T\\hat{\\mathbf{\\Sigma}}^{-1}(\\mathbf{y-X\\hat\\beta})\\]"
+  },
+  {
+    "objectID": "Week10.html#prediction-1",
+    "href": "Week10.html#prediction-1",
+    "title": "Random Effects Models",
+    "section": "Prediction",
+    "text": "Prediction\n\nIf \\(\\mathbf{\\Sigma}\\) is given and \\(\\mathbf{\\beta}\\) is estimated by GLS,\n\n\\[\n(\\tau^2\\mathbf{ZZ}^T)\\mathbf{\\Sigma}^{-1}(\\mathbf{y-X\\hat\\beta}_{\\mathrm{GLS}})\n\\]\nis called the Best Linear Unbiased prediction (BLUP) of \\(\\mathbf{Zb}\\).\n\nIt is prediction because random effects are not a parameter.\nIt is linear because it is expressed as a linear function of \\(\\mathbf{y}\\).\nIt is (conditionally) unbiased because it was chosen to be \\(E[\\mathbf{Zb̂|}y] =\\mathbf{Zb}\\)b (realization). This unbiasedness in BLUP ensures that we make predictions for random effects that are, on average, accurate.\nIt is best because it minimizes the mean squared error of prediction."
+  },
+  {
+    "objectID": "Week10.html#shrinkage-property",
+    "href": "Week10.html#shrinkage-property",
+    "title": "Random Effects Models",
+    "section": "Shrinkage Property",
+    "text": "Shrinkage Property\n\nThe predicted value for \\(\\mathbf{y}\\) is\n\n\\[\n\\begin{aligned}\n\\mathbf{\\hat{y}} & =\\mathbf{X\\hat\\beta+Z\\hat b}\\\\\n&=\\mathbf{X\\hat\\beta}+\\hat\\tau^2\\mathbf{ZZ}^T\\mathbf{\\hat{\\Sigma}^{-1}(y-X\\hat\\beta})\\\\\n&=\\underbrace{(\\mathbf{I}-\\hat\\tau^2\\mathbf{ZZ}^T\\mathbf{\\hat{\\Sigma}}^{-1})}_{\\text{weight 1}}\\mathbf{X\\hat\\beta}+\\underbrace{\\hat\\tau^2\\mathbf{ZZ}^T\\mathbf{\\hat\\Sigma}^{-1}}_{\\text{weight 2}}\\mathbf{y}\n\\end{aligned}\n\\]\n\nA few observations:\n\nThe predicted value of chick’s weight is the weighted mean of estimated population level mean (\\(\\mathbf{X\\hat\\beta}\\)) and the observed data \\(\\mathbf{y}\\).\nits prediction shrinks the response towards the population level mean.\nThe “amount” of shrinkage depends on the relative weight of \\(\\tau^2\\) and \\(\\sigma^2\\)."
+  },
+  {
+    "objectID": "Week10.html#linear-mixed-models-from-a-bayesian-perspective",
+    "href": "Week10.html#linear-mixed-models-from-a-bayesian-perspective",
+    "title": "Random Effects Models",
+    "section": "Linear Mixed Models from a Bayesian Perspective",
+    "text": "Linear Mixed Models from a Bayesian Perspective\n\\[\n\\mathbf{y=X\\beta+Zb+\\epsilon}\n\\]\nwhere\n\\[\nb_1,\\ldots,b_n\\overset{\\mathrm{i.i.d.}}{\\sim}N(0,\\tau^2),\\quad\\epsilon_{ij}\\sim N(0,\\sigma^2)\\quad\\text{and }b\\text{s and }\\epsilon\\text{s are independent}\n\\]\n\nRandom effects = setting a normal prior on the random effects!\n\nIn frequentist approaches, the variance components are ‘estimated’ by maximizing a form of ‘likelihood’\nThe \\(\\mathbf{\\hat b}\\) is obtained by using the posterior mean.\nThe degree of \\(\\tau^2\\) (relative to \\(\\sigma^2\\) ) determines how much to shrink toward the population mean.\nOne can specify \\(\\tau^2\\) directly (if there is a reasonable belief), or specify additional prior (hyperprior) on \\(\\tau^2\\) (to let model choose the ‘optimal’ value)."
+  },
+  {
+    "objectID": "Week10.html#types-of-hypothesis-in-linear-mixed-models",
+    "href": "Week10.html#types-of-hypothesis-in-linear-mixed-models",
+    "title": "Random Effects Models",
+    "section": "Types of Hypothesis in Linear Mixed Models",
+    "text": "Types of Hypothesis in Linear Mixed Models\n\nFixed effects: formulated as a linear hypothesis of \\(\\mathbf{\\beta}\\)\n\n\\[\nH_0:\\mathbf{A\\beta=c}\\qquad\\text{versus}\\qquad H_1:\\mathbf{A\\beta\\ne c}\n\\]\n\nVariance component:\n\n\\[\nH_0:\\tau^2=0\\qquad\\text{versus}\\qquad H_1:\\tau^2&gt;0\n\\]"
+  },
+  {
+    "objectID": "Week10.html#inference-for-fixed-effects",
+    "href": "Week10.html#inference-for-fixed-effects",
+    "title": "Random Effects Models",
+    "section": "Inference for Fixed Effects",
+    "text": "Inference for Fixed Effects\n1. Likelihood Ratio Test\n\nWhen parameters are estimated by the maximum likelihood (not REML), the LRT statistic could be derived as\n\n\\[\nT_{\\mathrm{LRT}}=-2\\left(\\log L(\\hat\\Theta_{\\mathrm{null}})-\\log L(\\hat\\Theta_{\\mathrm{full}})\\right)\n\\]\nwhere \\(\\Theta\\) is the parameter set. \\(T_{LRT}\\) follows \\(\\chi_{\\text{rank}(\\mathbf{A})}\\) distribution asymptotically when \\(H_0\\) is true.\n\nImplementation: Could use the logLik() function.\nLRT test tends to be anticonservative."
+  },
+  {
+    "objectID": "Week10.html#inference-for-fixed-effects-1",
+    "href": "Week10.html#inference-for-fixed-effects-1",
+    "title": "Random Effects Models",
+    "section": "Inference for Fixed Effects",
+    "text": "Inference for Fixed Effects\n2. Wald Test\n\nFrom likelihood theories, we have the Wald test statistic given by\n\n\\[\nT_{\\mathrm{Wald}}=(\\mathbf{A\\hat\\beta-c})^T\\left\\{\\underbrace{\\mathbf{A(X^T\\hat\\Sigma^{-1}X)^{-1}A}^T}_{\\equiv\\widehat{\\operatorname{aCov}}(\\mathbf{A\\hat\\beta})}\\right\\}^{-1}(\\mathbf{A\\hat\\beta-c})\\sim\\chi^2_{\\operatorname{rank}(\\mathbf{A})}\n\\]\nwhen \\(H_0\\) is true.\n\n\\(\\hat\\beta\\) could be obtained directly, and \\(\\widehat{\\operatorname{aCov}}(\\hat\\beta)\\) is obtained by vcov(fit).\nWald test tends to be anti-conservative"
+  },
+  {
+    "objectID": "Week10.html#inference-for-fixed-effects-2",
+    "href": "Week10.html#inference-for-fixed-effects-2",
+    "title": "Random Effects Models",
+    "section": "Inference for Fixed Effects",
+    "text": "Inference for Fixed Effects\n3. (Approximated) \\(F\\) Test (RECOMMENDED) - The approximated F statistic is\n\\[F=\\frac{(\\mathbf{A\\hat\\beta-c})^T\\left\\{\\mathbf{A(X^T\\hat\\Sigma^{-1}X})^{-1}\\mathbf{A}^T\\right\\}^{-1}(\\mathbf{A\\hat\\beta-c})}{\\operatorname{rank}(\\mathbf{A})}\\]\nwhich follows a \\(F\\) distribution with numerator degrees of freedom \\(\\operatorname{rank}(\\mathbf{A})\\) and denominator degrees of freedom estimated from the data.\n\nseveral methods are available for estimating the appropriate number of degrees of freedom, such as the Satterthwaite-type approximation (used in R)\nImplementation made in anova(fit) from the lmerTest package."
+  },
+  {
+    "objectID": "Week10.html#inference-for-variance-component",
+    "href": "Week10.html#inference-for-variance-component",
+    "title": "Random Effects Models",
+    "section": "Inference for Variance Component",
+    "text": "Inference for Variance Component\n\nIn theory, Wald test could be constructed by applying the properties of MLE.\n\n\\[T_{\\mathrm{Wald}}=\\frac{\\hat\\tau^4}{\\widehat{\\operatorname{aVar}}(\\hat\\tau^2)}\\]\nwhere \\(\\widehat{\\operatorname{aVar}}(\\hat\\tau^2)\\) is obtained from the Fisher information. - In practice, this is tricky because variance components are boundary parameters (they cannot be negative)."
+  },
+  {
+    "objectID": "Week10.html#inference-for-variance-component-1",
+    "href": "Week10.html#inference-for-variance-component-1",
+    "title": "Random Effects Models",
+    "section": "Inference for Variance Component",
+    "text": "Inference for Variance Component\n\nA more common approach is the likelihood ratio test, which could be obtained from the logLik function.\n\n\\[\nT_{\\mathrm{LRT}}=-2\\left(\\log L(\\hat\\Theta_{\\mathrm{null}})-\\log L(\\hat\\Theta_{\\mathrm{full}})\\right)\n\\]\n\nHowever, because of the boundary problem, the corresponding null distribution in this case is not \\(\\chi^2_{df=1}\\) but it is a mixture \\(\\chi^2\\) distribution.\n\nIn case of one variance component only in the full model, the null distribution of \\(T_{LRT}\\) would be \\(0.5\\chi^2_{df=0} + 0.5\\chi^2_{df=1}\\), where \\(\\chi^2_{df=1}\\) is a point mass concentrated at 0.\nIn case there are two variance components in the full model, the null distribution of \\(T_{LRT}\\) is\n\n\n\\[\n0.5\\chi^2_{df=1}+0.5\\chi^2_{df=2}\n\\]"
+  },
+  {
+    "objectID": "Week10.html#simulation-in-r",
+    "href": "Week10.html#simulation-in-r",
+    "title": "Random Effects Models",
+    "section": "Simulation in R",
+    "text": "Simulation in R\nn_groups = 50                                  # Number of groups\nn_per_group = 5                                # Observations per group\nn_obs = n_groups * n_per_group\ngroup = rep(1:n_groups, each = n_per_group)    # Group index\ngroup = as.factor(group)\nx = rnorm(n_obs)                               # Covariate\nTstat=vector()\n\nlibrary(lme4)\nfor (sim in 1:10000){\n  eps = rnorm(n_obs)\n  y = 5 + 3 * x + eps\n  data = data.frame(y = y, x = x, group = group)\n  full_model = lmer(y ~ x + (1 | group), data = data, REML=F)\n  null_model = lm(y ~ x , data = data)\n  Tstat[sim] = -2*(logLik(null_model)-logLik(full_model))\n}"
+  },
+  {
+    "objectID": "Week10.html#simulation-in-r-1",
+    "href": "Week10.html#simulation-in-r-1",
+    "title": "Random Effects Models",
+    "section": "Simulation in R",
+    "text": "Simulation in R\n\n\n\n\n\n\nIn this example, the \\(\\chi^2_{df=1}\\) (right) is not a valid null distribution.\nIf we include \\(T_{LRT} &gt; 0\\) only (left), the distribution \\(\\approx \\chi^2_{df=1}\\) , supporting the \\(0.5\\chi^2_{df=0} + 0.5\\chi^2_{df=1}\\) as the null distribution of \\(T_{LRT}\\)."
+  },
+  {
+    "objectID": "Week10.html#random-intercept-model",
+    "href": "Week10.html#random-intercept-model",
+    "title": "Random Effects Models",
+    "section": "Random Intercept Model",
+    "text": "Random Intercept Model\n\nIf we focus on chicks with Diet 3 in the Chick Weight study, the random intercept model considers\n\n\\[\ny_{ij}=\\beta_0+t_{ij}\\beta_1+b_i+\\epsilon_{ij}\n\\]\n\nUnder the random intercept model,\n\nThe average baseline weight is \\(\\beta_0\\)\nThe average growth rate is \\(\\beta_1\\)\nbi captures the deviation of Chick i’s weight from the group average at birth.\nConditioned on \\(b_i\\) , the fitted growth model for Chick \\(i\\) would be\n\n\n\\[\ny_{ij}\\mid b_i=(\\beta_0+b_i)+t_{ij}\\beta_1\n\\]"
+  },
+  {
+    "objectID": "Week10.html#random-intercept-model-1",
+    "href": "Week10.html#random-intercept-model-1",
+    "title": "Random Effects Models",
+    "section": "Random Intercept Model",
+    "text": "Random Intercept Model\n\n\n\n\n\n\nDoes a random intercept model a reasonable model?"
+  },
+  {
+    "objectID": "Week10.html#random-intercept-slope-model",
+    "href": "Week10.html#random-intercept-slope-model",
+    "title": "Random Effects Models",
+    "section": "Random Intercept + Slope Model",
+    "text": "Random Intercept + Slope Model\n\nIf we focus on chicks with Diet 3 in the Chick Weight study, the random intercept+slope model considers\n\n\\[\ny_{ij}=\\beta_0+t_{ij}\\beta_1+b_{0i}+t_{ij}b_{1i}+\\epsilon_{ij}\n\\]\nthere are two random effects. - Under the random intercept+slope model,\n\nThe average baseline weight is \\(\\beta_0\\) (unchanged)\nThe average growth rate is \\(\\beta_1\\) (unchanged)\n\\(b_{0i}\\) captures the deviation of Chick \\(i\\)’s weight from the group average at birth.\n\\(b_{1i}\\) captures the deviation of Chick i’s growth rate from the group-level growth rate.\nConditioned on \\(b_{0i}, b_{1i}\\), the fitted growth model for Chick \\(i\\) would be\n\n\\[\ny_{ij}\\mid b_{0i},b_{1i}=(\\beta_0+b_{0i})+t_{ij}(\\beta_1+b_{1i})\n\\]"
+  },
+  {
+    "objectID": "Week10.html#random-intercept-slope-model-1",
+    "href": "Week10.html#random-intercept-slope-model-1",
+    "title": "Random Effects Models",
+    "section": "Random Intercept + Slope Model",
+    "text": "Random Intercept + Slope Model\n\n\n\n\n\n\nMore reasonable?"
+  },
+  {
+    "objectID": "Week10.html#fitting-lmms-in-r",
+    "href": "Week10.html#fitting-lmms-in-r",
+    "title": "Random Effects Models",
+    "section": "Fitting LMMs in R",
+    "text": "Fitting LMMs in R\n\n\n\nWhen subjects are measured more than once, there are two ways to display the data.\nWide Format: Consider the dataset to the right, which consists of Exam 1 and Exam 2 scores of three randomly selected students.\nLong Format: Below, you can see the same dataset in long format, where the students show up twice.\n\n\n\n\n\n\n\n\n\nIn R, we make sure the dataset is organized in the long format"
+  },
+  {
+    "objectID": "Week10.html#fitting-lmms-in-r-1",
+    "href": "Week10.html#fitting-lmms-in-r-1",
+    "title": "Random Effects Models",
+    "section": "Fitting LMMs in R",
+    "text": "Fitting LMMs in R\n\nFitting linear mixed models can be done by using lme4 package in R.\n\nlibrary(lme4)\n\nLet’s use our chick weight example again, with a particular focus on Diet 3.\n\ndata(ChickWeight)\nChick3=ChickWeight[ChickWeight$Diet==3,]\nhead(Chick3)"
+  },
+  {
+    "objectID": "Week10.html#fitting-lmms-in-r-2",
+    "href": "Week10.html#fitting-lmms-in-r-2",
+    "title": "Random Effects Models",
+    "section": "Fitting LMMs in R",
+    "text": "Fitting LMMs in R\n\n\nInterpretations:\n\nThe estimated \\(\\tau^2\\) and \\(\\sigma^2\\) are 674.8 and 943.5, respectively\n\\(\\hat{\\beta_0} = 18.25\\) with \\(\\operatorname{Var}(\\hat{\\beta_0}) = 9.63^2\\)\n\\(\\hat{\\beta_1} = 11.42\\) with \\(\\operatorname{Var}(\\hat{\\beta_0}) = 0.39^2\\)\n\\(t\\) statistics can be used to test \\(H_0 : \\beta = 0\\) against \\(H_1 : \\beta \\neq 0\\)\n\n\n\nlibrary(lmer) \n\n# random intercept only model \n\nfit &lt;- lmer(weight~Time + (1|Chick), \n            data=Chick3)\n\nsummary(fit)"
+  },
+  {
+    "objectID": "Week10.html#fitting-lmms-in-r-3",
+    "href": "Week10.html#fitting-lmms-in-r-3",
+    "title": "Random Effects Models",
+    "section": "Fitting LMMs in R",
+    "text": "Fitting LMMs in R\n\nThe lme4 package itself does not provide a \\(p\\)-value. It is because there are different methods in estimating linear mixed models and computing the distribution of the parameter estimates.\nHowever, you can load lmerTest package, re-run the model, and produce the summary output with p values.\n\nlibrary(lmerTest)\n\nfit &lt;- lmer(weight~Time + (1|Chick), \n            data=Chick3)\n\nsummary(fit)"
+  },
+  {
+    "objectID": "Week10.html#fitting-lmms-in-r-4",
+    "href": "Week10.html#fitting-lmms-in-r-4",
+    "title": "Random Effects Models",
+    "section": "Fitting LMMs in R",
+    "text": "Fitting LMMs in R\n\n\nInterpretations:\n\nThe estimated group-level average growth is \\(18.25 + 11.42 \\times \\text{weeks}\\)\nThere is significant evidence that there is a time effect on the weight\nFor Chick #33, the predicted growth is \\((18.25 + 15.11) + (11.42 - 4.75) \\times \\text{weeks}\\)\n\n\nlibrary(lmerTest)\n\nfit=lmer(weight~Time+(1+Time|Chick), data=Chick3) #Random intercept plus slope.\n\ncoef(summary(fit))\n\nranef(fit2)"
+  },
+  {
+    "objectID": "Week10.html#case-study-1-comparison-to-linear-model-fits",
+    "href": "Week10.html#case-study-1-comparison-to-linear-model-fits",
+    "title": "Random Effects Models",
+    "section": "Case Study 1: Comparison to Linear Model Fits",
+    "text": "Case Study 1: Comparison to Linear Model Fits\n\nApproach 1: Linear mixed models – random intercept\nApproach 2: We let every chick to have different intercepts by using fixed effects only (using 7 dummy variables \\(z_{ik}\\) , \\(k = 1, . . . , 7\\))\n\n\\[\ny_i=\\beta_0+t_{ij}\\beta_1+\\sum_{k=1}^7z_{ik}b_k+\\epsilon_{ij}\n\\]\n\nApproach 3: Linear mixed models – random intercept + slope\nApproach 4: We let every chick to have different intercepts and slopes by using fixed effects only (using dummy variables)\n\n\\[\ny_i=\\beta_0+t_{ij}\\beta_1+b_{0k}+\\sum_{k=1}^7(t_{ij}z_{ik})b_{1k}+\\epsilon_{ij}\n\\]"
+  },
+  {
+    "objectID": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups",
+    "href": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups",
+    "title": "Random Effects Models",
+    "section": "Case Study 2: Comparing Growth Rates Across Diet Groups",
+    "text": "Case Study 2: Comparing Growth Rates Across Diet Groups\n\nIf we model groups 1-4 simultaneously, then we need three indicator (i.e., dummy) variables.\n\n\\(z_{i1}=1\\) if subject \\(i\\) is assigned to group 1, 0 otherwise\n\\(z_{i2}=1\\) if subject \\(i\\) is assigned to group 2, 0 otherwise\n\\(z_{i3}=1\\) if subject \\(i\\) is assigned to group 3, 0 otherwise\n\nAnd\n\n\\[\ny_{ij}=\\beta_0+t_{ij}\\beta_1+\\underbrace{z_{i1}\\alpha_1+z_{i2}\\alpha_2+z_{i3}\\alpha_3}_{\\text{heterogeneous diet group-specific intercept}}+\\underbrace{(t_{ij}z_{i1})\\gamma_1+(t_{ij}z_{i2})\\gamma_2+(t_{ij}z_{i3})\\gamma_3}_{\\text{heterogeneous diet group-specific slope}}+\\underbrace{\\epsilon_{ij}}_{\\text{noise}}\n\\]"
+  },
+  {
+    "objectID": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups-1",
+    "href": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups-1",
+    "title": "Random Effects Models",
+    "section": "Case Study 2: Comparing Growth Rates Across Diet Groups",
+    "text": "Case Study 2: Comparing Growth Rates Across Diet Groups\n\nOur null hypothesis is \\(H_0 : \\gamma_1 = \\gamma_2 = \\gamma_3 = 0\\).\nThe intercept + slope model provides \\(p\\) value of 0.002127.\n\nlibrary(lmerTest)\n\nfit=lmer(weight~Time*Diet+(1+Time|Chick), data=ChickWeight)\n\nanova(fit)"
+  },
+  {
+    "objectID": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups-2",
+    "href": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups-2",
+    "title": "Random Effects Models",
+    "section": "Case Study 2: Comparing Growth Rates Across Diet Groups",
+    "text": "Case Study 2: Comparing Growth Rates Across Diet Groups\n\nOur null hypothesis is \\(H_0 : \\gamma_1 = \\gamma_2 = \\gamma_3 = 0\\).\nComparing it to the linear model without considering any correlation, the \\(p\\) value is smaller.\n\n\nfit.lm=lm(weight~Time*Diet, data=ChickWeight)\n\nanova(fit.lm)"
+  },
+  {
+    "objectID": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups-3",
+    "href": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups-3",
+    "title": "Random Effects Models",
+    "section": "Case Study 2: Comparing Growth Rates Across Diet Groups",
+    "text": "Case Study 2: Comparing Growth Rates Across Diet Groups\n\nDoes the previous result suggest that linear mixed model is bad?\nIt is possible that some of them could be prone to inflated Type 1 error rate.\nTherefore, we could generate the ‘null data’ and see how frequently p values are less than 0.05\nIn case study 2, the null data could be generated by shuffling the group labels."
+  },
+  {
+    "objectID": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups-4",
+    "href": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups-4",
+    "title": "Random Effects Models",
+    "section": "Case Study 2: Comparing Growth Rates Across Diet Groups",
+    "text": "Case Study 2: Comparing Growth Rates Across Diet Groups"
+  },
+  {
+    "objectID": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups-5",
+    "href": "Week10.html#case-study-2-comparing-growth-rates-across-diet-groups-5",
+    "title": "Random Effects Models",
+    "section": "Case Study 2: Comparing Growth Rates Across Diet Groups",
+    "text": "Case Study 2: Comparing Growth Rates Across Diet Groups\n\nComparing three models:\n\nLinear regression\nLMM (random intercept)\nLMM (random intercept+slope)\n\nRepeating evaluating \\(p\\) values 10000 times under the null, the empirical Type 1 error rates were\n\n0.657 for Linear regression\n0.835 for LMM (random intercept)\n0.057 for LMM (random intercept+slope)\n\nThis empirical investigation suggests the importance of using the correct model that best meet the underlying DGP."
+  },
+  {
+    "objectID": "Week10.html#random-effects-modeling-of-linear-regression-1",
+    "href": "Week10.html#random-effects-modeling-of-linear-regression-1",
+    "title": "Random Effects Models",
+    "section": "Random effects modeling of linear regression",
+    "text": "Random effects modeling of linear regression\n\nIn ‘classical approach’, the linear regression is carried out by assuming that\n\n\\[\n\\mathbf{y=X\\beta+\\epsilon}\\quad\\text{where}\\quad\\epsilon\\sim\\operatorname{MVN}(\\mathbf{0},\\sigma^2\\mathbf{I})\n\\]\n\nAssume, for simplicity, that all \\(\\mathbf{y}\\) as well as each covariate are standardized to have zero mean and a unit variance.\nBased on this model, it was equivalent to saying that\n\n\\[\nE[\\mathbf{y}]=\\mathbf{X\\beta}\\qquad\\text{and}\\qquad\\operatorname{Cov}(\\mathbf{y})=\\sigma^2\\mathbf{I}\n\\]\nwhere \\(\\mathbf{\\beta}\\) is viewed as parameters to be estimated. Testing for\n\\[\nH_0:\\beta_1=\\cdots=\\beta_p=0\n\\]\ncan be done using the \\(F\\) test."
+  },
+  {
+    "objectID": "Week10.html#random-effects-modeling-of-linear-regression-2",
+    "href": "Week10.html#random-effects-modeling-of-linear-regression-2",
+    "title": "Random Effects Models",
+    "section": "Random effects modeling of linear regression",
+    "text": "Random effects modeling of linear regression\n\nIn ‘random effects’ approach, we can view \\(\\mathbf{\\beta}\\) as random effects by assuming that\n\n\\[\n\\beta_1,\\ldots,\\beta_p\\overset{\\mathrm{i.i.d.}}{\\sim}N(0,\\tau^2)\\quad\\Rightarrow\\quad\\mathbf{\\beta}\\sim\\operatorname{MVN}(\\mathbf{0},\\tau^2\\mathbf{I})\n\\]\nso that, in principle, testing for \\(H_0 : \\beta_1 = ... = \\beta_p = 0\\) in fixed effects approach is equivalent to testing \\(H_0 : \\tau^2 = 0\\) in random effects models.\n\nThe model formulation is now different:\n\n\\[\n\\begin{aligned}E[\\mathbf{y}]&=\\mathbf{0}\\\\\\operatorname{Cov}(\\mathbf{y})&=\\operatorname{Cov}(\\mathbf{X\\beta}+\\sigma^2\\mathbf{I})=\\mathbf{X}(\\tau^2\\mathbf{I})\\mathbf{X}^T+\\sigma^2\\mathbf{I}=\\tau^2\\mathbf{XX}^T+\\sigma^2\\mathbf{I}\\end{aligned}\n\\]\nwhich gives \\(\\mathbf{y} \\sim \\operatorname{MVN}(\\mathbf{0}, \\tau^2\\mathbf{XX}^T + \\sigma^2\\mathbf{I})\\) as your DGP."
+  },
+  {
+    "objectID": "Week10.html#random-effects-modeling-of-linear-regression-3",
+    "href": "Week10.html#random-effects-modeling-of-linear-regression-3",
+    "title": "Random Effects Models",
+    "section": "Random effects modeling of linear regression",
+    "text": "Random effects modeling of linear regression\n\\[\\mathbf{y}\\sim\\operatorname{MVN}(\\mathbf{0,\\Sigma})\\qquad\\text{where}\\qquad\\mathbf{\\Sigma}\\equiv\\tau^2\\mathbf{XX}^T+\\sigma^2\\mathbf{I}\\]\n\nRecall that your parameters are \\(\\tau^2,\\sigma^2\\) in this case and you can predict \\(\\beta_1,\\ldots,\\beta_p\\) using the best linear unbiased predictions.\n\n\\[\n\\begin{aligned}\n\\hat{\\mathbf{\\beta}}_{\\mathrm{random}}&=\\hat\\tau^2\\mathbf{X}^T(\\hat\\tau^2\\mathbf{XX}^T+\\hat\\sigma^2\\mathbf{I})^{-1}\\mathbf{y}\\\\\n&=\\frac{\\hat\\tau^2}{\\hat\\sigma^2}\\mathbf{X}^T\\left(\\frac{\\hat\\tau^2}{\\hat\\sigma^2}\\mathbf{XX}^T+\\mathbf{I}\\right)^{-1}\\mathbf{y}\\\\\n&=\\left(\\mathbf{X^TX}+\\frac{\\hat\\sigma^2}{\\hat\\tau^2}\\mathbf{I}\\right)^{-1}\\mathbf{X^Ty}\n\\end{aligned}\n\\]\nFor the last equality, I used the fact that \\(\\mathbf{A(I+BA)^{-1}=(I+AB)^{-1}A}\\)\n\nLook familiar?"
+  },
+  {
+    "objectID": "Week10.html#random-effects-modeling-of-linear-regression-4",
+    "href": "Week10.html#random-effects-modeling-of-linear-regression-4",
+    "title": "Random Effects Models",
+    "section": "Random effects modeling of linear regression",
+    "text": "Random effects modeling of linear regression\n\\[\\hat{\\mathbf{\\beta}}_{\\mathrm{random}}=\\left(\\mathbf{X^TX}+\\frac{\\hat\\sigma^2}{\\hat\\tau^2}\\mathbf{I}\\right)^{-1}\\mathbf{X^Ty}\\]\n\nIt is just a form of the Bayesian linear regression!\n\nIt is not too surprising, because, viewing \\(\\beta\\)s as random effects \\(\\beta_1,\\ldots,\\beta_p\\overset{\\mathrm{i.i.d.}}{\\sim}N(0,\\tau^2)\\) is just equivalent to imposing a normal prior.\nCompared to the Bayesian view, the random effects modeling of linear regression estimates \\(\\tau^2\\) explicitly using a likelihood approach.\n\nThe ratio of \\(\\tau^2\\) to \\(\\sigma^2\\) was an important factor in the performance of the random effect approach.\n\nIf \\(\\tau^2\\) was very small (so that most \\(\\beta\\)s were close to 0, then random effects were useful.\nIf \\(\\tau^2\\) was large, linear regression performed better."
+  },
+  {
+    "objectID": "Week10.html#random-effects-modeling-of-linear-regression-5",
+    "href": "Week10.html#random-effects-modeling-of-linear-regression-5",
+    "title": "Random Effects Models",
+    "section": "Random effects modeling of linear regression",
+    "text": "Random effects modeling of linear regression\n\nThere is no well-defined R package that implements such approach. However, it can be implemented manually:\n\nlibrary(nlme)\nrandom_lm = function(y,X){\n    n=length(y); all=rep(1,n)\n    #Fit random effects model without an intercept\n    model = lme(y~-1, random=list(all=pdIdent(~X-1)))\n    #Get BLUP of beta.\n    beta.hat = as.numeric(model$coefficients$random$all)\n    return(beta.hat)\n}"
+  },
+  {
+    "objectID": "Week10.html#summary",
+    "href": "Week10.html#summary",
+    "title": "Random Effects Models",
+    "section": "Summary",
+    "text": "Summary"
   }
 ]
