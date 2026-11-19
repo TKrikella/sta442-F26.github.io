@@ -28,7 +28,7 @@ I hope this course helps you develop the confidence to work with data independen
 | Test | Date | Information |
 |:----------:|:--------:|:--------:|
 | Midterm | October 23rd, 2pm -- 4pm | [Information + Practice](Midterm_Information.pdf) |
-| Final | TBD | |
+| Final | December 10th, 2pm -- 4pm | [Past Final](STA442-PastFinal.pdf) |
 :::
 
 ## Announcements
