@@ -312,7 +312,7 @@ fit = gam(wage ~ s(age, 5) + s(year, 4) + education, data = Wage)
 
 ## Generalized Additive Models
 
-### Some comments
+**Some comments**
 
 - We do not need to manually try out many different transformations on each variable individually.
 - Adding higher order terms or spline basis without any penalization would lead to a very large number of parameters ($\approx$ low degrees of freedom).
@@ -322,7 +322,7 @@ fit = gam(wage ~ s(age, 5) + s(year, 4) + education, data = Wage)
   - It is still possible to consider a spline expansion to an interaction term between two variables. But what if we have large $p$ and consider all pairwise interactions?
 
 
-## Summary: Penalized Splines and GAMs
+## Summary
 
 - **Polynomial regression** allows nonlinear relationships by introducing higher-order terms, but high-degree polynomials can lead to overfitting.
 
