@@ -2728,5 +2728,516 @@
     "title": "Random Effects Models",
     "section": "Linear Mixed Models: Matrix Formulation",
     "text": "Linear Mixed Models: Matrix Formulation\n\nFrom the one-way mixed effects ANOVA,\n\n\\[\n\\underbrace{\\begin{pmatrix}y_{1,1}\\\\y_{1,2}\\\\\\vdots\\\\y_{1,6}\\\\y_{2,1}\\\\\\vdots\\\\y_{2,6}\\\\\\vdots\\\\y_{8,1}\\\\\\vdots\\\\y_{8,6}\\end{pmatrix}}_\\mathbf{y}\n=\\underbrace{\\begin{pmatrix}1\\\\1\\\\\\vdots\\\\1\\\\1\\\\\\vdots\\\\1\\\\\\vdots\\\\1\\\\\\vdots\\\\1\\end{pmatrix}}_\\mathbf{X}\\beta_0+\n\\underbrace{\\begin{bmatrix}1&0&\\cdots&0\\\\1&0&\\cdots&0\\\\\\vdots&\\vdots&&\\vdots\\\\1&0&\\cdots&0\\\\0&1&\\cdots&0\\\\\\vdots&\\vdots&&\\vdots\\\\0&1&\\cdots&0\\\\\\vdots&\\vdots&&\\vdots\\\\0&0&\\cdots&1\\\\\\vdots&\\vdots&&\\vdots\\\\0&0&\\cdots&1\\end{bmatrix}}_\\mathbf{Z}\n\\begin{pmatrix}b_1\\\\b_2\\\\\\vdots\\\\b_8\\end{pmatrix}\n+\\underbrace{\\begin{pmatrix}\\epsilon_{1,1}\\\\\\epsilon_{1,2}\\\\\\vdots\\\\\\epsilon_{1,6}\\\\\\epsilon_{2,1}\\\\\\vdots\\\\\\epsilon_{2,6}\\\\\\vdots\\\\\\epsilon_{8,1}\\\\\\vdots\\\\\\epsilon_{8,6}\\end{pmatrix}}_\\mathbf{\\epsilon}\n\\]"
+  },
+  {
+    "objectID": "Week11.html#case-study",
+    "href": "Week11.html#case-study",
+    "title": "Penalized Regression",
+    "section": "Case Study",
+    "text": "Case Study\nA researcher investigates whether a new treatment reduces depression symptoms over time.\n\n100 patients are followed at baseline and months 1, 3, 6, and 12.\nHalf receive the new treatment; half receive standard care.\nThe response is a continuous depression symptom score, where higher scores indicate more severe symptoms.\n\nQuestion 1: Exploratory Analysis\n\nWhy might ordinary linear regression be inappropriate for these data?\nWhat exploratory plots would you produce before fitting a model?\nWhat features of these plots might suggest the need for random intercepts and/or random slopes?"
+  },
+  {
+    "objectID": "Week11.html#case-study-1",
+    "href": "Week11.html#case-study-1",
+    "title": "Penalized Regression",
+    "section": "Case Study",
+    "text": "Case Study\nQuestion 2: Model Specification\nConsider the following models, where \\(t_{ij}\\) represents time and \\(T_i\\) indicates treatment assignment.\nModel 1: Ordinary Linear Regression\n\\[\nY_{ij}=\\beta_0+\\beta_1t_{ij}+\\beta_2T_i+\\beta_3t_{ij}T_i+\\epsilon_{ij}\n\\]\nModel 2: Random Intercept\n\\[\nY_{ij}=\\beta_0+\\beta_1t_{ij}+\\beta_2T_i+\\beta_3t_{ij}T_i+b_{0i}+\\epsilon_{ij}\n\\]\nModel 3: Random Intercept and Slope\n\\[\nY_{ij}=\\beta_0+\\beta_1t_{ij}+\\beta_2T_i+\\beta_3t_{ij}T_i+b_{0i}+b_{1i}t_{ij}+\\epsilon_{ij}\n\\]\n\nWhat is the difference between Models 2 and 3?\nHow would you determine which model is most appropriate?"
+  },
+  {
+    "objectID": "Week11.html#case-study-2",
+    "href": "Week11.html#case-study-2",
+    "title": "Penalized Regression",
+    "section": "Case Study",
+    "text": "Case Study\nQuestion 3: Model Selection and Interpretation\nSuppose Models 2 and 3 are fitted using maximum likelihood, giving:\n\n\n\nModel\nAIC\n\n\n\n\n\nModel 2: Random Intercept\n1840\n\n\n\nModel 3: Random Intercept + Slope\n1795\n\n\n\n\n\nWhich model would you prefer based on these results? Explain.\nWhat additional considerations are important before making your final decision?\nSuppose the estimated treatment-by-time interaction is negative. How would you interpret this coefficient?"
+  },
+  {
+    "objectID": "Week11.html#table-of-contents",
+    "href": "Week11.html#table-of-contents",
+    "title": "Penalized Regression",
+    "section": "Table of Contents",
+    "text": "Table of Contents\n\nBias-variance tradeoff\nPenalized regression\nExtensions\nChoosing tuning parameters"
+  },
+  {
+    "objectID": "Week11.html#one-page-review",
+    "href": "Week11.html#one-page-review",
+    "title": "Penalized Regression",
+    "section": "One-Page Review",
+    "text": "One-Page Review"
+  },
+  {
+    "objectID": "Week11.html#recap-bias-of-an-estimator",
+    "href": "Week11.html#recap-bias-of-an-estimator",
+    "title": "Penalized Regression",
+    "section": "Recap: Bias of an Estimator",
+    "text": "Recap: Bias of an Estimator\n\nSuppose that we have an estimator of a parameter, say \\(\\hat\\theta\\) for a parameter \\(\\theta\\) in a data generating model. Then the \\(\\mathrm{bias}(\\hat\\theta)\\) is defined by\n\\[\\mathrm{bias}(\\hat\\theta)=E[\\hat\\theta]-\\theta\\]\n\n\n\nFor example, suppose that you have a data generating model \\(y_i=\\mathbf{x}_i^T\\boldsymbol\\beta+\\epsilon_i\\) with \\(\\epsilon_i\\overset{i.i.d.}{\\sim}N(0,\\sigma^2)\\). Then the bias of the fitted value \\(X\\hat\\beta_{LS}\\) is zero because\n\\[E[X\\hat\\beta_{LS}]=E\\left(X(X^TX)^{-1}X^Ty\\right)=X\\beta\\]\n\n\n\n\n\nA few examples covered in this course\n\n(ordinary/weighted/generalized/etc) least squares (unbiased)\nMLE solution (asymptotically unbiased)"
+  },
+  {
+    "objectID": "Week11.html#bias-variance-tradeoff-1",
+    "href": "Week11.html#bias-variance-tradeoff-1",
+    "title": "Penalized Regression",
+    "section": "Bias-Variance Tradeoff",
+    "text": "Bias-Variance Tradeoff\n\nSuppose that the true DGP is \\(y_i=f(x_i)+\\epsilon_i\\), where \\(f(x_i)\\) and \\(\\epsilon_i\\) are independent and \\(\\epsilon_i\\) has mean 0 and variance \\(\\sigma^2\\).\n\nNote that we don’t enforce \\(f(x)=x^T\\beta\\).\n\n \nIf we consider ‘any’ method \\(\\hat f\\) that obtains \\(f\\), then the mean square error (MSE), that can be used to quantify how closely \\(\\hat f(x)\\) approximates \\(y\\).\n\\[\\mathrm{MSE}(\\hat f)=E\\left[(y-\\hat f(x))^2\\right]\\]"
+  },
+  {
+    "objectID": "Week11.html#bias-variance-tradeoff-2",
+    "href": "Week11.html#bias-variance-tradeoff-2",
+    "title": "Penalized Regression",
+    "section": "Bias-Variance Tradeoff",
+    "text": "Bias-Variance Tradeoff\n\nIn practice, the true DGP is unknown and we cannot compute the MSE directly.\n\n \n\nA more natural option is the ‘empirical’ MSE, which is computed by\n\\[\\widehat{\\mathrm{MSE}}(\\hat f)=\\frac{1}{n}\\sum_{i=1}^n(y_i-\\hat f(x_i))^2\\]\n\nIt can always be obtained without knowing the true DGP."
+  },
+  {
+    "objectID": "Week11.html#bias-variance-tradeoff-3",
+    "href": "Week11.html#bias-variance-tradeoff-3",
+    "title": "Penalized Regression",
+    "section": "Bias-Variance Tradeoff",
+    "text": "Bias-Variance Tradeoff\n\nBias-variance tradeoff:\n\\[\\mathrm{MSE}(\\hat f(x))=\\sigma^2+\\mathrm{Bias}^2(\\hat f(x))+\\mathrm{Var}(\\hat f(x))\\]\nwhere\n\n\\(\\sigma^2\\) is an irreducible noise\nBias: \\(E[\\hat f(x)]-f(x)\\)\nVariance: \\(E[(E(\\hat f(x))-\\hat f(x))^2]\\) \\(\\qquad \\mathrm{Var}(X)=E[(X-E(X))^2]\\)"
+  },
+  {
+    "objectID": "Week11.html#bias-variance-tradeoff-4",
+    "href": "Week11.html#bias-variance-tradeoff-4",
+    "title": "Penalized Regression",
+    "section": "Bias-Variance Tradeoff",
+    "text": "Bias-Variance Tradeoff\n\nFor notational simplicity, let \\(\\hat f\\equiv\\hat f(x)\\). Then\n\n\\[\\begin{aligned}\n\\mathrm{MSE}(\\hat f)&=E[(y-\\hat f)^2]=E[(f+\\epsilon-\\hat f)^2]\\\\\n&=E[(f-E(\\hat f)+\\epsilon+E(\\hat f)-\\hat f)^2]\\\\\n&=E[(f-E(\\hat f))^2]+E[\\epsilon^2]+E[(E(\\hat f)-\\hat f)^2]\\\\\n&\\quad+2(f-E(\\hat f))E[\\epsilon]+2E[\\epsilon]E[E(\\hat f)-\\hat f]\\\\\n&\\quad+2E[E(\\hat f)-\\hat f](f-E(\\hat f))\\\\\n&=(f-E(\\hat f))^2+E[\\epsilon^2]+E[(E(\\hat f)-\\hat f)^2]\\\\\n&=\\mathrm{Bias}^2(\\hat f)+\\sigma^2+\\mathrm{Var}(\\hat f)\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "Week11.html#bias-variance-tradeoff-5",
+    "href": "Week11.html#bias-variance-tradeoff-5",
+    "title": "Penalized Regression",
+    "section": "Bias-Variance Tradeoff",
+    "text": "Bias-Variance Tradeoff\n\nBias-variance tradeoff provides an explicit understanding of how ‘models’ work.\n\nWe may build a prediction model, possibly biased, which reduces MSE by significantly reducing the variance.\n\n\n\n\n\nIt is very useful in understanding\n\nComplex versus simple models\nParametric versus nonparametric models\nLinear versus nonlinear models\nFrequentist versus Bayesian models\netc."
+  },
+  {
+    "objectID": "Week11.html#mse-and-overfitting",
+    "href": "Week11.html#mse-and-overfitting",
+    "title": "Penalized Regression",
+    "section": "MSE and Overfitting",
+    "text": "MSE and Overfitting\n\n\n\nMSE needs to be computed from the dataset independent of the one used to obtain (i.e., train) the model \\(\\hat f\\).\n\n\n\nOtherwise, MSE could easily go to 0 just as the model complexity increases\n\ne.g., more covariates are added."
+  },
+  {
+    "objectID": "Week11.html#penalized-regression-1",
+    "href": "Week11.html#penalized-regression-1",
+    "title": "Penalized Regression",
+    "section": "Penalized Regression",
+    "text": "Penalized Regression\n\nWhy do we even want to avoid using ordinary least squares?\n\nModel interpretability: not all of the predictors would be associated with the outcome. Including such irrelevant variables leads to unnecessary complexity in the resulting model.\nPrediction accuracy: OLS would be fine when \\(n\\gg p\\). However, it would easily overfit when \\(n\\) is not much larger than \\(p\\). It does not even have a unique solution when \\(p&gt;n\\)."
+  },
+  {
+    "objectID": "Week11.html#penalized-regression-2",
+    "href": "Week11.html#penalized-regression-2",
+    "title": "Penalized Regression",
+    "section": "Penalized Regression",
+    "text": "Penalized Regression\n\nThe key idea of penalized regression is to impose a restriction on \\(\\beta\\).\n\n\n\nPenalized regression finds the \\(\\beta\\) that minimizes the following objective function:\n\\[\\sum_{i=1}^n(y_i-\\mathbf{x}_i^T\\boldsymbol\\beta)^2+P_\\lambda(\\boldsymbol\\beta)\\]\nwhere \\(P_\\lambda(\\beta)\\) is the penalty function that depending on \\(\\lambda\\).\n\n\n\n\nFor non-continuous data, the ‘SSE’ part above could be replaced by (or ‘generalized to’) the negative log likelihood. For binary data,\n\\[\\underbrace{-\\sum_{i=1}^n\\{y_i\\log(p_i)+(1-y_i)\\log(1-p_i)\\}}_{\\text{negative log likelihood}}+\\underbrace{P_\\lambda(\\beta)}_{\\text{penalty}}\\]"
+  },
+  {
+    "objectID": "Week11.html#penalized-regression-3",
+    "href": "Week11.html#penalized-regression-3",
+    "title": "Penalized Regression",
+    "section": "Penalized Regression",
+    "text": "Penalized Regression\nAIC and BIC as Penalized Regression\n\\[\\mathrm{AIC}(\\beta)=-2\\log L(\\beta)+2\\times\\|\\beta\\|_0\\] \\[\\mathrm{BIC}(\\beta)=-2\\log L(\\beta)+\\log(n)\\times\\|\\beta\\|_0\\]\n\nFinding \\(\\hat\\beta\\) that minimizes \\(\\mathrm{AIC}(\\beta)\\) (or \\(\\mathrm{BIC}(\\beta)\\)) is one way to prevent overfitting by imposing a \\(L_0\\) penalty on \\(\\beta\\) with \\(\\lambda=2\\) (AIC) or \\(\\lambda=\\log(n)\\) (BIC) where\n\\[\\|\\beta\\|_0=\\sum_{j=1}^p I(\\beta_j\\ne 0)\\]\n\n\n\nIn practice, there is no closed-form solution for AIC and BIC, and AIC and BIC would be infeasible when \\(p\\) is large.\n\ne.g., \\(2^{20}\\approx 1\\) million models to compare"
+  },
+  {
+    "objectID": "Week11.html#penalized-regression-4",
+    "href": "Week11.html#penalized-regression-4",
+    "title": "Penalized Regression",
+    "section": "Penalized Regression",
+    "text": "Penalized Regression\nAIC and BIC as Penalized Regression"
+  },
+  {
+    "objectID": "Week11.html#possible-penalities",
+    "href": "Week11.html#possible-penalities",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n\nInstead, we consider the following penalties, with \\(\\lambda&gt;0\\):\n\n\\(\\lambda\\cdot\\sum_{j=1}^p\\beta_j^2\\): This is called the ‘ridge’ penalty.\n\\(\\lambda\\cdot\\sum_{j=1}^p|\\beta_j|\\): This is called the ‘LASSO’ penalty.\nA combination of ridge and LASSO penalties: \\(\\lambda_1\\cdot\\sum_{j=1}^p|\\beta_j|+\\lambda_2/2\\cdot\\sum_{j=1}^p\\beta_j^2\\): This is called the ‘elastic net’ penalty.\n\n\n\n\nWhen \\(\\lambda=0\\), there is no penalty imposed and it becomes least squares."
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-1",
+    "href": "Week11.html#possible-penalities-1",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n1. Ridge Regression\n\nWith \\(\\lambda&gt;0\\), the ridge regression minimizes the following objective function:\n\\[\\|y-X\\beta\\|_2^2+\\lambda\\|\\beta\\|_2^2\\quad\\text{or, equivalently,}\\quad\\sum_{i=1}^n(y_i-x_i^T\\beta)^2+\\lambda\\sum_{j=1}^p\\beta_j^2\\]\n\nIt penalizes \\(\\beta\\) from being \\(\\hat\\beta_{LS}\\) by imposing a restriction on \\(\\sum_{j=1}^p\\beta_j^2&lt;t\\) for some \\(t\\) (Lagrangian)."
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-2",
+    "href": "Week11.html#possible-penalities-2",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n1. Ridge Regression\n\nWith fixed \\(\\lambda\\), it can be shown that\n\n\\[\n\\hat\\beta_{\\mathrm{ridge},\\lambda}\n={\\color{blue}{(X^TX+\\lambda I)}^{-1}}X^Ty\n\\]\nNote that the blue part is always invertible, even when \\(p&gt;n\\)! There always exists a unique solution.\n\n\n\n\\(\\hat\\beta_{\\mathrm{ridge},\\lambda}\\) is a biased estimator for \\(\\beta\\):\n\\[\\mathrm{bias}(\\hat\\beta_{\\mathrm{ridge},\\lambda})=E[\\hat\\beta_{\\mathrm{ridge},\\lambda}]-\\beta=[(X^TX+\\lambda I)^{-1}X^TX-I]\\beta\\ne0\\]\nunless \\(\\beta=0\\)."
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-3",
+    "href": "Week11.html#possible-penalities-3",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n1. Ridge Regression: Tuning Parameter\n\n\n\nChoice of \\(\\lambda&gt;0\\) is important to balance the tradeoff between bias and variance. The \\(\\lambda\\) value decides a degree of bias you’re infusing to make MSE the lowest.\n\n\n\nWhen \\(\\lambda=0\\), then there is no bias (OLS) but may have high variance.\nWhen \\(\\lambda\\to\\infty\\), then \\((X^TX+\\lambda I)^{-1}\\approx(1/\\lambda)I\\to0\\), making most elements of \\(\\hat\\beta_\\lambda\\) similar to 0. (low variance but high bias)."
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-4",
+    "href": "Week11.html#possible-penalities-4",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n1. Ridge Regression\n\nAdvantages:\n\nRidge reduces the variance of fitted model by trading off the bias\nComputationally efficient\nRelaxing multicolinearilty: in some cases, \\(X^TX\\) almost singular (e.g., \\(p&gt;n\\), or some variables are highly correlated), then \\((X^TX+\\lambda I)^{-1}\\) removes singularity.\n\n\nDisadvantages:\n\nit tends to include all \\(p\\) covariates in the fitted model \\(\\Rightarrow\\) not appropriate for variable selection."
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-5",
+    "href": "Week11.html#possible-penalities-5",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n1. Standardization in Ridge Regression\n\nThe ridge penalty (and others in Lecture 7) is scale-dependent: larger-scaled covariates or response values are penalized less.\nStandardization\n\nEach covariate (\\(x_j\\)) and response (\\(y\\)) are scaled to zero mean and unit variance:\n\\[x_{ij}^{std}=\\frac{x_{ij}-\\bar x_j}{s_j}\\quad\\text{and}\\quad y^{std}=\\frac{y-\\bar y}{s_y}.\\]\n\n\n\n\nBenefits\n\nEnsures all variables are on the same scale, making the penalty fair across coefficients.\nSimplifies interpretation of penalization, as coefficients are directly comparable.\nAfter standardization, the intercept term disappears."
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-6",
+    "href": "Week11.html#possible-penalities-6",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n1. Standardization in Ridge Regression\n\nEstimated Coefficients from Standardized Data:\n\\(\\hat\\beta_j^{std}\\) = estimated coefficients on standardized covariates and response.\n\n\n\nRescaling to the original scale:\n\\[\\hat\\beta_j=\\frac{\\hat\\beta_j^{std}\\cdot s_y}{s_j},\\quad\\text{and}\\quad\\hat\\beta_0=\\bar y-\\sum_j\\hat\\beta_j\\bar x_j,\\]\nwhere:\n\n\\(\\hat\\beta_j\\): coefficient on the original scale.\n\\(\\hat\\beta_0\\): intercept on the original scale."
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-7",
+    "href": "Week11.html#possible-penalities-7",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n2. LASSO\n\n\n\nWhen \\(\\lambda&gt;0\\) is given, find the \\(\\beta\\) that minimizes the following objective function:\n\\[\\sum_{i=1}^n(y_i-x_i^T\\beta)^2+\\lambda\\sum_{j=1}^p|\\beta_j|\\]\n\nSimilar to ridge, it penalizes \\(\\beta_j\\)s from fully growing by imposing a restriction on \\(\\sum_{j=1}^p|\\beta_j|&lt;t\\) for some \\(t\\) (Lagrangian).\nDue to theoretical properties of the penalty, it will provide a sparse estimate of \\(\\hat\\beta_\\lambda\\)s, i.e. it achieves both regularization and variable selection at once.\nSimilar to ridge regression, parameter estimates are biased in general."
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-8",
+    "href": "Week11.html#possible-penalities-8",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n2. LASSO: Finding the Solution\n\nWhen there is one covariate \\(x_i\\) and a response \\(y_i\\) where both are standardized, we consider the following optimization problem:\n\\[\\frac12\\sum_{i=1}^n(y_i^{std}-\\beta x_i^{std})^2+\\lambda|\\beta|\\]\nThe solution for the optimization problem above is given by\n\\[\\hat\\beta_{\\mathrm{LASSO},\\lambda}=\\mathrm{sign}(\\hat\\rho_{x,y})\\cdot\\max\\left(0,|\\hat\\rho_{x,y}|-\\frac\\lambda n\\right)\\]\nwhere \\(\\hat\\rho_{x,y}\\) is the correlation between \\(x\\) and \\(y\\)."
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-9",
+    "href": "Week11.html#possible-penalities-9",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n2. LASSO: Finding the Solution\n\nCoordinate descent: update each parameter until reaching the convergence.\n\nInitialization: Set \\(\\hat\\beta=0\\).\nCoordinate-wise update: For each \\(j=1,\\ldots,p\\), update \\(\\hat\\beta_j\\) by fixing all the other parameters estimates as fixed (\\(\\hat\\beta_1,\\ldots,\\hat\\beta_{j-1},\\beta_{j+1},\\ldots,\\beta_p\\)) with the current estimates:\n\\[\\begin{aligned}\\hat\\beta_j&=\\arg\\min_{\\beta_j}\\left\\{\\sum_{i=1}^n(y_i-\\sum_{j=1}^px_{ij}\\beta_j)^2+\\lambda\\sum_{j=1}^p|\\beta_j|\\right\\}\\\\\n&=\\arg\\min_{\\beta_j}\\left\\{\\sum_{i=1}^n(y_i-\\sum_{k\\ne j}x_{ik}\\beta_k-x_{ij}\\beta_j)^2+\\lambda|\\beta_j|\\right\\}\\end{aligned}\\]\nRepeat Step 2 until convergence: Iterate over all \\(j\\) until the coefficients stabilize."
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-10",
+    "href": "Week11.html#possible-penalities-10",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n2. LASSO\n\nDisadvantages of LASSO:\n\nLasso tends to select at most \\(n\\) variables, where \\(n\\) is the sample size. (problematic when the true model involves more variables)\nLasso arbitrarily selects one variable from a group of highly correlated predictors, ignoring others (which might not be desirable in some contexts)."
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-11",
+    "href": "Week11.html#possible-penalities-11",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\nComparing Ridge and LASSO Regressions\n\nNeither ridge regression nor the LASSO will universally dominate the other.\n\n\n\nIn general, one might expect\n\nLASSO to perform better: a relatively small number of predictors have substantial coefficients, and the remaining predictors have coefficients that are very small or that equal zero.\nRidge regression to perform better: the response is a function of many predictors, all with coefficients of roughly equal size. (Note: The number of predictors that is related to the response is never known a priori for real data sets.)"
+  },
+  {
+    "objectID": "Week11.html#possible-penalities-12",
+    "href": "Week11.html#possible-penalities-12",
+    "title": "Penalized Regression",
+    "section": "Possible Penalities",
+    "text": "Possible Penalities\n3. Elastic Net\n\nObjective Function:\n\\[\\min_\\beta\\frac{1}{2n}\\|y-X\\beta\\|_2^2+\\lambda_1\\|\\beta\\|_1+\\frac{\\lambda_2}{2}\\|\\beta\\|_2^2,\\]\nwhere:\n\n\\(\\|\\beta\\|_1=\\sum_j|\\beta_j|\\): LASSO penalty.\n\\(\\|\\beta\\|_2^2=\\sum_j\\beta_j^2\\): Ridge penalty.\n\\(\\lambda_1,\\lambda_2&gt;0\\): regularization parameters.\n\nKey Idea: Elastic Net blends (i) the sparsity of LASSO and (ii) the grouping effect of Ridge.\nDisadvantage: depends on two tuning parameters \\(\\lambda_1\\) and \\(\\lambda_2\\), which would be computationally intense."
+  },
+  {
+    "objectID": "Week11.html#implementations-with-glmnet-in-r",
+    "href": "Week11.html#implementations-with-glmnet-in-r",
+    "title": "Penalized Regression",
+    "section": "Implementations with glmnet in R",
+    "text": "Implementations with glmnet in R\n\nBasic: glmnet(X, y, family, alpha, lambda)\n\nX: the X matrix (not including the intercept)\ny: the y vector\nalpha: 1 (LASSO), 0 (Ridge), the value between 0 and 1 (elastic net)\nlambda: the \\(\\lambda\\) value after standardizing the variables"
+  },
+  {
+    "objectID": "Week11.html#inference-with-penalized-regression",
+    "href": "Week11.html#inference-with-penalized-regression",
+    "title": "Penalized Regression",
+    "section": "Inference with Penalized Regression",
+    "text": "Inference with Penalized Regression\n\nIn this chapter we have focused mostly on estimation, not inference.\n\n\n\nIn practice, biased coefficient estimates provided by penalized regression make statistical inference challenging.\n\nAlso, uncertainty quantification (i.e., variance) is challenging\n\n\n\n\nDespite decent theoretical developments made in statistics (e.g., debiased LASSO, selective inference, etc), they are not fully practical yet."
+  },
+  {
+    "objectID": "Week11.html#more-general-formulations",
+    "href": "Week11.html#more-general-formulations",
+    "title": "Penalized Regression",
+    "section": "More General Formulations",
+    "text": "More General Formulations\n\nNegative log likelihood, when it is well-specified in terms of the data generating model, provides a good loss function, and the penalties (\\(\\sum_{j=1}^p|\\beta_j|\\) or \\(\\sum_{j=1}^p\\beta_j^2\\)) provides a good ‘prior’ (in Bayesian contexts). However, are these the only possible choices that we can use?\n\n\n\n\nActually, if our purpose is not constructing the data generating model but building a good classification model that prevents overfitting, using the (negative) likelihood as a loss function might not be necessary.\n\n\n\nMany ‘machine learning’ models can be formulated by\n\\[[\\text{A loss function}]+[\\text{A penalty function}]\\]"
+  },
+  {
+    "objectID": "Week11.html#more-general-formulations-1",
+    "href": "Week11.html#more-general-formulations-1",
+    "title": "Penalized Regression",
+    "section": "More General Formulations",
+    "text": "More General Formulations\n1. Modifying the Loss Function\n\nSuppose that \\(y_i\\in\\{-1,1\\}\\). The soft-margin support vector machine (SVM) classifier can be obtained by minimizing\n\\[\\underbrace{\\sum_{i=1}^n\\max(0,1-y_i\\cdot x_i^T\\beta)}_{\\text{aka ‘hinge loss’}}+\\underbrace{\\lambda\\sum_{j=1}^p\\beta_j^2}_{\\text{Ridge penalty}}\\]\n\nThis framework gives an understanding of why SVM is robust to high-dimensional data: there is a ridge penalty that prevents overfitting.\nIf the ridge penalty is replaced by \\(\\lambda\\sum_{j=1}^p|\\beta_j|\\), it will give you sparse estimates of \\(\\beta\\).\nA more general hinge-loss function is constructed by replacing \\(x_i^T\\beta\\) with \\(f(x_i)\\).\nCautionary note: I didn’t say it is easy to optimize."
+  },
+  {
+    "objectID": "Week11.html#more-general-formulations-2",
+    "href": "Week11.html#more-general-formulations-2",
+    "title": "Penalized Regression",
+    "section": "More General Formulations",
+    "text": "More General Formulations\n1. Modifying the Loss Function"
+  },
+  {
+    "objectID": "Week11.html#more-general-formulations-3",
+    "href": "Week11.html#more-general-formulations-3",
+    "title": "Penalized Regression",
+    "section": "More General Formulations",
+    "text": "More General Formulations\n1. Modifying the Loss Function"
+  },
+  {
+    "objectID": "Week11.html#more-general-formulations-4",
+    "href": "Week11.html#more-general-formulations-4",
+    "title": "Penalized Regression",
+    "section": "More General Formulations",
+    "text": "More General Formulations\n2. Modifying the Penalty Function\n\nWe can also consider different penalties based on different vector norms:\n\nLASSO penalty: \\(P_\\lambda(\\beta)=\\lambda\\cdot|\\beta|\\)\nRidge penalty: \\(P_\\lambda(\\beta)=\\lambda\\cdot\\beta^2\\)\n\\(L_q\\) penalty: \\(P_\\lambda(\\beta)=\\lambda\\cdot|\\beta|^q\\)\n\\(L_0\\) penalty: \\(P_\\lambda(\\beta)=\\lambda\\cdot I(\\beta\\ne0)\\).\n\nWhen \\(0\\le q\\le1\\), the resulting coefficient estimates would be sparse.\nWhen \\(0\\le q&lt;1\\), it is not guaranteed to converge to a global minimum."
+  },
+  {
+    "objectID": "Week11.html#more-general-formulations-5",
+    "href": "Week11.html#more-general-formulations-5",
+    "title": "Penalized Regression",
+    "section": "More General Formulations",
+    "text": "More General Formulations\n2. Modifying the Penalty Function\n\n\n\nMinimax concave penalty (MCP):\n\\[P_{\\lambda,\\gamma}(\\beta)=\\begin{cases}\\lambda|\\beta|-\\beta^2/(2\\gamma)&\\text{if }|\\beta|\\le\\lambda\\gamma\\\\\\frac12\\gamma\\lambda^2&\\text{if }|\\beta|&gt;\\lambda\\gamma\\end{cases}\\]\nSmoothly clipped absolute deviations (SCAD) penalty:\n\\[P_{\\lambda,\\gamma}(\\beta)=\\begin{cases}\\lambda|\\beta|&\\text{if }|\\beta|\\le\\lambda\\\\\\frac{2\\gamma\\lambda|\\beta|-\\beta^2-\\lambda^2}{2(\\gamma-1)}&\\text{if }\\lambda&lt;|\\beta|&lt;\\lambda\\gamma\\\\\\frac{\\lambda^2(\\gamma+1)}2&\\text{if }|\\beta|&gt;\\lambda\\gamma\\end{cases}\\]\nTruncated LASSO Penalty (TLP)\n\\[P_{\\lambda,\\tau}(\\beta)=\\lambda\\cdot\\min(|\\beta|/\\tau,1)\\]\n\nImplementation for MCP and SCAD: ncvreg, TLP: glmtlp"
+  },
+  {
+    "objectID": "Week11.html#more-general-formulations-6",
+    "href": "Week11.html#more-general-formulations-6",
+    "title": "Penalized Regression",
+    "section": "More General Formulations",
+    "text": "More General Formulations\n2. Modifying the Penalty Function\n\nSimilar to the \\(L_q\\) penalty with \\(0&lt;q&lt;1\\), it is not guaranteed that optimization with SCAD, MCP, or TLP will converge to a global minimum\n\n\n\nThen why use these ‘non-standard’ forms of penalty?\n\nReduced bias (for large coefficients): LASSO/ridge/elastic net introduces severe bias for large coefficients because the penalty grows with the absolute value of coefficients.\nSparsity: SCAD, MCP, TLP still provide sparse coefficient estimates.\nOracle property: they can correctly identify the true set of non-zero coefficients."
+  },
+  {
+    "objectID": "Week11.html#example-fused-lasso",
+    "href": "Week11.html#example-fused-lasso",
+    "title": "Penalized Regression",
+    "section": "Example: Fused LASSO",
+    "text": "Example: Fused LASSO\n\nMotivating question: in this time series data, can we identify the jumping points where means change?\nWe assume\n\\[y_i\\sim N(\\mu_j,\\sigma^2)\\]\nwhere \\(\\mu_j\\) are distinct means\nWe want \\(\\mu_j\\) to be mostly constant over time except for the jumping points."
+  },
+  {
+    "objectID": "Week11.html#example-fused-lasso-1",
+    "href": "Week11.html#example-fused-lasso-1",
+    "title": "Penalized Regression",
+    "section": "Example: Fused LASSO",
+    "text": "Example: Fused LASSO\n\nThe LASSO penalty can be modified to induce smoothing.\n\\[\\min_{\\beta\\in\\mathbb R^n}\\left\\{\\sum_{i=1}^N(y_i-\\beta_0-\\beta_i)^2+\\lambda\\sum_{i=1}^{n-1}|\\beta_{i+1}-\\beta_i|\\right\\}.\\]\nThe ‘loss function’ assumes that each \\(y_i\\) has different means, but\nThe penalty function penalizes the ‘difference between the means’ between two time points \\((i,i+1)\\)\nBecause of the LASSO penalty, many \\((\\beta_{i+1}-\\beta_i)\\) terms will shrink to 0."
+  },
+  {
+    "objectID": "Week11.html#example-fused-lasso-2",
+    "href": "Week11.html#example-fused-lasso-2",
+    "title": "Penalized Regression",
+    "section": "Example: Fused LASSO",
+    "text": "Example: Fused LASSO"
+  },
+  {
+    "objectID": "Week11.html#model-selection",
+    "href": "Week11.html#model-selection",
+    "title": "Penalized Regression",
+    "section": "Model Selection",
+    "text": "Model Selection\n\nFinding the best tuning parameter (e.g., \\(\\lambda\\)) is critical in prediction.\n\n\n\nIdeally, when no other information is given, we may want to minimize the mean square error (MSE).\n\n\n\nOne approach is to view the regression with different \\(\\lambda\\)s as different ‘models’ and choose the best model by keeping the rule of ‘not using data twice’.\n\n\n\nIt naturally leads to the idea of cross validation."
+  },
+  {
+    "objectID": "Week11.html#model-selection-1",
+    "href": "Week11.html#model-selection-1",
+    "title": "Penalized Regression",
+    "section": "Model Selection",
+    "text": "Model Selection\n1. Cross Validation\n\nCross validation is a technique to partition the original data into several non-overlapping sub-data sets and evaluate the model’s predictive performances."
+  },
+  {
+    "objectID": "Week11.html#model-selection-2",
+    "href": "Week11.html#model-selection-2",
+    "title": "Penalized Regression",
+    "section": "Model Selection",
+    "text": "Model Selection\n1. Cross Validation\n\nProcedures (5 fold CV) in comparing different models\n\nChoose 4 folds out of 5, fit each model \\(\\Rightarrow f_{train}(\\cdot)\\).\nApply it to the fold \\(\\{y_{test},X_{test}\\}\\) not used in 1 and compute the predicted MSE:\n\\[\\mathrm{MSE}_{test}=\\|y_{test}-f_{train}(X)\\|_2^2\\]\nRepeat 1 and 2 5 times using different folds of data, and take the average MSE across 5 folds for each model.\nChoose the model with the lowest average MSE."
+  },
+  {
+    "objectID": "Week11.html#model-selection-3",
+    "href": "Week11.html#model-selection-3",
+    "title": "Penalized Regression",
+    "section": "Model Selection",
+    "text": "Model Selection\n1. Cross Validation\n\nFor LASSO/Ridge/Elastic net, glmnet has an option cv.glmnet() function that implment CV-based choice of \\(\\lambda\\).\nThe red dots denote for average prediction error for each (\\(\\lambda\\)) value using cross validation. It neither chose \\(\\lambda=0\\) or \\(\\lambda=\\infty\\) but chose \\(\\log(\\lambda)\\approx-2.1\\) that is the ‘best’ in making a balance between bias and variance.\n\nlibrary(glmnet)\nfit = cv.glmnet(X, y, alpha = 1,\n                 nfolds=10)\nplot(fit)"
+  },
+  {
+    "objectID": "Week11.html#model-selection-4",
+    "href": "Week11.html#model-selection-4",
+    "title": "Penalized Regression",
+    "section": "Model Selection",
+    "text": "Model Selection\n1. Cross Validation\n\nCross validation is useful because it can be applied to compare performances of different (including non-likelihood-based) methods.\nPartitioning samples into several folds includes some degrees of randomness, but one can use leave-one-out cross validation (LOOCV) that has \\(n\\) folds for \\(n\\) samples.\nLOOCV could be computationally demanding especially when \\(n\\) is large."
+  },
+  {
+    "objectID": "Week11.html#model-selection-5",
+    "href": "Week11.html#model-selection-5",
+    "title": "Penalized Regression",
+    "section": "Model Selection",
+    "text": "Model Selection\n2. Generalized Cross Validation\n\nIf we restrict our attention to a linear smoother fit where a fitted model could be represented by \\(\\hat y=S_\\lambda y\\) for some \\(S_\\lambda\\), then generalized cross validation (GCV) approximates the LOOCV.\n\\[\\mathrm{GCV}(\\lambda)=\\frac{\\|y-\\hat y\\|^2/n}{(1-\\mathrm{tr}(S_\\lambda)/n)^2},\\]\nRidge regression is an example of linear smoother, but LASSO and other methods aren’t.\nDespite its name, GCV does not partition data into several folds. It requires fitting model once for each \\(\\lambda\\). (computationally efficient)\nThe \\(1-\\mathrm{tr}(S_\\lambda)/n\\) in the denominator is called the ‘effective degrees of freedom’ that summarizes the model complexity for a specific \\(\\lambda\\) value."
+  },
+  {
+    "objectID": "Week11.html#model-selection-6",
+    "href": "Week11.html#model-selection-6",
+    "title": "Penalized Regression",
+    "section": "Model Selection",
+    "text": "Model Selection\n3. Likelihood Based Approaches\n\nAlternative viewpoint for Ridge regression:\n\\[y=X\\beta+\\epsilon\\quad\\text{where}\\quad\\beta\\sim MVN(0,\\tau^2I)\\quad\\text{and}\\quad\\epsilon\\sim MVN(0,\\sigma^2I)\\]\nunder this setup,\n\nFinding BLUP of \\(\\beta\\) \\(\\Rightarrow\\) ridge regression\n\\(\\lambda=\\sigma^2/\\tau^2\\).\n\\(\\sigma^2\\) and \\(\\tau^2\\) could be directly ‘estimated’ by maximizing a likelihood\n\nAlternatively, you may think of \\(\\tau^2\\) given in the form of prior in Bayesian linear regression.\n\nFinding the Bayes estimator \\(\\hat\\beta_{Bayes}\\) is equivalent to ridge regression.\n\\(\\lambda=\\sigma^2/\\tau^2\\) is determined by your prior knowledge of \\(\\tau^2\\)"
+  },
+  {
+    "objectID": "Week12.html#case-study",
+    "href": "Week12.html#case-study",
+    "title": "Generalized Additive Models",
+    "section": "Case Study",
+    "text": "Case Study\nA hospital is interested in predicting patients’ systolic blood pressure using demographic information, lifestyle factors, and medical measurements.\nThe dataset contains 200 patients and 100 predictors. Some predictors are highly correlated (e.g., BMI, weight, and waist circumference).\nThe researchers are considering four approaches:\n\nOrdinary least squares (OLS)\nRidge regression\nLASSO\nElastic net\n\nQuestions:\n\nWhat potential problems might arise if we use OLS?\nWhich of the four methods would you recommend, and why?\nHow would your recommendation change if you knew that only five predictors were truly associated with blood pressure?"
+  },
+  {
+    "objectID": "Week12.html#case-study-1",
+    "href": "Week12.html#case-study-1",
+    "title": "Generalized Additive Models",
+    "section": "Case Study",
+    "text": "Case Study\nThe researchers decide to fit LASSO regression and use 10-fold cross-validation to choose \\(\\lambda\\).\nThey obtain the following results:\n\n\n\n\\(\\lambda\\)\nCV MSE\n\n\n\n\n0.001\n120\n\n\n0.01\n105\n\n\n0.1\n92\n\n\n1\n98\n\n\n10\n145\n\n\n\nQuestions:\n\nWhich value of \\(\\lambda\\) would you choose? Explain.\nWhy does the prediction error increase when \\(\\lambda\\) becomes very large?\nSuppose the researchers choose \\(\\lambda=0.001\\) because it produces the smallest training MSE. What is wrong with their reasoning?"
+  },
+  {
+    "objectID": "Week12.html#case-study-2",
+    "href": "Week12.html#case-study-2",
+    "title": "Generalized Additive Models",
+    "section": "Case Study",
+    "text": "Case Study\nAfter selecting their tuning parameters, the researchers obtain the following results on an independent test set:\n\n\n\nModel\nTest MSE\nNonzero coefficients\n\n\n\n\nOLS\n130\n100\n\n\nRidge\n91\n100\n\n\nLASSO\n95\n12\n\n\nElastic net\n89\n35\n\n\n\nQuestions:\n\nWhich model would you recommend if the primary goal is prediction? What if interpretability is important?\nWhy might elastic net outperform LASSO in this example?\nA researcher claims that the 12 predictors selected by LASSO are the only variables that truly affect blood pressure. Do you agree?"
+  },
+  {
+    "objectID": "Week12.html#table-of-contents",
+    "href": "Week12.html#table-of-contents",
+    "title": "Generalized Additive Models",
+    "section": "Table of Contents",
+    "text": "Table of Contents\n\nPenalized splines\nGeneralized additive model (GAM)"
+  },
+  {
+    "objectID": "Week12.html#moving-beyond-linearity",
+    "href": "Week12.html#moving-beyond-linearity",
+    "title": "Generalized Additive Models",
+    "section": "Moving Beyond Linearity",
+    "text": "Moving Beyond Linearity\n\nAlmost everything in this course covers ‘linear’ associations between two random variables. If we had \\(x\\) and \\(y\\), then we modeled their linear relationship by\n\\[y_i = \\beta_0 + x_i\\beta_1 + \\epsilon_i\\]\nWhen the true relationship between \\(y\\) and \\(x\\) is non-linear (e.g. quadratic), then using linear regression is a not a good idea.\nToday’s class covers how we can construct better models given data limited availability."
+  },
+  {
+    "objectID": "Week12.html#polynomial-regression",
+    "href": "Week12.html#polynomial-regression",
+    "title": "Generalized Additive Models",
+    "section": "Polynomial Regression",
+    "text": "Polynomial Regression\n\nThe simplest method to account for the potential linearity is to add higher-order terms of \\(x\\). For example,\n\\[y_i=f(x_i)+\\epsilon_i=\\beta_0+x_i\\beta_1+x_i^2\\beta_2+x_i^3\\beta_3+\\epsilon_i\\]\nHere we’re not really interested in each regression coefficients. Rather, we are more interested in the fitted values \\(f(x_i)\\). You may also draw a confidence interval for each fitted value.\nWe may add more higher-order terms to the model, but it does not mean that it is always beneficial.\n\nThere is always an issue of overfitting.\nAppropriate higher order terms must be chosen before you fit a model."
+  },
+  {
+    "objectID": "Week12.html#polynomial-regression-1",
+    "href": "Week12.html#polynomial-regression-1",
+    "title": "Generalized Additive Models",
+    "section": "Polynomial Regression",
+    "text": "Polynomial Regression\n\n\nPrediction of wage with age using 4th-order polynomial regression, with 95% CI."
+  },
+  {
+    "objectID": "Week12.html#splines",
+    "href": "Week12.html#splines",
+    "title": "Generalized Additive Models",
+    "section": "Splines",
+    "text": "Splines\nSmooth polynomial lines\n\nInstead of using higher order polynomials, we fix the order but try different ‘bases’ based on the ‘knots’ that we placed.\nWe mildly assume that these bases are ‘relatively sufficient’ to approximate (possibly non-linear) function \\(f(x)\\).\nThere are different bases one can try, as you’ll see later. The goal is not to have the fitted values that are ‘exactly same across all bases functions (it is never possible). Rather, we care more about ’approximations’."
+  },
+  {
+    "objectID": "Week12.html#simple-splines",
+    "href": "Week12.html#simple-splines",
+    "title": "Generalized Additive Models",
+    "section": "Simple Splines",
+    "text": "Simple Splines\nLet the slope change many times\n\\[y_i = \\beta_0+x_i\\beta_1+\\sum_{j=1}^K (x_i-\\kappa_j)_+\\gamma_j+\\epsilon_i\\]\nwhere \\((x_i-\\kappa_j)_+=x_i-\\kappa_j\\) if it is greater than 0 and 0 otherwise.\n\nIt is (for now) just the same as constructing many variables derived from \\(x\\) (\\((x_i-\\kappa_j)_+\\)) and fitting a multiple linear regression.\n\\(\\kappa_1,\\ldots,\\kappa_K\\) are called ‘knots’.\n\nThey must be chosen before you conduct any analysis.\nIdeally, it must be placed at points where slope changes are expected.\nIn practice, these locations are unknown and it is chosen to have equal distances (i.e., equally spaced)."
+  },
+  {
+    "objectID": "Week12.html#truncated-linear-basis",
+    "href": "Week12.html#truncated-linear-basis",
+    "title": "Generalized Additive Models",
+    "section": "Truncated Linear Basis",
+    "text": "Truncated Linear Basis\nWith different number of knots (\\(K\\))\n\nx = seq(0, 1, length.out=1000)\nZ = generateTPbases(x, n.knots=15, order=1)"
+  },
+  {
+    "objectID": "Week12.html#truncated-linear-basis-1",
+    "href": "Week12.html#truncated-linear-basis-1",
+    "title": "Generalized Additive Models",
+    "section": "Truncated Linear Basis",
+    "text": "Truncated Linear Basis"
+  },
+  {
+    "objectID": "Week12.html#truncated-linear-basis-2",
+    "href": "Week12.html#truncated-linear-basis-2",
+    "title": "Generalized Additive Models",
+    "section": "Truncated Linear Basis",
+    "text": "Truncated Linear Basis\nWith different number of knots (\\(K\\))\n\nSimulated example: let \\(y_i=f(x_i)+\\epsilon_i\\) where \\(\\epsilon_i\\sim N(0,1)\\) and\n\\[f(x_i)=5\\cos(x_i)\\quad\\text{if }x_i&lt;0\\qquad\\text{and}\\qquad f(x_i)=5\\cos(x_i/3)\\quad\\text{if }x_i&gt;0\\]\n\n\\(K=5\\) (blue) seems to be more appropriate here (although it is still not a ‘correct’ model) than \\(K=25\\) (red; seems too wiggly)."
+  },
+  {
+    "objectID": "Week12.html#penalized-splines-1",
+    "href": "Week12.html#penalized-splines-1",
+    "title": "Generalized Additive Models",
+    "section": "Penalized Splines",
+    "text": "Penalized Splines\nFlexible without overfitting\n\nIdea: Use sufficiently many knots then penalize changes at the knots.\n\nInstead of using multiple linear regression, we consider penalizing spline coefficients.\n\nIn case of the truncated linear basis, we minimize\n\\[\\sum_{i=1}^{n}\\left(y_i-\\beta_0-x_i\\beta_1-\\sum_{j=1}^{K}(x_i-\\kappa_j)_+\\gamma_j\\right)^2+\\lambda\\sum_{j=1}^{K}\\gamma_j^2\\]\nIt relaxes the knot-selection issue, leaving a single \\(\\lambda\\) to be chosen.\nOther penalty functions could be used, at the expense of computations in model fitting + choosing \\(\\lambda\\)."
+  },
+  {
+    "objectID": "Week12.html#penalized-splines-2",
+    "href": "Week12.html#penalized-splines-2",
+    "title": "Generalized Additive Models",
+    "section": "Penalized Splines",
+    "text": "Penalized Splines\n\nIt can be reparametrized by \\((\\mathbf y-\\mathbf X\\boldsymbol\\beta)^T(\\mathbf y-\\mathbf X\\boldsymbol\\beta)+\\lambda\\boldsymbol\\beta^T\\mathbf D\\boldsymbol\\beta\\) where\n\n\\[\n\\mathbf y=\\begin{bmatrix}y_1\\\\y_2\\\\\\vdots\\\\y_n\\end{bmatrix},\\quad\n\\mathbf X=\\begin{bmatrix}\n1 & x_1 & (x_1-\\kappa_1)_+ & \\cdots & (x_1-\\kappa_K)_+\\\\\n1 & x_2 & (x_2-\\kappa_1)_+ & \\cdots & (x_2-\\kappa_K)_+\\\\\n\\vdots & \\vdots & \\vdots & & \\vdots\\\\\n1 & x_n & (x_n-\\kappa_1)_+ & \\cdots & (x_n-\\kappa_K)_+\n\\end{bmatrix},\\quad\n\\mathbf D=\\begin{bmatrix}0&0&\\mathbf 0^T\\\\0&0&\\mathbf 0^T\\\\\\mathbf 0&\\mathbf 0&\\mathbf I_K\\end{bmatrix}\n\\]\n\nWhen \\(\\lambda\\) is provided, the closed form solution for \\(\\boldsymbol\\beta\\) is\n\\[\\hat{\\boldsymbol\\beta}=(\\mathbf X^T\\mathbf X+\\lambda\\mathbf D)^{-1}\\mathbf X^T\\mathbf y\\]\n\nWhen \\(\\lambda\\to 0\\), you obtain \\(\\hat{\\boldsymbol\\beta}\\) using OLS \\(\\Rightarrow\\) wiggly curve. (look familiar)?\nWhen \\(\\lambda\\to\\infty\\), the spline terms are highly penalized and there are only the intercept and the linear slope term that survives."
+  },
+  {
+    "objectID": "Week12.html#penalized-splines-3",
+    "href": "Week12.html#penalized-splines-3",
+    "title": "Generalized Additive Models",
+    "section": "Penalized Splines",
+    "text": "Penalized Splines\nExample with different choices of \\(\\lambda\\)s\n\n\n\\(y\\): daily non-accidental deaths in the 5-county New York City, 2001-2005.\n\\(x\\): daily temperature in Fahrenheit"
+  },
+  {
+    "objectID": "Week12.html#penalized-splines-4",
+    "href": "Week12.html#penalized-splines-4",
+    "title": "Generalized Additive Models",
+    "section": "Penalized Splines",
+    "text": "Penalized Splines\nChoosing \\(\\lambda\\)\n\nThe gam() function in the mgcv package uses generalized cross-validation (GCV), which is possible because \\(\\hat{\\mathbf y}=f(\\mathbf X)=\\mathbf S_\\lambda\\mathbf y\\).\n\nDefine \\(\\mathbf S_\\lambda=\\mathbf X(\\mathbf X^T\\mathbf X+\\lambda\\mathbf D)^{-1}\\mathbf X^T\\).\nFor each \\(\\lambda\\), compute\n\\[\\operatorname{GCV}(\\lambda)=\\frac{\\sum_{i=1}^{n}[y_i-\\hat f_\\lambda(x_i)]^2}{[1-\\operatorname{trace}(\\mathbf S_\\lambda)]^2}\\]\nChoose \\(\\lambda\\) that yields the lowest \\(\\operatorname{GCV}(\\lambda)\\)."
+  },
+  {
+    "objectID": "Week12.html#penalized-splines-as-blups",
+    "href": "Week12.html#penalized-splines-as-blups",
+    "title": "Generalized Additive Models",
+    "section": "Penalized Splines as BLUPs",
+    "text": "Penalized Splines as BLUPs\nChoosing \\(\\lambda\\): Linear mixed effect formulation\n\nThe penalized spline could be translated into a linear mixed model framework: \\(\\mathbf y=\\mathbf X\\boldsymbol\\beta+\\mathbf Z\\mathbf b+\\boldsymbol\\epsilon\\) where\n\n\\[\n\\mathbf X=\\begin{bmatrix}1&x_1\\\\1&x_2\\\\\\vdots&\\vdots\\\\1&x_n\\end{bmatrix}\n\\quad\\text{and}\\quad\n\\mathbf Z=\\begin{bmatrix}\n(x_1-\\kappa_1)_+&\\cdots&(x_1-\\kappa_K)_+\\\\\n(x_2-\\kappa_1)_+&\\cdots&(x_2-\\kappa_K)_+\\\\\n\\vdots&&\\vdots\\\\\n(x_n-\\kappa_1)_+&\\cdots&(x_n-\\kappa_K)_+\n\\end{bmatrix}\n\\]\n\nTherefore, REML could be used to estimate parameters (i.e., \\(\\sigma^2\\), \\(\\tau^2\\)) and predict random effects so that \\(\\hat{\\mathbf y}=\\mathbf X\\hat{\\boldsymbol\\beta}+\\mathbf Z\\hat{\\mathbf b}\\).\n\nThis approach is implemented in REML=T in the gam() function.\n\nBayesian methods could be also used."
+  },
+  {
+    "objectID": "Week12.html#penalized-splines-as-blups-1",
+    "href": "Week12.html#penalized-splines-as-blups-1",
+    "title": "Generalized Additive Models",
+    "section": "Penalized Splines as BLUPs",
+    "text": "Penalized Splines as BLUPs\nComparisons"
+  },
+  {
+    "objectID": "Week12.html#generalized-additive-models",
+    "href": "Week12.html#generalized-additive-models",
+    "title": "Generalized Additive Models",
+    "section": "Generalized additive models",
+    "text": "Generalized additive models"
+  },
+  {
+    "objectID": "Week12.html#generalized-additive-models-1",
+    "href": "Week12.html#generalized-additive-models-1",
+    "title": "Generalized Additive Models",
+    "section": "Generalized Additive Models",
+    "text": "Generalized Additive Models\n\nA natural way to extend the multiple linear regression model is to replace linear predictors with splines.\n\nMultiple linear regression:\n\\[y_i=\\beta_0+x_{i1}\\beta_1+x_{i2}\\beta_2+\\cdots+x_{ip}\\beta_p+\\epsilon_i\\]\nGeneralized additive models:\n\\[y_i=\\beta_0+f_1(x_{i1})+f_2(x_{i2})+\\cdots+f_p(x_{ip})+\\epsilon_i\\]\n\nNote:\n\nIt is called an additive model because we calculate a separate \\(f_j(\\cdot)\\) for \\(j\\)th predictor, and then add together all of their contributions.\nGAM can handle non-linear effects of each predictor, while (multiple) linear regression only deals with linear associations.\nWe still have the form \\(\\hat{\\mathbf y}=\\mathbf S\\mathbf y\\) (linear smoother), so GCV (or REML) could be used to find the solution without using cross validation."
+  },
+  {
+    "objectID": "Week12.html#generalized-additive-models-2",
+    "href": "Week12.html#generalized-additive-models-2",
+    "title": "Generalized Additive Models",
+    "section": "Generalized Additive Models",
+    "text": "Generalized Additive Models\nExample\n\n\\[\\text{wage}=\\beta_0+f_1(\\text{year})+f_2(\\text{age})+\\text{education}+\\epsilon\\]\nfit = gam(wage ~ s(age, 5) + s(year, 4) + education, data = Wage)"
+  },
+  {
+    "objectID": "Week12.html#generalized-additive-models-3",
+    "href": "Week12.html#generalized-additive-models-3",
+    "title": "Generalized Additive Models",
+    "section": "Generalized Additive Models",
+    "text": "Generalized Additive Models\nSome comments\n\nWe do not need to manually try out many different transformations on each variable individually.\nAdding higher order terms or spline basis without any penalization would lead to a very large number of parameters (\\(\\approx\\) low degrees of freedom).\nThe non-linear fits can potentially make more accurate predictions for the response.\nBecause the model is additive, we can examine the effect of each variable on \\(y\\) individually while holding all of the other variables fixed.\nThe main limitation of GAMs is that the model is restricted to be additive. With many variables, important interactions can be missed.\n\nIt is still possible to consider a spline expansion to an interaction term between two variables. But what if we have large \\(p\\) and consider all pairwise interactions?"
+  },
+  {
+    "objectID": "Week11.html#possible-penalties",
+    "href": "Week11.html#possible-penalties",
+    "title": "Penalized Regression",
+    "section": "Possible Penalties",
+    "text": "Possible Penalties\n3. Elastic Net\n\nObjective Function:\n\\[\n\\min_\\beta \\frac{1}{2n}\\|y-X\\beta\\|_2^2\n+\\lambda\\left[\\alpha\\|\\beta\\|_1\n+\\frac{1-\\alpha}{2}\\|\\beta\\|_2^2\\right]\n\\]\nwhere:\n\n\\(\\|\\beta\\|_1=\\sum_j|\\beta_j|\\): LASSO penalty.\n\\(\\|\\beta\\|_2^2=\\sum_j\\beta_j^2\\): Ridge penalty.\n\\(\\alpha\\in[0,1]\\): controls the balance between LASSO and Ridge.\n\\(\\lambda\\geq 0\\): controls the overall strength of regularization.\n\n\n\n\n\nElastic Net blends (i) the sparsity of LASSO and (ii) the grouping effect of Ridge.\nDisadvantage: Requires tuning two parameters, \\(\\alpha\\) and \\(\\lambda\\), typically using cross-validation."
+  },
+  {
+    "objectID": "Week11.html#summary-penalized-regression",
+    "href": "Week11.html#summary-penalized-regression",
+    "title": "Penalized Regression",
+    "section": "Summary: Penalized Regression",
+    "text": "Summary: Penalized Regression\n\nBias-variance tradeoff: Introducing some bias can reduce variance and improve prediction accuracy.\nPenalized regression: We minimize a loss function plus a penalty to control model complexity and prevent overfitting.\nCommon penalties:\n\nRidge (\\(L_2\\)): Shrinks coefficients toward zero but does not perform variable selection.\nLASSO (\\(L_1\\)): Shrinks coefficients and can set some exactly to zero.\nElastic Net: Combines ridge and LASSO, particularly useful with correlated predictors.\n\nExtensions: Different loss functions and penalties allow us to address different modelling goals.\nChoosing tuning parameters:\n\nCross-validation: Evaluates predictive performance on held-out data.\nGeneralized cross-validation: Efficiently approximates LOOCV for linear smoothers.\nLikelihood-based approaches: Can estimate tuning parameters through probabilistic assumptions.\n\n\nAnnouncements: Assignment available on course website, due Dec. 4th"
+  },
+  {
+    "objectID": "Week11.html#summary",
+    "href": "Week11.html#summary",
+    "title": "Penalized Regression",
+    "section": "Summary",
+    "text": "Summary\n\nBias-variance tradeoff: Introducing some bias can reduce variance and improve prediction accuracy.\nPenalized regression: We minimize a loss function plus a penalty to control model complexity and prevent overfitting.\nCommon penalties:\n\nRidge (\\(L_2\\)): Shrinks coefficients toward zero but does not perform variable selection.\nLASSO (\\(L_1\\)): Shrinks coefficients and can set some exactly to zero.\nElastic Net: Combines ridge and LASSO, particularly useful with correlated predictors.\n\nExtensions: Different loss functions and penalties allow us to address different modelling goals.\nChoosing tuning parameters:\n\nCross-validation: Evaluates predictive performance on held-out data.\nGeneralized cross-validation: Efficiently approximates LOOCV for linear smoothers.\nLikelihood-based approaches: Can estimate tuning parameters through probabilistic assumptions.\n\n\nAnnouncements: Assignment available on course website, due Dec. 4th"
   }
 ]

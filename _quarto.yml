@@ -11,6 +11,8 @@ project:
     - Week5-6.qmd
     - Week9.qmd
     - Week10.qmd
+    - Week11.qmd
+    - Week12.qmd
 
 website:
   title: "STA442"
