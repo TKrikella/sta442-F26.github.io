@@ -18,7 +18,7 @@ Below is a tentative schedule of topics for the term. You can find the lecture s
 | Oct. 30 | **No class — Reading Week** | |  — | — |
 | Nov. 6 | **Bayesian Thinking**<br>Prior and posterior distributions, choice of priors, Bayesian interpretation of penalized regression and GAMs | [HTML Slides](Week9.html) |  — | Assignment 2 Due |
 | Nov. 13| **Random Effects Models**<br>Correlated data, generalized least squares, random effects, longitudinal data analysis, restricted maximum likelihood (REML), BLUP | [HTML Slides](Week10.html) |  \[ELM\] Ch. 10, 11 |  |
-| Nov. 20 | **Penalized Regression**<br>Bias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation | [HTML Slides](Week11.html)|  \[ISL\] Ch. 6<br>\[ESL\] Sec. 7.10 | Assignment 3 Released |
+| Nov. 20 | **Penalized Regression**<br>Bias–variance trade-off, ridge regression, LASSO and variants, cross-validation, generalized CV, random-effects interpretation | [HTML Slides](Week11.html)|  \[ISL\] Ch. 6<br>\[ESL\] Sec. 7.10 | [Assignment 3 Released](STA442_Assignment3.pdf) |
 | Nov. 27 | **Generalized Additive Models**<br>Basis functions, smoothing splines, generalized additive models | [HTML Slides](Week12.html) |  \[ELM\] Ch. 15<br>\[ISL\] Ch. 7<br>\[ESL\] Ch. 5 | | 
 | Dec. 4 | **COURSE REVIEW** | | | Assignment 3 Due |
 :::
