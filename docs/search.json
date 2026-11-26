@@ -24,8 +24,8 @@
     "objectID": "Course-Introduction.html#about-me",
     "href": "Course-Introduction.html#about-me",
     "title": "STA442: Methods in Applied Statistics",
-    "section": "About Me",
-    "text": "About Me\n\n\nTatiana Krikella (she/her)\n\nAssistant Professor, Teaching Stream\n\n\nEducation\n\nUndergrad: University of Windsor\nMasters: University of Windsor\nPhD: University of Waterloo\n\n\n\nAbout me\n\nI like to travel\nI like to bake\nMy Goodreads book challenge this year is 45\nI started running this summer\n\n\n\n\n\nMy PhD graduation, 2024."
+    "section": "",
+    "text": "Tatiana Krikella (she/her)\n\nAssistant Professor, Teaching Stream\n\n\nEducation\n\nUndergrad: University of Windsor\nMasters: University of Windsor\nPhD: University of Waterloo\n\n\n\nAbout me\n\nI like to travel\nI like to bake\nMy Goodreads book challenge this year is 45\nI started running this summer\n\n\n\n\n\nMy PhD graduation, 2024."
   },
   {
     "objectID": "Course-Introduction.html#about-you",
@@ -1950,7 +1950,7 @@
     "href": "index.html#tests",
     "title": "STA442",
     "section": "Tests",
-    "text": "Tests\n\n\n\n\nTest\nDate\nInformation\n\n\n\n\nMidterm\nOctober 23rd, 2pm – 4pm\nInformation + Practice\n\n\nFinal\nDecember 10th, 2pm – 4pm\nPast Final"
+    "text": "Tests\n\n\n\n\nTest\nDate\nInformation\n\n\n\n\nMidterm\nOctober 23rd, 2pm – 4pm\nInformation + Practice\n\n\nFinal\nDecember 10th, 2pm – 4pm\nFinal InformationPast Final"
   },
   {
     "objectID": "Week9.html#table-of-contents",
@@ -3253,5 +3253,12 @@
     "title": "Generalized Additive Models",
     "section": "Summary",
     "text": "Summary\n\nPolynomial regression allows nonlinear relationships by introducing higher-order terms, but high-degree polynomials can lead to overfitting.\nSplines model nonlinear relationships using piecewise polynomials joined at knots.\n\nMore knots allow greater flexibility, but can also increase overfitting.\n\nPenalized splines control this flexibility by penalizing large changes in the fitted function.\n\nThe smoothing parameter \\(\\lambda\\) controls the tradeoff between goodness of fit and complexity.\n\\(\\lambda\\) can be selected using GCV or REML (through a mixed-effects formulation).\n\nGeneralized additive models (GAMs) extend multiple linear regression by allowing each predictor to have its own smooth function:\n\\[y_i=\\beta_0+\\sum_{j=1}^p f_j(x_{ij})+\\epsilon_i\\]\nAdvantages of GAMs: Flexible nonlinear relationships, improved predictive potential, and interpretable individual predictor effects.\nLimitations of GAMs: Additive models do not automatically capture interactions; including many nonlinear interactions can greatly increase model complexity.\n\nAnnouncements: Assignment due Dec 4th\nNext Week: Course Review!!"
+  },
+  {
+    "objectID": "Course-Introduction.html",
+    "href": "Course-Introduction.html",
+    "title": "STA442: Methods in Applied Statistics",
+    "section": "",
+    "text": "Tatiana Krikella (she/her)\n\nAssistant Professor, Teaching Stream\n\n\nEducation\n\nUndergrad: University of Windsor\nMasters: University of Windsor\nPhD: University of Waterloo\n\n\n\nAbout me\n\nI like to travel\nI like to bake\nMy Goodreads book challenge this year is 45\nI started running this summer\n\n\n\n\n\nMy PhD graduation, 2024."
   }
 ]
